@@ -2,7 +2,7 @@ import {createRequire} from 'node:module';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {regions,isSafePosition} from './src/regions.js';
-import {stories} from './src/story-content.js';
+import {forestStories as stories} from './src/story-content.js';
 const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/mi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const browser=await chromium.launch({headless:true,...(process.env.BROWSER_EXE?{executablePath:process.env.BROWSER_EXE}:{channel:'msedge'})});
 const page=await browser.newPage({viewport:{width:1440,height:1000}});
@@ -57,7 +57,7 @@ try{
  await check('quick introduction is ungated, keyboard/mouse accessible and restores focus',async()=>{
   assert.equal(await page.locator('dialog[open]').count(),0);assert.equal((await state()).stories.length,0);
   await page.locator('#quick-intro').click();await page.waitForTimeout(220);
-  const text=await page.locator('#body').innerText();for(const expected of ['编程','音乐','Minecraft','Johnny Town','待本人补充'])assert.ok(text.includes(expected));
+  const text=await page.locator('#body').innerText();for(const expected of ['编程','音乐','Minecraft','Johnny Town'])assert.ok(text.includes(expected));
   assert.ok(text.length<650);assert.equal(await page.locator('#close').evaluate(e=>e===document.activeElement),true);
   await page.screenshot({path:dir+'/quick-introduction.png'});
   await close();assert.equal(await page.locator('#quick-intro').evaluate(e=>e===document.activeElement),true);
@@ -65,8 +65,8 @@ try{
   assert.equal(await page.locator('dialog[open]').count(),0);assert.equal((await state()).stories.length,0);
  });
  await check('journal initially shows five mysterious entries without story spoilers',async()=>{
-  await page.keyboard.press('m');assert.equal(await page.locator('.journal-locked').count(),5);
-  assert.ok((await page.locator('.journal-progress').innerText()).includes('0 / 5'));
+  await page.keyboard.press('m');assert.equal(await page.locator('.journal-locked').count(),13);
+  assert.ok((await page.locator('.journal-progress').innerText()).includes('0 / 13'));
   for(const s of stories)assert.ok(!(await page.locator('#body').innerText()).includes(s.summary));await close();
  });
  await check('town northern route enters forest with a safe stable spawn',async()=>{
@@ -87,7 +87,7 @@ try{
  });
  await check('repeat interaction is unique; journal rereads all entries without movement',async()=>{
   await page.keyboard.press('e');await page.waitForTimeout(100);await close();assert.equal((await state()).stories.length,5);
-  await page.keyboard.press('m');assert.equal(await page.locator('.journal-locked').count(),0);assert.ok((await page.locator('.journal-progress').innerText()).includes('5 / 5'));
+  await page.keyboard.press('m');assert.equal(await page.locator('.journal-locked').count(),8);assert.ok((await page.locator('.journal-progress').innerText()).includes('5 / 13'));
   for(const s of stories){await page.getByText('重读 · '+s.name,{exact:true}).click();assert.ok((await page.locator('#body').innerText()).includes(s.detail[1]));}
   await page.screenshot({path:dir+'/journal-complete.png'});await close();
  });

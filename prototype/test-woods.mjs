@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {regions,isSafePosition} from './src/regions.js';
 import {woodsPaths} from './src/woods-data.js';
-import {stories,storyIds,profile} from './src/story-content.js';
+import {forestStories as stories,storyIds,profile} from './src/story-content.js';
 import {createWorldStore,normalizeWorld,WORLD_KEY,WORLD_VERSION} from './src/world-store.js';
 const memory=()=>{const map=new Map();let writes=0;return {getItem:k=>map.get(k)??null,setItem:(k,v)=>{writes++;map.set(k,v);},get writes(){return writes;}};};
 const old={version:1,regionId:'meadow',spawnId:'fromTown',discovered:['town','meadow'],progress:{transitions:8}};
@@ -38,8 +38,8 @@ test('blocked storage still supports unique journal entries in memory',()=>{
  const store=createWorldStore({storage:()=>{throw Error('denied');}});store.discover('unwritten');store.discover('unwritten');assert.deepEqual(store.read().stories,['unwritten']);assert.ok(store.warning);
 });
 test('five story records match interactive geometry and have optional short detail',()=>{
- assert.equal(stories.length,5);assert.equal(new Set(storyIds).size,5);
- for(const story of stories){const p=regions.woods.places.find(p=>p.storyId===story.id);assert.ok(p);assert.ok(isSafePosition(regions.woods,p.door));assert.ok(story.summary.length<100);assert.equal(story.detail.length,2);assert.ok(story.connection);}
+ assert.equal(stories.length,5);assert.equal(new Set(storyIds).size,13);
+ for(const story of stories){const p=regions.woods.places.find(p=>p.storyId===story.id);assert.ok(p);assert.ok(isSafePosition(regions.woods,p.door));assert.ok(story.summary.length<100);assert.equal(story.detail.length,2);assert.equal(story.connection,undefined);}
 });
 test('every main/branch path center stays clear for the full 16px player body',()=>{
  for(const path of woodsPaths)for(let i=1;i<path.length;i++){
@@ -56,6 +56,6 @@ test('all five destinations and exit are in one reachable free-space component',
  for(const p of [...r.places,...r.exits])assert.ok(queue.some(n=>Math.hypot(n.x-p.door.x,n.y-p.door.y)<step),'unreachable '+p.id);
 });
 test('quick introduction is concise, includes project and interests, with editorial limits',()=>{
- assert.ok(profile.interests.length>=3);assert.ok(profile.overview.some(s=>s.text.includes('Johnny Town')));assert.ok(profile.editorialNote.includes('待本人补充'));
+ assert.ok(profile.interests.length>=3);assert.ok(profile.overview.some(s=>s.text.includes('Johnny Town')));assert.equal(profile.editorialNote,undefined);
  assert.ok(JSON.stringify(profile).length<800);
 });

@@ -1,0 +1,41 @@
+✔ local date and exact weighted intervals (2.7841ms)
+✔ persistent same day, new day, snapshot and interrupted animation (0.8095ms)
+✔ denied storage and malformed records never crash or reroll in page (0.3001ms)
+✔ 100000 deterministic samples roughly match weights (11.0293ms)
+✔ autoplay falls back to muted then manual (0.4482ms)
+✔ closing while play promise rejects never restarts muted media (0.1824ms)
+✔ meadow every entrance and landmark reachable with full body (32.4169ms)
+✔ lake every entrance and landmark reachable with full body (34.1206ms)
+✔ valley every entrance and landmark reachable with full body (16.2997ms)
+✔ all 13 stories retain concise opening and expansion without authoring notes (0.3932ms)
+✔ old V2 discoveries and fortune-independent state survive new entries and trips (1.1562ms)
+✔ production contains no private media or local serving configuration (6.2796ms)
+✔ 05A v1 migrates region, checkpoint, discoveries and counters to v2 (1.3397ms)
+✔ migration writes same key and never touches fortune bytes (0.3026ms)
+✔ discovery works in arbitrary order, persists immediately and is idempotent (0.4286ms)
+✔ story progress survives repeated region visits and safe checkpoint restoration (0.4946ms)
+✔ invalid or partial story data is sanitized without losing a valid world checkpoint (0.1765ms)
+✔ corrupted and unsupported save versions recover to town without phantom discoveries (0.2294ms)
+✔ blocked storage still supports unique journal entries in memory (0.2168ms)
+✔ five story records match interactive geometry and have optional short detail (0.2115ms)
+✔ every main/branch path center stays clear for the full 16px player body (2.7825ms)
+✔ all five destinations and exit are in one reachable free-space component (17.996ms)
+✔ quick introduction is concise, includes project and interests, with editorial limits (0.2377ms)
+✔ every region spawn and destination is safe and outside its exit interaction range (1.2597ms)
+✔ collision geometry rejects solids, nonfinite coordinates and map edges (0.6745ms)
+✔ Phase04 fortune-only storage migrates without modifying its existing bytes (0.3456ms)
+✔ round trips persist checkpoint, discoveries and transition count across instances (1.0672ms)
+✔ corrupt, partial, unsupported or hostile saves safely fall back to town (0.3096ms)
+✔ valid schema is sanitized and arbitrary saved coordinates never spawn the player (0.122ms)
+✔ blocked storage keeps exploration alive in memory and reports the limitation (0.1549ms)
+✔ future regions are navigation labels without executable exits (0.1239ms)
+✔ video byte ranges support seeks and reject malformed or unsatisfiable ranges (0.3711ms)
+✔ media network or decode failures never get mislabeled as autoplay restrictions (0.4123ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 225.1744

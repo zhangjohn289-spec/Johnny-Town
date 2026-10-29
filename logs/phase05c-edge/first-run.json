@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "name": "town quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "woods quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "meadow quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "meadow all exits walked and scenic composition",
+      "pass": true
+    },
+    {
+      "name": "lake quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "lake-stage reached and read",
+      "pass": true
+    },
+    {
+      "name": "rhythm-stones reached and read",
+      "pass": false,
+      "error": "Blocked {\"dest\":{\"x\":248,\"y\":440},\"p\":{\"x\":246.24999999999966,\"y\":396}}"
+    }
+  ],
+  "metrics": {
+    "trips": [
+      329,
+      302,
+      303,
+      318
+    ]
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

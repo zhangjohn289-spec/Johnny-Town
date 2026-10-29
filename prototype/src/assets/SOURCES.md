@@ -19,3 +19,7 @@ Phase 04 使用 scripts/polish-art.mjs 生成精修版，新增 tree-b.png（80�
 woods-data.js / woods-renderer.js 定义原创森林地图和像素绘制：蜿蜒小径、树林、针叶树、晨光石碑、旅行路牌、回响古树、齿轮工坊、留白路标及休憩树桩。复用本目录的原创 tree / tree-b 纹理，配合程序绘制的像素细节。森林地面与五处地标首次进入时缓存为 Phaser 纹理，不依赖外部图片、字体、音频或授权游戏素材。
 
 叙事文案在 story-content.js，均为本项目原创象征性文本。没有使用或发布私人 MP4，也没有将外部游戏贴图嵌入地图。
+
+## Phase 05C
+
+草甸、旋律湖与机械谷使用expansion-data.js中的确定性布局和landscape-renderer.js原创像素绘制；复用既有原创树纹理。地面在本机Phaser中生成并缓存，不下载外部素材。新增故事为原创中文短篇，没有使用版权音乐或外部游戏素材。私人MP4不进入生产构建。

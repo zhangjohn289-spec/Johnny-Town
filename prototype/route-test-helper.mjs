@@ -1,0 +1,4 @@
+import {regions,isSafePosition} from './src/regions.js';
+export function route(regionId,start,end){const r=regions[regionId],snap=p=>({x:Math.round(p.x/8)*8,y:Math.round(p.y/8)*8}),a=snap(start),queue=[a],parents=new Map([[a.x+','+a.y,null]]);let found;
+for(let i=0;i<queue.length;i++){const p=queue[i];if(Math.hypot(p.x-end.x,p.y-end.y)<12){found=p;break;}for(const [dx,dy] of [[8,0],[-8,0],[0,8],[0,-8]]){const n={x:p.x+dx,y:p.y+dy},key=n.x+','+n.y;if(!parents.has(key)&&isSafePosition(r,n)&&[[6,0],[-6,0],[0,6],[0,-6]].every(([dx,dy])=>isSafePosition(r,{x:n.x+dx,y:n.y+dy}))){parents.set(key,p);queue.push(n);}}}
+if(!found)throw Error('No route '+regionId+' '+JSON.stringify(end));let result=[];for(let p=found;p;p=parents.get(p.x+','+p.y))result.push(p);result.reverse();return result.filter((p,i)=>i===0||i===result.length-1||((p.x-result[i-1].x)!==(result[i+1].x-p.x)||(p.y-result[i-1].y)!==(result[i+1].y-p.y)));}

@@ -14,7 +14,7 @@ export function mountMedia(root,config=mediaConfig){
  const stop=()=>{const v=root.querySelector('video');if(v){v.pause();v.removeAttribute('src');v.load();v.remove();}};
  const play=v=>{const attempt=generation;void attemptPlayback(v,status,()=>!disposed&&attempt===generation);};
  const start=()=>{generation++;stop();
- if(!config.confirmed||!config.url){status.textContent='媒体来源尚未确认，当前无法播放。播放器接口已准备好，确认可用来源后再启用。';return;}
+ if(!config.confirmed||!config.url){status.textContent='宝箱里的影片暂时无法播放，请稍后再来。';return;}
  const video=document.createElement('video');video.controls=true;video.playsInline=true;video.src=config.url;video.preload='metadata';root.prepend(video);const attempt=generation;video.onerror=()=>{if(!disposed&&attempt===generation)status.textContent='视频加载失败，请重试或稍后再来。';};play(video);};
  const controls=document.createElement('div');for(const [label,fn] of [['重试',start],['手动播放',()=>{const v=root.querySelector('video');if(v)play(v);}],['开启声音',()=>{const v=root.querySelector('video');if(v){v.muted=false;play(v);}}]]){const b=document.createElement('button');b.textContent=label;b.onclick=fn;controls.append(b);}root.append(controls);
  if(config.confirmed&&config.sourceUrl){const link=document.createElement('a');link.href=config.sourceUrl;link.textContent='前往来源观看';link.target='_blank';link.rel='noopener noreferrer';root.append(link);}start();return ()=>{disposed=true;generation++;stop();};

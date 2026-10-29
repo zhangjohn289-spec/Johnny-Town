@@ -25,7 +25,7 @@ class WorldScene extends Phaser.Scene {
     const saved=worldStore.read();
     const checkpoint=safeSpawn(saved.regionId,saved.spawnId);
     this.region=regions[checkpoint.regionId];
-    this.interacting=false; this.transitioning=false; this.target=null;
+    this.interacting=false; this.transitioning=false; this.target=null; this.ambientUpdate=null;
     renderRegion(this);
     this.walls=this.physics.add.staticGroup();
     for(const w of this.region.collisions) this.walls.add(this.add.rectangle(w.x+w.w/2,w.y+w.h/2,w.w,w.h));

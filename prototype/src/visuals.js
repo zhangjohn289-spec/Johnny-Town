@@ -24,6 +24,7 @@ export function setupEnvironment(scene){
  scene.motionChange=()=>{scene.reduced=scene.reducedMotion.matches;};scene.motionChange();scene.reducedMotion.addEventListener('change',scene.motionChange);scene.events.once('shutdown',()=>scene.reducedMotion.removeEventListener('change',scene.motionChange));
 }
 export function animateArt(scene,time,x,y){
+ scene.ambientUpdate?.(time);
  scene.player.setDepth(scene.player.y+16);scene.shadow.setPosition(scene.player.x,scene.player.y+14);
  const moving=!!(x||y);if(moving)scene.facing=Math.abs(x)>Math.abs(y)?(x<0?2:3):(y<0?1:0);
  if(moving&&!scene.reduced)scene.walker.play('walk-'+scene.facing,true);else{scene.walker.stop();scene.walker.setFrame(scene.facing*4);}

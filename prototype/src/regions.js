@@ -1,3 +1,4 @@
+import {lake,valley,meadowPaths} from './expansion-data.js';
 import {places} from './config.js';
 import {woods} from './woods-data.js';
 
@@ -6,7 +7,7 @@ export const PLAYER_SPEED = 175;
 export const BODY_SIZE = 16;
 const treeWalls = trees => trees.map(([x, y]) => ({x: x - 19, y: y - 24, w: 38, h: 48, kind: 'tree'}));
 const townTrees = [[70,120],[440,120],[890,170],[80,500],[430,520]];
-const meadowTrees = [[100,130],[260,180],[440,130],[730,160],[910,120],[100,640],[300,620],[660,640],[890,620]];
+const meadowTrees = [[100,130],[260,180],[440,130],[730,160],[910,120],[100,640],[300,620],[660,640],[890,620],[190,100],[240,110],[590,100],[800,95],[180,680],[470,680],[520,710],[820,700]];
 const meadowFences = [{x:340,y:250,w:160,h:16,kind:'fence'}, {x:600,y:500,w:176,h:16,kind:'fence'}];
 
 // All rectangles use top-left coordinates; interaction points are independent of solids.
@@ -23,16 +24,14 @@ export const regions = {
     id:'meadow', name:'Frontier Meadow · 边境草甸', renderer:'meadow', width:64*TILE_SIZE, height:48*TILE_SIZE,
     bounds:{x:16,y:32,width:992,height:720}, trees:meadowTrees, places:[],
     collisions:[...treeWalls(meadowTrees), ...meadowFences],
-    spawns:{fromTown:{x:145,y:384}}, defaultSpawn:'fromTown',
-    exits:[{id:'to-town',name:'← Johnny Town',action:'返回',door:{x:50,y:384},to:'town',spawn:'fromMeadow'}],
+    paths:meadowPaths, spawns:{fromTown:{x:145,y:384},fromLake:{x:800,y:250},fromValley:{x:800,y:620}}, defaultSpawn:'fromTown',
+    exits:[{id:'to-town',name:'← Johnny Town',action:'返回',door:{x:50,y:384},to:'town',spawn:'fromMeadow'},{id:'to-lake',name:'旋律湖 ↗',action:'前往',door:{x:910,y:250},to:'lake',spawn:'fromMeadow'},{id:'to-valley',name:'机械谷 ↘',action:'前往',door:{x:940,y:620},to:'valley',spawn:'fromMeadow'}],
   },
-  woods,
+  woods, lake, valley,
 };
 
 export const regionList = [
   ...Object.values(regions).map(({id,name}) => ({id,name,available:true})),
-  {id:'lake',name:'Melody Lake · 旋律湖',available:false},
-  {id:'valley',name:'Gear Valley · 机械谷',available:false},
   {id:'ruins',name:'Forgotten Ruins · 遗忘遗迹',available:false},
 ];
 
