@@ -1,5 +1,50 @@
+# Dependencies and generated builds
 **/node_modules/
 **/dist/
-
-# Preserved local AE installation, not the active application
+**/build/
+**/coverage/
+# Local engine, credentials and tool state
 /johnny-town/
+**/.phaser/
+.env
+.env.*
+!.env.example
+!.env.sample
+**/.aws/
+**/.ssh/
+**/.codex/
+**/.agents/
+**/.npmrc
+**/.netrc
+**/*credentials*.json
+**/*service-account*.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+# Caches, private scratch data and OS/editor state
+**/.cache/
+**/.vite/
+**/.npm/
+**/.pnpm-store/
+**/.playwright/
+**/playwright-report/
+**/test-results/
+**/tmp/
+**/temp/
+**/*.log
+**/*.local
+**/.DS_Store
+**/Thumbs.db
+**/Desktop.ini
+**/.idea/
+**/.vscode/
+# No third-party media files are authorized for this release
+**/*.mp4
+**/*.webm
+**/*.mov
+**/*.avi
+**/*.mkv
+**/*.mp3
+**/*.wav
+**/*.ogg

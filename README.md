@@ -22,5 +22,5 @@ prototype/scripts/polish-art.mjs 调用基础绘制器并加入精修/PNG压缩�
 
 ## 验收与发布
 6项核心测试、Edge与官方Chrome for Testing的视觉/交互/速度/焦点测试通过；Firefox未测试。详细结果、限制与真实截图见 PHASE04.md、logs/phase04-tests.md 和 logs/phase04-screenshots/。
-Pages工作流默认只构建，公开部署必须明确批准后手动开启publish。目前没有Git远端，也没有公网URL。步骤见 DEPLOYMENT.md。
+Pages工作流默认只构建，公开部署必须明确批准后手动开启publish。origin 已配置为 https://github.com/zhangjohn289-spec/Johnny-Town.git，仍无公网URL。Vite base 为 /Johnny-Town/。步骤见 DEPLOYMENT.md。
 历史开发说明保留 PHASE02.md、PHASE03.md。AE独立目录不参与当前应用，未修改。

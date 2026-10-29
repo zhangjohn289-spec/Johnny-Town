@@ -1,9 +1,9 @@
 # GitHub Pages 发布说明
 
-本项目尚未公开部署，无 Git 远端、无公网 URL。依任务第 12.2 节，必须先取得用户对目标仓库及公开发布的明确批准，不更改仓库可见性。
+本项目尚未公开部署，无公网 URL。origin 已配置为 https://github.com/zhangjohn289-spec/Johnny-Town.git；本次只授权上传代码。依任务第 12.2 节，必须先取得用户对目标仓库及公开发布的明确批准，不更改仓库可见性。
 
 ## 已准备
-- Vite base=./，纯静态 dist，没有后端或运行时构建依赖。
+- Vite base=/Johnny-Town/（仓库名大小写一致），纯静态 dist，没有后端或运行时构建依赖。
 - Pages 工作流仅 workflow_dispatch。默认 publish=false，只执行 npm ci、核心测试、build 并上传产物。publish=true 才运行依赖 build 的 deploy job。
 - 部署 job 使用 github-pages environment，pages:write / id-token:write 仅在该 job。
 - 不会因 push 自动发布。建议仓库所有者为 github-pages 环境配置 required reviewers。
