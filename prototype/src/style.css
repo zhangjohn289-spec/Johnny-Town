@@ -4,3 +4,15 @@ html,body{height:100%;}body{background:#24372d;background-image:radial-gradient(
 /* Phase 04: inset timber frame and parchment grain, without external fonts. */
 dialog{background-color:#f7e9c4;background-image:repeating-linear-gradient(0deg,#e5cea01a 0px,#e5cea01a 1px,transparent 1px,transparent 4px);border-color:#5f4932;box-shadow:inset 0 0 0 2px #fff3ce,inset 0 0 0 5px #c1a76c,8px 8px 0 #14271e80;padding:32px}dialog h2{font-size:21px;letter-spacing:2px;margin-top:8px}button{transition:background-color .12s,transform .12s}button:active{transform:translate(1px,1px);box-shadow:none}button:focus-visible{outline-offset:3px}dialog::backdrop{background:#172d2399}#hint{box-shadow:inset 0 0 0 1px #cab17b33}.paper{border-color:#bc9f67;padding:24px;line-height:2}body>header small{color:#c5d1aa}
 @media(prefers-reduced-motion:reduce){button{transition:none}}
+/* Phase 05A: navigation stays readable at small widths; dialogs remain in the top layer. */
+.navigation{display:flex;align-items:center;gap:8px}.navigation button{padding:6px 10px;font-size:12px}
+#region-name{max-width:240px}#save-status{font-size:12px;color:#ffe295;margin:0 12px;max-width:90vw}
+#save-status:empty{display:none}.region-list{padding-left:20px}.region-list li{margin:12px 0}
+@media(max-width:850px),(max-height:540px){
+ html,body{height:auto;min-height:100%;overflow:auto}body{justify-content:flex-start}
+ .small-screen{display:block;position:static;inset:auto;padding:4px 16px;font-size:14px;background:transparent}
+ header,#game,footer{visibility:visible}header,footer{padding:10px 16px;flex-wrap:wrap;gap:8px}
+ h1{font-size:20px}.navigation{flex-wrap:wrap}#game{width:calc(96vw - 12px);margin:8px auto}
+ footer{flex-direction:column;align-items:flex-start}#hint{min-width:0;text-align:left}
+ dialog{padding:20px;max-height:85dvh}#close{position:sticky;bottom:0}
+}

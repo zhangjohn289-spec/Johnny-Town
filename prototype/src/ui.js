@@ -8,9 +8,11 @@ function shrine(){let timer,extractTimer;const drawResult=r=>{body.replaceChildr
 export function show(place,onClose){if(panel.open)return;previousFocus=document.activeElement;onReturn=onClose;document.querySelector('#title').textContent=place.name;body.replaceChildren();panel.showModal();
  if(place.id==='home'){intro.forEach(t=>paragraph(t));dispose=()=>{};}
  else if(place.id==='shrine')dispose=shrine();
+ else if(place.id==='world'){dispose=()=>{};paragraph('沿路标步行，按 E 往返；尚未建成的区域暂不可进入。');const list=document.createElement('ul');list.className='region-list';for(const region of place.regions){const item=document.createElement('li');item.textContent=region.name+' — '+(!region.available?'尚未建成':place.state.regionId===region.id?'当前位置':place.state.discovered.includes(region.id)?'已发现':'未探索');list.append(item);}body.append(list);paragraph('累计跨区 '+place.state.progress.transitions+' 次；刷新后回到当前区域的安全路口。','eyebrow');}
  else{paragraph('▰','chest-open');dispose=mountMedia(body);}
  document.querySelector('#close').focus();}
 panel.addEventListener('close',()=>{dispose();dispose=()=>{};body.replaceChildren();onReturn();previousFocus?.focus?.();});
 document.querySelector('#close').onclick=()=>panel.close();
 export const isOpen=()=>panel.open;
+export const showNavigation=(regions,state,onClose)=>show({id:'world',name:'世界路书',regions,state},onClose);
 

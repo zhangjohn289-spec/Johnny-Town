@@ -1,10 +1,10 @@
 # GitHub Pages 发布说明
 
-本项目尚未公开部署，无公网 URL。origin 已配置为 https://github.com/zhangjohn289-spec/Johnny-Town.git；本次只授权上传代码。依任务第 12.2 节，必须先取得用户对目标仓库及公开发布的明确批准，不更改仓库可见性。
+用户报告 Phase 04 已公开上线；本次 Phase 05A 未重新进行公网验收。origin 保持 https://github.com/zhangjohn289-spec/Johnny-Town.git。Phase 05A 只允许本地开发和提交，不允许 push、merge 到 main 或部署。不得修改仓库可见性。
 
 ## 已准备
 - Vite base=/Johnny-Town/（仓库名大小写一致），纯静态 dist，没有后端或运行时构建依赖。
-- Pages 工作流仅 workflow_dispatch。默认 publish=false，只执行 npm ci、核心测试、build 并上传产物。publish=true 才运行依赖 build 的 deploy job。
+- Pages 工作流仅 workflow_dispatch。默认 publish=false，只执行 npm ci、核心与世界存档测试、build 并上传产物。publish=true 才运行依赖 build 的 deploy job。
 - 部署 job 使用 github-pages environment，pages:write / id-token:write 仅在该 job。
 - 不会因 push 自动发布。建议仓库所有者为 github-pages 环境配置 required reviewers。
 - AE 目录、node_modules、dist 被忽略，不上传引擎账户配置。已检查跟踪路径与常见凭据特征，未发现凭据文件；未声称这是全面安全审计。
@@ -19,3 +19,8 @@
 本地模拟 Pages 子路径的服务器：从项目根目录运行 node prototype/serve-pages-check.mjs，访问 http://127.0.0.1:4183/Johnny-Town/ 。它是本地验收工具，不是生产服务器。
 
 官方工作流参考：https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+## Phase 05A 本地媒体隔离
+LOCAL_VIDEO_FILE 只能放在被忽略的 prototype/.env.local；不要放在公开变量 VITE_* 中。Vite build 不启用本地视频插件，不复制原文件。发布前运行 node prototype/test-static.mjs，检查 dist 无 MP4/私有路径，再审查暂存文件。当前公开播放器保留来源未确认提示，不能将本地测试通过视为分发许可。
+
+本次仅更新 build job 的单元测试列表；workflow_dispatch、publish=false 默认值和 deploy 条件保持原样，未运行远端工作流。

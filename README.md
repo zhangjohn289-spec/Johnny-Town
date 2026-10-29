@@ -1,26 +1,45 @@
-# Johnny Town — Phase 04
+# Johnny Town — Phase 05A
 
-PC Only 的原创像素小镇个人网站，Phaser 3.90.0 + Vite 6.4.5。当前分支 feature/phase04-polish-release。
+PC Only 的原创像素探索网站，Phaser 3.90.0 + Vite 6.4.5。本地开发分支为 `feature/phase05a-world-foundation`，继承 Phase 04 和首次上传提交，未合并 main、未推送或部署。
 
-已完成：小屋介绍、每日抽签、原创像素地图、四方向红色空心圆头火柴人动画、碰撞、弹窗控制、画质精修及 Edge/Chrome 实测。Rickroll 官方候选嵌入返回150，产品保留媒体未就绪提示。**当前 Phase 04 部分完成：本地验收和发布准备完成，尚未公开部署/公网验收。**
+中心小镇保留原有建筑、美术、每日抽签、红色火柴人与播放器。现在可沿东侧路标前往 **Frontier Meadow / 边境草甸** 并返回，支持摄像机跟随、安全路口存档、区域发现和世界路书。四个未来正式区域仅显示“尚未建成”。
 
 ## 本地运行
+
 ```powershell
 $env:PATH = 'C:\Program Files\nodejs;' + $env:PATH
 cd prototype
 npm.cmd ci
-npm.cmd run dev
-npm.cmd run build
-npm.cmd run preview
-node --test test-core.mjs
+npm.cmd run dev -- --port 4190 --strictPort
 ```
-WASD/方向键移动，E互动，Esc或按钮返回。生产预览 http://127.0.0.1:4182/ ，子路径静态验收 http://127.0.0.1:4183/Johnny-Town/ 。小窗口显示PC Only/扩大窗口提示，不提供手机控制。
 
-## 结构与资源
-prototype/src/main.js 场景与输入；visuals.js 美术与动画；ui.js 弹窗；fortune-store.js 日期和持久化；fortunes.js 30条签文；media.js 媒体配置与降级；assets/ 原创PNG；style.css 界面。
-prototype/scripts/polish-art.mjs 调用基础绘制器并加入精修/PNG压缩，可重建精修资源；依赖本机 pngjs/sharp 工具路径。生产包不依赖绘制器或临时图片URL。美术规格见 ART-SPEC.md，来源见 assets/SOURCES.md。
+打开 http://127.0.0.1:4190/Johnny-Town/ 。WASD / 方向键移动，E 互动或跨区，M / 页眉按钮打开路书，Esc 返回探索。刷新回到当前区域的安全路口，不保存任意精确坐标。小屏幕可以阅读、滚动和关闭弹窗；游戏仍要求桌面键盘，不提供触屏摇杆。
 
-## 验收与发布
-6项核心测试、Edge与官方Chrome for Testing的视觉/交互/速度/焦点测试通过；Firefox未测试。详细结果、限制与真实截图见 PHASE04.md、logs/phase04-tests.md 和 logs/phase04-screenshots/。
-Pages工作流默认只构建，公开部署必须明确批准后手动开启publish。origin 已配置为 https://github.com/zhangjohn289-spec/Johnny-Town.git，仍无公网URL。Vite base 为 /Johnny-Town/。步骤见 DEPLOYMENT.md。
-历史开发说明保留 PHASE02.md、PHASE03.md。AE独立目录不参与当前应用，未修改。
+```powershell
+# 从项目根目录执行
+node --test prototype/test-core.mjs prototype/test-world.mjs
+npm.cmd --prefix prototype run build
+node prototype/test-static.mjs
+npm.cmd --prefix prototype run preview -- --port 4191 --strictPort
+```
+
+生产预览：http://127.0.0.1:4191/Johnny-Town/ 。浏览器测试命令和环境见 [测试记录](logs/phase05a-tests.md)。
+
+## 本地视频
+
+将 `prototype/.env.example` 复制为被忽略的 `.env.local`，设置 `LOCAL_VIDEO_FILE` 为本机 MP4 绝对路径并重启开发服务器。该文件由开发服务器直接读取，支持 Range/拖动播放；不要复制进 src、public 或 dist。默认仅绑定 127.0.0.1，不应将这个带本地媒体的开发服务暴露公网。
+
+生产构建始终排除该配置与视频，保留来源未确认提示。当前未提供获得公开分发授权的媒体来源；本地播放验收不代表分发授权。
+
+## 结构和文档
+
+- `prototype/src/regions.js`：区域地图、障碍、出生点、出口和导航目录。
+- `main.js` / `player-controller.js`：共享场景生命周期、区域切换、键盘与固定速度控制。
+- `region-renderer.js` / `visuals.js`：草甸绘制及复用 Phase 04 原创贴图、动画。
+- `world-store.js`：独立版本化世界存档；`fortune-store.js` / `fortunes.js` 保留原接口及存储键。
+- `ui.js` / `media.js`：原生弹窗、世界路书与播放器；`prototype/local-video.js` 为开发专用视频中间件。
+- [Phase 05A 功能说明](PHASE05A.md)、[架构记录](logs/phase05a-architecture.md)、[测试记录](logs/phase05a-tests.md)、[部署说明](DEPLOYMENT.md)。
+
+美术来源、重建方式保留于 ART-SPEC.md、prototype/src/assets/SOURCES.md 和 prototype/scripts/。历史 Phase 02–04 文档保留为当时记录。
+
+GitHub Actions 仍只接受手动运行，`publish` 默认 false；只有另行授权并显式设置 true 才可公开部署。本次没有触发 Actions 或修改线上版本。用户报告 Phase 04 已上线，本次未重新验证公网状态。

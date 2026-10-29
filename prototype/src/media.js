@@ -1,8 +1,12 @@
 // Configure only verified, licensed HTML5 media. Platform pages are not video URLs.
-export const mediaConfig={url:null,sourceUrl:null,confirmed:false};
+const localEnabled=import.meta.env?.DEV && typeof __LOCAL_VIDEO_ENABLED__!=='undefined' && __LOCAL_VIDEO_ENABLED__;
+export const mediaConfig=localEnabled
+ ? {url:import.meta.env.BASE_URL+'__local-video',sourceUrl:null,confirmed:true}
+ : {url:null,sourceUrl:null,confirmed:false};
 export async function attemptPlayback(video,status,isActive=()=>true){
+ const loadFailed=()=>{if(!video.error)return false;status.textContent='视频加载失败，请重试或稍后再来。';return true;};
  try{await video.play();if(!isActive()){video.pause();return;}status.textContent='正在播放';}
- catch{if(!isActive())return;video.muted=true;try{await video.play();if(!isActive()){video.pause();return;}status.textContent='已静音播放，请点击“开启声音”。';}catch{if(isActive())status.textContent='自动播放受限，请点击“手动播放”。';}}
+ catch{if(!isActive()||loadFailed())return;video.muted=true;try{await video.play();if(!isActive()){video.pause();return;}status.textContent='已静音播放，请点击“开启声音”。';}catch{if(isActive()&&!loadFailed())status.textContent='自动播放受限，请点击“手动播放”。';}}
 }
 export function mountMedia(root,config=mediaConfig){
  const status=document.createElement('p');status.setAttribute('role','status');root.append(status);

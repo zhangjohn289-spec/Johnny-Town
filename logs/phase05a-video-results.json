@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "name": "dev endpoint streams MP4 byte ranges",
+      "pass": true
+    },
+    {
+      "name": "invalid seek returns 416",
+      "pass": true
+    },
+    {
+      "name": "browser decodes real video metadata and frames",
+      "pass": true
+    },
+    {
+      "name": "video time advances during playback",
+      "pass": true
+    },
+    {
+      "name": "pause stops playback clock",
+      "pass": true
+    },
+    {
+      "name": "seek and resume play",
+      "pass": true
+    },
+    {
+      "name": "Esc removes source and stops original video element",
+      "pass": true
+    },
+    {
+      "name": "keyboard resumes after video close",
+      "pass": true
+    },
+    {
+      "name": "load failure is explained",
+      "pass": true
+    },
+    {
+      "name": "production preview has no video streaming route",
+      "pass": true
+    },
+    {
+      "name": "production excludes media files and private endpoint or path",
+      "pass": true
+    },
+    {
+      "name": "no JavaScript exceptions",
+      "pass": true
+    }
+  ],
+  "metadata": {
+    "duration": 212.308833,
+    "width": 1920,
+    "height": 1080,
+    "canPlayH264": "probably",
+    "source": "/Johnny-Town/__local-video"
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}
