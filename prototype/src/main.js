@@ -1,7 +1,7 @@
 import './style.css';
 import Phaser from 'phaser';
 import {world} from './config.js';
-import {show,showNavigation,isOpen} from './ui.js';
+import {show,showNavigation,showQuick,isOpen} from './ui.js';
 import {preloadArt,animateArt} from './visuals.js';
 import {regions,regionList,safeSpawn} from './regions.js';
 import {createWorldStore} from './world-store.js';
@@ -10,6 +10,7 @@ import {renderRegion} from './region-renderer.js';
 
 const worldStore=createWorldStore();
 const navigation=document.querySelector('#world-map');
+const quickButton=document.querySelector('#quick-intro');
 const hint=document.querySelector('#hint');
 
 class WorldScene extends Phaser.Scene {
@@ -40,15 +41,20 @@ class WorldScene extends Phaser.Scene {
     this.ring=this.add.graphics().setDepth(999);
     const interact=event=>{if(!event.repeat) this.interact();};
     const map=event=>{if(!event?.repeat) this.openNavigation();};
+    const quick=event=>{if(!event?.repeat) this.openQuick();};
     this.input.keyboard.enabled=true;
     this.input.keyboard.resetKeys();
     this.input.keyboard.on('keydown-E',interact);
     this.input.keyboard.on('keydown-M',map);
+    this.input.keyboard.on('keydown-I',quick);
     navigation.addEventListener('click',map);
+    quickButton.addEventListener('click',quick);
     this.events.once('shutdown',()=>{
       this.input.keyboard.off('keydown-E',interact);
       this.input.keyboard.off('keydown-M',map);
+      this.input.keyboard.off('keydown-I',quick);
       navigation.removeEventListener('click',map);
+      quickButton.removeEventListener('click',quick);
       this.input.keyboard.resetKeys();
     });
     document.querySelector('#region-name').textContent=this.region.name;
@@ -61,11 +67,20 @@ class WorldScene extends Phaser.Scene {
     lockInput(this,true);
     showNavigation(regionList,worldStore.read(),()=>lockInput(this,false));
   }
+  openQuick(){
+    if(isOpen()||this.interacting)return;
+    lockInput(this,true);
+    showQuick(this.region.id,()=>lockInput(this,false));
+  }
   interact(){
     if(!this.target||isOpen()||this.interacting) return;
     const target=this.target;
     lockInput(this,true);
     if(target.to){this.travel(target);return;}
+    if(target.kind==='story'){
+      worldStore.discover(target.storyId);
+      document.querySelector('#save-status').textContent=worldStore.warning;
+    }
     const open=()=>show(target,()=>{
       lockInput(this,false);
       this.art.chest?.setAngle(0).setTexture('chest');

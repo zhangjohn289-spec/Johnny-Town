@@ -1,0 +1,250 @@
+{
+  "browser": "156.0.4314.50",
+  "url": "http://127.0.0.1:4201/Johnny-Town/",
+  "results": [
+    {
+      "name": "Phase04 visual texture cache and town framing",
+      "pass": true
+    },
+    {
+      "name": "actual keyboard walking reaches both road exits without teleporting through walls",
+      "pass": true
+    },
+    {
+      "name": "existing fortune persists through travel and safe meadow entry",
+      "pass": true
+    },
+    {
+      "name": "camera scroll and all four bounds with physical movement",
+      "pass": true
+    },
+    {
+      "name": "meadow trees and fences block movement; road stays traversable",
+      "pass": true
+    },
+    {
+      "name": "refresh restores safe checkpoint, discoveries and fortune",
+      "pass": true
+    },
+    {
+      "name": "world navigation locks motion, restores focus, lists future regions without links",
+      "pass": true
+    },
+    {
+      "name": "20 cached transitions retain one set of bodies, colliders and listeners",
+      "pass": true
+    },
+    {
+      "name": "movement remains 175 px/s and diagonal normalized after repeated travel",
+      "pass": true
+    },
+    {
+      "name": "reduced motion skips fades and walking animation on region change",
+      "pass": true
+    },
+    {
+      "name": "desktop and narrow viewports keep canvas ratio and closable readable navigation",
+      "pass": true
+    },
+    {
+      "name": "legacy fortune-only and corrupted world saves recover in browser",
+      "pass": true
+    },
+    {
+      "name": "basic render performance and asset requests",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "transitions": [
+      {
+        "destination": "meadow",
+        "ms": 287
+      },
+      {
+        "destination": "town",
+        "ms": 305
+      },
+      {
+        "destination": "meadow",
+        "ms": 287
+      },
+      {
+        "destination": "town",
+        "ms": 300
+      },
+      {
+        "destination": "meadow",
+        "ms": 302
+      },
+      {
+        "destination": "town",
+        "ms": 292
+      },
+      {
+        "destination": "meadow",
+        "ms": 303
+      },
+      {
+        "destination": "town",
+        "ms": 302
+      },
+      {
+        "destination": "meadow",
+        "ms": 303
+      },
+      {
+        "destination": "town",
+        "ms": 303
+      },
+      {
+        "destination": "meadow",
+        "ms": 287
+      },
+      {
+        "destination": "town",
+        "ms": 303
+      },
+      {
+        "destination": "meadow",
+        "ms": 299
+      },
+      {
+        "destination": "town",
+        "ms": 302
+      },
+      {
+        "destination": "meadow",
+        "ms": 302
+      },
+      {
+        "destination": "town",
+        "ms": 302
+      },
+      {
+        "destination": "meadow",
+        "ms": 300
+      },
+      {
+        "destination": "town",
+        "ms": 300
+      },
+      {
+        "destination": "meadow",
+        "ms": 302
+      },
+      {
+        "destination": "town",
+        "ms": 295
+      },
+      {
+        "destination": "meadow",
+        "ms": 302
+      },
+      {
+        "destination": "town",
+        "ms": 287
+      },
+      {
+        "destination": "meadow",
+        "ms": 26
+      },
+      {
+        "destination": "meadow",
+        "ms": 303
+      }
+    ],
+    "heapBefore": 6681656,
+    "heapAfter": 7147104,
+    "resources": {
+      "town": {
+        "region": "town",
+        "E": 1,
+        "M": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 8,
+        "colliders": 1,
+        "children": 33,
+        "textures": 16,
+        "shutdown": 16
+      },
+      "meadow": {
+        "region": "meadow",
+        "E": 1,
+        "M": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 11,
+        "colliders": 1,
+        "children": 32,
+        "textures": 12,
+        "shutdown": 16
+      }
+    },
+    "viewports": [
+      {
+        "width": 1366,
+        "height": 768,
+        "canvas": {
+          "x": 242,
+          "y": 95.796875,
+          "width": 882,
+          "height": 588
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "canvas": {
+          "x": 460,
+          "y": 212.46875,
+          "width": 1000,
+          "height": 666.65625
+        }
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "canvas": {
+          "x": 780,
+          "y": 392.46875,
+          "width": 1000,
+          "height": 666.65625
+        }
+      },
+      {
+        "width": 400,
+        "height": 800,
+        "canvas": {
+          "x": 14,
+          "y": 217.78125,
+          "width": 372,
+          "height": 248
+        }
+      },
+      {
+        "width": 800,
+        "height": 450,
+        "canvas": {
+          "x": 22,
+          "y": 160.1875,
+          "width": 756,
+          "height": 504
+        }
+      }
+    ],
+    "fps": {
+      "town": {
+        "raf": 60.256088375596285,
+        "phaser": 60.375
+      },
+      "meadowMoving": {
+        "raf": 59.97900734599889,
+        "phaser": 60.2109375
+      }
+    }
+  },
+  "errors": [],
+  "failed": []
+}

@@ -16,3 +16,12 @@ dialog{background-color:#f7e9c4;background-image:repeating-linear-gradient(0deg,
  footer{flex-direction:column;align-items:flex-start}#hint{min-width:0;text-align:left}
  dialog{padding:20px;max-height:85dvh}#close{position:sticky;bottom:0}
 }
+/* Phase 05B: a quick introduction is always available, with optional story depth. */
+#quick-intro{background:#a98548;color:#fff8dc;border-color:#e2c280}header .navigation{justify-content:flex-end;flex-wrap:wrap;max-width:520px}
+.story-lead{font-size:16px;line-height:1.95;border-left:3px solid #b49659;padding-left:16px}
+.interest-list{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0}.interest-list li{background:#d6d6ad;border:1px solid #a6ac7d;padding:3px 9px;font-size:13px}
+#body h3{font-size:15px;margin:20px 0 4px;color:#536b46}.editorial-note{font-size:12px;color:#6d7056;line-height:1.7}.route-note{font-size:13px;background:#e8dbb2;padding:10px}
+.story-details{margin:12px 0;padding:10px 12px;border:1px solid #b4a173;background:#fff6d433}
+.story-details summary{cursor:pointer;color:#405f3e;font-weight:bold}.story-details summary:focus-visible{outline:2px solid #84743b;outline-offset:4px}
+.journal-progress{font-weight:bold;color:#456942}.journal-locked{font-size:13px;color:#787561;padding:6px 12px;border-bottom:1px dashed #b7ab84}
+@media(max-width:850px){header .navigation{justify-content:flex-start}#region-name{width:100%;max-width:none}.story-lead{font-size:15px}}

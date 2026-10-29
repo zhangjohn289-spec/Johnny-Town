@@ -1,0 +1,35 @@
+✔ local date and exact weighted intervals (2.3153ms)
+✔ persistent same day, new day, snapshot and interrupted animation (0.7746ms)
+✔ denied storage and malformed records never crash or reroll in page (0.222ms)
+✔ 100000 deterministic samples roughly match weights (9.5826ms)
+✔ autoplay falls back to muted then manual (0.405ms)
+✔ closing while play promise rejects never restarts muted media (0.1413ms)
+✔ 05A v1 migrates region, checkpoint, discoveries and counters to v2 (1.3199ms)
+✔ migration writes same key and never touches fortune bytes (0.2977ms)
+✔ discovery works in arbitrary order, persists immediately and is idempotent (0.3051ms)
+✔ story progress survives repeated region visits and safe checkpoint restoration (0.726ms)
+✔ invalid or partial story data is sanitized without losing a valid world checkpoint (0.2789ms)
+✔ corrupted and unsupported save versions recover to town without phantom discoveries (0.2203ms)
+✔ blocked storage still supports unique journal entries in memory (0.1806ms)
+✔ five story records match interactive geometry and have optional short detail (0.1723ms)
+✔ every main/branch path center stays clear for the full 16px player body (1.7575ms)
+✔ all five destinations and exit are in one reachable free-space component (15.0629ms)
+✔ quick introduction is concise, includes project and interests, with editorial limits (0.196ms)
+✔ every region spawn and destination is safe and outside its exit interaction range (0.9776ms)
+✔ collision geometry rejects solids, nonfinite coordinates and map edges (0.5145ms)
+✔ Phase04 fortune-only storage migrates without modifying its existing bytes (0.3542ms)
+✔ round trips persist checkpoint, discoveries and transition count across instances (0.8699ms)
+✔ corrupt, partial, unsupported or hostile saves safely fall back to town (0.2505ms)
+✔ valid schema is sanitized and arbitrary saved coordinates never spawn the player (0.1247ms)
+✔ blocked storage keeps exploration alive in memory and reports the limitation (0.1384ms)
+✔ future regions are navigation labels without executable exits (0.1151ms)
+✔ video byte ranges support seeks and reject malformed or unsatisfiable ranges (0.2739ms)
+✔ media network or decode failures never get mislabeled as autoplay restrictions (0.3139ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 129.9634

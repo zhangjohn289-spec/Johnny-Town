@@ -24,3 +24,9 @@
 LOCAL_VIDEO_FILE 只能放在被忽略的 prototype/.env.local；不要放在公开变量 VITE_* 中。Vite build 不启用本地视频插件，不复制原文件。发布前运行 node prototype/test-static.mjs，检查 dist 无 MP4/私有路径，再审查暂存文件。当前公开播放器保留来源未确认提示，不能将本地测试通过视为分发许可。
 
 本次仅更新 build job 的单元测试列表；workflow_dispatch、publish=false 默认值和 deploy 条件保持原样，未运行远端工作流。
+
+## Phase 05B
+
+本地分支 feature/phase05b-memory-woods 只用于开发、验收和本地提交。build job 增加 test-woods.mjs，发布门禁保持原样。未授权本阶段 push、merge 或部署。
+
+世界存档同一键内由 version 1 升为2，迁移保留旧区域进度，新增故事发现记录；运势键不变。若未来需要回滚至05A，应先备份新版世界进度，05A不理解version=2，不能承诺旧代码读取新版故事。

@@ -41,7 +41,7 @@ test('corrupt, partial, unsupported or hostile saves safely fall back to town',(
   }
 });
 test('valid schema is sanitized and arbitrary saved coordinates never spawn the player',()=>{
-  const value=normalizeWorld({version:1,regionId:'meadow',spawnId:'fromTown',position:{x:100,y:130},discovered:['meadow','meadow','__proto__','woods'],progress:{transitions:2}});
+  const value=normalizeWorld({version:1,regionId:'meadow',spawnId:'fromTown',position:{x:100,y:130},discovered:['meadow','meadow','__proto__','lake'],progress:{transitions:2}});
   assert.deepEqual(value.discovered,['town','meadow']);assert.equal(value.position,undefined);
   assert.ok(isSafePosition(regions.meadow,safeSpawn(value.regionId,value.spawnId).position));
 });

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const require=createRequire(import.meta.url),{chromium}=require('C:/Users/mi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const browser=await chromium.launch({headless:true,channel:'msedge'}),page=await browser.newPage();
-const url='http://127.0.0.1:4190/Johnny-Town/',results=[],errors=[];let metadata;
+const url=process.env.DEV_URL||'http://127.0.0.1:4190/Johnny-Town/',results=[],errors=[];let metadata;
 page.on('pageerror',e=>errors.push(e.message));
 const check=(name,pass)=>{results.push({name,pass});assert.ok(pass,name);};
 try{
@@ -30,11 +30,11 @@ try{
  await page.evaluate(()=>__town.scene.player.body.reset(732,520));await page.waitForTimeout(100);await page.keyboard.press('e');
  await page.waitForFunction(()=>document.querySelector('#body')?.textContent.includes('视频加载失败'),null,{timeout:2000}).catch(async error=>{console.log('ERROR UI:',await page.locator('#body').innerText());throw error;});
  check('load failure is explained',true);await page.keyboard.press('Escape');
- const prod=await page.request.get('http://127.0.0.1:4191/Johnny-Town/__local-video');
+ const prod=await page.request.get((process.env.TOWN_URL||'http://127.0.0.1:4191/Johnny-Town/')+'__local-video');
  check('production preview has no video streaming route',prod.headers()['content-type']!=='video/mp4');
  const files=fs.readdirSync('prototype/dist',{recursive:true}).filter(x=>fs.statSync('prototype/dist/'+x).isFile());
  check('production excludes media files and private endpoint or path',files.every(f=>!/\.(mp4|webm|mov|mkv)$/i.test(f))&&files.filter(f=>/\.(js|html|css)$/.test(f)).every(f=>!/__local-video|LOCAL_VIDEO_FILE|爷自愿的|C:\\Users|C:\/Users/.test(fs.readFileSync('prototype/dist/'+f,'utf8'))));
  check('no JavaScript exceptions',errors.length===0);
 }finally{
- fs.writeFileSync('logs/phase05a-video-results.json',JSON.stringify({results,metadata,errors,browser:await browser.version()},null,2));console.log(JSON.stringify({results,metadata,errors},null,2));await browser.close();
+ fs.writeFileSync((process.env.TEST_LOG_DIR||'logs')+'/phase05a-video-results.json',JSON.stringify({results,metadata,errors,browser:await browser.version()},null,2));console.log(JSON.stringify({results,metadata,errors},null,2));await browser.close();
 }

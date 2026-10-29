@@ -10,7 +10,7 @@ export function createPlayer(scene, position) {
   });
   scene.physics.add.existing(scene.player);
   scene.player.body.setSize(16,16).setOffset(-8,0).setCollideWorldBounds(true);
-  scene.keys=scene.input.keyboard.addKeys('W,A,S,D,UP,DOWN,LEFT,RIGHT,E,M');
+  scene.keys=scene.input.keyboard.addKeys('W,A,S,D,UP,DOWN,LEFT,RIGHT,E,M,I');
 }
 
 export function lockInput(scene, locked) {

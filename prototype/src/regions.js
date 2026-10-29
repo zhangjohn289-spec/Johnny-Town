@@ -1,4 +1,5 @@
 import {places} from './config.js';
+import {woods} from './woods-data.js';
 
 export const TILE_SIZE = 16;
 export const PLAYER_SPEED = 175;
@@ -14,8 +15,9 @@ export const regions = {
     id:'town', name:'Johnny Town · 中心小镇', renderer:'town', width:960, height:640,
     bounds:{x:20,y:35,width:920,height:580}, trees:townTrees, places,
     collisions:[...places.map(p => ({x:p.x,y:p.y,w:p.w,h:p.h,kind:'building'})), ...treeWalls(townTrees)],
-    spawns:{start:{x:470,y:355}, fromMeadow:{x:780,y:350}}, defaultSpawn:'start',
-    exits:[{id:'to-meadow',name:'边境草甸 →',action:'出发',door:{x:885,y:350},to:'meadow',spawn:'fromTown'}],
+    spawns:{start:{x:470,y:355}, fromMeadow:{x:780,y:350},fromWoods:{x:500,y:185}}, defaultSpawn:'start',
+    exits:[{id:'to-meadow',name:'边境草甸 →',action:'出发',door:{x:885,y:350},to:'meadow',spawn:'fromTown'},
+      {id:'to-woods',name:'记忆森林 ↑',action:'进入',door:{x:500,y:90},to:'woods',spawn:'fromTown'}],
   },
   meadow: {
     id:'meadow', name:'Frontier Meadow · 边境草甸', renderer:'meadow', width:64*TILE_SIZE, height:48*TILE_SIZE,
@@ -24,11 +26,11 @@ export const regions = {
     spawns:{fromTown:{x:145,y:384}}, defaultSpawn:'fromTown',
     exits:[{id:'to-town',name:'← Johnny Town',action:'返回',door:{x:50,y:384},to:'town',spawn:'fromMeadow'}],
   },
+  woods,
 };
 
 export const regionList = [
   ...Object.values(regions).map(({id,name}) => ({id,name,available:true})),
-  {id:'woods',name:'Memory Woods · 记忆森林',available:false},
   {id:'lake',name:'Melody Lake · 旋律湖',available:false},
   {id:'valley',name:'Gear Valley · 机械谷',available:false},
   {id:'ruins',name:'Forgotten Ruins · 遗忘遗迹',available:false},

@@ -23,7 +23,7 @@ jobs:
           cache-dependency-path: prototype/package-lock.json
       - run: npm ci
         working-directory: prototype
-      - run: node --test test-core.mjs test-world.mjs
+      - run: node --test test-core.mjs test-world.mjs test-woods.mjs
         working-directory: prototype
       - run: npm run build
         working-directory: prototype

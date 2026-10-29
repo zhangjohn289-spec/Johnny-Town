@@ -27,12 +27,12 @@ try{
  await group('Phase04 visual texture cache and town framing',async()=>{
   assert.equal(await page.evaluate(()=>['ground','home','shrine','chest','tree','treeB','walker','chest-open'].every(k=>__town.scene.textures.exists(k))),true);
   assert.deepEqual(await page.evaluate(()=>({x:__town.scene.cameras.main.scrollX,y:__town.scene.cameras.main.scrollY})),{x:0,y:0});
-  await page.screenshot({path:'logs/phase05a-town.png'});
+  await page.screenshot({path:(process.env.TEST_LOG_DIR||'logs')+'/phase05a-town.png'});
  });
  await group('actual keyboard walking reaches both road exits without teleporting through walls',async()=>{
   await page.keyboard.down('d');await page.waitForTimeout(2300);await page.keyboard.up('d');
   assert.ok((await pos()).x>810);await page.keyboard.press('e');await ready('meadow');
-  await page.waitForTimeout(200);await page.screenshot({path:'logs/phase05a-meadow-entry.png'});
+  await page.waitForTimeout(200);await page.screenshot({path:(process.env.TEST_LOG_DIR||'logs')+'/phase05a-meadow-entry.png'});
   await page.keyboard.down('a');await page.waitForTimeout(500);await page.keyboard.up('a');
   await page.keyboard.press('e');await ready('town');await page.waitForTimeout(200);
   assert.deepEqual(await pos(),{x:780,y:350});
@@ -51,7 +51,7 @@ try{
   let c=await page.evaluate(()=>({x:__town.scene.cameras.main.scrollX,y:__town.scene.cameras.main.scrollY}));assert.equal(c.x,64);
   await page.keyboard.down('s');await page.waitForTimeout(2100);await page.keyboard.up('s');await page.waitForTimeout(250);
   p=await pos();assert.ok(p.y<=736&&p.y>=730);c=await page.evaluate(()=>({x:__town.scene.cameras.main.scrollX,y:__town.scene.cameras.main.scrollY}));assert.equal(c.y,128);
-  await page.screenshot({path:'logs/phase05a-meadow.png'});
+  await page.screenshot({path:(process.env.TEST_LOG_DIR||'logs')+'/phase05a-meadow.png'});
   await at(30,40);await page.keyboard.down('a');await page.keyboard.down('w');await page.waitForTimeout(350);await page.keyboard.up('a');await page.keyboard.up('w');await page.waitForTimeout(700);
   p=await pos();assert.ok(p.x>=24&&p.y>=32);c=await page.evaluate(()=>({x:__town.scene.cameras.main.scrollX,y:__town.scene.cameras.main.scrollY}));assert.deepEqual(c,{x:0,y:0});
  });
@@ -125,6 +125,6 @@ try{
  });
 } finally {
  delete metrics.fortune;
- fs.writeFileSync('logs/phase05a-browser-results.json',JSON.stringify({browser:await browser.version(),url,results,metrics,errors,failed},null,2));
+ fs.writeFileSync((process.env.TEST_LOG_DIR||'logs')+'/phase05a-browser-results.json',JSON.stringify({browser:await browser.version(),url,results,metrics,errors,failed},null,2));
  console.log(JSON.stringify({results,metrics,errors,failed},null,2));await browser.close();
 }

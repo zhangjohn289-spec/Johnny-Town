@@ -13,3 +13,9 @@ Vite imports 将它们打包为本地静态资产，小文件可能内联为 dat
 图像和可编辑绘制源码随项目 Git 提交保存。规格见仓库根目录 ART-SPEC.md。
 
 Phase 04 使用 scripts/polish-art.mjs 生成精修版，新增 tree-b.png（80×104）。保留尺寸、透明度和统一像素密度，最终使用限色 PNG 存储。无第三方美术。
+
+## Phase 05B · Memory Woods
+
+woods-data.js / woods-renderer.js 定义原创森林地图和像素绘制：蜿蜒小径、树林、针叶树、晨光石碑、旅行路牌、回响古树、齿轮工坊、留白路标及休憩树桩。复用本目录的原创 tree / tree-b 纹理，配合程序绘制的像素细节。森林地面与五处地标首次进入时缓存为 Phaser 纹理，不依赖外部图片、字体、音频或授权游戏素材。
+
+叙事文案在 story-content.js，均为本项目原创象征性文本。没有使用或发布私人 MP4，也没有将外部游戏贴图嵌入地图。
