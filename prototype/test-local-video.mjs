@@ -38,4 +38,3 @@ try{
 }finally{
  fs.writeFileSync('logs/phase05a-video-results.json',JSON.stringify({results,metadata,errors,browser:await browser.version()},null,2));console.log(JSON.stringify({results,metadata,errors},null,2));await browser.close();
 }
-
