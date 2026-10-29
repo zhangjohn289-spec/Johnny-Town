@@ -31,3 +31,6 @@ npm.cmd run build 成功，dist 为静态产物。JS 约 1.49 MB，gzip 342 KB�
 
 ## 第二阶段（2026-10-29）
 保持 Node v26.13.0 / npm.cmd 11.20.0；未重装 AE。基线和最终构建通过，预览端口 4180。单元与浏览器测试见 phase02-tests.md。媒体来源未确认，Phase 02 部分完成。
+
+## 第三阶段
+生产预览 4182，美术与适配、功能回归和速度测试完成。无新增依赖；环境沿用 Node 26 / npm.cmd 11。详见 phase03-tests.md。

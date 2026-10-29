@@ -22,3 +22,8 @@ node --test test-core.mjs
 .github/workflows/pages.yml 仅手动触发，上传 prototype/dist。Vite base=./，构建资产使用相对路径，无后端和路由依赖。上传后在 Pages 设置选择 GitHub Actions，再手动运行。尚未公开发布。
 
 开发说明与已知问题：PHASE02.md。测试结果：logs/phase02-tests.md。浏览器测试脚本依赖本机捆绑 Playwright 和 Edge，其他机器需调整 require 路径。没有新增依赖。
+
+## Phase 03（当前版本）
+正式像素场景、四方向火柴人动画、环境细节与统一 UI 已接入。美术规范见 ART-SPEC.md；开发和限制见 PHASE03.md；实测结果见 logs/phase03-tests.md。
+生产预览：http://127.0.0.1:4182/ 。三种桌面尺寸已测试，移动、碰撞与每日签保持。小窗口显示扩大窗口/PC Only 提示。Rickroll 视频仍未配置。
+PNG 生成器位于 prototype/scripts/generate-art.mjs，资源位于 prototype/src/assets/，无外部图像或字体依赖。没有公开发布。
