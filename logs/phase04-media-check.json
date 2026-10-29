@@ -1,0 +1,10 @@
+{
+  "events": [
+    "ready",
+    {
+      "error": 150
+    }
+  ],
+  "time": 0,
+  "state": -1
+}

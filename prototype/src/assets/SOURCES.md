@@ -11,3 +11,5 @@
 Vite imports 将它们打包为本地静态资产，小文件可能内联为 data URL。素材约 56 KB。
 生成器使用 pngjs 编码 PNG，当前优先使用本机 Codex 捆绑包路径；其他开发机需将 require 路径改为已安装的 pngjs。生产应用不加载生成器，无 pngjs 运行依赖。
 图像和可编辑绘制源码随项目 Git 提交保存。规格见仓库根目录 ART-SPEC.md。
+
+Phase 04 使用 scripts/polish-art.mjs 生成精修版，新增 tree-b.png（80×104）。保留尺寸、透明度和统一像素密度，最终使用限色 PNG 存储。无第三方美术。

@@ -1,10 +1,12 @@
-# Johnny Town Phase 02
+# Johnny Town — Phase 04
 
-应用目录 prototype/，Phaser 3.90.0 + Vite 6.4.5，PC Only。AE 独立目录保持不变。
+PC Only 的原创像素小镇个人网站，Phaser 3.90.0 + Vite 6.4.5。当前分支 feature/phase04-polish-release。
 
-## 运行
-PowerShell 当前会话将 C:\Program Files\nodejs 放入 PATH 首位，然后：
+已完成：小屋介绍、每日抽签、原创像素地图、四方向红色空心圆头火柴人动画、碰撞、弹窗控制、画质精修及 Edge/Chrome 实测。Rickroll 官方候选嵌入返回150，产品保留媒体未就绪提示。**当前 Phase 04 部分完成：本地验收和发布准备完成，尚未公开部署/公网验收。**
+
+## 本地运行
 ```powershell
+$env:PATH = 'C:\Program Files\nodejs;' + $env:PATH
 cd prototype
 npm.cmd ci
 npm.cmd run dev
@@ -12,18 +14,13 @@ npm.cmd run build
 npm.cmd run preview
 node --test test-core.mjs
 ```
-当前预览：http://127.0.0.1:4180/ 。WASD/方向键移动，靠近地点按 E，Esc 或按钮关闭。
+WASD/方向键移动，E互动，Esc或按钮返回。生产预览 http://127.0.0.1:4182/ ，子路径静态验收 http://127.0.0.1:4183/Johnny-Town/ 。小窗口显示PC Only/扩大窗口提示，不提供手机控制。
 
-小屋完整介绍、神社 30 条原创签文和每日保存已可用。百宝箱播放器模块就绪，但尚未配置已确认的视频来源，**Phase 02 部分完成**。
+## 结构与资源
+prototype/src/main.js 场景与输入；visuals.js 美术与动画；ui.js 弹窗；fortune-store.js 日期和持久化；fortunes.js 30条签文；media.js 媒体配置与降级；assets/ 原创PNG；style.css 界面。
+prototype/scripts/polish-art.mjs 调用基础绘制器并加入精修/PNG压缩，可重建精修资源；依赖本机 pngjs/sharp 工具路径。生产包不依赖绘制器或临时图片URL。美术规格见 ART-SPEC.md，来源见 assets/SOURCES.md。
 
-模块：src/config.js 地点参数；main.js 地图移动；ui.js 弹窗与界面；fortunes.js 签文；fortune-store.js 日期、权重和持久化；media.js 媒体配置与播放降级。
-
-## GitHub Pages
-.github/workflows/pages.yml 仅手动触发，上传 prototype/dist。Vite base=./，构建资产使用相对路径，无后端和路由依赖。上传后在 Pages 设置选择 GitHub Actions，再手动运行。尚未公开发布。
-
-开发说明与已知问题：PHASE02.md。测试结果：logs/phase02-tests.md。浏览器测试脚本依赖本机捆绑 Playwright 和 Edge，其他机器需调整 require 路径。没有新增依赖。
-
-## Phase 03（当前版本）
-正式像素场景、四方向火柴人动画、环境细节与统一 UI 已接入。美术规范见 ART-SPEC.md；开发和限制见 PHASE03.md；实测结果见 logs/phase03-tests.md。
-生产预览：http://127.0.0.1:4182/ 。三种桌面尺寸已测试，移动、碰撞与每日签保持。小窗口显示扩大窗口/PC Only 提示。Rickroll 视频仍未配置。
-PNG 生成器位于 prototype/scripts/generate-art.mjs，资源位于 prototype/src/assets/，无外部图像或字体依赖。没有公开发布。
+## 验收与发布
+6项核心测试、Edge与官方Chrome for Testing的视觉/交互/速度/焦点测试通过；Firefox未测试。详细结果、限制与真实截图见 PHASE04.md、logs/phase04-tests.md 和 logs/phase04-screenshots/。
+Pages工作流默认只构建，公开部署必须明确批准后手动开启publish。目前没有Git远端，也没有公网URL。步骤见 DEPLOYMENT.md。
+历史开发说明保留 PHASE02.md、PHASE03.md。AE独立目录不参与当前应用，未修改。

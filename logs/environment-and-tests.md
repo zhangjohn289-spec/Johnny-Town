@@ -34,3 +34,6 @@ npm.cmd run build 成功，dist 为静态产物。JS 约 1.49 MB，gzip 342 KB�
 
 ## 第三阶段
 生产预览 4182，美术与适配、功能回归和速度测试完成。无新增依赖；环境沿用 Node 26 / npm.cmd 11。详见 phase03-tests.md。
+
+## Phase 04 环境
+Node v26.13.0/npm.cmd11.20.0保持；Edge可用。系统Chrome安装器失败（提示可能权限不足），随后官方Chrome for Testing免安装包成功，位于用户Temp目录，不加入项目。Edge和Chrome生产子路径回归均通过。记录见phase04-tests.md。没有配置远端或公开部署。
