@@ -1,22 +1,24 @@
-# Johnny Town 第一阶段原型
+# Johnny Town Phase 02
 
-当前可运行版本在 prototype/，采用 Phaser 3.90.0 + Vite 6.4.5。johnny-town/ 是保留的 AE 初始化目录，不是当前应用。
+应用目录 prototype/，Phaser 3.90.0 + Vite 6.4.5，PC Only。AE 独立目录保持不变。
 
-PowerShell：
+## 运行
+PowerShell 当前会话将 C:\Program Files\nodejs 放入 PATH 首位，然后：
 ```powershell
 cd prototype
-& 'C:\Program Files\nodejs\npm.cmd' ci
-& 'C:\Program Files\nodejs\npm.cmd' run dev
-& 'C:\Program Files\nodejs\npm.cmd' run build
-& 'C:\Program Files\nodejs\npm.cmd' run preview
+npm.cmd ci
+npm.cmd run dev
+npm.cmd run build
+npm.cmd run preview
+node --test test-core.mjs
 ```
-若 Node 不在 PATH，将 C:\Program Files\nodejs 加到当前会话 PATH 首位。
+当前预览：http://127.0.0.1:4180/ 。WASD/方向键移动，靠近地点按 E，Esc 或按钮关闭。
 
-WASD/方向键移动，靠近地点按 E，Esc 或按钮关闭面板。仅桌面原型，神社与宝箱为占位面板。没有实现抽签、视频、音乐和手机控制。
+小屋完整介绍、神社 30 条原创签文和每日保存已可用。百宝箱播放器模块就绪，但尚未配置已确认的视频来源，**Phase 02 部分完成**。
 
-src/config.js 保存地图地点参数，src/main.js 为地图与角色场景，src/ui.js 管理原生 dialog。使用 Arcade Physics 碰撞和归一化速度。所有美术由几何图形绘制，无外部美术资源。
+模块：src/config.js 地点参数；main.js 地图移动；ui.js 弹窗与界面；fortunes.js 签文；fortune-store.js 日期、权重和持久化；media.js 媒体配置与播放降级。
 
 ## GitHub Pages
-仓库根目录已准备手动触发的 .github/workflows/pages.yml。上传仓库后在 Settings → Pages 选择 GitHub Actions，再手动运行工作流。构建上传 prototype/dist，Vite base 为 ./，支持仓库子路径。尚未实际发布或验证公开 URL。
+.github/workflows/pages.yml 仅手动触发，上传 prototype/dist。Vite base=./，构建资产使用相对路径，无后端和路由依赖。上传后在 Pages 设置选择 GitHub Actions，再手动运行。尚未公开发布。
 
-检查日志见 logs/environment-and-tests.md。浏览器自动检查脚本 prototype/test-browser.mjs 使用本机捆绑 Playwright 和 Edge，属于本环境验收脚本，其他机器需调整依赖路径。已有需求与 AE 目录均保留。
+开发说明与已知问题：PHASE02.md。测试结果：logs/phase02-tests.md。浏览器测试脚本依赖本机捆绑 Playwright 和 Edge，其他机器需调整 require 路径。没有新增依赖。

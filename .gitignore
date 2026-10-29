@@ -1,2 +1,5 @@
 **/node_modules/
 **/dist/
+
+# Preserved local AE installation, not the active application
+/johnny-town/
