@@ -1,3 +1,4 @@
+import {activityPlaces} from './activities-data.js';
 import {newStories} from './story-content.js';
 const place=(id,x,y,w,h,dx,dy)=>({id,storyId:id,kind:'story',name:newStories.find(s=>s.id===id).name,action:'阅读',x,y,w,h,door:{x:dx,y:dy}});
 export const meadowPaths=[[[500,400],[570,320],[570,140]],[[50,384],[210,400],[350,350],[500,400],[640,340],[780,300],[910,250]],[[500,400],[550,510],[700,570],[800,550],[950,550],[940,620]]];
@@ -9,3 +10,5 @@ const water=[];for(let y=80;y<460;y+=16){const s=waterSpan(y);if(!s)continue;if(
 const base=(id,name,paths,places,trees,solids=[])=>({id,name,renderer:id,width:1024,height:768,bounds:{x:16,y:32,width:992,height:720},paths,places,trees,collisions:[...places.map(p=>({x:p.x,y:p.y,w:p.w,h:p.h,kind:'landmark'})),...trees.map(([x,y])=>({x:x-19,y:y-24,w:38,h:48,kind:'tree'})),...solids],spawns:{fromMeadow:{x:150,y:600}},defaultSpawn:'fromMeadow',exits:[{id:id+'-return',name:'← 边境草甸',action:'返回',door:{x:50,y:600},to:'meadow',spawn:id==='lake'?'fromLake':'fromValley'}]});
 export const lake=base('lake','Melody Lake · 旋律湖',lakePaths,[place('lake-stage',230,200,130,50,300,290),place('rhythm-stones',160,412,80,28,200,480),place('echoing-pier',580,500,24,30,550,590),place('conductors-lantern',832,440,24,36,850,520)],[[80,180],[150,270],[80,700],[340,700],[940,590],[940,200]],water.filter(w=>w.w>0));
 export const valley=base('valley','Gear Valley · 机械谷',valleyPaths,[place('first-gear',216,470,48,40,240,550),place('unfinished-ideas',455,360,130,90,520,490),place('great-transmission',716,460,88,62,760,570),place('skyward-blueprint',750,170,140,70,820,280)],[[90,260],[340,650],[920,430]], [{x:100,y:100,w:240,h:64,kind:'rock'},{x:340,y:200,w:80,h:80,kind:'rock'},{x:600,y:670,w:240,h:40,kind:'rock'}]);
+
+for(const r of [lake,valley]){const extra=activityPlaces.filter(p=>p.region===r.id);r.places.push(...extra);r.collisions.push(...extra.map(p=>({x:p.x,y:p.y,w:p.w,h:p.h,kind:"activity"})));}

@@ -31,7 +31,10 @@ export function renderLandscape(scene){
  for(const w of r.collisions.filter(w=>w.kind==='fence'||w.kind==='rock')){const g=scene.add.graphics().setDepth(w.y+w.h);if(w.kind==='fence'){box(g,0x725b3c,w.x,w.y-7,w.w,6);box(g,0xb79b68,w.x,w.y-9,w.w,3);for(let x=w.x;x<w.x+w.w;x+=32)box(g,0x987c50,x,w.y-18,6,34);}else{box(g,0x535e55,w.x,w.y+8,w.w,w.h-8);box(g,0xa3a38a,w.x+8,w.y,w.w-16,12);for(let a=0;a<w.w-12;a+=24){box(g,0x8c9781,w.x+a+4,w.y-6-(a%3)*3,20,12);box(g,0xb3b69a,w.x+a+6,w.y-6-(a%3)*3,13,3);}for(let x=w.x+12;x<w.x+w.w-10;x+=21)box(g,0x777e6d,x,w.y+16,3,w.h-22);}}
  const gears=[];
  for(const p of r.places){const g=scene.add.graphics().setDepth(p.y+p.h),x=p.x,y=p.y;
-  if(p.id==='lake-stage'){
+  if(p.kind==='activity'){
+   if(p.activityId==='rhythm'){box(g,0x685c42,x+8,y+20,5,22);box(g,0x685c42,x+34,y+20,5,22);box(g,0x9e6b4d,x,y,48,24);box(g,0xe4d4a5,x-2,y-3,52,7);for(const a of [5,20,37])box(g,0xd8bd7d,x+a,y+4,3,19);}
+   else{box(g,0x69543c,x,y+8,60,26);box(g,0xbba477,x-5,y+6,70,5);for(let i=0;i<3;i++){g.lineStyle(3,0xc7a461).strokeCircle(x+10+i*20,y-3,10);box(g,0x81918b,x+8+i*20,y-5,4,4);}box(g,0x5a6854,x+25,y-28,8,20);}
+  }else if(p.id==='lake-stage'){
    for(let k=0;k<3;k++){box(g,0x60735b,x-25,y+60+k*18,130,7);box(g,0xb7b78c,x-25-k*12,y+58+k*18,180+k*24,3);}
    box(g,0x72573b,x,y,p.w,p.h);for(let a=0;a<p.w;a+=12)box(g,0xb9a273,x+a,y+4,9,p.h-8);
    box(g,0x876244,x-8,y-65,7,105);box(g,0x876244,x+p.w,y-65,7,105);box(g,0xb77b65,x-8,y-65,p.w+15,13);box(g,0x9b5860,x,y-50,17,48);box(g,0x9b5860,x+p.w-17,y-50,17,48);

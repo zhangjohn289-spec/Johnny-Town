@@ -1,0 +1,14 @@
+[
+  {
+    "name": "complete progress memorial and keyboard pagination",
+    "pass": true
+  },
+  {
+    "name": "ruin collision and camera bounds",
+    "pass": true
+  },
+  {
+    "name": "active machine stops after short feedback",
+    "pass": true
+  }
+]

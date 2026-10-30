@@ -29,3 +29,5 @@ Phase 05D：遗迹地面、石柱、符文、书桌、模型和石门均由ruins
 Phase 06C：Chief Mek为generate-chief-mek.mjs原创生成的48×64透明像素PNG；沿用既有pngjs工具。遗迹精修仍使用原创Graphics绘制，无外部游戏素材、字体或媒体。
 
 Phase 06D：四张npc-*.png为generate-npcs.mjs原创32×48透明像素角色，使用现有pngjs工具；制服、工具、旅行装及长袍采用项目既有色系，无外部角色贴图或音频。
+
+Phase 06E：鼓架、工作台及SVG齿轮均为原创程序绘制；16音符练习为原创通用节奏，无外部音频、旋律或素材库。

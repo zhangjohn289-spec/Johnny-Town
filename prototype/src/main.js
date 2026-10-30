@@ -82,6 +82,7 @@ class WorldScene extends Phaser.Scene {
   interact(){
     if(!this.target||isOpen()||this.interacting) return;
     const target={...this.target};
+    if(target.kind==='activity')target.onComplete=id=>{worldStore.finishActivity(id);document.querySelector('#save-status').textContent=worldStore.warning;};
     if(target.kind==='secret'){
       target.state=target.id==='memorial'?worldStore.read():worldStore.secret(target.id);target.complete=()=>worldStore.secret(target.id);target.count=this.secretCounts[target.id]||0;this.secretCounts[target.id]=target.count+1;
       target.activate=()=>{this.machineUntil=this.time.now+2500;};

@@ -1,3 +1,4 @@
+import {activityInfo} from './activities-data.js';
 import {secrets} from './ruins-data.js';
 import {profile,stories,getStory} from './story-content.js';
 
@@ -40,6 +41,8 @@ export function renderJournal(root,regions,state){
   }
   if(state.secrets.golden)node(root,'p','黄金回旋已完成 · Lesson 4: Pay your respects.');
   if(state.secrets.waited)node(root,'p','Some things are worth waiting for.');
+  node(root,'h3','互动体验 · Interactive Experiences');
+  for(const [id,a] of Object.entries(activityInfo)){const entry=node(root,'section',null,'activity-journal');node(entry,'h4',a.name+' — '+(state.activities[id]?'已完成':'未完成'));node(entry,'p',a.interest);}
   node(root,'p','累计跨区 '+state.progress.transitions+' 次；刷新后回到当前区域的安全路口。','eyebrow');
 }
 export {profile,getStory};
