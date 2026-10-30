@@ -1,3 +1,4 @@
+import {bindTouchControls} from './touch-controls.js';
 import {nextRune} from './ruins-data.js';
 import './style.css';
 import Phaser from 'phaser';
@@ -32,6 +33,7 @@ class WorldScene extends Phaser.Scene {
     this.walls=this.physics.add.staticGroup();
     for(const w of this.region.collisions) this.walls.add(this.add.rectangle(w.x+w.w/2,w.y+w.h/2,w.w,w.h));
     createPlayer(this,checkpoint.position);
+    bindTouchControls(this);
     const b=this.region.bounds;
     this.physics.world.setBounds(b.x,b.y,b.width,b.height);
     this.physics.add.collider(this.player,this.walls);
@@ -126,12 +128,16 @@ class WorldScene extends Phaser.Scene {
       .filter(v=>v.d<75).sort((a,b)=>a.d-b.d)[0]?.p;
     this.ring.clear();
     if(this.target) this.ring.lineStyle(2,0xffdf92).strokeRect(this.target.door.x-23,this.target.door.y-9,46,20);
-    hint.textContent=this.target ? `${this.target.name} — 按 E ${this.target.action}` : '沿着道路，随便逛逛。';
+    document.querySelector('#touch-interact').textContent=this.target?.action||'互动';
+    hint.textContent=this.target ? `${this.target.name} — ${document.documentElement.classList.contains('touch-device')?'点右侧按钮':'按 E'} ${this.target.action}` : '沿着道路，随便逛逛。';
     if(this.region.id==='ruins'&&this.target?.id==='clock')hint.textContent=this.ruinState.waited?'Some things are worth waiting for. — E 查看':`静候钟声 · ${Math.min(8,Math.floor((time-(this.waitStart??time))/1000))} / 8 秒 · E 查看`;
     animateArt(this,time,x,y);
   }
 }
 
-new Phaser.Game({type:Phaser.AUTO,parent:'game',width:world.width,height:world.height,pixelArt:true,roundPixels:true,
+const touchDevice=navigator.maxTouchPoints>0||matchMedia('(any-pointer: coarse)').matches;
+document.documentElement.classList.toggle('touch-device',touchDevice);
+if(touchDevice){document.querySelector('#quick-intro').textContent='认识 Johnny';document.querySelector('#world-map').textContent='探索日志';document.querySelector('#close').textContent='返回探索';}
+new Phaser.Game({type:Phaser.AUTO,parent:'game',width:touchDevice?640:world.width,height:touchDevice?426:world.height,pixelArt:true,roundPixels:true,
   backgroundColor:'#80975b',physics:{default:'arcade',arcade:{debug:false}},
   scale:{mode:Phaser.Scale.FIT,autoCenter:Phaser.Scale.CENTER_BOTH},scene:WorldScene});

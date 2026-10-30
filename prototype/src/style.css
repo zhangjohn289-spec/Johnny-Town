@@ -1,4 +1,4 @@
-/* Desktop-only presentation; world coordinates and physics remain unchanged. */
+/* Shared pixel presentation; world coordinates and physics remain unchanged. */
 html,body{height:100%;}body{background:#24372d;background-image:radial-gradient(ellipse at top,#40533c,#1d3029);font-family:Consolas,"Microsoft YaHei",monospace;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}header,footer{width:min(100%,1160px);flex-shrink:0;padding:12px 20px}header{align-items:center}h1{letter-spacing:4px;color:#f0d69c;text-shadow:2px 2px #684c30;font-size:25px}small{font-size:12px;line-height:1.8}#game{width:min(1160px,calc((100vh - 160px)*1.5),96vw);max-width:none;aspect-ratio:3/2;border:6px solid #aa8f59;outline:2px solid #564731;box-shadow:0 0 0 3px #d4bc80,0 18px 40px #12251c80;flex-shrink:0}canvas{image-rendering:pixelated;image-rendering:crisp-edges;width:100%!important;height:100%!important}footer{font-size:12px;gap:16px;align-items:center}#hint{padding:9px 14px;background:#304737;border:2px solid #9c8757;min-width:270px;text-align:center}dialog{background:#f2e5bd;border:5px solid #655039;outline:2px solid #d1b77b;color:#3d4936;box-shadow:7px 7px 0 #182b20;line-height:1.9}dialog h2{border-bottom:2px solid #c4ad79;padding-bottom:12px;color:#644b32;letter-spacing:2px}button{background:#74603d;border:2px solid #b39a62;box-shadow:2px 2px 0 #4a3b2b;color:#fff2ce;font-family:inherit}button:hover,button:focus-visible{background:#8b7448;outline:2px solid #e4c98c}.paper{background:#fff4d1;background-image:repeating-linear-gradient(0deg,transparent,transparent 31px,#c9b98c28 32px);box-shadow:3px 4px 0 #bba77b}.fortune-level{border:3px double #a6583d;width:100px;margin:15px auto!important;padding:5px;color:#a34d38}.tube{font-family:monospace;color:#986c40;text-shadow:3px 3px #573f2e}.small-screen{display:none}@media(max-width:850px),(max-height:540px){.small-screen{display:block;position:fixed;inset:0;z-index:20;background:#24372d;color:#f2e5bd;text-align:center;padding:25vh 25px;font-size:20px}header,#game,footer{visibility:hidden}}
 #game{box-sizing:content-box;width:min(1148px,calc((100vh - 180px)*1.5),calc(96vw - 12px));}canvas{margin:0!important;}
 /* Phase 04: inset timber frame and parchment grain, without external fonts. */
@@ -25,3 +25,26 @@ dialog{background-color:#f7e9c4;background-image:repeating-linear-gradient(0deg,
 .story-details summary{cursor:pointer;color:#405f3e;font-weight:bold}.story-details summary:focus-visible{outline:2px solid #84743b;outline-offset:4px}
 .journal-progress{font-weight:bold;color:#456942}.journal-locked{font-size:13px;color:#787561;padding:6px 12px;border-bottom:1px dashed #b7ab84}
 @media(max-width:850px){header .navigation{justify-content:flex-start}#region-name{width:100%;max-width:none}.story-lead{font-size:15px}}
+#touch-controls{display:none}
+/* Touch surfaces are separate from the canvas and native scrollable dialogs. */
+.touch-device body{height:100vh;height:100dvh;min-height:0;overflow:hidden;justify-content:flex-start;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.touch-device header{padding:5px 8px;margin:0;gap:4px;flex-wrap:wrap;width:100%;max-width:100%}
+.touch-device h1{font-size:17px;letter-spacing:2px}.touch-device header small:not(#region-name){display:none}
+.touch-device header .navigation{max-width:none;flex-wrap:nowrap;gap:3px;justify-content:flex-start}.touch-device #region-name{font-size:11px;width:auto;max-width:150px}
+.touch-device button,.touch-device summary,.touch-device #body a{min-height:44px;min-width:44px;padding:8px;display:inline-flex;align-items:center;font-size:14px}
+.touch-device .navigation button{font-size:12px;margin:0;padding:6px}
+.touch-device #game{box-sizing:content-box;max-width:none;width:min(calc(100vw - 20px),calc((100dvh - 270px)*1.5));margin:auto;border-width:3px;flex-shrink:0;aspect-ratio:640/426}
+.touch-device #touch-controls{display:flex;justify-content:space-between;align-items:center;width:100%;padding:4px 20px;height:112px;flex-shrink:0}
+#stick{width:100px;height:100px;border-radius:50%;background:#213e36df;border:3px solid #c4a56d;display:grid;place-items:center;touch-action:none;user-select:none;-webkit-user-select:none}
+#stick-knob{display:block;width:44px;height:44px;border-radius:50%;background:#bba16b;border:3px solid #f1d6a0;pointer-events:none}
+#touch-interact{border-radius:50%;width:74px;height:74px;touch-action:none;justify-content:center}
+.touch-device footer{margin:0;padding:4px 8px;display:block;width:100%;max-width:none;font-size:12px}.touch-device footer>span:first-child{display:none}.touch-device #hint{display:block;padding:3px;min-width:0}
+.touch-device .small-screen{position:static;display:block;padding:1px 8px;font-size:11px;background:transparent;flex-shrink:0}
+.touch-device dialog{width:calc(100vw - 24px);max-width:560px;max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));padding:16px;overscroll-behavior:contain;font-size:15px}
+.touch-device #close{position:sticky;bottom:0;z-index:2}.touch-device #body{overflow-wrap:anywhere}.touch-device #body input{min-height:44px;max-width:100%}
+@media(orientation:landscape){
+ .touch-device .small-screen{display:none}.touch-device header{flex-wrap:nowrap;justify-content:space-between;height:52px}
+ .touch-device #game{width:min(calc(100vw - 240px - env(safe-area-inset-left) - env(safe-area-inset-right)),calc((100dvh - 100px)*1.5));margin:auto}
+ .touch-device #touch-controls{position:fixed;bottom:calc(30px + env(safe-area-inset-bottom));left:0;padding-left:max(10px,env(safe-area-inset-left));padding-right:max(10px,env(safe-area-inset-right));pointer-events:none}
+ .touch-device #touch-controls>*{pointer-events:auto}
+}

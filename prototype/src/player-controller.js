@@ -1,3 +1,4 @@
+import {movementVector} from './touch-controls.js';
 import {PLAYER_SPEED} from './regions.js';
 
 export function createPlayer(scene, position) {
@@ -14,6 +15,7 @@ export function createPlayer(scene, position) {
 }
 
 export function lockInput(scene, locked) {
+  scene.resetTouch?.();
   scene.player.body.setVelocity(0);
   scene.walker.stop().setFrame(scene.facing*4);
   scene.input.keyboard.resetKeys();
@@ -23,10 +25,10 @@ export function lockInput(scene, locked) {
 
 export function movePlayer(scene) {
   const k=scene.keys;
-  const x=Number(k.D.isDown||k.RIGHT.isDown)-Number(k.A.isDown||k.LEFT.isDown);
-  const y=Number(k.S.isDown||k.DOWN.isDown)-Number(k.W.isDown||k.UP.isDown);
-  const length=Math.hypot(x,y)||1;
+  const x=(scene.touch?.x||0)+Number(k.D.isDown||k.RIGHT.isDown)-Number(k.A.isDown||k.LEFT.isDown);
+  const y=(scene.touch?.y||0)+Number(k.S.isDown||k.DOWN.isDown)-Number(k.W.isDown||k.UP.isDown);
+  const vector=movementVector(x,y);
   // Arcade integrates pixels/second with its own fixed step; never multiply by delta again.
-  scene.player.body.setVelocity(x/length*PLAYER_SPEED,y/length*PLAYER_SPEED);
+  scene.player.body.setVelocity(vector.x*PLAYER_SPEED,vector.y*PLAYER_SPEED);
   return {x,y};
 }
