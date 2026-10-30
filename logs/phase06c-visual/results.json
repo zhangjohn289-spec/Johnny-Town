@@ -1,0 +1,18 @@
+[
+  {
+    "name": "eave overlaps wall top by one pixel",
+    "pass": true
+  },
+  {
+    "name": "1440x900 roof and ruins rendered",
+    "pass": true
+  },
+  {
+    "name": "844x390 roof and ruins rendered",
+    "pass": true
+  },
+  {
+    "name": "390x844 roof and ruins rendered",
+    "pass": true
+  }
+]

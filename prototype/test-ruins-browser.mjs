@@ -9,7 +9,7 @@ const counts=()=>page.evaluate(()=>{const s=__town.scene;return {E:s.input.keybo
 const saved=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('johnny-town.world.v1')));
 const shot=name=>page.screenshot({path:dir+'/'+name+'.png'});
 try{
- await page.goto('http://127.0.0.1:4200/Johnny-Town/');await ready('town');
+ await page.goto(process.env.TOWN_URL||'http://127.0.0.1:4200/Johnny-Town/');await ready('town');
  await page.evaluate(()=>localStorage.setItem('johnny-town.world.v1',JSON.stringify({version:2,regionId:'meadow',spawnId:'fromTown',discovered:['town','meadow'],progress:{transitions:3},stories:['beginning']})));
  await page.reload();await ready('meadow');
  await check('old save and entrance walked',async()=>{await walk('meadow',regions.meadow.exits.find(e=>e.to==='ruins').door);await shot('entrance');await page.keyboard.press('e');await ready('ruins');await page.waitForTimeout(400);});
