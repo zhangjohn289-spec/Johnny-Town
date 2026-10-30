@@ -1,6 +1,6 @@
 import {mountActivity} from './activity-ui.js';
 import {renderDialogue} from './dialogue-ui.js';
-import {renderSecret} from './ruins-ui.js';
+import {renderSecret,renderGolden} from './ruins-ui.js';
 import {createFortuneStore} from './fortune-store.js';
 import {renderCityHall} from './city-hall.js';
 import {renderChestLink} from './chest-link.js';
@@ -18,8 +18,8 @@ export function show(place,onClose){if(panel.open)return;previousFocus=document.
  else if(place.id==='quick'){dispose=()=>{};renderQuick(body,place.regionId,()=>panel.close());}
  else if(place.kind==='activity')dispose=mountActivity(body,place);
  else if(place.kind==='npc'){dispose=()=>{};renderDialogue(body,place,()=>panel.close());}
- else if(place.kind==='secret'){dispose=()=>{};renderSecret(body,place);}
- else if(place.kind==='rune'){dispose=()=>{};paragraph(place.message);}
+ else if(place.kind==='secret')dispose=renderSecret(body,place)||(()=>{});
+ else if(place.kind==='rune')dispose=renderGolden(body,place.trialView);
  else if(place.kind==='story'){dispose=()=>{};renderStory(body,getStory(place.storyId));}
  else{paragraph('▰','chest-open');dispose=()=>{};renderChestLink(body);}
  document.querySelector('#close').focus();}

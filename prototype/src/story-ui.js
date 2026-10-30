@@ -1,4 +1,5 @@
 import {activityInfo} from './activities-data.js';
+import {lessons,normalizeTrial,trialClues} from './golden-trial.js';
 import {secrets} from './ruins-data.js';
 import {profile,stories,getStory} from './story-content.js';
 
@@ -34,12 +35,21 @@ export function renderJournal(root,regions,state){
     node(entry,'p',story.summary,'story-lead');for(const text of story.detail)node(entry,'p',text);
   }
   node(root,'h3','发现的秘密 · Secrets Discovered');
-  node(root,'p',`${state.secrets.found.length} / 9`,'secrets-progress');
+  const trialStage=normalizeTrial(state.goldenTrial,state.secrets.golden).stage;
+  // A recovered trial proves the stone is known even if a partial/legacy save
+  // omitted its discovery ID. Reconcile the journal without rewriting that list.
+  const knownSecrets=new Set(state.secrets.found);if(trialStage>0)knownSecrets.add('golden');
+  node(root,'p',`${knownSecrets.size} / 9`,'secrets-progress');
   for(const secret of secrets){
-    if(!state.secrets.found.includes(secret.id)){node(root,'p','未知的秘密','secret-locked');continue;}
-    const entry=node(root,'details',null,'secret-entry');node(entry,'summary',secret.name);node(entry,'p',secret.id==='memorial'?'谢谢你来过。预算仍未获批。':secret.pages[0]);
+    if(!knownSecrets.has(secret.id)){node(root,'p','未知的秘密','secret-locked');continue;}
+    const entry=node(root,'details',null,'secret-entry');node(entry,'summary',secret.name);
+    if(secret.id==='golden'){
+      const stage=trialStage;
+      entry.dataset.secret='golden';node(entry,'p',stage===5?'五课回旋 · 已完成 · 5 / 5':`五课回旋 · ${stage} / 5`,'golden-progress');
+      lessons.slice(0,stage).forEach((line,i)=>node(entry,'p',`Lesson ${i+1} · ${line}`));
+      node(entry,'p',trialClues[stage],'route-note');
+    }else node(entry,'p',secret.id==='memorial'?'谢谢你来过。预算仍未获批。':secret.pages[0]);
   }
-  if(state.secrets.golden)node(root,'p','黄金回旋已完成 · Lesson 4: Pay your respects.');
   if(state.secrets.waited)node(root,'p','Some things are worth waiting for.');
   node(root,'h3','互动体验 · Interactive Experiences');
   for(const [id,a] of Object.entries(activityInfo)){const entry=node(root,'section',null,'activity-journal');node(entry,'h4',a.name+' — '+(state.activities[id]?'已完成':'未完成'));node(entry,'p',a.interest);}

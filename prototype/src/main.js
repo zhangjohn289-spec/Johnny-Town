@@ -1,7 +1,7 @@
 import {createNPCs} from './npc-system.js';
 import {chooseInteraction} from './npc-data.js';
 import {bindTouchControls} from './touch-controls.js';
-import {nextRune} from './ruins-data.js';
+import {stoneState} from './golden-trial.js';
 import './style.css';
 import Phaser from 'phaser';
 import {world} from './config.js';
@@ -30,7 +30,7 @@ class WorldScene extends Phaser.Scene {
     const checkpoint=safeSpawn(saved.regionId,saved.spawnId);
     this.region=regions[checkpoint.regionId];
     this.interacting=false; this.transitioning=false; this.target=null; this.ambientUpdate=null;
-    this.ruinState=saved.secrets;this.runeStep=0;this.secretCounts={};this.waitStart=null;this.machineUntil=0;
+    this.ruinState=saved.secrets;this.goldenStage=saved.goldenTrial.stage;this.goldenCompletionAt=null;this.secretCounts={};this.waitStart=null;this.machineUntil=0;
     renderRegion(this);
     this.walls=this.physics.add.staticGroup();
     for(const w of this.region.collisions) this.walls.add(this.add.rectangle(w.x+w.w/2,w.y+w.h/2,w.w,w.h));
@@ -83,14 +83,14 @@ class WorldScene extends Phaser.Scene {
     if(!this.target||isOpen()||this.interacting) return;
     const target={...this.target};
     if(target.kind==='activity')target.onComplete=id=>{worldStore.finishActivity(id);document.querySelector('#save-status').textContent=worldStore.warning;};
-    if(target.kind==='secret'){
+    if(target.id==='golden'||target.kind==='rune'){
+      target.trialView=worldStore.interactGolden(target.id);
+      this.goldenStage=target.trialView.stage;this.ruinState=worldStore.read().secrets;
+      document.querySelector('#save-status').textContent=worldStore.warning;
+    }
+    if(target.kind==='secret'&&target.id!=='golden'){
       target.state=target.id==='memorial'?worldStore.read():worldStore.secret(target.id);target.complete=()=>worldStore.secret(target.id);target.count=this.secretCounts[target.id]||0;this.secretCounts[target.id]=target.count+1;
       target.activate=()=>{this.machineUntil=this.time.now+2500;};
-    }
-    if(target.kind==='rune'){
-      this.runeStep=nextRune(this.runeStep,target.index);
-      if(this.runeStep===3)this.ruinState=worldStore.complete('golden').secrets;
-      target.message=this.ruinState.golden?'Lesson 4: Pay your respects.':`符文亮起 ${this.runeStep} / 3。依次激活 1 → 2 → 3；走错可从 1 重新开始。`;
     }
     lockInput(this,true);
     if(target.to){this.travel(target);return;}
@@ -100,6 +100,9 @@ class WorldScene extends Phaser.Scene {
     }
     const open=()=>show(target,()=>{
       lockInput(this,false);
+      // Let the visitor see the brief spiral after reading the final lesson.
+      // Only the advancing interaction carries 'complete'; rereads never replay.
+      if(target.trialView?.mode==='complete'&&!this.reduced)this.goldenCompletionAt=this.time.now;
       this.art.chest?.setAngle(0).setTexture('chest');
     });
     if(target.id==='chest'&&!this.reduced) this.tweens.add({
@@ -129,6 +132,10 @@ class WorldScene extends Phaser.Scene {
     if(isOpen()||this.interacting){animateArt(this,time,0,0);return;}
     const {x,y}=movePlayer(this);
     this.target=chooseInteraction([...this.region.places,...this.region.exits],this.npcs,this.player);
+    if(this.region.id==='ruins'&&(this.target?.id==='golden'||this.target?.kind==='rune')){
+      const state=stoneState(this.goldenStage,this.target.id);
+      this.target={...this.target,action:state==='completed'||state==='listening'?'重读':state==='awakened'||this.target.id==='golden'?'聆听':'查看'};
+    }
     this.ring.clear();
     if(this.target) this.ring.lineStyle(2,0xffdf92).strokeRect(this.target.door.x-23,this.target.door.y-9,46,20);
     document.querySelector('#touch-interact').textContent=this.target?.action||'互动';

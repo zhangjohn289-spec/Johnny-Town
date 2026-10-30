@@ -1,0 +1,162 @@
+✔ two activity entries safe reachable and do not overlap existing triggers (28.7215ms)
+✔ rhythm has sixteen original notes within twenty to forty seconds (0.5263ms)
+✔ forgiving timing boundary nearest note and repeated hits guarded (0.3863ms)
+✔ external gear chain has exactly one valid alternating configuration (1.3414ms)
+✖ activities default safely in old saves and preserve all other progress (2.7635ms)
+✔ completion idempotent persists independently of fortune and stories (0.9486ms)
+✔ local date and exact weighted intervals (2.5904ms)
+✔ persistent same day, new day, snapshot and interrupted animation (0.8479ms)
+✔ denied storage and malformed records never crash or reroll in page (0.2463ms)
+✔ 100000 deterministic samples roughly match weights (14.2603ms)
+✔ autoplay falls back to muted then manual (0.7127ms)
+✔ closing while play promise rejects never restarts muted media (0.3055ms)
+✔ meadow every entrance and landmark reachable with full body (65.1227ms)
+✔ lake every entrance and landmark reachable with full body (53.9478ms)
+✔ valley every entrance and landmark reachable with full body (51.8503ms)
+✔ all 13 stories retain concise opening and expansion without authoring notes (0.531ms)
+✔ old V2 discoveries and fortune-independent state survive new entries and trips (1.6439ms)
+✔ production contains no private media or local serving configuration (10.5843ms)
+✔ P7A preserves the full published valley geometry, exits and interactive data (2.3827ms)
+✔ three original gear sizes have visible hubs, rims, spokes and transparent openings (10.6611ms)
+✔ external meshes preserve opposed tooth phase and pitch-line speed over time (0.5887ms)
+✔ frame sampling wraps without discontinuity and animation is time based (0.5167ms)
+✔ gear atlases are generated once and reused on scene restarts (201.6175ms)
+✔ canonical five lines are exact and ordered (1.7314ms)
+✔ deterministic five-stage sequence requires a final central interaction (0.4018ms)
+✔ every out-of-order stone at every stage cannot skip or reset progress (0.3312ms)
+✔ dormant, awakened and completed rune states are distinct and monotonic (0.2515ms)
+✔ fresh visitor and pre-P7B P6/P7A saves retain existing data (0.9196ms)
+✔ restores intermediate/final stage 0 across region visits and fresh store (0.6823ms)
+✔ restores intermediate/final stage 1 across region visits and fresh store (0.5145ms)
+✔ restores intermediate/final stage 2 across region visits and fresh store (0.6561ms)
+✔ restores intermediate/final stage 3 across region visits and fresh store (0.3429ms)
+✔ restores intermediate/final stage 4 across region visits and fresh store (0.4335ms)
+✔ restores intermediate/final stage 5 across region visits and fresh store (0.2986ms)
+✔ progress immediately persists after each lesson and repeats do not write or duplicate (0.4064ms)
+✔ legacy discovery retains its achievement without falsely completing five lessons (0.1673ms)
+✔ legacy completed Golden Spin is grandfathered, never revoked (0.2889ms)
+✔ missing malformed partial hostile and contradictory stage fields sanitize safely (0.5664ms)
+✔ denied storage and corrupted save still support the full trial without crashing (0.4433ms)
+✔ full published ruins geometry and interaction hotspots remain byte-equivalent (1.4993ms)
+✔ four stable unique NPCs have valid regions distinct sprites and safe reachable positions (76.1278ms)
+✔ each dialogue has sequential lines two valid branches and an exit (0.4993ms)
+✔ missing dialogue and hostile IDs fail safely (0.3726ms)
+✔ existing landmark in range wins and NPC radius is respected (0.4795ms)
+✔ hall and all existing town interactions and exits stay reachable (53.4864ms)
+✖ P5D save checkpoint discoveries secrets and fortunes remain independent (3.1799ms)
+✔ hall has nine history milestones six existing destinations and canonical chest URL (0.2464ms)
+✔ ruins all twelve objects and exit reachable with full collision body (102.491ms)
+✔ bidirectional meadow connection and no phase06 exit (0.1711ms)
+✔ optional secret extension preserves old V1 and V2 state (0.7463ms)
+✔ secret flags sanitize malformed data (0.1213ms)
+✔ discoveries and completion persist without duplication or fortune changes (0.7891ms)
+✔ runes require ordered activations and allow retry (0.1129ms)
+✔ memorial never claims completion with partial progress (0.1441ms)
+✔ blocked storage still supports secrets and no phantom unlock (0.168ms)
+✔ stick dead zone prevents drift and diagonals stay normalized (1.8663ms)
+✔ hybrid input never exceeds base speed and opposites cancel (0.3792ms)
+✔ 05A v1 migrates region, checkpoint, discoveries and counters to v2 (2.2405ms)
+✔ migration writes same key and never touches fortune bytes (0.5838ms)
+✔ discovery works in arbitrary order, persists immediately and is idempotent (0.9715ms)
+✔ story progress survives repeated region visits and safe checkpoint restoration (1.0073ms)
+✔ invalid or partial story data is sanitized without losing a valid world checkpoint (0.2341ms)
+✔ corrupted and unsupported save versions recover to town without phantom discoveries (0.2809ms)
+✔ blocked storage still supports unique journal entries in memory (0.282ms)
+✔ five story records match interactive geometry and have optional short detail (0.2193ms)
+✔ every main/branch path center stays clear for the full 16px player body (3.2496ms)
+✔ all five destinations and exit are in one reachable free-space component (24.4403ms)
+✔ quick introduction is concise, includes project and interests, with editorial limits (0.2561ms)
+✔ every region spawn and destination is safe and outside its exit interaction range (1.1229ms)
+✔ collision geometry rejects solids, nonfinite coordinates and map edges (1.0141ms)
+✔ Phase04 fortune-only storage migrates without modifying its existing bytes (0.4109ms)
+✔ round trips persist checkpoint, discoveries and transition count across instances (1.3184ms)
+✔ corrupt, partial, unsupported or hostile saves safely fall back to town (0.4368ms)
+✔ valid schema is sanitized and arbitrary saved coordinates never spawn the player (0.2171ms)
+✔ blocked storage keeps exploration alive in memory and reports the limitation (0.2063ms)
+✔ future regions are navigation labels without executable exits (0.1164ms)
+✔ video byte ranges support seeks and reject malformed or unsatisfiable ranges (0.3443ms)
+✔ media network or decode failures never get mislabeled as autoplay restrictions (0.504ms)
+ℹ tests 78
+ℹ suites 0
+ℹ pass 76
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 380.2582
+
+✖ failing tests:
+
+test at prototype\test-activities.mjs:6:1
+✖ activities default safely in old saves and preserve all other progress (2.7635ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+
+    {
+      activities: {
+        gears: false,
+        rhythm: false
+      },
+  ...
+      ],
+  +   goldenTrial: {
+  +     stage: 5
+  +   },
+      progress: {
+        transitions: 9
+      },
+      regionId: 'ruins',
+      secrets: {
+
+      at TestContext.<anonymous> (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-activities.mjs:6:287)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { version: 2, regionId: 'ruins', spawnId: 'fromMeadow', discovered: [ 'town', 'ruins' ], progress: { transitions: 9 }, activities: { rhythm: false, gears: false }, secrets: { found: [Array], golden: true, waited: true }, goldenTrial: { stage: 5 }, stories: [ 'beginning' ] },
+    expected: { version: 2, regionId: 'ruins', spawnId: 'fromMeadow', discovered: [ 'town', 'ruins' ], progress: { transitions: 9 }, stories: [ 'beginning' ], secrets: { found: [Array], golden: true, waited: true }, activities: { rhythm: false, gears: false } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at prototype\test-phase06a.mjs:3:1
+✖ P5D save checkpoint discoveries secrets and fortunes remain independent (3.1799ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+
+    {
+      activities: {
+        gears: false,
+        rhythm: false
+      },
+  ...
+      ],
+  +   goldenTrial: {
+  +     stage: 5
+  +   },
+      progress: {
+        transitions: 27
+      },
+      regionId: 'ruins',
+      secrets: {
+
+      at TestContext.<anonymous> (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-phase06a.mjs:3:319)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { version: 2, regionId: 'ruins', spawnId: 'fromMeadow', discovered: [ 'town', 'meadow', 'woods', 'lake', 'valley', 'ruins' ], progress: { transitions: 27 }, activities: { rhythm: false, gears: false }, secrets: { found: [Array], golden: true, waited: true }, goldenTrial: { stage: 5 }, stories: [ 'beginning', 'lake-stage', 'first-gear' ] },
+    expected: { version: 2, regionId: 'ruins', spawnId: 'fromMeadow', discovered: [ 'town', 'meadow', 'woods', 'lake', 'valley', 'ruins' ], progress: { transitions: 27 }, stories: [ 'beginning', 'lake-stage', 'first-gear' ], secrets: { found: [Array], golden: true, waited: true }, activities: { rhythm: false, gears: false } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
