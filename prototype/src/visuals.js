@@ -1,3 +1,7 @@
+import npcClerk from './assets/npc-clerk.png';
+import npcApprentice from './assets/npc-apprentice.png';
+import npcExplorer from './assets/npc-explorer.png';
+import npcArchivist from './assets/npc-archivist.png';
 import chiefMek from './assets/chief-mek.png';
 import {drawCityHall} from './city-hall.js';
 import treeB from './assets/tree-b.png';
@@ -8,7 +12,7 @@ import shrine from './assets/shrine.png';
 import chest from './assets/chest.png';
 import tree from './assets/tree.png';
 import player from './assets/player.png';
-export function preloadArt(scene){for(const [key,url] of Object.entries({ground,home,shrine,chest,tree,treeB,chiefMek}))scene.load.image(key,url);scene.load.image('chest-open',chestOpen);scene.load.spritesheet('walker',player,{frameWidth:32,frameHeight:48});}
+export function preloadArt(scene){for(const [key,url] of Object.entries({'npc-clerk':npcClerk,'npc-apprentice':npcApprentice,'npc-explorer':npcExplorer,'npc-archivist':npcArchivist}))scene.load.image(key,url);for(const [key,url] of Object.entries({ground,home,shrine,chest,tree,treeB,chiefMek}))scene.load.image(key,url);scene.load.image('chest-open',chestOpen);scene.load.spritesheet('walker',player,{frameWidth:32,frameHeight:48});}
 export function buildArt(scene,places){
  scene.add.image(0,0,'ground').setOrigin(0).setDepth(-100);
  scene.art={};

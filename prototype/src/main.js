@@ -1,3 +1,5 @@
+import {createNPCs} from './npc-system.js';
+import {chooseInteraction} from './npc-data.js';
 import {bindTouchControls} from './touch-controls.js';
 import {nextRune} from './ruins-data.js';
 import './style.css';
@@ -33,6 +35,7 @@ class WorldScene extends Phaser.Scene {
     this.walls=this.physics.add.staticGroup();
     for(const w of this.region.collisions) this.walls.add(this.add.rectangle(w.x+w.w/2,w.y+w.h/2,w.w,w.h));
     createPlayer(this,checkpoint.position);
+    createNPCs(this);
     bindTouchControls(this);
     const b=this.region.bounds;
     this.physics.world.setBounds(b.x,b.y,b.width,b.height);
@@ -120,12 +123,11 @@ class WorldScene extends Phaser.Scene {
       if(!near||isOpen())this.waitStart=null;
       else {this.waitStart??=time;if(time-this.waitStart>=8000)this.ruinState=worldStore.complete('waited').secrets;}
     }
+    this.updateNPCs?.(time);
     this.player.body.setVelocity(0);
     if(isOpen()||this.interacting){animateArt(this,time,0,0);return;}
     const {x,y}=movePlayer(this);
-    this.target=[...this.region.places,...this.region.exits]
-      .map(p=>({p,d:Phaser.Math.Distance.Between(this.player.x,this.player.y,p.door.x,p.door.y)}))
-      .filter(v=>v.d<75).sort((a,b)=>a.d-b.d)[0]?.p;
+    this.target=chooseInteraction([...this.region.places,...this.region.exits],this.npcs,this.player);
     this.ring.clear();
     if(this.target) this.ring.lineStyle(2,0xffdf92).strokeRect(this.target.door.x-23,this.target.door.y-9,46,20);
     document.querySelector('#touch-interact').textContent=this.target?.action||'互动';

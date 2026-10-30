@@ -27,3 +27,5 @@ woods-data.js / woods-renderer.js 定义原创森林地图和像素绘制：蜿�
 Phase 05D：遗迹地面、石柱、符文、书桌、模型和石门均由ruins-renderer.js原创绘制；未复制外部游戏贴图或加入外部媒体。彩蛋文字采用本阶段任务书指定文本。
 
 Phase 06C：Chief Mek为generate-chief-mek.mjs原创生成的48×64透明像素PNG；沿用既有pngjs工具。遗迹精修仍使用原创Graphics绘制，无外部游戏素材、字体或媒体。
+
+Phase 06D：四张npc-*.png为generate-npcs.mjs原创32×48透明像素角色，使用现有pngjs工具；制服、工具、旅行装及长袍采用项目既有色系，无外部角色贴图或音频。
