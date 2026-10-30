@@ -1,3 +1,4 @@
+import {drawCityHall} from './city-hall.js';
 import treeB from './assets/tree-b.png';
 import chestOpen from './assets/chest-open.png';
 import ground from './assets/ground.png';
@@ -10,7 +11,7 @@ export function preloadArt(scene){for(const [key,url] of Object.entries({ground,
 export function buildArt(scene,places){
  scene.add.image(0,0,'ground').setOrigin(0).setDepth(-100);
  scene.art={};
- for(const p of places){const offset=p.id==='home'?{x:-16,y:-60}:p.id==='shrine'?{x:-16,y:-60}:{x:-5,y:-17};scene.art[p.id]=scene.add.image(p.x+offset.x,p.y+offset.y,p.id).setOrigin(0).setDepth(p.y+p.h);}
+ for(const p of places){if(p.id==='city-hall'){drawCityHall(scene,p);continue;}const offset=p.id==='home'?{x:-16,y:-60}:p.id==='shrine'?{x:-16,y:-60}:{x:-5,y:-17};scene.art[p.id]=scene.add.image(p.x+offset.x,p.y+offset.y,p.id).setOrigin(0).setDepth(p.y+p.h);}
  const trees=scene.region.trees;
  for(const [i,[x,y]] of trees.entries()){scene.add.image(x-40,y-76,i%2?'treeB':'tree').setOrigin(0).setDepth(y+24);}
  const decor=scene.add.graphics().setDepth(1);

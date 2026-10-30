@@ -1,6 +1,7 @@
 import {renderSecret} from './ruins-ui.js';
 import {createFortuneStore} from './fortune-store.js';
-import {mountMedia} from './media.js';
+import {renderCityHall} from './city-hall.js';
+import {renderChestLink} from './chest-link.js';
 import {renderQuick,renderStory,renderJournal,profile,getStory} from './story-ui.js';
 const panel=document.querySelector('#panel'),body=document.querySelector('#body'),store=createFortuneStore();
 let dispose=()=>{},onReturn=()=>{},previousFocus;
@@ -9,13 +10,14 @@ function paragraph(text,cls){const p=document.createElement('p');p.textContent=t
 function shrine(){let timer,extractTimer;const drawResult=r=>{body.replaceChildren();paragraph('今日签文 · '+r.date,'eyebrow');paragraph(r.fortuneLevel,'fortune-level');paragraph(r.fortuneText,'paper');paragraph('娱乐签文，仅供一笑。');if(store.warning)paragraph(store.warning,'warning');};const existing=store.read();if(existing){drawResult(existing);return ()=>{};}paragraph('远道搬来的神社，今天也在认真营业。');const tube=paragraph('▥','tube');const button=document.createElement('button');button.textContent='抽签';body.append(button);if(store.warning)paragraph(store.warning,'warning');button.onclick=()=>{button.disabled=true;const result=store.draw();tube.classList.add('shake');button.textContent='签已保存，正在展开…';extractTimer=setTimeout(()=>{tube.classList.remove('shake');tube.textContent='│';button.textContent='签已抽出，正在展开…';},450);timer=setTimeout(()=>{if(panel.open)drawResult(result);},matchMedia('(prefers-reduced-motion: reduce)').matches?0:900);};return ()=>{clearTimeout(timer);clearTimeout(extractTimer);};}
 export function show(place,onClose){if(panel.open)return;previousFocus=document.activeElement;onReturn=onClose;document.querySelector('#title').textContent=place.name;body.replaceChildren();panel.showModal();
  if(place.id==='home'){intro.forEach(t=>paragraph(t));dispose=()=>{};}
+ else if(place.id==='city-hall'){dispose=()=>{};renderCityHall(body);}
  else if(place.id==='shrine')dispose=shrine();
  else if(place.id==='world'){dispose=()=>{};renderJournal(body,place.regions,place.state);}
  else if(place.id==='quick'){dispose=()=>{};renderQuick(body,place.regionId,()=>panel.close());}
  else if(place.kind==='secret'){dispose=()=>{};renderSecret(body,place);}
  else if(place.kind==='rune'){dispose=()=>{};paragraph(place.message);}
  else if(place.kind==='story'){dispose=()=>{};renderStory(body,getStory(place.storyId));}
- else{paragraph('▰','chest-open');dispose=mountMedia(body);}
+ else{paragraph('▰','chest-open');dispose=()=>{};renderChestLink(body);}
  document.querySelector('#close').focus();}
 panel.addEventListener('close',()=>{dispose();dispose=()=>{};body.replaceChildren();onReturn();previousFocus?.focus?.();});
 document.querySelector('#close').onclick=()=>panel.close();
