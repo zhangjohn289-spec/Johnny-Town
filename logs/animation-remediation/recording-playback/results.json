@@ -1,0 +1,114 @@
+{
+  "results": [
+    {
+      "id": "woods",
+      "pass": true,
+      "frames": [
+        {
+          "time": 0.5057,
+          "width": 960,
+          "height": 640,
+          "decoded": 15,
+          "dropped": 1
+        },
+        {
+          "time": 3.0095,
+          "width": 960,
+          "height": 640,
+          "decoded": 89,
+          "dropped": 2
+        },
+        {
+          "time": 6.0142,
+          "width": 960,
+          "height": 640,
+          "decoded": 179,
+          "dropped": 2
+        }
+      ]
+    },
+    {
+      "id": "lake",
+      "pass": true,
+      "frames": [
+        {
+          "time": 0.5037,
+          "width": 960,
+          "height": 640,
+          "decoded": 20,
+          "dropped": 0
+        },
+        {
+          "time": 3.007,
+          "width": 960,
+          "height": 640,
+          "decoded": 95,
+          "dropped": 13
+        },
+        {
+          "time": 6.0115,
+          "width": 960,
+          "height": 640,
+          "decoded": 185,
+          "dropped": 20
+        }
+      ]
+    },
+    {
+      "id": "meadow",
+      "pass": true,
+      "frames": [
+        {
+          "time": 0.5118,
+          "width": 960,
+          "height": 640,
+          "decoded": 19,
+          "dropped": 0
+        },
+        {
+          "time": 3.0157,
+          "width": 960,
+          "height": 640,
+          "decoded": 95,
+          "dropped": 0
+        },
+        {
+          "time": 6.0037,
+          "width": 960,
+          "height": 640,
+          "decoded": 185,
+          "dropped": 0
+        }
+      ]
+    },
+    {
+      "id": "ruins",
+      "pass": true,
+      "frames": [
+        {
+          "time": 0.5131,
+          "width": 960,
+          "height": 640,
+          "decoded": 20,
+          "dropped": 0
+        },
+        {
+          "time": 3.017,
+          "width": 960,
+          "height": 640,
+          "decoded": 95,
+          "dropped": 0
+        },
+        {
+          "time": 6.0056,
+          "width": 960,
+          "height": 640,
+          "decoded": 185,
+          "dropped": 0
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

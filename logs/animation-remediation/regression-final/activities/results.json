@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "name": "rhythm reached and safe interrupted attempt",
+      "pass": true
+    },
+    {
+      "name": "original rhythm actual time hits misses result and retry",
+      "pass": true
+    },
+    {
+      "name": "gears reached fail reset solve retry and old records preserved",
+      "pass": true
+    },
+    {
+      "name": "journal entries and repeated open close cleanup",
+      "pass": true
+    },
+    {
+      "name": "844 touch rhythm input cancel gear solve exit",
+      "pass": true
+    },
+    {
+      "name": "390 touch rhythm input cancel gear solve exit",
+      "pass": true
+    },
+    {
+      "name": "768 touch rhythm input cancel gear solve exit",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

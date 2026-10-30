@@ -1,0 +1,172 @@
+{
+  "id": "woods",
+  "view": "portrait",
+  "inherited": {
+    "media": false,
+    "scene": false
+  },
+  "normal": {
+    "media": false,
+    "scene": false
+  },
+  "stationary": true,
+  "camera": {
+    "x": 172,
+    "y": 207,
+    "width": 640,
+    "height": 426
+  },
+  "canvas": {
+    "x": 10,
+    "y": 273.359375,
+    "width": 370,
+    "height": 246.28125
+  },
+  "frames": [
+    {
+      "i": 0,
+      "milliseconds": 16.700000000000273
+    },
+    {
+      "i": 1,
+      "milliseconds": 567.5999999999999
+    },
+    {
+      "i": 2,
+      "milliseconds": 1135.1
+    },
+    {
+      "i": 3,
+      "milliseconds": 1702.6
+    },
+    {
+      "i": 4,
+      "milliseconds": 2286.7999999999997
+    },
+    {
+      "i": 5,
+      "milliseconds": 2871.1
+    },
+    {
+      "i": 6,
+      "milliseconds": 3455.2999999999997
+    },
+    {
+      "i": 7,
+      "milliseconds": 4056.4
+    },
+    {
+      "i": 8,
+      "milliseconds": 4623.700000000001
+    }
+  ],
+  "rois": [
+    {
+      "i": 3,
+      "world": {
+        "x": 385,
+        "y": 270,
+        "seed": 6
+      },
+      "x": 129,
+      "y": 303,
+      "w": 30,
+      "h": 23,
+      "changes": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 567.5999999999999
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1135.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1702.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2286.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2871.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3455.2999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4056.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4623.700000000001
+        }
+      ],
+      "fromFirst": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 567.5999999999999
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1135.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1702.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2286.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2871.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3455.2999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4056.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4623.700000000001
+        }
+      ]
+    }
+  ],
+  "reduced": {
+    "media": true,
+    "scene": true,
+    "differences": [
+      {
+        "i": 3,
+        "changed": 0,
+        "salient": 0
+      }
+    ]
+  }
+}

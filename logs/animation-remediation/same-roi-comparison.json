@@ -1,0 +1,682 @@
+[
+  {
+    "id": "woods",
+    "view": "desktop",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 12,
+      "y": 100,
+      "width": 960,
+      "height": 640
+    },
+    "threshold": 60,
+    "before": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 6,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 7,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 10,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 11,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 12,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 13,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 14,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 15,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 16,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 17,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 18,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 19,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 20,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 21,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 22,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 23,
+        "maxSalientWithin5Seconds": 0
+      }
+    ],
+    "after": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 65
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 46
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 149
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 283
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 264
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 239
+      },
+      {
+        "i": 6,
+        "maxSalientWithin5Seconds": 269
+      },
+      {
+        "i": 7,
+        "maxSalientWithin5Seconds": 246
+      },
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 257
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 294
+      },
+      {
+        "i": 10,
+        "maxSalientWithin5Seconds": 287
+      },
+      {
+        "i": 11,
+        "maxSalientWithin5Seconds": 309
+      },
+      {
+        "i": 12,
+        "maxSalientWithin5Seconds": 299
+      },
+      {
+        "i": 13,
+        "maxSalientWithin5Seconds": 299
+      },
+      {
+        "i": 14,
+        "maxSalientWithin5Seconds": 288
+      },
+      {
+        "i": 15,
+        "maxSalientWithin5Seconds": 263
+      },
+      {
+        "i": 16,
+        "maxSalientWithin5Seconds": 236
+      },
+      {
+        "i": 17,
+        "maxSalientWithin5Seconds": 316
+      },
+      {
+        "i": 18,
+        "maxSalientWithin5Seconds": 256
+      },
+      {
+        "i": 19,
+        "maxSalientWithin5Seconds": 226
+      },
+      {
+        "i": 20,
+        "maxSalientWithin5Seconds": 248
+      },
+      {
+        "i": 21,
+        "maxSalientWithin5Seconds": 224
+      },
+      {
+        "i": 22,
+        "maxSalientWithin5Seconds": 240
+      },
+      {
+        "i": 23,
+        "maxSalientWithin5Seconds": 275
+      }
+    ]
+  },
+  {
+    "id": "lake",
+    "view": "desktop",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 62,
+      "y": 128,
+      "width": 960,
+      "height": 640
+    },
+    "threshold": 50,
+    "before": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 12
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 12
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 26
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 8
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 8
+      },
+      {
+        "i": 6,
+        "maxSalientWithin5Seconds": 13
+      },
+      {
+        "i": 7,
+        "maxSalientWithin5Seconds": 12
+      }
+    ],
+    "after": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 215
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 209
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 105
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 203
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 150
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 210
+      },
+      {
+        "i": 6,
+        "maxSalientWithin5Seconds": 221
+      },
+      {
+        "i": 7,
+        "maxSalientWithin5Seconds": 135
+      }
+    ]
+  },
+  {
+    "id": "meadow",
+    "view": "desktop",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 12,
+      "y": 72,
+      "width": 960,
+      "height": 640
+    },
+    "threshold": 50,
+    "before": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 7,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 24
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 31
+      },
+      {
+        "i": 10,
+        "maxSalientWithin5Seconds": 3
+      },
+      {
+        "i": 11,
+        "maxSalientWithin5Seconds": 0
+      }
+    ],
+    "after": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 162
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 70
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 198
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 75
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 76
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 193
+      },
+      {
+        "i": 7,
+        "maxSalientWithin5Seconds": 90
+      },
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 274
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 217
+      },
+      {
+        "i": 10,
+        "maxSalientWithin5Seconds": 72
+      },
+      {
+        "i": 11,
+        "maxSalientWithin5Seconds": 185
+      }
+    ]
+  },
+  {
+    "id": "ruins",
+    "view": "desktop",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 64,
+      "y": 120,
+      "width": 960,
+      "height": 640
+    },
+    "threshold": 4,
+    "before": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 0
+      }
+    ],
+    "after": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 14
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 14
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 10
+      }
+    ]
+  },
+  {
+    "id": "woods",
+    "view": "portrait",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 172,
+      "y": 207,
+      "width": 640,
+      "height": 426
+    },
+    "threshold": 14,
+    "before": [
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 11,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 13,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 15,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 18,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 20,
+        "maxSalientWithin5Seconds": 0
+      }
+    ],
+    "after": [
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 93
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 66
+      },
+      {
+        "i": 11,
+        "maxSalientWithin5Seconds": 97
+      },
+      {
+        "i": 13,
+        "maxSalientWithin5Seconds": 87
+      },
+      {
+        "i": 15,
+        "maxSalientWithin5Seconds": 9
+      },
+      {
+        "i": 18,
+        "maxSalientWithin5Seconds": 73
+      },
+      {
+        "i": 20,
+        "maxSalientWithin5Seconds": 0
+      }
+    ]
+  },
+  {
+    "id": "lake",
+    "view": "portrait",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 222,
+      "y": 287,
+      "width": 640,
+      "height": 426
+    },
+    "threshold": 12,
+    "before": [
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 7
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 5
+      },
+      {
+        "i": 6,
+        "maxSalientWithin5Seconds": 0
+      }
+    ],
+    "after": [
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 45
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 67
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 59
+      },
+      {
+        "i": 6,
+        "maxSalientWithin5Seconds": 68
+      }
+    ]
+  },
+  {
+    "id": "meadow",
+    "view": "portrait",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 172,
+      "y": 179,
+      "width": 640,
+      "height": 426
+    },
+    "threshold": 12,
+    "before": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 8
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 6
+      },
+      {
+        "i": 10,
+        "maxSalientWithin5Seconds": 1
+      }
+    ],
+    "after": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 49
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 26
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 68
+      },
+      {
+        "i": 3,
+        "maxSalientWithin5Seconds": 8
+      },
+      {
+        "i": 4,
+        "maxSalientWithin5Seconds": 28
+      },
+      {
+        "i": 5,
+        "maxSalientWithin5Seconds": 59
+      },
+      {
+        "i": 8,
+        "maxSalientWithin5Seconds": 84
+      },
+      {
+        "i": 9,
+        "maxSalientWithin5Seconds": 70
+      },
+      {
+        "i": 10,
+        "maxSalientWithin5Seconds": 20
+      }
+    ]
+  },
+  {
+    "id": "ruins",
+    "view": "portrait",
+    "method": "Same projected ROI rectangles and stationary view in both runs; threshold 24 RGB levels; before/after each compared against its own first frame.",
+    "camera": {
+      "x": 332,
+      "y": 227,
+      "width": 640,
+      "height": 426
+    },
+    "threshold": 2,
+    "before": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 0
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 0
+      }
+    ],
+    "after": [
+      {
+        "i": 0,
+        "maxSalientWithin5Seconds": 3
+      },
+      {
+        "i": 1,
+        "maxSalientWithin5Seconds": 7
+      },
+      {
+        "i": 2,
+        "maxSalientWithin5Seconds": 3
+      }
+    ]
+  }
+]

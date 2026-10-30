@@ -1,0 +1,374 @@
+{
+  "id": "woods",
+  "view": "desktop",
+  "inherited": {
+    "media": false,
+    "scene": false
+  },
+  "normal": {
+    "media": false,
+    "scene": false
+  },
+  "stationary": true,
+  "camera": {
+    "x": 12,
+    "y": 100,
+    "width": 960,
+    "height": 640
+  },
+  "canvas": {
+    "x": 220,
+    "y": 172.46875,
+    "width": 1000,
+    "height": 666.65625
+  },
+  "frames": [
+    {
+      "i": 0,
+      "milliseconds": 33.40000000000009
+    },
+    {
+      "i": 1,
+      "milliseconds": 701
+    },
+    {
+      "i": 2,
+      "milliseconds": 1336.1
+    },
+    {
+      "i": 3,
+      "milliseconds": 1952.7999999999997
+    },
+    {
+      "i": 4,
+      "milliseconds": 2570.6
+    },
+    {
+      "i": 5,
+      "milliseconds": 3204.9
+    },
+    {
+      "i": 6,
+      "milliseconds": 3805.7000000000003
+    },
+    {
+      "i": 7,
+      "milliseconds": 4423.4
+    },
+    {
+      "i": 8,
+      "milliseconds": 5057.6
+    }
+  ],
+  "rois": [
+    {
+      "i": 3,
+      "world": {
+        "x": 385,
+        "y": 270,
+        "seed": 6
+      },
+      "x": 600,
+      "y": 337,
+      "w": 54,
+      "h": 42,
+      "changes": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 701
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1336.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1952.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2570.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3204.9
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3805.7000000000003
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4423.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 5057.6
+        }
+      ],
+      "fromFirst": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 701
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1336.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1952.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2570.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3204.9
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3805.7000000000003
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4423.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 5057.6
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "world": {
+        "x": 818,
+        "y": 389,
+        "seed": 7
+      },
+      "x": 1051,
+      "y": 461,
+      "w": 54,
+      "h": 42,
+      "changes": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 701
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1336.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1952.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2570.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3204.9
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3805.7000000000003
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4423.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 5057.6
+        }
+      ],
+      "fromFirst": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 701
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1336.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1952.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2570.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3204.9
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3805.7000000000003
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4423.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 5057.6
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "world": {
+        "x": 243,
+        "y": 696,
+        "seed": 8
+      },
+      "x": 452,
+      "y": 781,
+      "w": 54,
+      "h": 42,
+      "changes": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 701
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1336.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1952.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2570.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3204.9
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3805.7000000000003
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4423.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 5057.6
+        }
+      ],
+      "fromFirst": [
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 701
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1336.1
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 1952.7999999999997
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 2570.6
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3204.9
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 3805.7000000000003
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 4423.4
+        },
+        {
+          "changed": 0,
+          "salient": 0,
+          "milliseconds": 5057.6
+        }
+      ]
+    }
+  ],
+  "reduced": {
+    "media": true,
+    "scene": true,
+    "differences": [
+      {
+        "i": 3,
+        "changed": 0,
+        "salient": 0
+      },
+      {
+        "i": 4,
+        "changed": 0,
+        "salient": 0
+      },
+      {
+        "i": 5,
+        "changed": 0,
+        "salient": 0
+      }
+    ]
+  }
+}

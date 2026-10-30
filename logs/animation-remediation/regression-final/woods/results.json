@@ -1,0 +1,254 @@
+{
+  "browser": "156.0.4314.50",
+  "url": "http://127.0.0.1:4501/Johnny-Town/",
+  "results": [
+    {
+      "name": "quick introduction is ungated, keyboard/mouse accessible and restores focus",
+      "pass": true
+    },
+    {
+      "name": "journal initially shows five mysterious entries without story spoilers",
+      "pass": true
+    },
+    {
+      "name": "town northern route enters forest with a safe stable spawn",
+      "pass": true
+    },
+    {
+      "name": "all five stories reached along main and branch paths with actual keyboard movement",
+      "pass": true
+    },
+    {
+      "name": "repeat interaction is unique; journal rereads all entries without movement",
+      "pass": true
+    },
+    {
+      "name": "refresh restores safe forest entry and unlocked journal",
+      "pass": true
+    },
+    {
+      "name": "optional quiet clearing and return route are reachable without story gates",
+      "pass": true
+    },
+    {
+      "name": "20 cached transitions preserve listeners, bodies, textures and story progress",
+      "pass": true
+    },
+    {
+      "name": "forest landmark, tree and rock collisions remain solid after transitions",
+      "pass": true
+    },
+    {
+      "name": "camera clamps at all four forest edges without blank space",
+      "pass": true
+    },
+    {
+      "name": "reduced motion, resized layouts and keyboard details remain usable",
+      "pass": true
+    },
+    {
+      "name": "legacy and corrupted world saves migrate/recover without touching fortune",
+      "pass": true
+    },
+    {
+      "name": "forest performance and production resource isolation",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "transitions": [
+      {
+        "to": "woods",
+        "ms": 305
+      },
+      {
+        "to": "town",
+        "ms": 292
+      },
+      {
+        "to": "woods",
+        "ms": 291
+      },
+      {
+        "to": "town",
+        "ms": 290
+      },
+      {
+        "to": "woods",
+        "ms": 299
+      },
+      {
+        "to": "town",
+        "ms": 302
+      },
+      {
+        "to": "woods",
+        "ms": 295
+      },
+      {
+        "to": "town",
+        "ms": 292
+      },
+      {
+        "to": "woods",
+        "ms": 295
+      },
+      {
+        "to": "town",
+        "ms": 287
+      },
+      {
+        "to": "woods",
+        "ms": 292
+      },
+      {
+        "to": "town",
+        "ms": 297
+      },
+      {
+        "to": "woods",
+        "ms": 301
+      },
+      {
+        "to": "town",
+        "ms": 298
+      },
+      {
+        "to": "woods",
+        "ms": 298
+      },
+      {
+        "to": "town",
+        "ms": 291
+      },
+      {
+        "to": "woods",
+        "ms": 290
+      },
+      {
+        "to": "town",
+        "ms": 298
+      },
+      {
+        "to": "woods",
+        "ms": 302
+      },
+      {
+        "to": "town",
+        "ms": 301
+      },
+      {
+        "to": "woods",
+        "ms": 294
+      },
+      {
+        "to": "town",
+        "ms": 303
+      },
+      {
+        "to": "woods",
+        "ms": 297
+      },
+      {
+        "to": "town",
+        "ms": 21
+      },
+      {
+        "to": "woods",
+        "ms": 21
+      },
+      {
+        "to": "woods",
+        "ms": 361
+      }
+    ],
+    "heapBefore": 6918164,
+    "heapAfter": 7455196,
+    "resources": {
+      "town": {
+        "region": "town",
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 9,
+        "colliders": 1,
+        "children": 39,
+        "textures": 33,
+        "shutdown": 18
+      },
+      "woods": {
+        "region": "woods",
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 108,
+        "colliders": 1,
+        "children": 241,
+        "textures": 34,
+        "shutdown": 19
+      }
+    },
+    "sizes": [
+      {
+        "width": 1366,
+        "height": 768,
+        "canvas": {
+          "x": 242,
+          "y": 95.796875,
+          "width": 882,
+          "height": 588
+        }
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "canvas": {
+          "x": 460,
+          "y": 212.46875,
+          "width": 1000,
+          "height": 666.65625
+        }
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "canvas": {
+          "x": 780,
+          "y": 392.46875,
+          "width": 1000,
+          "height": 666.65625
+        }
+      },
+      {
+        "width": 400,
+        "height": 800,
+        "canvas": {
+          "x": 14,
+          "y": 198.1875,
+          "width": 372,
+          "height": 248
+        }
+      },
+      {
+        "width": 800,
+        "height": 450,
+        "canvas": {
+          "x": 22,
+          "y": 140.59375,
+          "width": 756,
+          "height": 504
+        }
+      }
+    ],
+    "fps": {
+      "raf": 60.14736103426507,
+      "phaser": 59.625
+    }
+  },
+  "errors": [],
+  "failed": []
+}

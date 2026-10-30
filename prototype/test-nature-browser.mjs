@@ -1,7 +1,7 @@
 import {createRequire} from 'node:module';import fs from 'node:fs';import assert from 'node:assert/strict';
 import {regions} from './src/regions.js';import {effectCaps} from './src/nature-config.js';
 const {chromium}=createRequire(import.meta.url)('C:/Users/mi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
-const browser=await chromium.launch({channel:'msedge',headless:true}),page=await browser.newPage({viewport:{width:1440,height:1000}}),dir='logs/phase07c-r1/environment',results=[],errors=[],metrics={};fs.mkdirSync(dir,{recursive:true});page.on('pageerror',e=>errors.push(e.message));
+const browser=await chromium.launch({channel:'msedge',headless:true}),page=await browser.newPage({viewport:{width:1440,height:1000}}),dir=process.env.QA_DIR||'logs/phase07c-r1/environment',results=[],errors=[],metrics={};fs.mkdirSync(dir,{recursive:true});page.on('pageerror',e=>errors.push(e.message));
 const check=async(name,fn)=>{try{await fn();results.push({name,pass:true});console.log('PASS',name);}catch(e){results.push({name,pass:false,error:e.message});throw e;}};
 const ready=id=>page.waitForFunction(id=>window.__town?.scene.region.id===id&&!__town.scene.transitioning,id);
 const at=async p=>{await page.evaluate(p=>__town.scene.player.body.reset(p.x,p.y),p);await page.waitForTimeout(160);};

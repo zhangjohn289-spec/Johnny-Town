@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "name": "desktop normal gameplay scene and all five existing interactions",
+      "pass": true
+    },
+    {
+      "name": "desktop fixed-position nearest pixel gears animate without sprite wobble",
+      "pass": true
+    },
+    {
+      "name": "desktop reduced motion freezes all mechanical frames and steam",
+      "pass": true
+    },
+    {
+      "name": "tablet normal gameplay scene and all five existing interactions",
+      "pass": true
+    },
+    {
+      "name": "tablet fixed-position nearest pixel gears animate without sprite wobble",
+      "pass": true
+    },
+    {
+      "name": "tablet reduced motion freezes all mechanical frames and steam",
+      "pass": true
+    },
+    {
+      "name": "mobile normal gameplay scene and all five existing interactions",
+      "pass": true
+    },
+    {
+      "name": "mobile fixed-position nearest pixel gears animate without sprite wobble",
+      "pass": true
+    },
+    {
+      "name": "mobile reduced motion freezes all mechanical frames and steam",
+      "pass": true
+    },
+    {
+      "name": "landscape normal gameplay scene and all five existing interactions",
+      "pass": true
+    },
+    {
+      "name": "landscape fixed-position nearest pixel gears animate without sprite wobble",
+      "pass": true
+    },
+    {
+      "name": "landscape reduced motion freezes all mechanical frames and steam",
+      "pass": true
+    },
+    {
+      "name": "no browser runtime errors across all views",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50"
+}
