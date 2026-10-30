@@ -16,7 +16,7 @@ const pos=()=>page.evaluate(()=>({x:__town.scene.player.x,y:__town.scene.player.
 const close=async()=>{await page.keyboard.press('Escape');await page.waitForTimeout(100);};
 const resources=()=>page.evaluate(()=>{const s=__town.scene;return {region:s.region.id,E:s.input.keyboard.listenerCount('keydown-E'),M:s.input.keyboard.listenerCount('keydown-M'),load:s.load.listenerCount('loaderror'),bodies:s.physics.world.bodies.size,staticBodies:s.physics.world.staticBodies.size,colliders:s.physics.world.colliders.getActive().length,children:s.children.length,textures:s.textures.getTextureKeys().length,shutdown:s.events.listenerCount('shutdown')};});
 async function travel(destination){
-  const exit=await page.evaluate(()=>__town.scene.region.exits[0]);
+  const exit=await page.evaluate(destination=>__town.scene.region.exits.find(e=>e.to===destination),destination);
   await at(exit.door.x,exit.door.y);
   const begin=Date.now();await page.keyboard.press('e');await ready(destination);
   await page.waitForFunction(()=>!__town.scene.cameras.main.fadeEffect.isRunning);

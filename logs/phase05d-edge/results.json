@@ -1,0 +1,123 @@
+{
+  "results": [
+    {
+      "name": "old save and entrance walked",
+      "pass": true
+    },
+    {
+      "name": "I and M ungated with nine unknown secrets",
+      "pass": true
+    },
+    {
+      "name": "manuscript walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "golden walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "engineer walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "safe-chest walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "clock walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "flight walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "logs walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "phase-door walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "memorial walked and all pages read",
+      "pass": true
+    },
+    {
+      "name": "manuscript repeated text and unique discovery",
+      "pass": true
+    },
+    {
+      "name": "golden wrong order retry and solve",
+      "pass": true
+    },
+    {
+      "name": "journal persistence refresh and old story kept",
+      "pass": true
+    },
+    {
+      "name": "20 warmed transitions stable and return safe",
+      "pass": true
+    },
+    {
+      "name": "reduced motion and small desktop panels",
+      "pass": true
+    },
+    {
+      "name": "zero page errors and FPS sample",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "trips": [
+      335,
+      301,
+      293,
+      303,
+      298,
+      295,
+      292,
+      293,
+      301,
+      297,
+      301,
+      300,
+      293,
+      288,
+      300,
+      294,
+      302,
+      295,
+      288,
+      299,
+      294,
+      292
+    ],
+    "resources": {
+      "meadow": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "bodies": 1,
+        "static": 19,
+        "colliders": 1,
+        "children": 57,
+        "textures": 18
+      },
+      "ruins": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "bodies": 1,
+        "static": 16,
+        "colliders": 1,
+        "children": 51,
+        "textures": 23
+      }
+    },
+    "fps": 59.96304425597191
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

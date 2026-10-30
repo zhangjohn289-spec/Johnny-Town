@@ -1,3 +1,4 @@
+import {nextRune} from './ruins-data.js';
 import './style.css';
 import Phaser from 'phaser';
 import {world} from './config.js';
@@ -26,6 +27,7 @@ class WorldScene extends Phaser.Scene {
     const checkpoint=safeSpawn(saved.regionId,saved.spawnId);
     this.region=regions[checkpoint.regionId];
     this.interacting=false; this.transitioning=false; this.target=null; this.ambientUpdate=null;
+    this.ruinState=saved.secrets;this.runeStep=0;this.secretCounts={};this.waitStart=null;this.machineUntil=0;
     renderRegion(this);
     this.walls=this.physics.add.staticGroup();
     for(const w of this.region.collisions) this.walls.add(this.add.rectangle(w.x+w.w/2,w.y+w.h/2,w.w,w.h));
@@ -74,7 +76,16 @@ class WorldScene extends Phaser.Scene {
   }
   interact(){
     if(!this.target||isOpen()||this.interacting) return;
-    const target=this.target;
+    const target={...this.target};
+    if(target.kind==='secret'){
+      target.state=target.id==='memorial'?worldStore.read():worldStore.secret(target.id);target.complete=()=>worldStore.secret(target.id);target.count=this.secretCounts[target.id]||0;this.secretCounts[target.id]=target.count+1;
+      target.activate=()=>{this.machineUntil=this.time.now+2500;};
+    }
+    if(target.kind==='rune'){
+      this.runeStep=nextRune(this.runeStep,target.index);
+      if(this.runeStep===3)this.ruinState=worldStore.complete('golden').secrets;
+      target.message=this.ruinState.golden?'Lesson 4: Pay your respects.':`符文亮起 ${this.runeStep} / 3。依次激活 1 → 2 → 3；走错可从 1 重新开始。`;
+    }
     lockInput(this,true);
     if(target.to){this.travel(target);return;}
     if(target.kind==='story'){
@@ -101,6 +112,12 @@ class WorldScene extends Phaser.Scene {
     }
   }
   update(time){
+    if(this.region.id==='ruins'&&!this.ruinState.waited){
+      const clock=this.region.places.find(p=>p.id==='clock');
+      const near=Math.hypot(this.player.x-clock.door.x,this.player.y-clock.door.y)<65;
+      if(!near||isOpen())this.waitStart=null;
+      else {this.waitStart??=time;if(time-this.waitStart>=8000)this.ruinState=worldStore.complete('waited').secrets;}
+    }
     this.player.body.setVelocity(0);
     if(isOpen()||this.interacting){animateArt(this,time,0,0);return;}
     const {x,y}=movePlayer(this);
@@ -110,6 +127,7 @@ class WorldScene extends Phaser.Scene {
     this.ring.clear();
     if(this.target) this.ring.lineStyle(2,0xffdf92).strokeRect(this.target.door.x-23,this.target.door.y-9,46,20);
     hint.textContent=this.target ? `${this.target.name} — 按 E ${this.target.action}` : '沿着道路，随便逛逛。';
+    if(this.region.id==='ruins'&&this.target?.id==='clock')hint.textContent=this.ruinState.waited?'Some things are worth waiting for. — E 查看':`静候钟声 · ${Math.min(8,Math.floor((time-(this.waitStart??time))/1000))} / 8 秒 · E 查看`;
     animateArt(this,time,x,y);
   }
 }

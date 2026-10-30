@@ -1,3 +1,4 @@
+import {secrets} from './ruins-data.js';
 import {profile,stories,getStory} from './story-content.js';
 
 function node(parent,tag,text,className){
@@ -20,7 +21,7 @@ export function renderQuick(root,regionId,close){
   const explore=node(root,'button','开始自由探索');explore.type='button';explore.onclick=close;
 }
 export function renderJournal(root,regions,state){
-  node(root,'p','沿路标步行，按 E 往返；尚未建成的区域暂不可进入。');
+  node(root,'p','沿路标步行，按 E 往返；每段旅途都可以慢慢重走。');
   const list=node(root,'ul',null,'region-list');
   for(const region of regions) node(list,'li',region.name+' — '+(!region.available?'尚未建成':state.regionId===region.id?'当前位置':state.discovered.includes(region.id)?'已发现':'未探索'));
   node(root,'h3','旅途 · 探索日志');
@@ -31,6 +32,14 @@ export function renderJournal(root,regions,state){
     const entry=node(journal,'details',null,'story-details');node(entry,'summary','重读 · '+story.name);
     node(entry,'p',story.summary,'story-lead');for(const text of story.detail)node(entry,'p',text);
   }
+  node(root,'h3','发现的秘密 · Secrets Discovered');
+  node(root,'p',`${state.secrets.found.length} / 9`,'secrets-progress');
+  for(const secret of secrets){
+    if(!state.secrets.found.includes(secret.id)){node(root,'p','未知的秘密','secret-locked');continue;}
+    const entry=node(root,'details',null,'secret-entry');node(entry,'summary',secret.name);node(entry,'p',secret.id==='memorial'?'谢谢你来过。预算仍未获批。':secret.pages[0]);
+  }
+  if(state.secrets.golden)node(root,'p','黄金回旋已完成 · Lesson 4: Pay your respects.');
+  if(state.secrets.waited)node(root,'p','Some things are worth waiting for.');
   node(root,'p','累计跨区 '+state.progress.transitions+' 次；刷新后回到当前区域的安全路口。','eyebrow');
 }
 export {profile,getStory};

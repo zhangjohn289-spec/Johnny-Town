@@ -1,6 +1,6 @@
-# Johnny Town — Phase 05C / Melody Lake & Gear Valley
+# Johnny Town — Phase 05D / Forgotten Ruins
 
-Phaser 3.90.0 + Vite 6.4.5 的 PC Only 像素探索个人网站。当前本地开发分支为 feature/phase05c-lake-valley，基于已验收的 Phase 05B。未推送、合并 main 或公开部署。
+Phaser 3.90.0 + Vite 6.4.5 的 PC Only 像素探索个人网站。当前本地开发分支为 feature/phase05d-forgotten-ruins，基于已验收的 Phase 05C。未推送、合并 main 或公开部署。
 
 **快速了解是基础功能，深入探索是可选体验。** 页眉“认识 Johnny [I]”无需解锁即可打开简短介绍、兴趣和项目概览；愿意探索的访客可从小镇北侧走入记忆森林。
 
@@ -46,3 +46,9 @@ npm.cmd --prefix prototype run preview -- --port 4201 --strictPort
 GitHub Actions 仍仅手动运行，publish 默认 false。本次在生产构建后增加新区域及产物隔离测试，没有触发远端任务、推送、部署或继续 05D。
 
 草甸东北前往旋律湖，东南前往机械谷，两者均可返回。新增湖畔与机械故事，M日志保留旧发现并展示13篇进度。新模块为expansion-data.js和landscape-renderer.js。
+
+## 遗忘遗迹
+
+草甸中央向北沿「苔痕石阶」按 E 进入，西南出口随时返回。九个秘密、三符文回旋机关、8秒等待之钟与可重读纪念碑。M日志新增独立秘密分类，不影响原13篇故事。
+
+[Phase 05D 开发报告](PHASE05D.md) · [验收记录](logs/phase05d-tests.md)。新单元测试：`node --test prototype/test-ruins.mjs`；浏览器验收：启动4200开发服务后运行`node prototype/test-ruins-browser.mjs`。

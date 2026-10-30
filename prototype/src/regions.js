@@ -1,3 +1,4 @@
+import {ruins} from './ruins-data.js';
 import {lake,valley,meadowPaths} from './expansion-data.js';
 import {places} from './config.js';
 import {woods} from './woods-data.js';
@@ -24,15 +25,14 @@ export const regions = {
     id:'meadow', name:'Frontier Meadow · 边境草甸', renderer:'meadow', width:64*TILE_SIZE, height:48*TILE_SIZE,
     bounds:{x:16,y:32,width:992,height:720}, trees:meadowTrees, places:[],
     collisions:[...treeWalls(meadowTrees), ...meadowFences],
-    paths:meadowPaths, spawns:{fromTown:{x:145,y:384},fromLake:{x:800,y:250},fromValley:{x:800,y:620}}, defaultSpawn:'fromTown',
-    exits:[{id:'to-town',name:'← Johnny Town',action:'返回',door:{x:50,y:384},to:'town',spawn:'fromMeadow'},{id:'to-lake',name:'旋律湖 ↗',action:'前往',door:{x:910,y:250},to:'lake',spawn:'fromMeadow'},{id:'to-valley',name:'机械谷 ↘',action:'前往',door:{x:940,y:620},to:'valley',spawn:'fromMeadow'}],
+    paths:meadowPaths, spawns:{fromTown:{x:145,y:384},fromRuins:{x:570,y:240},fromLake:{x:800,y:250},fromValley:{x:800,y:620}}, defaultSpawn:'fromTown',
+    exits:[{id:'to-ruins',name:'苔痕石阶 ↑',action:'探索',door:{x:570,y:140},to:'ruins',spawn:'fromMeadow'},{id:'to-town',name:'← Johnny Town',action:'返回',door:{x:50,y:384},to:'town',spawn:'fromMeadow'},{id:'to-lake',name:'旋律湖 ↗',action:'前往',door:{x:910,y:250},to:'lake',spawn:'fromMeadow'},{id:'to-valley',name:'机械谷 ↘',action:'前往',door:{x:940,y:620},to:'valley',spawn:'fromMeadow'}],
   },
-  woods, lake, valley,
+  woods, lake, valley, ruins,
 };
 
 export const regionList = [
   ...Object.values(regions).map(({id,name}) => ({id,name,available:true})),
-  {id:'ruins',name:'Forgotten Ruins · 遗忘遗迹',available:false},
 ];
 
 export function isSafePosition(region, point) {

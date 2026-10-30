@@ -1,6 +1,6 @@
 import {newStories} from './story-content.js';
 const place=(id,x,y,w,h,dx,dy)=>({id,storyId:id,kind:'story',name:newStories.find(s=>s.id===id).name,action:'阅读',x,y,w,h,door:{x:dx,y:dy}});
-export const meadowPaths=[[[50,384],[210,400],[350,350],[500,400],[640,340],[780,300],[910,250]],[[500,400],[550,510],[700,570],[800,550],[950,550],[940,620]]];
+export const meadowPaths=[[[500,400],[570,320],[570,140]],[[50,384],[210,400],[350,350],[500,400],[640,340],[780,300],[910,250]],[[500,400],[550,510],[700,570],[800,550],[950,550],[940,620]]];
 export const lakePaths=[[[50,600],[200,560],[350,600],[550,590],[720,560],[850,520]],[[200,560],[200,480],[240,360],[300,290]],[[550,590],[550,460]]];
 export const valleyPaths=[[[50,600],[180,560],[300,550],[420,490],[520,490],[700,580],[860,600]],[[520,490],[620,470],[640,360],[650,280],[820,280]]];
 export function pathDistance(paths,x,y){let best=Infinity;for(const path of paths)for(let i=1;i<path.length;i++){const [a,b]=path[i-1],[c,d]=path[i],dx=c-a,dy=d-b,t=Math.max(0,Math.min(1,((x-a)*dx+(y-b)*dy)/(dx*dx+dy*dy)));best=Math.min(best,Math.hypot(x-a-t*dx,y-b-t*dy));}return best;}
