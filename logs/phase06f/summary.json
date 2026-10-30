@@ -1,0 +1,33 @@
+{
+  "testedGameCommit": "625487208a43745868138ca9c91289d42c238c0a",
+  "unitTests": 56,
+  "browserFunctional": 97,
+  "suites": {
+    "activities": 8,
+    "audit": 11,
+    "forest": 13,
+    "hall": 7,
+    "lake-valley": 19,
+    "mobile": 10,
+    "npc": 9,
+    "ruins": 17,
+    "ruins-details": 3
+  },
+  "visualGeometry": 4,
+  "assets": [
+    {
+      "name": "ground-ua3-yTCd.png",
+      "sha256": "b4713e346ba2f17bb8046d9e8a8a7f10010329f0d10a2959f9f15e5288b711f8"
+    },
+    {
+      "name": "index-BFu-sRo8.js",
+      "sha256": "7c3a3bc44dedb70afcab2defda2533ac1a67d8392425b9840c6f72841b389947"
+    },
+    {
+      "name": "index-C6SPQUa5.css",
+      "sha256": "ee505bfbcc0f4039fc3a7ce6448c917cd2b9deca7da2cfca849a73a371325fe2"
+    }
+  ],
+  "decision": "READY FOR USER APPROVAL",
+  "publicBase": "d05d483e6c413fc31506c5004b42f3f55669277f"
+}

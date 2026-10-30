@@ -1,0 +1,153 @@
+{
+  "results": [
+    {
+      "name": "town quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "woods quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "meadow quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "meadow all exits walked and scenic composition",
+      "pass": true
+    },
+    {
+      "name": "lake quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "lake-stage reached and read",
+      "pass": true
+    },
+    {
+      "name": "rhythm-stones reached and read",
+      "pass": true
+    },
+    {
+      "name": "echoing-pier reached and read",
+      "pass": true
+    },
+    {
+      "name": "conductors-lantern reached and read",
+      "pass": true
+    },
+    {
+      "name": "valley quick introduction and clean journal",
+      "pass": true
+    },
+    {
+      "name": "first-gear reached and read",
+      "pass": true
+    },
+    {
+      "name": "unfinished-ideas reached and read",
+      "pass": true
+    },
+    {
+      "name": "great-transmission reached and read",
+      "pass": true
+    },
+    {
+      "name": "skyward-blueprint reached and read",
+      "pass": true
+    },
+    {
+      "name": "all 13 discoveries survive refresh and do not duplicate",
+      "pass": true
+    },
+    {
+      "name": "20 new-region transitions retain stable resources",
+      "pass": true
+    },
+    {
+      "name": "lake water and valley workshop collision with bounded cameras",
+      "pass": true
+    },
+    {
+      "name": "reduced motion freezes machinery and overlays fit small desktop",
+      "pass": true
+    },
+    {
+      "name": "no errors and short render sample",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "trips": [
+      309,
+      293,
+      300,
+      298,
+      293,
+      303,
+      291,
+      291,
+      293,
+      298,
+      291,
+      290,
+      303,
+      295,
+      295,
+      287,
+      291,
+      290,
+      295,
+      293,
+      298,
+      287,
+      287,
+      292,
+      292,
+      301,
+      287,
+      295,
+      292,
+      295,
+      290,
+      297,
+      297,
+      297
+    ],
+    "resources": {
+      "meadow": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "bodies": 1,
+        "static": 19,
+        "colliders": 1,
+        "children": 60,
+        "textures": 26
+      },
+      "lake": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "bodies": 1,
+        "static": 36,
+        "colliders": 1,
+        "children": 61,
+        "textures": 23
+      },
+      "valley": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "bodies": 1,
+        "static": 11,
+        "colliders": 1,
+        "children": 42,
+        "textures": 24
+      }
+    },
+    "fps": 60
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

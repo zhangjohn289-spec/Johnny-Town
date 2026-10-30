@@ -1,0 +1,10 @@
+{
+  "build_type": "workflow",
+  "url": "https://zhangjohn289-spec.github.io/Johnny-Town/",
+  "latestRun": {
+    "sha": "d05d483e6c413fc31506c5004b42f3f55669277f",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/zhangjohn289-spec/Johnny-Town/actions/runs/40984858740"
+  }
+}

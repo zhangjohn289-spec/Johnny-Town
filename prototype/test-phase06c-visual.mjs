@@ -3,7 +3,7 @@ import {createRequire} from 'node:module';import fs from 'node:fs';import assert
 const rects=[];let color;const g={setDepth(){return this;},fillStyle(c){color=c;return this;},fillRect(x,y,w,h){rects.push({color,x,y,w,h});return this;},lineStyle(){return this;},strokeCircle(){return this;}};
 drawCityHall({add:{graphics:()=>g,text:()=>({setOrigin(){return this;},setDepth(){return this;}})}},{x:140,y:390,w:168,h:90});
 const eave=rects.find(r=>r.color===0x45665c);assert.equal(eave.y+eave.h,391);
-const {chromium}=createRequire(import.meta.url)('C:/Users/mi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'),browser=await chromium.launch({headless:true,channel:'msedge'}),dir='logs/phase06c-visual';fs.mkdirSync(dir,{recursive:true});const results=[{name:'eave overlaps wall top by one pixel',pass:true}];
+const {chromium}=createRequire(import.meta.url)('C:/Users/mi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'),browser=await chromium.launch({headless:true,channel:'msedge'}),dir=process.env.QA_DIR||'logs/phase06c-visual';fs.mkdirSync(dir,{recursive:true});const results=[{name:'eave overlaps wall top by one pixel',pass:true}];
 try{for(const [width,height,touch] of [[1440,900,false],[844,390,true],[390,844,true]]){
  const page=await browser.newPage({viewport:{width,height},hasTouch:touch,isMobile:touch});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('http://127.0.0.1:4201/Johnny-Town/');await page.waitForFunction(()=>window.__town);
  await page.evaluate(()=>__town.scene.player.body.reset(224,510));await page.waitForTimeout(400);await page.screenshot({path:dir+`/hall-${width}.png`});

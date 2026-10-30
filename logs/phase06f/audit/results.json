@@ -1,0 +1,53 @@
+{
+  "results": [
+    {
+      "name": "save fixture fresh",
+      "pass": true
+    },
+    {
+      "name": "save fixture synthetic-pre06",
+      "pass": true
+    },
+    {
+      "name": "save fixture synthetic-phase06",
+      "pass": true
+    },
+    {
+      "name": "save fixture synthetic-both-complete",
+      "pass": true
+    },
+    {
+      "name": "save fixture malformed",
+      "pass": true
+    },
+    {
+      "name": "save fixture partial",
+      "pass": true
+    },
+    {
+      "name": "native NPC listeners and idle pause remain stable",
+      "pass": true
+    },
+    {
+      "name": "rhythm native listeners and animation frames cleaned after ten exits",
+      "pass": true
+    },
+    {
+      "name": "synthetic hidden state cancels and zero-score practice still completes",
+      "pass": true
+    },
+    {
+      "name": "private serving paths absent from preview and production bundle isolated",
+      "pass": true
+    },
+    {
+      "name": "no audit browser errors",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "framesAfterClose": 1
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

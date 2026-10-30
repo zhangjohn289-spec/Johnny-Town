@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "name": "375x667 touch viewport and dialogs",
+      "pass": true
+    },
+    {
+      "name": "667x375 touch viewport and dialogs",
+      "pass": true
+    },
+    {
+      "name": "390x844 touch viewport and dialogs",
+      "pass": true
+    },
+    {
+      "name": "844x390 touch viewport and dialogs",
+      "pass": true
+    },
+    {
+      "name": "768x1024 touch viewport and dialogs",
+      "pass": true
+    },
+    {
+      "name": "1024x768 touch viewport and dialogs",
+      "pass": true
+    },
+    {
+      "name": "real touch diagonal multitouch modal release and cancel",
+      "pass": true
+    },
+    {
+      "name": "touch hall shrine chest popup and unchanged save",
+      "pass": true
+    },
+    {
+      "name": "touch region changes ruins journal refresh and old save",
+      "pass": true
+    },
+    {
+      "name": "desktop keyboard and no browser errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}
