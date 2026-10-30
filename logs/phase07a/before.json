@@ -1,0 +1,821 @@
+{
+  "browser": "156.0.4314.50",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "errors": [],
+      "scene": {
+        "region": {
+          "id": "valley",
+          "name": "Gear Valley · 机械谷",
+          "renderer": "valley",
+          "width": 1024,
+          "height": 768,
+          "bounds": {
+            "x": 16,
+            "y": 32,
+            "width": 992,
+            "height": 720
+          },
+          "paths": [
+            [
+              [
+                50,
+                600
+              ],
+              [
+                180,
+                560
+              ],
+              [
+                300,
+                550
+              ],
+              [
+                420,
+                490
+              ],
+              [
+                520,
+                490
+              ],
+              [
+                700,
+                580
+              ],
+              [
+                860,
+                600
+              ]
+            ],
+            [
+              [
+                520,
+                490
+              ],
+              [
+                620,
+                470
+              ],
+              [
+                640,
+                360
+              ],
+              [
+                650,
+                280
+              ],
+              [
+                820,
+                280
+              ]
+            ]
+          ],
+          "places": [
+            {
+              "id": "first-gear",
+              "storyId": "first-gear",
+              "kind": "story",
+              "name": "第一枚齿轮",
+              "action": "阅读",
+              "x": 216,
+              "y": 470,
+              "w": 48,
+              "h": 40,
+              "door": {
+                "x": 240,
+                "y": 550
+              }
+            },
+            {
+              "id": "unfinished-ideas",
+              "storyId": "unfinished-ideas",
+              "kind": "story",
+              "name": "未完成的工坊",
+              "action": "阅读",
+              "x": 455,
+              "y": 360,
+              "w": 130,
+              "h": 90,
+              "door": {
+                "x": 520,
+                "y": 490
+              }
+            },
+            {
+              "id": "great-transmission",
+              "storyId": "great-transmission",
+              "kind": "story",
+              "name": "宏大传动",
+              "action": "阅读",
+              "x": 716,
+              "y": 460,
+              "w": 88,
+              "h": 62,
+              "door": {
+                "x": 760,
+                "y": 570
+              }
+            },
+            {
+              "id": "skyward-blueprint",
+              "storyId": "skyward-blueprint",
+              "kind": "story",
+              "name": "向天空的蓝图",
+              "action": "阅读",
+              "x": 750,
+              "y": 170,
+              "w": 140,
+              "h": 70,
+              "door": {
+                "x": 820,
+                "y": 280
+              }
+            },
+            {
+              "id": "power-bench",
+              "activityId": "gears",
+              "kind": "activity",
+              "name": "恢复工坊动力",
+              "region": "valley",
+              "action": "试一试",
+              "x": 710,
+              "y": 300,
+              "w": 60,
+              "h": 32,
+              "door": {
+                "x": 740,
+                "y": 370
+              }
+            }
+          ],
+          "trees": [
+            [
+              90,
+              260
+            ],
+            [
+              340,
+              650
+            ],
+            [
+              920,
+              430
+            ]
+          ],
+          "collisions": [
+            {
+              "x": 216,
+              "y": 470,
+              "w": 48,
+              "h": 40,
+              "kind": "landmark"
+            },
+            {
+              "x": 455,
+              "y": 360,
+              "w": 130,
+              "h": 90,
+              "kind": "landmark"
+            },
+            {
+              "x": 716,
+              "y": 460,
+              "w": 88,
+              "h": 62,
+              "kind": "landmark"
+            },
+            {
+              "x": 750,
+              "y": 170,
+              "w": 140,
+              "h": 70,
+              "kind": "landmark"
+            },
+            {
+              "x": 71,
+              "y": 236,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 321,
+              "y": 626,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 901,
+              "y": 406,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 100,
+              "y": 100,
+              "w": 240,
+              "h": 64,
+              "kind": "rock"
+            },
+            {
+              "x": 340,
+              "y": 200,
+              "w": 80,
+              "h": 80,
+              "kind": "rock"
+            },
+            {
+              "x": 600,
+              "y": 670,
+              "w": 240,
+              "h": 40,
+              "kind": "rock"
+            },
+            {
+              "x": 710,
+              "y": 300,
+              "w": 60,
+              "h": 32,
+              "kind": "activity"
+            }
+          ],
+          "spawns": {
+            "fromMeadow": {
+              "x": 150,
+              "y": 600
+            }
+          },
+          "defaultSpawn": "fromMeadow",
+          "exits": [
+            {
+              "id": "valley-return",
+              "name": "← 边境草甸",
+              "action": "返回",
+              "door": {
+                "x": 50,
+                "y": 600
+              },
+              "to": "meadow",
+              "spawn": "fromValley"
+            }
+          ]
+        },
+        "canvas": {
+          "width": 960,
+          "height": 640
+        },
+        "children": 42,
+        "textures": 22
+      }
+    },
+    {
+      "name": "tablet",
+      "width": 1024,
+      "height": 768,
+      "errors": [],
+      "scene": {
+        "region": {
+          "id": "valley",
+          "name": "Gear Valley · 机械谷",
+          "renderer": "valley",
+          "width": 1024,
+          "height": 768,
+          "bounds": {
+            "x": 16,
+            "y": 32,
+            "width": 992,
+            "height": 720
+          },
+          "paths": [
+            [
+              [
+                50,
+                600
+              ],
+              [
+                180,
+                560
+              ],
+              [
+                300,
+                550
+              ],
+              [
+                420,
+                490
+              ],
+              [
+                520,
+                490
+              ],
+              [
+                700,
+                580
+              ],
+              [
+                860,
+                600
+              ]
+            ],
+            [
+              [
+                520,
+                490
+              ],
+              [
+                620,
+                470
+              ],
+              [
+                640,
+                360
+              ],
+              [
+                650,
+                280
+              ],
+              [
+                820,
+                280
+              ]
+            ]
+          ],
+          "places": [
+            {
+              "id": "first-gear",
+              "storyId": "first-gear",
+              "kind": "story",
+              "name": "第一枚齿轮",
+              "action": "阅读",
+              "x": 216,
+              "y": 470,
+              "w": 48,
+              "h": 40,
+              "door": {
+                "x": 240,
+                "y": 550
+              }
+            },
+            {
+              "id": "unfinished-ideas",
+              "storyId": "unfinished-ideas",
+              "kind": "story",
+              "name": "未完成的工坊",
+              "action": "阅读",
+              "x": 455,
+              "y": 360,
+              "w": 130,
+              "h": 90,
+              "door": {
+                "x": 520,
+                "y": 490
+              }
+            },
+            {
+              "id": "great-transmission",
+              "storyId": "great-transmission",
+              "kind": "story",
+              "name": "宏大传动",
+              "action": "阅读",
+              "x": 716,
+              "y": 460,
+              "w": 88,
+              "h": 62,
+              "door": {
+                "x": 760,
+                "y": 570
+              }
+            },
+            {
+              "id": "skyward-blueprint",
+              "storyId": "skyward-blueprint",
+              "kind": "story",
+              "name": "向天空的蓝图",
+              "action": "阅读",
+              "x": 750,
+              "y": 170,
+              "w": 140,
+              "h": 70,
+              "door": {
+                "x": 820,
+                "y": 280
+              }
+            },
+            {
+              "id": "power-bench",
+              "activityId": "gears",
+              "kind": "activity",
+              "name": "恢复工坊动力",
+              "region": "valley",
+              "action": "试一试",
+              "x": 710,
+              "y": 300,
+              "w": 60,
+              "h": 32,
+              "door": {
+                "x": 740,
+                "y": 370
+              }
+            }
+          ],
+          "trees": [
+            [
+              90,
+              260
+            ],
+            [
+              340,
+              650
+            ],
+            [
+              920,
+              430
+            ]
+          ],
+          "collisions": [
+            {
+              "x": 216,
+              "y": 470,
+              "w": 48,
+              "h": 40,
+              "kind": "landmark"
+            },
+            {
+              "x": 455,
+              "y": 360,
+              "w": 130,
+              "h": 90,
+              "kind": "landmark"
+            },
+            {
+              "x": 716,
+              "y": 460,
+              "w": 88,
+              "h": 62,
+              "kind": "landmark"
+            },
+            {
+              "x": 750,
+              "y": 170,
+              "w": 140,
+              "h": 70,
+              "kind": "landmark"
+            },
+            {
+              "x": 71,
+              "y": 236,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 321,
+              "y": 626,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 901,
+              "y": 406,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 100,
+              "y": 100,
+              "w": 240,
+              "h": 64,
+              "kind": "rock"
+            },
+            {
+              "x": 340,
+              "y": 200,
+              "w": 80,
+              "h": 80,
+              "kind": "rock"
+            },
+            {
+              "x": 600,
+              "y": 670,
+              "w": 240,
+              "h": 40,
+              "kind": "rock"
+            },
+            {
+              "x": 710,
+              "y": 300,
+              "w": 60,
+              "h": 32,
+              "kind": "activity"
+            }
+          ],
+          "spawns": {
+            "fromMeadow": {
+              "x": 150,
+              "y": 600
+            }
+          },
+          "defaultSpawn": "fromMeadow",
+          "exits": [
+            {
+              "id": "valley-return",
+              "name": "← 边境草甸",
+              "action": "返回",
+              "door": {
+                "x": 50,
+                "y": 600
+              },
+              "to": "meadow",
+              "spawn": "fromValley"
+            }
+          ]
+        },
+        "canvas": {
+          "width": 640,
+          "height": 426
+        },
+        "children": 42,
+        "textures": 22
+      }
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "errors": [],
+      "scene": {
+        "region": {
+          "id": "valley",
+          "name": "Gear Valley · 机械谷",
+          "renderer": "valley",
+          "width": 1024,
+          "height": 768,
+          "bounds": {
+            "x": 16,
+            "y": 32,
+            "width": 992,
+            "height": 720
+          },
+          "paths": [
+            [
+              [
+                50,
+                600
+              ],
+              [
+                180,
+                560
+              ],
+              [
+                300,
+                550
+              ],
+              [
+                420,
+                490
+              ],
+              [
+                520,
+                490
+              ],
+              [
+                700,
+                580
+              ],
+              [
+                860,
+                600
+              ]
+            ],
+            [
+              [
+                520,
+                490
+              ],
+              [
+                620,
+                470
+              ],
+              [
+                640,
+                360
+              ],
+              [
+                650,
+                280
+              ],
+              [
+                820,
+                280
+              ]
+            ]
+          ],
+          "places": [
+            {
+              "id": "first-gear",
+              "storyId": "first-gear",
+              "kind": "story",
+              "name": "第一枚齿轮",
+              "action": "阅读",
+              "x": 216,
+              "y": 470,
+              "w": 48,
+              "h": 40,
+              "door": {
+                "x": 240,
+                "y": 550
+              }
+            },
+            {
+              "id": "unfinished-ideas",
+              "storyId": "unfinished-ideas",
+              "kind": "story",
+              "name": "未完成的工坊",
+              "action": "阅读",
+              "x": 455,
+              "y": 360,
+              "w": 130,
+              "h": 90,
+              "door": {
+                "x": 520,
+                "y": 490
+              }
+            },
+            {
+              "id": "great-transmission",
+              "storyId": "great-transmission",
+              "kind": "story",
+              "name": "宏大传动",
+              "action": "阅读",
+              "x": 716,
+              "y": 460,
+              "w": 88,
+              "h": 62,
+              "door": {
+                "x": 760,
+                "y": 570
+              }
+            },
+            {
+              "id": "skyward-blueprint",
+              "storyId": "skyward-blueprint",
+              "kind": "story",
+              "name": "向天空的蓝图",
+              "action": "阅读",
+              "x": 750,
+              "y": 170,
+              "w": 140,
+              "h": 70,
+              "door": {
+                "x": 820,
+                "y": 280
+              }
+            },
+            {
+              "id": "power-bench",
+              "activityId": "gears",
+              "kind": "activity",
+              "name": "恢复工坊动力",
+              "region": "valley",
+              "action": "试一试",
+              "x": 710,
+              "y": 300,
+              "w": 60,
+              "h": 32,
+              "door": {
+                "x": 740,
+                "y": 370
+              }
+            }
+          ],
+          "trees": [
+            [
+              90,
+              260
+            ],
+            [
+              340,
+              650
+            ],
+            [
+              920,
+              430
+            ]
+          ],
+          "collisions": [
+            {
+              "x": 216,
+              "y": 470,
+              "w": 48,
+              "h": 40,
+              "kind": "landmark"
+            },
+            {
+              "x": 455,
+              "y": 360,
+              "w": 130,
+              "h": 90,
+              "kind": "landmark"
+            },
+            {
+              "x": 716,
+              "y": 460,
+              "w": 88,
+              "h": 62,
+              "kind": "landmark"
+            },
+            {
+              "x": 750,
+              "y": 170,
+              "w": 140,
+              "h": 70,
+              "kind": "landmark"
+            },
+            {
+              "x": 71,
+              "y": 236,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 321,
+              "y": 626,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 901,
+              "y": 406,
+              "w": 38,
+              "h": 48,
+              "kind": "tree"
+            },
+            {
+              "x": 100,
+              "y": 100,
+              "w": 240,
+              "h": 64,
+              "kind": "rock"
+            },
+            {
+              "x": 340,
+              "y": 200,
+              "w": 80,
+              "h": 80,
+              "kind": "rock"
+            },
+            {
+              "x": 600,
+              "y": 670,
+              "w": 240,
+              "h": 40,
+              "kind": "rock"
+            },
+            {
+              "x": 710,
+              "y": 300,
+              "w": 60,
+              "h": 32,
+              "kind": "activity"
+            }
+          ],
+          "spawns": {
+            "fromMeadow": {
+              "x": 150,
+              "y": 600
+            }
+          },
+          "defaultSpawn": "fromMeadow",
+          "exits": [
+            {
+              "id": "valley-return",
+              "name": "← 边境草甸",
+              "action": "返回",
+              "door": {
+                "x": 50,
+                "y": 600
+              },
+              "to": "meadow",
+              "spawn": "fromValley"
+            }
+          ]
+        },
+        "canvas": {
+          "width": 640,
+          "height": 426
+        },
+        "children": 42,
+        "textures": 22
+      }
+    }
+  ]
+}
