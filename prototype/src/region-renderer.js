@@ -3,6 +3,7 @@ import {renderValley} from './valley-renderer.js';
 import {renderLandscape} from './landscape-renderer.js';
 import {buildArt,setupEnvironment} from './visuals.js';
 import {renderWoods} from './woods-renderer.js';
+import {attachNature} from './nature-effects.js';
 
 export function renderRegion(scene) {
   if(scene.region.renderer==='town') {
@@ -21,4 +22,5 @@ export function renderRegion(scene) {
     scene.add.text(x,y+28,'E · '+exit.action,{fontSize:'12px',fontFamily:'monospace',color:'#fff0c6',backgroundColor:'#4e6842',padding:{x:5,y:3}}).setOrigin(.5).setDepth(1000);
   }
   setupEnvironment(scene);
+  attachNature(scene);
 }

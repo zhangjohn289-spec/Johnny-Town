@@ -1,4 +1,5 @@
 import {distanceToPaths,inClearing,woodsClearings} from './woods-data.js';
+import {leafMass,ensureForestTrees} from './nature-art.js';
 
 const rect=(g,c,x,y,w,h,alpha=1)=>g.fillStyle(c,alpha).fillRect(Math.round(x),Math.round(y),w,h);
 function texture(scene,key,w,h,paint){
@@ -8,16 +9,7 @@ function texture(scene,key,w,h,paint){
   return key;
 }
 function leafCloud(g,x,y,w,h,seed=0){
-  const palette=[0x264d3b,0x396447,0x4f7951,0x69935b,0x8fac6b];
-  for(let row=0;row<h;row+=4)for(let col=0;col<w;col+=4){
-    const nx=(col-w/2)/(w/2),ny=(row-h/2)/(h/2);
-    if(nx*nx+ny*ny>1+((col+row+seed)%5)*.035)continue;
-    const hash=Math.imul((col*374761393)^(row*668265263)^seed,1274126177)>>>0;
-    const n=(hash^(hash>>>13))>>>0;
-    const shade=Math.min(4,Math.max(0,Math.floor((1-row/h)*2)+(n%5<2?1:0)+(n%13===0?1:0)));
-    rect(g,palette[shade],x+col,y+row,4,4);
-    if(n%7===0)rect(g,0xb3bf76,x+col+1,y+row,2,1);
-  }
+  leafMass(g,x,y,w,h,seed);
 }
 function woodsTextures(scene){
  texture(scene,'woods-ground',1024,768,g=>{
@@ -26,16 +18,17 @@ function woodsTextures(scene){
    const n=(x*13+y*19+(x*y)%113)%89,d=distanceToPaths(x+4,y+4);
    const clearing=woodsClearings.some(c=>Math.hypot(x-c.x,y-c.y)<c.r);
    const edge=Math.min(x,y,1024-x,768-y)<32;
-   let color=edge?0x304c38:clearing?0x74844c:[0x4b6841,0x526f43,0x587547,0x617d49][Math.floor(n/23)];
+   const patch=Math.sin(x/97)+Math.cos(y/113)+Math.sin((x-y)/149);
+   let color=edge?0x304c38:clearing?0x6d7e4c:patch>1?0x566e43:patch<-.6?0x3e5b3e:0x496640;
    if(d<31)color=d<23?(n<30?0xc5b27c:0xb5a471):0x8f8858;
    rect(g,color,x,y,8,8);
-   if(n<15)rect(g,d<28?0xa29465:0x84925b,x+2,y+3,3,2);
+   if(n<6)rect(g,d<28?0xa29465:0x7b8e58,x+2,y+3,3,2);
    if(n===41&&d>35)rect(g,0xd7bf80,x+2,y+1,2,2);
   }
   // Fallen leaves, moss and occasional stepping stones follow the path edges.
   for(let y=32;y<736;y+=17)for(let x=24;x<1000;x+=19){
    const d=distanceToPaths(x,y),n=(x*7+y*13)%47;
-   if(d>26&&d<45&&n<17){rect(g,n%2?0xa58d55:0xc7a16a,x,y,4,2);rect(g,0x677546,x+5,y+2,2,4);}
+   if(d>26&&d<45&&n<9){rect(g,n%2?0xa58d55:0xc7a16a,x,y,4,2);rect(g,0x677546,x+5,y+2,2,4);}
    if(d<18&&n<4){rect(g,0x8d9275,x,y,10,5);rect(g,0xc0be94,x+2,y,6,2);}
   }
   // Sunlit entrance, in small stepped patches rather than a screen-covering filter.
@@ -96,11 +89,11 @@ function woodsTextures(scene){
 }
 
 export function renderWoods(scene){
- const r=scene.region;scene.art={};woodsTextures(scene);
+ const r=scene.region;scene.art={};woodsTextures(scene);ensureForestTrees(scene);
  scene.add.image(0,0,'woods-ground').setOrigin(0).setDepth(-100);
  const floor=scene.add.graphics().setDepth(1);
  // Forest floor clusters stay off the routes and clearings. None secretly add collision.
- for(let i=0;i<210;i++){
+ for(let i=0;i<110;i++){
   const x=24+(i*137)%976,y=40+(i*79)%690;
   if(distanceToPaths(x,y)<39||inClearing(x,y,-6))continue;
   const c=i%3?0x749255:0x3b6248;
@@ -110,15 +103,7 @@ export function renderWoods(scene){
  }
  for(const [i,[x,y]] of r.trees.entries()){
   rect(floor,0x263e31,x-29,y-5,61,22,.4);
-  if(i%4===0){
-   const g=scene.add.graphics().setDepth(y+12);
-   rect(g,0x66533b,x-5,y-28,10,35);rect(g,0xa08b53,x-2,y-18,3,23);
-   for(let k=0;k<6;k++){
-    const w=16+k*9,top=y-104+k*12;
-    rect(g,k%2?0x4f7651:0x355c44,x-w/2,top,w,16);
-    for(let dx=2;dx<w-2;dx+=4){const lift=(dx*13+k*7)%9;rect(g,0x648550,x-w/2+dx,top+lift,4,3);if(dx%3===0)rect(g,0x91a265,x-w/2+dx,top+lift,2,1);}
-   }
-  }else scene.add.image(x-40,y-76,i%2?'treeB':'tree').setOrigin(0).setTint(i%3===0?0xb0bf8a:0x95b492).setDepth(y+12);
+  scene.add.image(x-40,y-76,'nature-forest-tree-'+(i%4===0?2:i%7===0?3:i%2)).setOrigin(0).setDepth(y+12);
  }
  for(const w of r.collisions.filter(w=>w.kind==='rock')){
   const g=scene.add.graphics().setDepth(w.y+w.h);rect(g,0x374d3b,w.x-3,w.y+15,w.w+9,12,.5);

@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "name": "woods desktop rendered at gameplay scale",
+      "pass": true
+    }
+  ],
+  "geometry": {
+    "town": "06570304c1f7bc1a3434432bf9e2fd13d1c6a5fe2fbff5c4148ce7ca991c079d",
+    "meadow": "13a0499f755d80ec3a3eeb873c2d151c526444334dc929f3b13a64663903fedd",
+    "woods": "33ecf18300622e07f4d6bc4536108a80bbd2c32caf55e1fd77c1d1154cf8737a",
+    "lake": "9b3fdf7ad70d8e6cefee530d45d474d12b3116dfdfc5160b1d7794bcb7488b0e",
+    "valley": "a727da9931aee9f658326bba25b3bbf617592f2289db23551c7eca1394e0a877",
+    "ruins": "732a5693aeedfd870c41667f9fc82b2b1086acc2dec8b5d3f24931cc2fae8c91"
+  },
+  "metrics": {
+    "woods": {
+      "fps": 59.4375,
+      "frameMedian": 16.699999999999818,
+      "frameP95": 16.800000000000182,
+      "heap": 30774710,
+      "children": 241,
+      "textures": 33,
+      "bodies": 1,
+      "static": 108,
+      "E": 1,
+      "ambient": {
+        "region": "woods",
+        "disposed": false,
+        "graphics": 4,
+        "counts": {
+          "grass": 6,
+          "canopy": 6,
+          "reeds": 0,
+          "ripples": 0,
+          "leaves": 2,
+          "dust": 0
+        }
+      }
+    }
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

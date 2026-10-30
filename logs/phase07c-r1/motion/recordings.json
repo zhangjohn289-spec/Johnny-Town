@@ -1,0 +1,34 @@
+[
+  {
+    "id": "woods",
+    "file": "C:\\Users\\mi\\Desktop\\Johnny-Town\\logs\\phase07c-r1\\motion\\woods.webm",
+    "bytes": 1169150,
+    "width": 960,
+    "height": 640,
+    "requestedSeconds": 16
+  },
+  {
+    "id": "lake",
+    "file": "C:\\Users\\mi\\Desktop\\Johnny-Town\\logs\\phase07c-r1\\motion\\lake.webm",
+    "bytes": 856217,
+    "width": 960,
+    "height": 640,
+    "requestedSeconds": 16
+  },
+  {
+    "id": "meadow",
+    "file": "C:\\Users\\mi\\Desktop\\Johnny-Town\\logs\\phase07c-r1\\motion\\meadow.webm",
+    "bytes": 869241,
+    "width": 960,
+    "height": 640,
+    "requestedSeconds": 16
+  },
+  {
+    "id": "ruins",
+    "file": "C:\\Users\\mi\\Desktop\\Johnny-Town\\logs\\phase07c-r1\\motion\\ruins.webm",
+    "bytes": 775445,
+    "width": 960,
+    "height": 640,
+    "requestedSeconds": 16
+  }
+]

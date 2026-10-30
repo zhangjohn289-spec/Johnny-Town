@@ -34,6 +34,6 @@ export function animateArt(scene,time,x,y){
  scene.player.setDepth(scene.player.y+16);scene.shadow.setPosition(scene.player.x,scene.player.y+14);
  const moving=!!(x||y);if(moving)scene.facing=Math.abs(x)>Math.abs(y)?(x<0?2:3):(y<0?1:0);
  if(moving&&!scene.reduced)scene.walker.play('walk-'+scene.facing,true);else{scene.walker.stop();scene.walker.setFrame(scene.facing*4);}
- const g=scene.environment;g.clear();if(!scene.reduced){for(let i=0;i<8;i++){const px=120+i*94+Math.floor(Math.sin(time/4000+i)*12),py=430+Math.floor(Math.sin(time/3200+i*2)*42);g.fillStyle(0xeadb91,.4).fillRect(px,py,2,2);}}
+ const g=scene.environment;g.clear();if(!scene.natureEffects&&!scene.reduced){for(let i=0;i<8;i++){const px=120+i*94+Math.floor(Math.sin(time/4000+i)*12),py=430+Math.floor(Math.sin(time/3200+i*2)*42);g.fillStyle(0xeadb91,.4).fillRect(px,py,2,2);}}
  for(const [id,image] of Object.entries(scene.art))image.setTint(scene.target?.id===id?0xffedc2:0xffffff);
 }

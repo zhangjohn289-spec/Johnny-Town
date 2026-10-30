@@ -1,5 +1,6 @@
 import {pathDistance} from './expansion-data.js';
 import {createGoldenStones} from './golden-stones.js';
+import {decorationSafe} from './nature-config.js';
 export function renderRuins(s){
  s.art={};const r=s.region,g=s.add.graphics().setDepth(-100);
  const box=(c,x,y,w,h)=>g.fillStyle(c).fillRect(x,y,w,h);
@@ -10,14 +11,22 @@ export function renderRuins(s){
    if(seed%13!==0){box([0x858b79,0x939580,0x757f71][seed%3],x,y,8,8);if(x%16===0)box(0x53665b,x,y,1,8);if(y%16===0)box(0xb0ad8e,x+1,y,7,1);if(seed%11===0&&x%16===0&&y%16===0)box(0x526a51,x+2,y+2,4,3);if(seed%7===0){box(0x505f55,x+3,y,1,4);box(0x505f55,x+4,y+4,3,1);}}
   }else if(n%31===0&&patch>-.3){box(0x67815c,x+1,y+3,5,2);box(0x79906a,x+2,y+1,2,4);}
  }
- for(const w of r.collisions.filter(w=>w.kind==='wall')){box(0x313e3e,w.x,w.y,w.w,w.h);for(let x=w.x;x<w.x+w.w;x+=24){box(0x818777,x,w.y-15,20,w.h);box(0x667e50,x,w.y-15,15,6);box(0xb1af90,x+2,w.y-14,13,2);box(0x4d5c50,x+9,w.y-3,1,13);}}
+ for(const w of r.collisions.filter(w=>w.kind==='wall')){
+  box(0x2e403b,w.x,w.y,w.w,w.h);
+  for(let x=w.x;x<w.x+w.w;x+=24){const i=Math.floor((x-w.x)/24),chip=[12,5,16,9][i%4],width=Math.min(22,w.x+w.w-x);
+   box(0x737e70,x,w.y-chip,width,w.h+chip-3);box(0x9da38b,x+2,w.y-chip,Math.max(1,width-5),3);box(0x4b5e52,x+width-4,w.y-chip+4,4,w.h+chip-7);
+   for(let y=w.y+8;y<w.y+w.h-5;y+=13){box(0x4a5e50,x+1,y,width-4,1);box(0x8b9580,x+2,y+2,width-7,1);}
+   box(0x43594b,x+8,w.y-chip+4,1,7);box(0x43594b,x+9,w.y-chip+11,4,1);box(0x617c51,x,w.y-chip+1,8+(i%3)*3,3);if(i%2===0)box(0x6d8759,x+1,w.y+16,5,9);
+  }
+ }
  // Moss, scattered chips and a quiet courtyard use deterministic placements.
- for(let i=0;i<70;i++){const x=40+(i*131)%940,y=40+(i*79)%680;if(pathDistance(r.paths,x,y)>40){box(0x73905f,x,y,9,4);box(0x93a181,x+3,y-3,5,3);}}
+ for(let i=0;i<65;i++){const x=40+(i*131)%940,y=40+(i*79)%680;if(decorationSafe(r,x,y)){box(0x5d7953,x,y,10,4);box(0x81946d,x+2,y-2,6,2);if(i%3===0){box(0x687e6b,x+11,y+3,7,4);box(0xa1a58a,x+12,y+2,4,2);}}}
  for(let i=0;i<14;i++){const x=135+(i*37)%140,y=245+(i*23)%70;box(0x789660,x,y,9,5);box(0xc6c398,x+2,y-3,3,3);}
  // Broken columns mark the approach; small rubble stays decorative.
  for(const [i,[x,y]] of [[80,90],[340,110],[940,340],[90,550],[500,720]].entries()){
   const height=[42,30,51,35,25][i];box(0x2d443a,x-9,y+8,46,14);box(0x687766,x-5,y+4,34,12);box(0x949a82,x,y-height,24,height+5);box(0xb0b399,x+3,y-height,4,height);box(0x6d7c6a,x+18,y-height+5,5,height-5);box(0xadae90,x-3,y-height-5,17,7);box(0x75846d,x+14,y-height+1,13,6);box(0x455e4b,x+9,y-height+8,2,15);box(0x78925d,x-3,y+4,24,5);
   box(0x8a927c,x+30,y+9,14,8);box(0xb0ae8d,x+32,y+7,8,3);
+  box(0x4c6150,x+10,y-height+8,2,9);box(0x4c6150,x+7,y-height+17,4,2);box(0x7a8c69,x+2,y+2,7,5);box(0x526e4d,x+21,y+6,6,4);
  }
  // Fallen masonry and corroded conduits occupy the old open courtyard.
  for(let i=0;i<5;i++){box(0x6b7d68,120+i*23,275+(i%2)*4,20,18);box(0xa0a58b,122+i*23,276+(i%2)*4,16,4);}
