@@ -1,0 +1,27 @@
+PASS priority normal movement chest
+PASS priority normal movement town-clerk
+PASS priority normal movement forest-archivist
+PASS priority normal movement traveling-explorer
+PASS priority normal movement mechanical-apprentice
+PASS priority normal movement golden
+PASS priority normal movement safe-chest
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ '{"version":2,"regionId":"ruins","spawnId":"fromMeadow","discovered":["town","ruins"],"progress":{"transitions":0},"activities":{"rhythm":false,"gears":false},"secrets":{"found":[],"golden":false,"waited":false},"goldenTrial":{"stage":0},"stories":[]}'
+- '{"version":2,"regionId":"ruins","spawnId":"fromMeadow","discovered":["town","ruins"],"progress":{"transitions":0},"activities":{"rhythm":false,"gears":false},"secrets":{"found":["golden","safe-chest"],"golden":false,"waited":false},"goldenTrial":{"stage":1},"stories":[]}'
+
+    at file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-reachability-journey.mjs:21:177 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '{"version":2,"regionId":"ruins","spawnId":"fromMeadow","discovered":["town","ruins"],"progress":{"transitions":0},"activities":{"rhythm":false,"gears":false},"secrets":{"found":[],"golden":false,"waited":false},"goldenTrial":{"stage":0},"stories":[]}',
+  expected: '{"version":2,"regionId":"ruins","spawnId":"fromMeadow","discovered":["town","ruins"],"progress":{"transitions":0},"activities":{"rhythm":false,"gears":false},"secrets":{"found":["golden","safe-chest"],"golden":false,"waited":false},"goldenTrial":{"stage":1},"stories":[]}',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

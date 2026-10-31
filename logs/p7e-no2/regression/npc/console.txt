@@ -1,0 +1,9 @@
+PASS town-clerk walked two branches close and repeat
+PASS mechanical-apprentice walked two branches close and repeat
+PASS traveling-explorer walked two branches close and repeat
+PASS forest-archivist walked two branches close and repeat
+PASS missing dialogue readable fallback and close
+PASS 20 transitions clean NPC count input handlers and resources
+PASS 844 mobile all four NPCs choice and close
+PASS 390 mobile all four NPCs choice and close
+PASS no errors

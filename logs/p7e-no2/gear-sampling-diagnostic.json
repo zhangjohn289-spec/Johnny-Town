@@ -1,0 +1,69 @@
+{
+  "note": "Offline analysis of unchanged accepted frameAt quantization. This is not a browser pass or a threshold change.",
+  "sampleIntervals": 30000,
+  "intervalMs": 900,
+  "overExistingTestThreshold": 4011,
+  "maxResidual": 24,
+  "examples": [
+    {
+      "time": 18,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 19,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 20,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 21,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 22,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 23,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 24,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 25,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 26,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    },
+    {
+      "time": 27,
+      "large": 7,
+      "medium": -8,
+      "residual": 24
+    }
+  ]
+}

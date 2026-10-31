@@ -1,0 +1,399 @@
+{
+  "results": [
+    {
+      "name": "30 measured active-input mixed transitions retain focus/touch listeners and objects after warmup",
+      "pass": true,
+      "counts": {
+        "woods": {
+          "children": 241,
+          "textures": 45,
+          "bodies": 1,
+          "static": 108,
+          "E": 1,
+          "document": {
+            "focusin": 1,
+            "focusout": 1,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#game": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#stick": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 1,
+            "pointerup": 1,
+            "pointercancel": 1,
+            "lostpointercapture": 1,
+            "click": 0,
+            "close": 0
+          },
+          "#touch-interact": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 1,
+            "close": 0
+          },
+          "#panel": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 2
+          }
+        },
+        "town": {
+          "children": 39,
+          "textures": 44,
+          "bodies": 1,
+          "static": 9,
+          "E": 1,
+          "document": {
+            "focusin": 1,
+            "focusout": 1,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#game": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#stick": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 1,
+            "pointerup": 1,
+            "pointercancel": 1,
+            "lostpointercapture": 1,
+            "click": 0,
+            "close": 0
+          },
+          "#touch-interact": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 1,
+            "close": 0
+          },
+          "#panel": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 2
+          }
+        },
+        "meadow": {
+          "children": 64,
+          "textures": 44,
+          "bodies": 1,
+          "static": 19,
+          "E": 1,
+          "document": {
+            "focusin": 1,
+            "focusout": 1,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#game": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#stick": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 1,
+            "pointerup": 1,
+            "pointercancel": 1,
+            "lostpointercapture": 1,
+            "click": 0,
+            "close": 0
+          },
+          "#touch-interact": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 1,
+            "close": 0
+          },
+          "#panel": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 2
+          }
+        },
+        "lake": {
+          "children": 65,
+          "textures": 41,
+          "bodies": 1,
+          "static": 36,
+          "E": 1,
+          "document": {
+            "focusin": 1,
+            "focusout": 1,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#game": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#stick": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 1,
+            "pointerup": 1,
+            "pointercancel": 1,
+            "lostpointercapture": 1,
+            "click": 0,
+            "close": 0
+          },
+          "#touch-interact": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 1,
+            "close": 0
+          },
+          "#panel": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 2
+          }
+        },
+        "valley": {
+          "children": 50,
+          "textures": 42,
+          "bodies": 1,
+          "static": 11,
+          "E": 1,
+          "document": {
+            "focusin": 1,
+            "focusout": 1,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#game": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#stick": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 1,
+            "pointerup": 1,
+            "pointercancel": 1,
+            "lostpointercapture": 1,
+            "click": 0,
+            "close": 0
+          },
+          "#touch-interact": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 1,
+            "close": 0
+          },
+          "#panel": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 2
+          }
+        },
+        "ruins": {
+          "children": 62,
+          "textures": 56,
+          "bodies": 1,
+          "static": 16,
+          "E": 1,
+          "document": {
+            "focusin": 1,
+            "focusout": 1,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#game": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 0
+          },
+          "#stick": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 1,
+            "pointermove": 1,
+            "pointerup": 1,
+            "pointercancel": 1,
+            "lostpointercapture": 1,
+            "click": 0,
+            "close": 0
+          },
+          "#touch-interact": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 1,
+            "close": 0
+          },
+          "#panel": {
+            "focusin": 0,
+            "focusout": 0,
+            "pointerdown": 0,
+            "pointermove": 0,
+            "pointerup": 0,
+            "pointercancel": 0,
+            "lostpointercapture": 0,
+            "click": 0,
+            "close": 2
+          }
+        }
+      }
+    },
+    {
+      "name": "actual headless tab switch observation",
+      "status": "Not tested: headless browser did not background page",
+      "observation": {
+        "hidden": false,
+        "events": [],
+        "touch": {
+          "x": 1,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "simulated visibility loss resets input",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

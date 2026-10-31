@@ -1,0 +1,7 @@
+PASS hall walked and four sections keyboard focus close
+PASS hall blocks body and all old town routes walked
+PASS chest explicit safe external link no media before action
+PASS save remains byte-identical through hall and chest
+PASS shrine persists across hall and journal intact
+PASS all six regions roundtrip shortcuts and preserved discoveries
+PASS small desktop readable hall and no page errors

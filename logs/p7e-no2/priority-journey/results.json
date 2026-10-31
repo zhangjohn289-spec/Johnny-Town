@@ -1,0 +1,218 @@
+{
+  "results": [
+    {
+      "id": "chest",
+      "region": "town",
+      "position": {
+        "x": 725.8219358184126,
+        "y": 426.0866180873224
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "百宝箱 — 点右侧按钮 打开",
+          "title": "百宝箱",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "百宝箱 — 点右侧按钮 打开",
+          "title": "百宝箱",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "town-clerk",
+      "region": "town",
+      "position": {
+        "x": 337.45364538398155,
+        "y": 416.02359565259667
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "市政书记员 — 点右侧按钮 交谈",
+          "title": "市政书记员",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "市政书记员 — 点右侧按钮 交谈",
+          "title": "市政书记员",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "town connected out-of-range E/tap rejection and save reload",
+      "position": {
+        "x": 64,
+        "y": 64
+      },
+      "setup": "controlled placement at BFS-connected safe point; no handler invocation",
+      "pass": true
+    },
+    {
+      "id": "forest-archivist",
+      "region": "woods",
+      "position": {
+        "x": 495.7201751539634,
+        "y": 395.5373215370834
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "森林档案员 — 点右侧按钮 交谈",
+          "title": "森林档案员",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "森林档案员 — 点右侧按钮 交谈",
+          "title": "森林档案员",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "nearby crossroads does not steal closer NPC; repeated E/tap",
+      "position": {
+        "x": 463.3897194435424,
+        "y": 471.1217457057768
+      },
+      "target": "forest-archivist",
+      "pass": true
+    },
+    {
+      "name": "woods connected out-of-range E/tap rejection and save reload",
+      "position": {
+        "x": 112,
+        "y": 64
+      },
+      "setup": "controlled placement at BFS-connected safe point; no handler invocation",
+      "pass": true
+    },
+    {
+      "id": "traveling-explorer",
+      "region": "meadow",
+      "position": {
+        "x": 427.91666666666737,
+        "y": 384
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "旅行探险家 — 点右侧按钮 交谈",
+          "title": "旅行探险家",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "旅行探险家 — 点右侧按钮 交谈",
+          "title": "旅行探险家",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "meadow connected out-of-range E/tap rejection and save reload",
+      "position": {
+        "x": 64,
+        "y": 64
+      },
+      "setup": "controlled placement at BFS-connected safe point; no handler invocation",
+      "pass": true
+    },
+    {
+      "id": "mechanical-apprentice",
+      "region": "valley",
+      "position": {
+        "x": 615.1353620126065,
+        "y": 513.1155459926115
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "机械学徒 — 点右侧按钮 交谈",
+          "title": "机械学徒",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "机械学徒 — 点右侧按钮 交谈",
+          "title": "机械学徒",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "valley connected out-of-range E/tap rejection and save reload",
+      "position": {
+        "x": 64,
+        "y": 64
+      },
+      "setup": "controlled placement at BFS-connected safe point; no handler invocation",
+      "pass": true
+    },
+    {
+      "id": "golden",
+      "region": "ruins",
+      "position": {
+        "x": 663.0064694514703,
+        "y": 354.3589460683959
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "黄金回旋之石 — 点右侧按钮 聆听",
+          "title": "黄金回旋之石",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "黄金回旋之石 — 点右侧按钮 重读",
+          "title": "黄金回旋之石",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "safe-chest",
+      "region": "ruins",
+      "position": {
+        "x": 856.2644171911069,
+        "y": 366.1732188189053
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "绝对安全的宝箱 — 点右侧按钮 查看",
+          "title": "绝对安全的宝箱",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "绝对安全的宝箱 — 点右侧按钮 查看",
+          "title": "绝对安全的宝箱",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "errors": []
+}

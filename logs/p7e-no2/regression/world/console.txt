@@ -1,0 +1,191 @@
+PASS Phase04 visual texture cache and town framing
+PASS actual keyboard walking reaches both road exits without teleporting through walls
+PASS existing fortune persists through travel and safe meadow entry
+PASS camera scroll and all four bounds with physical movement
+PASS meadow trees and fences block movement; road stays traversable
+PASS refresh restores safe checkpoint, discoveries and fortune
+PASS world navigation locks motion, restores focus, lists future regions without links
+PASS 20 cached transitions retain one set of bodies, colliders and listeners
+{
+  "results": [
+    {
+      "name": "Phase04 visual texture cache and town framing",
+      "pass": true
+    },
+    {
+      "name": "actual keyboard walking reaches both road exits without teleporting through walls",
+      "pass": true
+    },
+    {
+      "name": "existing fortune persists through travel and safe meadow entry",
+      "pass": true
+    },
+    {
+      "name": "camera scroll and all four bounds with physical movement",
+      "pass": true
+    },
+    {
+      "name": "meadow trees and fences block movement; road stays traversable",
+      "pass": true
+    },
+    {
+      "name": "refresh restores safe checkpoint, discoveries and fortune",
+      "pass": true
+    },
+    {
+      "name": "world navigation locks motion, restores focus, lists future regions without links",
+      "pass": true
+    },
+    {
+      "name": "20 cached transitions retain one set of bodies, colliders and listeners",
+      "pass": true
+    },
+    {
+      "name": "movement remains 175 px/s and diagonal normalized after repeated travel",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(Math.abs(await page.evaluate(()=>__town.scene.player.body.velocity.length())-175)<.001)\n"
+    }
+  ],
+  "metrics": {
+    "transitions": [
+      {
+        "destination": "meadow",
+        "ms": 289
+      },
+      {
+        "destination": "town",
+        "ms": 294
+      },
+      {
+        "destination": "meadow",
+        "ms": 294
+      },
+      {
+        "destination": "town",
+        "ms": 293
+      },
+      {
+        "destination": "meadow",
+        "ms": 290
+      },
+      {
+        "destination": "town",
+        "ms": 302
+      },
+      {
+        "destination": "meadow",
+        "ms": 298
+      },
+      {
+        "destination": "town",
+        "ms": 296
+      },
+      {
+        "destination": "meadow",
+        "ms": 292
+      },
+      {
+        "destination": "town",
+        "ms": 288
+      },
+      {
+        "destination": "meadow",
+        "ms": 303
+      },
+      {
+        "destination": "town",
+        "ms": 301
+      },
+      {
+        "destination": "meadow",
+        "ms": 300
+      },
+      {
+        "destination": "town",
+        "ms": 298
+      },
+      {
+        "destination": "meadow",
+        "ms": 300
+      },
+      {
+        "destination": "town",
+        "ms": 299
+      },
+      {
+        "destination": "meadow",
+        "ms": 299
+      },
+      {
+        "destination": "town",
+        "ms": 298
+      },
+      {
+        "destination": "meadow",
+        "ms": 297
+      },
+      {
+        "destination": "town",
+        "ms": 291
+      },
+      {
+        "destination": "meadow",
+        "ms": 303
+      },
+      {
+        "destination": "town",
+        "ms": 288
+      }
+    ],
+    "heapBefore": 7324624,
+    "heapAfter": 7905672,
+    "resources": {
+      "town": {
+        "region": "town",
+        "E": 1,
+        "M": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 9,
+        "colliders": 1,
+        "children": 39,
+        "textures": 29,
+        "shutdown": 19
+      },
+      "meadow": {
+        "region": "meadow",
+        "E": 1,
+        "M": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 19,
+        "colliders": 1,
+        "children": 64,
+        "textures": 29,
+        "shutdown": 20
+      }
+    }
+  },
+  "errors": [],
+  "failed": []
+}
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(Math.abs(await page.evaluate(()=>__town.scene.player.body.velocity.length())-175)<.001)
+
+    at file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-world-browser.mjs:93:11
+    at async group (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-world-browser.mjs:12:34)
+    at async file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-world-browser.mjs:90:2 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

@@ -1,0 +1,14 @@
+[
+  {
+    "suite": "priority-journey",
+    "exitCode": 1
+  },
+  {
+    "suite": "world-rerun",
+    "exitCode": 0
+  },
+  {
+    "suite": "gears-rerun",
+    "exitCode": 0
+  }
+]

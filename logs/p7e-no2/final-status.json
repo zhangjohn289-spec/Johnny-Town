@@ -1,0 +1,20 @@
+{
+  "branch": "codex/p7e-no2-interaction-reachability",
+  "baseline": "93fd79b0428abb0c9fac342eb6335bcb80f6fe7c",
+  "inventory": 45,
+  "buildingsExcluded": 6,
+  "exitsUnchanged": 10,
+  "objectsAudited": 29,
+  "corrected": 26,
+  "unchangedFootprints": 3,
+  "activationPasses": 286,
+  "intentionallyInaccessibleSamples": 4,
+  "unitTests": 98,
+  "regressionSuites": 19,
+  "regressionPassingRecords": 281,
+  "initialWorldAndGearFailuresRetained": true,
+  "finalAffectedRerunsPass": true,
+  "physicalDevices": "not tested",
+  "ownerAcceptance": "pending",
+  "remoteOperations": false
+}

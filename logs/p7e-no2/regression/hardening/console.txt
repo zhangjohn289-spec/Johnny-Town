@@ -1,0 +1,18 @@
+PASS HUD owns movement keys; Tab and pointer return to focusable world
+PASS long HTML body scrolls by native keyboard with stationary game
+PASS desktop-touch canvas, scroll, modal bounds, focus return and 44px controls
+PASS desktop-touch cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation
+PASS desktop-touch resize and simulated lost capture/blur/pagehide stop movement
+PASS phone-portrait canvas, scroll, modal bounds, focus return and 44px controls
+PASS phone-portrait cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation
+PASS phone-portrait resize and simulated lost capture/blur/pagehide stop movement
+PASS phone-landscape canvas, scroll, modal bounds, focus return and 44px controls
+PASS phone-landscape cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation
+PASS phone-landscape resize and simulated lost capture/blur/pagehide stop movement
+PASS tablet-portrait canvas, scroll, modal bounds, focus return and 44px controls
+PASS tablet-portrait cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation
+PASS tablet-portrait resize and simulated lost capture/blur/pagehide stop movement
+PASS tablet-landscape canvas, scroll, modal bounds, focus return and 44px controls
+PASS tablet-landscape cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation
+PASS tablet-landscape resize and simulated lost capture/blur/pagehide stop movement
+PASS Reduced Motion freezes town/NPC ambient motion and removes dialog transitions

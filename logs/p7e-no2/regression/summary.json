@@ -1,0 +1,74 @@
+[
+  {
+    "suite": "world",
+    "exitCode": 1
+  },
+  {
+    "suite": "woods",
+    "exitCode": 0
+  },
+  {
+    "suite": "expansion",
+    "exitCode": 0
+  },
+  {
+    "suite": "ruins",
+    "exitCode": 0
+  },
+  {
+    "suite": "ruins-details",
+    "exitCode": 0
+  },
+  {
+    "suite": "hall",
+    "exitCode": 0
+  },
+  {
+    "suite": "mobile",
+    "exitCode": 0
+  },
+  {
+    "suite": "npc",
+    "exitCode": 0
+  },
+  {
+    "suite": "activities",
+    "exitCode": 0
+  },
+  {
+    "suite": "gears",
+    "exitCode": 1
+  },
+  {
+    "suite": "golden",
+    "exitCode": 0
+  },
+  {
+    "suite": "nature",
+    "exitCode": 0
+  },
+  {
+    "suite": "narrative",
+    "exitCode": 0
+  },
+  {
+    "suite": "movement",
+    "exitCode": 0
+  },
+  {
+    "suite": "hardening",
+    "exitCode": 0
+  },
+  {
+    "suite": "lifecycle",
+    "exitCode": 0
+  },
+  {
+    "suite": "rhythm",
+    "exitCode": 0
+  },
+  {
+    "suite": "journey",
+    "exitCode": 0
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "suite": "world",
+    "exitCode": 1,
+    "records": 9,
+    "passes": 8
+  },
+  {
+    "suite": "woods",
+    "exitCode": 0,
+    "records": 13,
+    "passes": 13
+  },
+  {
+    "suite": "expansion",
+    "exitCode": 0,
+    "records": 19,
+    "passes": 19
+  },
+  {
+    "suite": "ruins",
+    "exitCode": 0,
+    "records": 17,
+    "passes": 17
+  },
+  {
+    "suite": "ruins-details",
+    "exitCode": 0,
+    "records": 3,
+    "passes": 3
+  },
+  {
+    "suite": "hall",
+    "exitCode": 0,
+    "records": 7,
+    "passes": 7
+  },
+  {
+    "suite": "mobile",
+    "exitCode": 0,
+    "records": 10,
+    "passes": 10
+  },
+  {
+    "suite": "npc",
+    "exitCode": 0,
+    "records": 9,
+    "passes": 9
+  },
+  {
+    "suite": "activities",
+    "exitCode": 0,
+    "records": 8,
+    "passes": 8
+  },
+  {
+    "suite": "gears",
+    "exitCode": 1,
+    "records": 2,
+    "passes": 1
+  },
+  {
+    "suite": "golden",
+    "exitCode": 0,
+    "records": 30,
+    "passes": 30
+  },
+  {
+    "suite": "nature",
+    "exitCode": 0,
+    "records": 7,
+    "passes": 7
+  },
+  {
+    "suite": "narrative",
+    "exitCode": 0,
+    "records": 48,
+    "passes": 48
+  },
+  {
+    "suite": "movement",
+    "exitCode": 0,
+    "records": 17,
+    "passes": 17
+  },
+  {
+    "suite": "hardening",
+    "exitCode": 0,
+    "records": 23,
+    "passes": 23
+  },
+  {
+    "suite": "lifecycle",
+    "exitCode": 0,
+    "records": 3,
+    "passes": 2
+  },
+  {
+    "suite": "rhythm",
+    "exitCode": 0,
+    "records": 3,
+    "passes": 3
+  },
+  {
+    "suite": "journey",
+    "exitCode": 0,
+    "records": 16,
+    "passes": 16
+  },
+  {
+    "suite": "world-rerun",
+    "exitCode": 0,
+    "records": 13,
+    "passes": 13
+  },
+  {
+    "suite": "gears-rerun",
+    "exitCode": 0,
+    "records": 13,
+    "passes": 13
+  },
+  {
+    "suite": "phase02",
+    "exitCode": 0,
+    "records": 23,
+    "passes": 23
+  }
+]

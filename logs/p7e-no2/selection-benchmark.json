@@ -1,0 +1,32 @@
+[
+  {
+    "region": "town",
+    "calls": 50000,
+    "milliseconds": 26.244199999999978
+  },
+  {
+    "region": "meadow",
+    "calls": 50000,
+    "milliseconds": 13.200600000000009
+  },
+  {
+    "region": "woods",
+    "calls": 50000,
+    "milliseconds": 61.220699999999965
+  },
+  {
+    "region": "lake",
+    "calls": 50000,
+    "milliseconds": 67.61009999999999
+  },
+  {
+    "region": "valley",
+    "calls": 50000,
+    "milliseconds": 46.55689999999993
+  },
+  {
+    "region": "ruins",
+    "calls": 50000,
+    "milliseconds": 86.68740000000003
+  }
+]

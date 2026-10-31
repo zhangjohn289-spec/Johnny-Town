@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "name": "town NPC reached and read with joystick/tap only",
+      "pass": true
+    },
+    {
+      "name": "joystick route to woods",
+      "pass": true
+    },
+    {
+      "name": "woods NPC reached and read with joystick/tap only",
+      "pass": true
+    },
+    {
+      "name": "joystick route to town",
+      "pass": true
+    },
+    {
+      "name": "joystick route to meadow",
+      "pass": true
+    },
+    {
+      "name": "meadow NPC reached and read with joystick/tap only",
+      "pass": true
+    },
+    {
+      "name": "joystick route to lake",
+      "pass": true
+    },
+    {
+      "name": "joystick route to meadow",
+      "pass": true
+    },
+    {
+      "name": "joystick route to valley",
+      "pass": true
+    },
+    {
+      "name": "valley NPC reached and read with joystick/tap only",
+      "pass": true
+    },
+    {
+      "name": "joystick route to meadow",
+      "pass": true
+    },
+    {
+      "name": "joystick route to ruins",
+      "pass": true
+    },
+    {
+      "name": "joystick route to meadow",
+      "pass": true
+    },
+    {
+      "name": "joystick route to town",
+      "pass": true
+    },
+    {
+      "name": "front and rear chest reachable with joystick and tap",
+      "pass": true,
+      "rear": {
+        "position": {
+          "x": 734.5620462504744,
+          "y": 405.94024595556937
+        },
+        "target": "chest"
+      }
+    },
+    {
+      "name": "six regions discovered and save reload retained",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

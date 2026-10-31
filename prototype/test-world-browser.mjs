@@ -88,6 +88,10 @@ try{
   assert.equal(await page.evaluate(()=>localStorage.getItem('johnny-town.fortune.v1')),metrics.fortune);
  });
  await group('movement remains 175 px/s and diagonal normalized after repeated travel',async()=>{
+  // No.1 intentionally gives a focused HUD button ownership of movement keys.
+  // This test measures gameplay speed, so return focus to the game first.
+  metrics.focusBeforeMovement=await page.evaluate(()=>({element:document.activeElement.id,uiOwnsKeyboard:__town.scene.uiOwnsKeyboard}));
+  await page.locator('#game').focus();
   for(const keys of [['d'],['d','s']]){
    await at(470,355);for(const k of keys)await page.keyboard.down(k);await page.waitForTimeout(100);
    assert.ok(Math.abs(await page.evaluate(()=>__town.scene.player.body.velocity.length())-175)<.001);

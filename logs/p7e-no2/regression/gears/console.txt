@@ -1,0 +1,21 @@
+PASS desktop normal gameplay scene and all five existing interactions
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(Math.abs(large*24+medium*18)<=21)
+
+    at file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-gear-valley-browser.mjs:29:81
+    at async check (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-gear-valley-browser.mjs:7:34)
+    at async file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-gear-valley-browser.mjs:24:3 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

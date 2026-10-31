@@ -1,0 +1,8 @@
+PASS rhythm reached and safe interrupted attempt
+PASS original rhythm actual time hits misses result and retry
+PASS gears reached fail reset solve retry and old records preserved
+PASS journal entries and repeated open close cleanup
+PASS 844 touch rhythm input cancel gear solve exit
+PASS 390 touch rhythm input cancel gear solve exit
+PASS 768 touch rhythm input cancel gear solve exit
+PASS no page errors

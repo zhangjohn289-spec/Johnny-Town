@@ -1,0 +1,7 @@
+PASS priority normal movement chest
+PASS priority normal movement town-clerk
+PASS priority normal movement forest-archivist
+PASS priority normal movement traveling-explorer
+PASS priority normal movement mechanical-apprentice
+PASS priority normal movement golden
+PASS priority normal movement safe-chest

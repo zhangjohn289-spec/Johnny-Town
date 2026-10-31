@@ -1,0 +1,165 @@
+{
+  "browser": "156.0.4314.50",
+  "url": "http://127.0.0.1:4511/Johnny-Town/",
+  "results": [
+    {
+      "name": "Phase04 visual texture cache and town framing",
+      "pass": true
+    },
+    {
+      "name": "actual keyboard walking reaches both road exits without teleporting through walls",
+      "pass": true
+    },
+    {
+      "name": "existing fortune persists through travel and safe meadow entry",
+      "pass": true
+    },
+    {
+      "name": "camera scroll and all four bounds with physical movement",
+      "pass": true
+    },
+    {
+      "name": "meadow trees and fences block movement; road stays traversable",
+      "pass": true
+    },
+    {
+      "name": "refresh restores safe checkpoint, discoveries and fortune",
+      "pass": true
+    },
+    {
+      "name": "world navigation locks motion, restores focus, lists future regions without links",
+      "pass": true
+    },
+    {
+      "name": "20 cached transitions retain one set of bodies, colliders and listeners",
+      "pass": true
+    },
+    {
+      "name": "movement remains 175 px/s and diagonal normalized after repeated travel",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(Math.abs(await page.evaluate(()=>__town.scene.player.body.velocity.length())-175)<.001)\n"
+    }
+  ],
+  "metrics": {
+    "transitions": [
+      {
+        "destination": "meadow",
+        "ms": 289
+      },
+      {
+        "destination": "town",
+        "ms": 294
+      },
+      {
+        "destination": "meadow",
+        "ms": 294
+      },
+      {
+        "destination": "town",
+        "ms": 293
+      },
+      {
+        "destination": "meadow",
+        "ms": 290
+      },
+      {
+        "destination": "town",
+        "ms": 302
+      },
+      {
+        "destination": "meadow",
+        "ms": 298
+      },
+      {
+        "destination": "town",
+        "ms": 296
+      },
+      {
+        "destination": "meadow",
+        "ms": 292
+      },
+      {
+        "destination": "town",
+        "ms": 288
+      },
+      {
+        "destination": "meadow",
+        "ms": 303
+      },
+      {
+        "destination": "town",
+        "ms": 301
+      },
+      {
+        "destination": "meadow",
+        "ms": 300
+      },
+      {
+        "destination": "town",
+        "ms": 298
+      },
+      {
+        "destination": "meadow",
+        "ms": 300
+      },
+      {
+        "destination": "town",
+        "ms": 299
+      },
+      {
+        "destination": "meadow",
+        "ms": 299
+      },
+      {
+        "destination": "town",
+        "ms": 298
+      },
+      {
+        "destination": "meadow",
+        "ms": 297
+      },
+      {
+        "destination": "town",
+        "ms": 291
+      },
+      {
+        "destination": "meadow",
+        "ms": 303
+      },
+      {
+        "destination": "town",
+        "ms": 288
+      }
+    ],
+    "heapBefore": 7324624,
+    "heapAfter": 7905672,
+    "resources": {
+      "town": {
+        "region": "town",
+        "E": 1,
+        "M": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 9,
+        "colliders": 1,
+        "children": 39,
+        "textures": 29,
+        "shutdown": 19
+      },
+      "meadow": {
+        "region": "meadow",
+        "E": 1,
+        "M": 1,
+        "load": 1,
+        "bodies": 1,
+        "staticBodies": 19,
+        "colliders": 1,
+        "children": 64,
+        "textures": 29,
+        "shutdown": 20
+      }
+    }
+  },
+  "errors": [],
+  "failed": []
+}

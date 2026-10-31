@@ -1,0 +1,7 @@
+PASS woods actual ambient frames, reduced motion, input and layering
+PASS lake actual ambient frames, reduced motion, input and layering
+PASS meadow actual ambient frames, reduced motion, input and layering
+PASS ruins actual ambient frames, reduced motion, input and layering
+PASS thirty mixed-region transitions dispose effects and preserve bounded resources
+PASS journal and persistent progress remain compatible after environmental changes
+PASS no browser runtime errors

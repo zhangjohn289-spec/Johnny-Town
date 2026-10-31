@@ -7,7 +7,4 @@ export const npcs=[
  {id:'forest-archivist',name:'森林档案员',region:'woods',position:{x:500,y:460},sprite:'npc-archivist',interactionRadius:54,dialogueId:'archivist',behavior:'idle',facing:'south'},
 ];
 export function dialogueNode(id,node='start',context){const graph=Object.hasOwn(dialogues,id)?dialogues[id]:null;return graph&&Object.hasOwn(graph,node)?(node==='start'&&context?narrativeStart(id,context):graph[node]):null;}
-export function chooseInteraction(existing,npcs,position){
- const nearest=list=>list.map(p=>({p,d:Math.hypot(position.x-p.door.x,position.y-p.door.y)})).filter(v=>v.d<(v.p.interactionRadius??75)).sort((a,b)=>a.d-b.d)[0]?.p;
- return nearest(existing)||nearest(npcs);
-}
+export {chooseInteraction} from './interaction-targeting.js';

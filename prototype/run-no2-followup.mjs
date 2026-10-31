@@ -1,0 +1,4 @@
+import fs from 'node:fs';import {spawnSync} from 'node:child_process';
+const tasks=[['priority-journey','test-reachability-journey.mjs'],['world-rerun','test-world-browser.mjs'],['gears-rerun','test-gear-valley-browser.mjs']],results=[];
+for(const [name,file] of tasks){const dir=`logs/p7e-no2/${name==='priority-journey'?'priority-journey':'regression/'+name}`;fs.mkdirSync(dir,{recursive:true});const r=spawnSync(process.execPath,[`prototype/${file}`],{encoding:'utf8',env:{...process.env,QA_DIR:dir,TEST_LOG_DIR:dir,TOWN_URL:'http://127.0.0.1:4511/Johnny-Town/'},timeout:600000});fs.writeFileSync(`${dir}/console.txt`,(r.stdout||'')+(r.stderr||''));results.push({suite:name,exitCode:r.status,error:r.error?.message});fs.writeFileSync('logs/p7e-no2/followup-summary.json',JSON.stringify(results,null,2));console.log(name,r.status);}
+if(results.some(r=>r.exitCode!==0))process.exitCode=1;

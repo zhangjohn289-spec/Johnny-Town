@@ -135,7 +135,7 @@ class WorldScene extends Phaser.Scene {
     this.player.body.setVelocity(0);
     if(isOpen()||this.interacting){animateArt(this,time,0,0);return;}
     const {x,y}=movePlayer(this);
-    this.target=chooseInteraction([...this.region.places,...this.region.exits],this.npcs,this.player);
+    this.target=chooseInteraction([...this.region.places,...this.region.exits],this.npcs,this.player,this.region.collisions);
     if(this.region.id==='ruins'&&(this.target?.id==='golden'||this.target?.kind==='rune')){
       const state=stoneState(this.goldenStage,this.target.id);
       this.target={...this.target,action:state==='completed'||state==='listening'?'重读':state==='awakened'||this.target.id==='golden'?'聆听':'查看'};

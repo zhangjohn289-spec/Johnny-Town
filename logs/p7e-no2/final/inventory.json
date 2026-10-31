@@ -1,0 +1,936 @@
+[
+  {
+    "id": "city-hall",
+    "kind": "municipal",
+    "name": "市政厅",
+    "action": "进入",
+    "x": 140,
+    "y": 390,
+    "w": 168,
+    "h": 90,
+    "door": {
+      "x": 224,
+      "y": 510
+    },
+    "region": "town",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 140,
+      "y": 390,
+      "w": 168,
+      "h": 90
+    }
+  },
+  {
+    "id": "home",
+    "name": "Johnny 的小屋",
+    "action": "进入",
+    "x": 130,
+    "y": 130,
+    "w": 180,
+    "h": 130,
+    "door": {
+      "x": 220,
+      "y": 285
+    },
+    "color": 13144418,
+    "region": "town",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 130,
+      "y": 130,
+      "w": 180,
+      "h": 130
+    }
+  },
+  {
+    "id": "shrine",
+    "name": "小神社",
+    "action": "抽签",
+    "x": 650,
+    "y": 120,
+    "w": 160,
+    "h": 140,
+    "door": {
+      "x": 730,
+      "y": 285
+    },
+    "color": 12739660,
+    "region": "town",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 650,
+      "y": 120,
+      "w": 160,
+      "h": 140
+    }
+  },
+  {
+    "id": "chest",
+    "name": "百宝箱",
+    "action": "打开",
+    "x": 700,
+    "y": 445,
+    "w": 65,
+    "h": 48,
+    "door": {
+      "x": 732,
+      "y": 520
+    },
+    "color": 13018185,
+    "region": "town",
+    "category": "object",
+    "bounds": {
+      "x": 700,
+      "y": 445,
+      "w": 65,
+      "h": 48
+    }
+  },
+  {
+    "id": "town-clerk",
+    "name": "市政书记员",
+    "region": "town",
+    "position": {
+      "x": 340,
+      "y": 490
+    },
+    "sprite": "npc-clerk",
+    "interactionRadius": 54,
+    "dialogueId": "clerk",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 340,
+      "y": 514
+    },
+    "bounds": {
+      "x": 324,
+      "y": 442,
+      "w": 32,
+      "h": 48
+    }
+  },
+  {
+    "id": "to-meadow",
+    "name": "边境草甸 →",
+    "action": "出发",
+    "door": {
+      "x": 885,
+      "y": 350
+    },
+    "to": "meadow",
+    "spawn": "fromTown",
+    "region": "town",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "to-woods",
+    "name": "记忆森林 ↑",
+    "action": "进入",
+    "door": {
+      "x": 500,
+      "y": 90
+    },
+    "to": "woods",
+    "spawn": "fromTown",
+    "region": "town",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "traveling-explorer",
+    "name": "旅行探险家",
+    "region": "meadow",
+    "position": {
+      "x": 430,
+      "y": 450
+    },
+    "sprite": "npc-explorer",
+    "interactionRadius": 54,
+    "dialogueId": "explorer",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 430,
+      "y": 474
+    },
+    "bounds": {
+      "x": 414,
+      "y": 402,
+      "w": 32,
+      "h": 48
+    }
+  },
+  {
+    "id": "to-ruins",
+    "name": "苔痕石阶 ↑",
+    "action": "探索",
+    "door": {
+      "x": 570,
+      "y": 140
+    },
+    "to": "ruins",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "to-town",
+    "name": "← Johnny Town",
+    "action": "返回",
+    "door": {
+      "x": 50,
+      "y": 384
+    },
+    "to": "town",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "to-lake",
+    "name": "旋律湖 ↗",
+    "action": "前往",
+    "door": {
+      "x": 910,
+      "y": 250
+    },
+    "to": "lake",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "to-valley",
+    "name": "机械谷 ↘",
+    "action": "前往",
+    "door": {
+      "x": 940,
+      "y": 620
+    },
+    "to": "valley",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "beginning",
+    "kind": "story",
+    "storyId": "beginning",
+    "name": "初始之地",
+    "action": "阅读",
+    "door": {
+      "x": 220,
+      "y": 610
+    },
+    "x": 198,
+    "y": 528,
+    "w": 44,
+    "h": 48,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 198,
+      "y": 528,
+      "w": 44,
+      "h": 48
+    }
+  },
+  {
+    "id": "crossroads",
+    "kind": "story",
+    "storyId": "crossroads",
+    "name": "命运岔路",
+    "action": "阅读",
+    "door": {
+      "x": 400,
+      "y": 460
+    },
+    "x": 374,
+    "y": 390,
+    "w": 36,
+    "h": 32,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 374,
+      "y": 390,
+      "w": 36,
+      "h": 32
+    }
+  },
+  {
+    "id": "echoing-tree",
+    "kind": "story",
+    "storyId": "echoing-tree",
+    "name": "回响之树",
+    "action": "聆听",
+    "door": {
+      "x": 690,
+      "y": 365
+    },
+    "x": 660,
+    "y": 260,
+    "w": 60,
+    "h": 56,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 660,
+      "y": 260,
+      "w": 60,
+      "h": 56
+    }
+  },
+  {
+    "id": "workshop",
+    "kind": "story",
+    "storyId": "workshop",
+    "name": "遗落工坊",
+    "action": "查看",
+    "door": {
+      "x": 720,
+      "y": 595
+    },
+    "x": 650,
+    "y": 480,
+    "w": 132,
+    "h": 72,
+    "region": "woods",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 650,
+      "y": 480,
+      "w": 132,
+      "h": 72
+    }
+  },
+  {
+    "id": "unwritten",
+    "kind": "story",
+    "storyId": "unwritten",
+    "name": "未书写之路",
+    "action": "阅读",
+    "door": {
+      "x": 890,
+      "y": 200
+    },
+    "x": 880,
+    "y": 140,
+    "w": 32,
+    "h": 24,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 880,
+      "y": 140,
+      "w": 32,
+      "h": 24
+    }
+  },
+  {
+    "id": "forest-archivist",
+    "name": "森林档案员",
+    "region": "woods",
+    "position": {
+      "x": 500,
+      "y": 460
+    },
+    "sprite": "npc-archivist",
+    "interactionRadius": 54,
+    "dialogueId": "archivist",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 500,
+      "y": 484
+    },
+    "bounds": {
+      "x": 484,
+      "y": 412,
+      "w": 32,
+      "h": 48
+    }
+  },
+  {
+    "id": "woods-to-town",
+    "name": "← Johnny Town",
+    "action": "返回",
+    "door": {
+      "x": 48,
+      "y": 640
+    },
+    "to": "town",
+    "spawn": "fromWoods",
+    "region": "woods",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "lake-stage",
+    "storyId": "lake-stage",
+    "kind": "story",
+    "name": "湖畔舞台",
+    "action": "阅读",
+    "x": 230,
+    "y": 200,
+    "w": 130,
+    "h": 50,
+    "door": {
+      "x": 300,
+      "y": 290
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 230,
+      "y": 200,
+      "w": 130,
+      "h": 50
+    }
+  },
+  {
+    "id": "rhythm-stones",
+    "storyId": "rhythm-stones",
+    "kind": "story",
+    "name": "节奏之石",
+    "action": "阅读",
+    "x": 160,
+    "y": 412,
+    "w": 80,
+    "h": 28,
+    "door": {
+      "x": 200,
+      "y": 480
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 160,
+      "y": 412,
+      "w": 80,
+      "h": 28
+    }
+  },
+  {
+    "id": "echoing-pier",
+    "storyId": "echoing-pier",
+    "kind": "story",
+    "name": "回声栈桥",
+    "action": "阅读",
+    "x": 580,
+    "y": 500,
+    "w": 24,
+    "h": 30,
+    "door": {
+      "x": 550,
+      "y": 590
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 580,
+      "y": 500,
+      "w": 24,
+      "h": 30
+    }
+  },
+  {
+    "id": "conductors-lantern",
+    "storyId": "conductors-lantern",
+    "kind": "story",
+    "name": "指挥者之灯",
+    "action": "阅读",
+    "x": 832,
+    "y": 440,
+    "w": 24,
+    "h": 36,
+    "door": {
+      "x": 850,
+      "y": 520
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 832,
+      "y": 440,
+      "w": 24,
+      "h": 36
+    }
+  },
+  {
+    "id": "rhythm-practice",
+    "activityId": "rhythm",
+    "kind": "activity",
+    "name": "湖岸节奏练习",
+    "region": "lake",
+    "action": "练习",
+    "x": 320,
+    "y": 500,
+    "w": 48,
+    "h": 32,
+    "door": {
+      "x": 344,
+      "y": 568
+    },
+    "category": "object",
+    "bounds": {
+      "x": 320,
+      "y": 500,
+      "w": 48,
+      "h": 32
+    }
+  },
+  {
+    "id": "lake-return",
+    "name": "← 边境草甸",
+    "action": "返回",
+    "door": {
+      "x": 50,
+      "y": 600
+    },
+    "to": "meadow",
+    "spawn": "fromLake",
+    "region": "lake",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "first-gear",
+    "storyId": "first-gear",
+    "kind": "story",
+    "name": "第一枚齿轮",
+    "action": "阅读",
+    "x": 216,
+    "y": 470,
+    "w": 48,
+    "h": 40,
+    "door": {
+      "x": 240,
+      "y": 550
+    },
+    "region": "valley",
+    "category": "object",
+    "bounds": {
+      "x": 216,
+      "y": 470,
+      "w": 48,
+      "h": 40
+    }
+  },
+  {
+    "id": "unfinished-ideas",
+    "storyId": "unfinished-ideas",
+    "kind": "story",
+    "name": "未完成的工坊",
+    "action": "阅读",
+    "x": 455,
+    "y": 360,
+    "w": 130,
+    "h": 90,
+    "door": {
+      "x": 520,
+      "y": 490
+    },
+    "region": "valley",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 455,
+      "y": 360,
+      "w": 130,
+      "h": 90
+    }
+  },
+  {
+    "id": "great-transmission",
+    "storyId": "great-transmission",
+    "kind": "story",
+    "name": "宏大传动",
+    "action": "阅读",
+    "x": 716,
+    "y": 460,
+    "w": 88,
+    "h": 62,
+    "door": {
+      "x": 760,
+      "y": 570
+    },
+    "region": "valley",
+    "category": "object",
+    "bounds": {
+      "x": 716,
+      "y": 460,
+      "w": 88,
+      "h": 62
+    }
+  },
+  {
+    "id": "skyward-blueprint",
+    "storyId": "skyward-blueprint",
+    "kind": "story",
+    "name": "向天空的蓝图",
+    "action": "阅读",
+    "x": 750,
+    "y": 170,
+    "w": 140,
+    "h": 70,
+    "door": {
+      "x": 820,
+      "y": 280
+    },
+    "region": "valley",
+    "category": "object",
+    "bounds": {
+      "x": 750,
+      "y": 170,
+      "w": 140,
+      "h": 70
+    }
+  },
+  {
+    "id": "power-bench",
+    "activityId": "gears",
+    "kind": "activity",
+    "name": "恢复工坊动力",
+    "region": "valley",
+    "action": "试一试",
+    "x": 710,
+    "y": 300,
+    "w": 60,
+    "h": 32,
+    "door": {
+      "x": 740,
+      "y": 370
+    },
+    "category": "object",
+    "bounds": {
+      "x": 710,
+      "y": 300,
+      "w": 60,
+      "h": 32
+    }
+  },
+  {
+    "id": "mechanical-apprentice",
+    "name": "机械学徒",
+    "region": "valley",
+    "position": {
+      "x": 620,
+      "y": 580
+    },
+    "sprite": "npc-apprentice",
+    "interactionRadius": 54,
+    "dialogueId": "apprentice",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 620,
+      "y": 604
+    },
+    "bounds": {
+      "x": 604,
+      "y": 532,
+      "w": 32,
+      "h": 48
+    }
+  },
+  {
+    "id": "valley-return",
+    "name": "← 边境草甸",
+    "action": "返回",
+    "door": {
+      "x": 50,
+      "y": 600
+    },
+    "to": "meadow",
+    "spawn": "fromValley",
+    "region": "valley",
+    "category": "transition-excluded"
+  },
+  {
+    "id": "manuscript",
+    "name": "永远写不完的手稿",
+    "kind": "secret",
+    "action": "查看",
+    "x": 152,
+    "y": 575,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 180,
+      "y": 640
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 152,
+      "y": 575,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "golden",
+    "name": "黄金回旋之石",
+    "kind": "secret",
+    "action": "查看",
+    "x": 632,
+    "y": 375,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 660,
+      "y": 440
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 632,
+      "y": 375,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "engineer",
+    "name": "绿皮工程师的遗产",
+    "kind": "secret",
+    "action": "查看",
+    "x": 372,
+    "y": 375,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 400,
+      "y": 440
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 372,
+      "y": 375,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "safe-chest",
+    "name": "绝对安全的宝箱",
+    "kind": "secret",
+    "action": "查看",
+    "x": 832,
+    "y": 385,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 860,
+      "y": 450
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 832,
+      "y": 385,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "clock",
+    "name": "等待者之钟",
+    "kind": "secret",
+    "action": "查看",
+    "x": 152,
+    "y": 355,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 180,
+      "y": 420
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 152,
+      "y": 355,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "flight",
+    "name": "失败的飞行实验",
+    "kind": "secret",
+    "action": "查看",
+    "x": 402,
+    "y": 175,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 430,
+      "y": 240
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 402,
+      "y": 175,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "logs",
+    "name": "被封存的开发日志",
+    "kind": "secret",
+    "action": "查看",
+    "x": 332,
+    "y": 575,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 360,
+      "y": 640
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 332,
+      "y": 575,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "phase-door",
+    "name": "不存在的下一阶段",
+    "kind": "secret",
+    "action": "查看",
+    "x": 792,
+    "y": 85,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 820,
+      "y": 150
+    },
+    "region": "ruins",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 792,
+      "y": 85,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "memorial",
+    "name": "最后的纪念碑",
+    "kind": "secret",
+    "action": "查看",
+    "x": 602,
+    "y": 85,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 630,
+      "y": 150
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 602,
+      "y": 85,
+      "w": 56,
+      "h": 40
+    }
+  },
+  {
+    "id": "rune-0",
+    "name": "回旋符文 1",
+    "kind": "rune",
+    "index": 0,
+    "action": "激活",
+    "x": 558,
+    "y": 500,
+    "w": 24,
+    "h": 16,
+    "door": {
+      "x": 570,
+      "y": 530
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 558,
+      "y": 500,
+      "w": 24,
+      "h": 16
+    }
+  },
+  {
+    "id": "rune-1",
+    "name": "回旋符文 2",
+    "kind": "rune",
+    "index": 1,
+    "action": "激活",
+    "x": 688,
+    "y": 530,
+    "w": 24,
+    "h": 16,
+    "door": {
+      "x": 700,
+      "y": 560
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 688,
+      "y": 530,
+      "w": 24,
+      "h": 16
+    }
+  },
+  {
+    "id": "rune-2",
+    "name": "回旋符文 3",
+    "kind": "rune",
+    "index": 2,
+    "action": "激活",
+    "x": 778,
+    "y": 490,
+    "w": 24,
+    "h": 16,
+    "door": {
+      "x": 790,
+      "y": 520
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 778,
+      "y": 490,
+      "w": 24,
+      "h": 16
+    }
+  },
+  {
+    "id": "ruins-return",
+    "name": "草甸的阳光 ↙",
+    "action": "返回",
+    "door": {
+      "x": 60,
+      "y": 700
+    },
+    "to": "meadow",
+    "spawn": "fromRuins",
+    "region": "ruins",
+    "category": "transition-excluded"
+  }
+]

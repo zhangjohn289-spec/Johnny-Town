@@ -1,0 +1,8109 @@
+[
+  {
+    "id": "city-hall",
+    "kind": "municipal",
+    "name": "市政厅",
+    "action": "进入",
+    "x": 140,
+    "y": 390,
+    "w": 168,
+    "h": 90,
+    "door": {
+      "x": 224,
+      "y": 510
+    },
+    "region": "town",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 140,
+      "y": 390,
+      "w": 168,
+      "h": 90
+    },
+    "source": "src/config.js",
+    "radius": 75,
+    "anchor": {
+      "x": 224,
+      "y": 510
+    },
+    "nearbyCollisions": [
+      {
+        "x": 140,
+        "y": 390,
+        "w": 168,
+        "h": 90,
+        "kind": "building"
+      },
+      {
+        "x": 61,
+        "y": 476,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 120,
+      "y": 290,
+      "w": 208,
+      "h": 220
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 168×90; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 224,
+          "y": 370
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 224,
+            "y": 352
+          },
+          {
+            "x": 224,
+            "y": 360
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 224,
+          "y": 492
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 480
+          },
+          {
+            "x": 320,
+            "y": 480
+          },
+          {
+            "x": 320,
+            "y": 488
+          },
+          {
+            "x": 232,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 118,
+          "y": 427
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 120,
+            "y": 352
+          },
+          {
+            "x": 120,
+            "y": 416
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 330,
+          "y": 427
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 416
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 224,
+          "y": 510
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 480
+          },
+          {
+            "x": 320,
+            "y": 480
+          },
+          {
+            "x": 320,
+            "y": 488
+          },
+          {
+            "x": 232,
+            "y": 488
+          },
+          {
+            "x": 232,
+            "y": 504
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "home",
+    "name": "Johnny 的小屋",
+    "action": "进入",
+    "x": 130,
+    "y": 130,
+    "w": 180,
+    "h": 130,
+    "door": {
+      "x": 220,
+      "y": 285
+    },
+    "color": 13144418,
+    "region": "town",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 130,
+      "y": 130,
+      "w": 180,
+      "h": 130
+    },
+    "source": "src/config.js",
+    "radius": 75,
+    "anchor": {
+      "x": 220,
+      "y": 285
+    },
+    "nearbyCollisions": [
+      {
+        "x": 140,
+        "y": 390,
+        "w": 168,
+        "h": 90,
+        "kind": "building"
+      },
+      {
+        "x": 130,
+        "y": 130,
+        "w": 180,
+        "h": 130,
+        "kind": "building"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 110,
+      "y": 30,
+      "w": 220,
+      "h": 260
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 180×130; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 220,
+          "y": 110
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 352
+          },
+          {
+            "x": 328,
+            "y": 112
+          },
+          {
+            "x": 320,
+            "y": 112
+          },
+          {
+            "x": 320,
+            "y": 104
+          },
+          {
+            "x": 224,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 220,
+          "y": 272
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 224,
+            "y": 352
+          },
+          {
+            "x": 224,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 108,
+          "y": 187
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 112,
+            "y": 352
+          },
+          {
+            "x": 112,
+            "y": 192
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 332,
+          "y": 187
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 336,
+            "y": 352
+          },
+          {
+            "x": 336,
+            "y": 192
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 220,
+          "y": 285
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 224,
+            "y": 352
+          },
+          {
+            "x": 224,
+            "y": 296
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shrine",
+    "name": "小神社",
+    "action": "抽签",
+    "x": 650,
+    "y": 120,
+    "w": 160,
+    "h": 140,
+    "door": {
+      "x": 730,
+      "y": 285
+    },
+    "color": 12739660,
+    "region": "town",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 650,
+      "y": 120,
+      "w": 160,
+      "h": 140
+    },
+    "source": "src/config.js",
+    "radius": 75,
+    "anchor": {
+      "x": 730,
+      "y": 285
+    },
+    "nearbyCollisions": [
+      {
+        "x": 650,
+        "y": 120,
+        "w": 160,
+        "h": 140,
+        "kind": "building"
+      },
+      {
+        "x": 700,
+        "y": 445,
+        "w": 65,
+        "h": 48,
+        "kind": "building"
+      },
+      {
+        "x": 871,
+        "y": 146,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 630,
+      "y": 20,
+      "w": 200,
+      "h": 270
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 160×140; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 730,
+          "y": 100
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 632,
+            "y": 352
+          },
+          {
+            "x": 632,
+            "y": 104
+          },
+          {
+            "x": 640,
+            "y": 104
+          },
+          {
+            "x": 640,
+            "y": 96
+          },
+          {
+            "x": 720,
+            "y": 96
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 730,
+          "y": 272
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 728,
+            "y": 352
+          },
+          {
+            "x": 728,
+            "y": 280
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 628,
+          "y": 182
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 624,
+            "y": 352
+          },
+          {
+            "x": 624,
+            "y": 192
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 832,
+          "y": 182
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 832,
+            "y": 352
+          },
+          {
+            "x": 832,
+            "y": 192
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 730,
+          "y": 285
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 728,
+            "y": 352
+          },
+          {
+            "x": 728,
+            "y": 296
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chest",
+    "name": "百宝箱",
+    "action": "打开",
+    "x": 700,
+    "y": 445,
+    "w": 65,
+    "h": 48,
+    "door": {
+      "x": 732,
+      "y": 520
+    },
+    "color": 13018185,
+    "region": "town",
+    "category": "object",
+    "bounds": {
+      "x": 700,
+      "y": 445,
+      "w": 65,
+      "h": 48
+    },
+    "source": "src/config.js",
+    "radius": 75,
+    "anchor": {
+      "x": 732,
+      "y": 520
+    },
+    "nearbyCollisions": [
+      {
+        "x": 700,
+        "y": 445,
+        "w": 65,
+        "h": 48,
+        "kind": "building"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 695,
+      "y": 428,
+      "w": 80,
+      "h": 64
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "Pixel chest image at (695,428); solid ground footprint 65×48",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 732.5,
+          "y": 425
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 728,
+            "y": 352
+          },
+          {
+            "x": 728,
+            "y": 416
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 732.5,
+          "y": 505
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 680,
+            "y": 352
+          },
+          {
+            "x": 680,
+            "y": 496
+          },
+          {
+            "x": 688,
+            "y": 496
+          },
+          {
+            "x": 688,
+            "y": 504
+          },
+          {
+            "x": 728,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 678,
+          "y": 461
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 672,
+            "y": 352
+          },
+          {
+            "x": 672,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 787,
+          "y": 461
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 784,
+            "y": 352
+          },
+          {
+            "x": 784,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 732,
+          "y": 520
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 680,
+            "y": 352
+          },
+          {
+            "x": 680,
+            "y": 496
+          },
+          {
+            "x": 688,
+            "y": 496
+          },
+          {
+            "x": 688,
+            "y": 504
+          },
+          {
+            "x": 728,
+            "y": 504
+          },
+          {
+            "x": 728,
+            "y": 512
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "town-clerk",
+    "name": "市政书记员",
+    "region": "town",
+    "position": {
+      "x": 340,
+      "y": 490
+    },
+    "sprite": "npc-clerk",
+    "interactionRadius": 54,
+    "dialogueId": "clerk",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 340,
+      "y": 514
+    },
+    "bounds": {
+      "x": 324,
+      "y": 442,
+      "w": 32,
+      "h": 48
+    },
+    "source": "src/npc-data.js + src/npc-system.js",
+    "radius": 54,
+    "anchor": {
+      "x": 340,
+      "y": 514
+    },
+    "nearbyCollisions": [
+      {
+        "x": 140,
+        "y": 390,
+        "w": 168,
+        "h": 90,
+        "kind": "building"
+      },
+      {
+        "x": 411,
+        "y": 496,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always talkable; repeat/session and saved progress select existing dialogue",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 324,
+      "y": 442,
+      "w": 32,
+      "h": 48
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "32×48 sprite, origin bottom center at position",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 340,
+          "y": 422
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 344,
+            "y": 352
+          },
+          {
+            "x": 344,
+            "y": 416
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 340,
+          "y": 502
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 344,
+            "y": 352
+          },
+          {
+            "x": 344,
+            "y": 496
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 302,
+          "y": 458
+        },
+        "reachable": false,
+        "reason": "standing body intersects existing collision/bounds"
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 378,
+          "y": 458
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 384,
+            "y": 352
+          },
+          {
+            "x": 384,
+            "y": 448
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 340,
+          "y": 514
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 472,
+            "y": 352
+          },
+          {
+            "x": 344,
+            "y": 352
+          },
+          {
+            "x": 344,
+            "y": 504
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "to-meadow",
+    "name": "边境草甸 →",
+    "action": "出发",
+    "door": {
+      "x": 885,
+      "y": 350
+    },
+    "to": "meadow",
+    "spawn": "fromTown",
+    "region": "town",
+    "category": "transition-excluded",
+    "source": "src/config.js",
+    "radius": 75,
+    "anchor": {
+      "x": 885,
+      "y": 350
+    },
+    "nearbyCollisions": [
+      {
+        "x": 700,
+        "y": 445,
+        "w": 65,
+        "h": 48,
+        "kind": "building"
+      },
+      {
+        "x": 871,
+        "y": 146,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "to-woods",
+    "name": "记忆森林 ↑",
+    "action": "进入",
+    "door": {
+      "x": 500,
+      "y": 90
+    },
+    "to": "woods",
+    "spawn": "fromTown",
+    "region": "town",
+    "category": "transition-excluded",
+    "source": "src/config.js",
+    "radius": 75,
+    "anchor": {
+      "x": 500,
+      "y": 90
+    },
+    "nearbyCollisions": [
+      {
+        "x": 421,
+        "y": 96,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "traveling-explorer",
+    "name": "旅行探险家",
+    "region": "meadow",
+    "position": {
+      "x": 430,
+      "y": 450
+    },
+    "sprite": "npc-explorer",
+    "interactionRadius": 54,
+    "dialogueId": "explorer",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 430,
+      "y": 474
+    },
+    "bounds": {
+      "x": 414,
+      "y": 402,
+      "w": 32,
+      "h": 48
+    },
+    "source": "src/npc-data.js + src/npc-system.js",
+    "radius": 54,
+    "anchor": {
+      "x": 430,
+      "y": 474
+    },
+    "nearbyCollisions": [
+      {
+        "x": 281,
+        "y": 596,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always talkable; repeat/session and saved progress select existing dialogue",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 414,
+      "y": 402,
+      "w": 32,
+      "h": 48
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "32×48 sprite, origin bottom center at position",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 430,
+          "y": 382
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 144,
+            "y": 384
+          },
+          {
+            "x": 424,
+            "y": 384
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 430,
+          "y": 462
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 144,
+            "y": 384
+          },
+          {
+            "x": 424,
+            "y": 384
+          },
+          {
+            "x": 424,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 392,
+          "y": 418
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 144,
+            "y": 384
+          },
+          {
+            "x": 392,
+            "y": 384
+          },
+          {
+            "x": 392,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 468,
+          "y": 418
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 144,
+            "y": 384
+          },
+          {
+            "x": 464,
+            "y": 384
+          },
+          {
+            "x": 464,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 430,
+          "y": 474
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 144,
+            "y": 384
+          },
+          {
+            "x": 424,
+            "y": 384
+          },
+          {
+            "x": 424,
+            "y": 464
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "to-ruins",
+    "name": "苔痕石阶 ↑",
+    "action": "探索",
+    "door": {
+      "x": 570,
+      "y": 140
+    },
+    "to": "ruins",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded",
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 570,
+      "y": 140
+    },
+    "nearbyCollisions": [
+      {
+        "x": 421,
+        "y": 106,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 711,
+        "y": 136,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 571,
+        "y": 76,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 340,
+        "y": 250,
+        "w": 160,
+        "h": 16,
+        "kind": "fence"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "to-town",
+    "name": "← Johnny Town",
+    "action": "返回",
+    "door": {
+      "x": 50,
+      "y": 384
+    },
+    "to": "town",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded",
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 50,
+      "y": 384
+    },
+    "nearbyCollisions": [],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "to-lake",
+    "name": "旋律湖 ↗",
+    "action": "前往",
+    "door": {
+      "x": 910,
+      "y": 250
+    },
+    "to": "lake",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded",
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 910,
+      "y": 250
+    },
+    "nearbyCollisions": [
+      {
+        "x": 891,
+        "y": 96,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 781,
+        "y": 71,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "to-valley",
+    "name": "机械谷 ↘",
+    "action": "前往",
+    "door": {
+      "x": 940,
+      "y": 620
+    },
+    "to": "valley",
+    "spawn": "fromMeadow",
+    "region": "meadow",
+    "category": "transition-excluded",
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 940,
+      "y": 620
+    },
+    "nearbyCollisions": [
+      {
+        "x": 871,
+        "y": 596,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 801,
+        "y": 676,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "beginning",
+    "kind": "story",
+    "storyId": "beginning",
+    "name": "初始之地",
+    "action": "阅读",
+    "door": {
+      "x": 220,
+      "y": 610
+    },
+    "x": 198,
+    "y": 528,
+    "w": 44,
+    "h": 48,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 198,
+      "y": 528,
+      "w": 44,
+      "h": 48
+    },
+    "source": "src/woods-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 220,
+      "y": 610
+    },
+    "nearbyCollisions": [
+      {
+        "x": 198,
+        "y": 528,
+        "w": 44,
+        "h": 48,
+        "kind": "landmark"
+      },
+      {
+        "x": 66,
+        "y": 499,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 79,
+        "y": 545,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 380,
+        "y": 607,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 324,
+        "y": 682,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 374,
+        "y": 676,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 80,
+        "y": 729,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 249,
+        "y": 734,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 318,
+        "y": 728,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 172,
+      "y": 476,
+      "w": 96,
+      "h": 112
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "96×112 image at (172,476)",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 220,
+          "y": 508
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 184,
+            "y": 624
+          },
+          {
+            "x": 184,
+            "y": 504
+          },
+          {
+            "x": 216,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 220,
+          "y": 588
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 216,
+            "y": 624
+          },
+          {
+            "x": 216,
+            "y": 592
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 176,
+          "y": 544
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 168,
+            "y": 624
+          },
+          {
+            "x": 168,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 264,
+          "y": 544
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 256,
+            "y": 624
+          },
+          {
+            "x": 256,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 220,
+          "y": 610
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 216,
+            "y": 624
+          },
+          {
+            "x": 216,
+            "y": 616
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crossroads",
+    "kind": "story",
+    "storyId": "crossroads",
+    "name": "命运岔路",
+    "action": "阅读",
+    "door": {
+      "x": 400,
+      "y": 460
+    },
+    "x": 374,
+    "y": 390,
+    "w": 36,
+    "h": 32,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 374,
+      "y": 390,
+      "w": 36,
+      "h": 32
+    },
+    "source": "src/woods-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 400,
+      "y": 460
+    },
+    "nearbyCollisions": [
+      {
+        "x": 374,
+        "y": 390,
+        "w": 36,
+        "h": 32,
+        "kind": "landmark"
+      },
+      {
+        "x": 322,
+        "y": 314,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 391,
+        "y": 308,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 441,
+        "y": 302,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 510,
+        "y": 296,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 266,
+        "y": 366,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 316,
+        "y": 360,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 380,
+        "y": 607,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 449,
+        "y": 624,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 280,
+        "y": 320,
+        "w": 32,
+        "h": 24,
+        "kind": "rock"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 344,
+      "y": 311,
+      "w": 96,
+      "h": 120
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "96×120 sign at (344,311)",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 392,
+          "y": 370
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 368
+          },
+          {
+            "x": 384,
+            "y": 368
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 392,
+          "y": 434
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 384,
+            "y": 584
+          },
+          {
+            "x": 384,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 352,
+          "y": 398
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 352,
+            "y": 624
+          },
+          {
+            "x": 352,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 432,
+          "y": 398
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 432,
+            "y": 584
+          },
+          {
+            "x": 432,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 400,
+          "y": 460
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 392,
+            "y": 584
+          },
+          {
+            "x": 392,
+            "y": 464
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "echoing-tree",
+    "kind": "story",
+    "storyId": "echoing-tree",
+    "name": "回响之树",
+    "action": "聆听",
+    "door": {
+      "x": 690,
+      "y": 365
+    },
+    "x": 660,
+    "y": 260,
+    "w": 60,
+    "h": 56,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 660,
+      "y": 260,
+      "w": 60,
+      "h": 56
+    },
+    "source": "src/woods-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 690,
+      "y": 365
+    },
+    "nearbyCollisions": [
+      {
+        "x": 660,
+        "y": 260,
+        "w": 60,
+        "h": 56,
+        "kind": "landmark"
+      },
+      {
+        "x": 650,
+        "y": 480,
+        "w": 132,
+        "h": 72,
+        "kind": "landmark"
+      },
+      {
+        "x": 622,
+        "y": 169,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 760,
+        "y": 180,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 510,
+        "y": 296,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 811,
+        "y": 358,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 824,
+        "y": 427,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 540,
+        "y": 220,
+        "w": 40,
+        "h": 24,
+        "kind": "rock"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 570,
+      "y": 91,
+      "w": 240,
+      "h": 240
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "240×240 elder canopy at (570,91)",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 690,
+          "y": 240
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 240
+          },
+          {
+            "x": 648,
+            "y": 240
+          },
+          {
+            "x": 648,
+            "y": 232
+          },
+          {
+            "x": 688,
+            "y": 232
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 690,
+          "y": 328
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 456
+          },
+          {
+            "x": 688,
+            "y": 456
+          },
+          {
+            "x": 688,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 638,
+          "y": 280
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 288
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 742,
+          "y": 280
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 456
+          },
+          {
+            "x": 736,
+            "y": 456
+          },
+          {
+            "x": 736,
+            "y": 288
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 690,
+          "y": 365
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 456
+          },
+          {
+            "x": 688,
+            "y": 456
+          },
+          {
+            "x": 688,
+            "y": 376
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "workshop",
+    "kind": "story",
+    "storyId": "workshop",
+    "name": "遗落工坊",
+    "action": "查看",
+    "door": {
+      "x": 720,
+      "y": 595
+    },
+    "x": 650,
+    "y": 480,
+    "w": 132,
+    "h": 72,
+    "region": "woods",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 650,
+      "y": 480,
+      "w": 132,
+      "h": 72
+    },
+    "source": "src/woods-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 720,
+      "y": 595
+    },
+    "nearbyCollisions": [
+      {
+        "x": 650,
+        "y": 480,
+        "w": 132,
+        "h": 72,
+        "kind": "landmark"
+      },
+      {
+        "x": 824,
+        "y": 427,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 881,
+        "y": 559,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 875,
+        "y": 605,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 819,
+        "y": 680,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 869,
+        "y": 674,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 575,
+        "y": 727,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 694,
+        "y": 738,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 763,
+        "y": 732,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 620,
+      "y": 392,
+      "w": 192,
+      "h": 176
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "192×176 hut at (620,392)",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 716,
+          "y": 460
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 584
+          },
+          {
+            "x": 632,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 464
+          },
+          {
+            "x": 640,
+            "y": 456
+          },
+          {
+            "x": 712,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 716,
+          "y": 564
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 712,
+            "y": 584
+          },
+          {
+            "x": 712,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 628,
+          "y": 508
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 624,
+            "y": 584
+          },
+          {
+            "x": 624,
+            "y": 512
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 804,
+          "y": 508
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 800,
+            "y": 584
+          },
+          {
+            "x": 800,
+            "y": 512
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 720,
+          "y": 595
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 720,
+            "y": 584
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "unwritten",
+    "kind": "story",
+    "storyId": "unwritten",
+    "name": "未书写之路",
+    "action": "阅读",
+    "door": {
+      "x": 890,
+      "y": 200
+    },
+    "x": 880,
+    "y": 140,
+    "w": 32,
+    "h": 24,
+    "region": "woods",
+    "category": "object",
+    "bounds": {
+      "x": 880,
+      "y": 140,
+      "w": 32,
+      "h": 24
+    },
+    "source": "src/woods-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 890,
+      "y": 200
+    },
+    "nearbyCollisions": [
+      {
+        "x": 880,
+        "y": 140,
+        "w": 32,
+        "h": 24,
+        "kind": "landmark"
+      },
+      {
+        "x": 753,
+        "y": 65,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 822,
+        "y": 59,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 872,
+        "y": 53,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 941,
+        "y": 47,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 697,
+        "y": 117,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 747,
+        "y": 111,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 760,
+        "y": 180,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 886,
+        "y": 306,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 936,
+        "y": 300,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 811,
+        "y": 358,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 880,
+        "y": 375,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 949,
+        "y": 369,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 832,
+      "y": 29,
+      "w": 128,
+      "h": 144
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "128×144 arch at (832,29)",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 896,
+          "y": 120
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 120
+          },
+          {
+            "x": 872,
+            "y": 120
+          },
+          {
+            "x": 872,
+            "y": 112
+          },
+          {
+            "x": 888,
+            "y": 112
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 896,
+          "y": 176
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 352
+          },
+          {
+            "x": 872,
+            "y": 352
+          },
+          {
+            "x": 872,
+            "y": 280
+          },
+          {
+            "x": 888,
+            "y": 280
+          },
+          {
+            "x": 888,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 858,
+          "y": 144
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 400
+          },
+          {
+            "x": 856,
+            "y": 400
+          },
+          {
+            "x": 856,
+            "y": 152
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 934,
+          "y": 144
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 352
+          },
+          {
+            "x": 872,
+            "y": 352
+          },
+          {
+            "x": 872,
+            "y": 280
+          },
+          {
+            "x": 928,
+            "y": 280
+          },
+          {
+            "x": 928,
+            "y": 152
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 890,
+          "y": 200
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 808,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 408
+          },
+          {
+            "x": 816,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 400
+          },
+          {
+            "x": 864,
+            "y": 352
+          },
+          {
+            "x": 872,
+            "y": 352
+          },
+          {
+            "x": 872,
+            "y": 280
+          },
+          {
+            "x": 888,
+            "y": 280
+          },
+          {
+            "x": 888,
+            "y": 208
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forest-archivist",
+    "name": "森林档案员",
+    "region": "woods",
+    "position": {
+      "x": 500,
+      "y": 460
+    },
+    "sprite": "npc-archivist",
+    "interactionRadius": 54,
+    "dialogueId": "archivist",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 500,
+      "y": 484
+    },
+    "bounds": {
+      "x": 484,
+      "y": 412,
+      "w": 32,
+      "h": 48
+    },
+    "source": "src/npc-data.js + src/npc-system.js",
+    "radius": 54,
+    "anchor": {
+      "x": 500,
+      "y": 484
+    },
+    "nearbyCollisions": [
+      {
+        "x": 374,
+        "y": 390,
+        "w": 36,
+        "h": 32,
+        "kind": "landmark"
+      },
+      {
+        "x": 391,
+        "y": 308,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 441,
+        "y": 302,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 510,
+        "y": 296,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 380,
+        "y": 607,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 449,
+        "y": 624,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always talkable; repeat/session and saved progress select existing dialogue",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 484,
+      "y": 412,
+      "w": 32,
+      "h": 48
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "32×48 sprite, origin bottom center at position",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 500,
+          "y": 392
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 496,
+            "y": 584
+          },
+          {
+            "x": 496,
+            "y": 400
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 500,
+          "y": 472
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 496,
+            "y": 584
+          },
+          {
+            "x": 496,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 462,
+          "y": 428
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 456,
+            "y": 584
+          },
+          {
+            "x": 456,
+            "y": 432
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 538,
+          "y": 428
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 528,
+            "y": 584
+          },
+          {
+            "x": 528,
+            "y": 432
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 500,
+          "y": 484
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 624
+          },
+          {
+            "x": 360,
+            "y": 584
+          },
+          {
+            "x": 496,
+            "y": 584
+          },
+          {
+            "x": 496,
+            "y": 488
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "woods-to-town",
+    "name": "← Johnny Town",
+    "action": "返回",
+    "door": {
+      "x": 48,
+      "y": 640
+    },
+    "to": "town",
+    "spawn": "fromWoods",
+    "region": "woods",
+    "category": "transition-excluded",
+    "source": "src/woods-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 48,
+      "y": 640
+    },
+    "nearbyCollisions": [
+      {
+        "x": 198,
+        "y": 528,
+        "w": 44,
+        "h": 48,
+        "kind": "landmark"
+      },
+      {
+        "x": 3,
+        "y": 436,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 16,
+        "y": 482,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 66,
+        "y": 499,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 10,
+        "y": 551,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 79,
+        "y": 545,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 11,
+        "y": 735,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      },
+      {
+        "x": 80,
+        "y": 729,
+        "w": 28,
+        "h": 24,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "lake-stage",
+    "storyId": "lake-stage",
+    "kind": "story",
+    "name": "湖畔舞台",
+    "action": "阅读",
+    "x": 230,
+    "y": 200,
+    "w": 130,
+    "h": 50,
+    "door": {
+      "x": 300,
+      "y": 290
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 230,
+      "y": 200,
+      "w": 130,
+      "h": 50
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 300,
+      "y": 290
+    },
+    "nearbyCollisions": [
+      {
+        "x": 230,
+        "y": 200,
+        "w": 130,
+        "h": 50,
+        "kind": "landmark"
+      },
+      {
+        "x": 160,
+        "y": 412,
+        "w": 80,
+        "h": 28,
+        "kind": "landmark"
+      },
+      {
+        "x": 131,
+        "y": 246,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 210,
+      "y": 100,
+      "w": 170,
+      "h": 180
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 130×50; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 295,
+          "y": 180
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 392
+          },
+          {
+            "x": 152,
+            "y": 392
+          },
+          {
+            "x": 152,
+            "y": 384
+          },
+          {
+            "x": 216,
+            "y": 384
+          },
+          {
+            "x": 216,
+            "y": 176
+          },
+          {
+            "x": 288,
+            "y": 176
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 295,
+          "y": 262
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 296,
+            "y": 600
+          },
+          {
+            "x": 296,
+            "y": 272
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 208,
+          "y": 217
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 392
+          },
+          {
+            "x": 152,
+            "y": 392
+          },
+          {
+            "x": 152,
+            "y": 384
+          },
+          {
+            "x": 200,
+            "y": 384
+          },
+          {
+            "x": 200,
+            "y": 224
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 382,
+          "y": 217
+        },
+        "reachable": false,
+        "reason": "standing body intersects existing collision/bounds"
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 300,
+          "y": 290
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 296,
+            "y": 600
+          },
+          {
+            "x": 296,
+            "y": 296
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rhythm-stones",
+    "storyId": "rhythm-stones",
+    "kind": "story",
+    "name": "节奏之石",
+    "action": "阅读",
+    "x": 160,
+    "y": 412,
+    "w": 80,
+    "h": 28,
+    "door": {
+      "x": 200,
+      "y": 480
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 160,
+      "y": 412,
+      "w": 80,
+      "h": 28
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 200,
+      "y": 480
+    },
+    "nearbyCollisions": [
+      {
+        "x": 160,
+        "y": 412,
+        "w": 80,
+        "h": 28,
+        "kind": "landmark"
+      },
+      {
+        "x": 320,
+        "y": 500,
+        "w": 48,
+        "h": 32,
+        "kind": "activity"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 140,
+      "y": 312,
+      "w": 120,
+      "h": 158
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 80×28; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 200,
+          "y": 392
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 392
+          },
+          {
+            "x": 152,
+            "y": 392
+          },
+          {
+            "x": 152,
+            "y": 384
+          },
+          {
+            "x": 192,
+            "y": 384
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 200,
+          "y": 452
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 192,
+            "y": 600
+          },
+          {
+            "x": 192,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 138,
+          "y": 418
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 600
+          },
+          {
+            "x": 144,
+            "y": 424
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 262,
+          "y": 418
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 256,
+            "y": 600
+          },
+          {
+            "x": 256,
+            "y": 424
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 200,
+          "y": 480
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 192,
+            "y": 600
+          },
+          {
+            "x": 192,
+            "y": 488
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "echoing-pier",
+    "storyId": "echoing-pier",
+    "kind": "story",
+    "name": "回声栈桥",
+    "action": "阅读",
+    "x": 580,
+    "y": 500,
+    "w": 24,
+    "h": 30,
+    "door": {
+      "x": 550,
+      "y": 590
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 580,
+      "y": 500,
+      "w": 24,
+      "h": 30
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 550,
+      "y": 590
+    },
+    "nearbyCollisions": [
+      {
+        "x": 580,
+        "y": 500,
+        "w": 24,
+        "h": 30,
+        "kind": "landmark"
+      },
+      {
+        "x": 424,
+        "w": 400,
+        "y": 400,
+        "h": 16,
+        "kind": "water"
+      },
+      {
+        "x": 456,
+        "y": 416,
+        "w": 72,
+        "h": 16,
+        "kind": "water"
+      },
+      {
+        "x": 488,
+        "y": 432,
+        "w": 40,
+        "h": 16,
+        "kind": "water"
+      },
+      {
+        "x": 572,
+        "y": 432,
+        "w": 204,
+        "h": 16,
+        "kind": "water"
+      },
+      {
+        "x": 572,
+        "y": 448,
+        "w": 156,
+        "h": 16,
+        "kind": "water"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 560,
+      "y": 400,
+      "w": 64,
+      "h": 160
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 24×30; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 592,
+          "y": 480
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 560,
+            "y": 600
+          },
+          {
+            "x": 560,
+            "y": 480
+          },
+          {
+            "x": 568,
+            "y": 480
+          },
+          {
+            "x": 568,
+            "y": 472
+          },
+          {
+            "x": 584,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 592,
+          "y": 542
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 592,
+            "y": 600
+          },
+          {
+            "x": 592,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 558,
+          "y": 507
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 552,
+            "y": 600
+          },
+          {
+            "x": 552,
+            "y": 512
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 626,
+          "y": 507
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 624,
+            "y": 600
+          },
+          {
+            "x": 624,
+            "y": 512
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 550,
+          "y": 590
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 544,
+            "y": 600
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "conductors-lantern",
+    "storyId": "conductors-lantern",
+    "kind": "story",
+    "name": "指挥者之灯",
+    "action": "阅读",
+    "x": 832,
+    "y": 440,
+    "w": 24,
+    "h": 36,
+    "door": {
+      "x": 850,
+      "y": 520
+    },
+    "region": "lake",
+    "category": "object",
+    "bounds": {
+      "x": 832,
+      "y": 440,
+      "w": 24,
+      "h": 36
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 850,
+      "y": 520
+    },
+    "nearbyCollisions": [
+      {
+        "x": 832,
+        "y": 440,
+        "w": 24,
+        "h": 36,
+        "kind": "landmark"
+      },
+      {
+        "x": 921,
+        "y": 566,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 572,
+        "y": 416,
+        "w": 236,
+        "h": 16,
+        "kind": "water"
+      },
+      {
+        "x": 572,
+        "y": 432,
+        "w": 204,
+        "h": 16,
+        "kind": "water"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 812,
+      "y": 340,
+      "w": 64,
+      "h": 166
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 24×36; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 844,
+          "y": 420
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 872,
+            "y": 600
+          },
+          {
+            "x": 872,
+            "y": 424
+          },
+          {
+            "x": 864,
+            "y": 424
+          },
+          {
+            "x": 864,
+            "y": 416
+          },
+          {
+            "x": 848,
+            "y": 416
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 844,
+          "y": 488
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 840,
+            "y": 600
+          },
+          {
+            "x": 840,
+            "y": 496
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 810,
+          "y": 450
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 800,
+            "y": 600
+          },
+          {
+            "x": 800,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 878,
+          "y": 450
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 872,
+            "y": 600
+          },
+          {
+            "x": 872,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 850,
+          "y": 520
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 848,
+            "y": 600
+          },
+          {
+            "x": 848,
+            "y": 528
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rhythm-practice",
+    "activityId": "rhythm",
+    "kind": "activity",
+    "name": "湖岸节奏练习",
+    "region": "lake",
+    "action": "练习",
+    "x": 320,
+    "y": 500,
+    "w": 48,
+    "h": 32,
+    "door": {
+      "x": 344,
+      "y": 568
+    },
+    "category": "object",
+    "bounds": {
+      "x": 320,
+      "y": 500,
+      "w": 48,
+      "h": 32
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 344,
+      "y": 568
+    },
+    "nearbyCollisions": [
+      {
+        "x": 321,
+        "y": 676,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 320,
+        "y": 500,
+        "w": 48,
+        "h": 32,
+        "kind": "activity"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 300,
+      "y": 400,
+      "w": 88,
+      "h": 162
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 48×32; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 344,
+          "y": 480
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 304,
+            "y": 600
+          },
+          {
+            "x": 304,
+            "y": 480
+          },
+          {
+            "x": 312,
+            "y": 480
+          },
+          {
+            "x": 312,
+            "y": 472
+          },
+          {
+            "x": 336,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 344,
+          "y": 544
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 336,
+            "y": 600
+          },
+          {
+            "x": 336,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 298,
+          "y": 508
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 288,
+            "y": 600
+          },
+          {
+            "x": 288,
+            "y": 512
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 390,
+          "y": 508
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 384,
+            "y": 600
+          },
+          {
+            "x": 384,
+            "y": 512
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 344,
+          "y": 568
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 336,
+            "y": 600
+          },
+          {
+            "x": 336,
+            "y": 576
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lake-return",
+    "name": "← 边境草甸",
+    "action": "返回",
+    "door": {
+      "x": 50,
+      "y": 600
+    },
+    "to": "meadow",
+    "spawn": "fromLake",
+    "region": "lake",
+    "category": "transition-excluded",
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 50,
+      "y": 600
+    },
+    "nearbyCollisions": [
+      {
+        "x": 61,
+        "y": 676,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "first-gear",
+    "storyId": "first-gear",
+    "kind": "story",
+    "name": "第一枚齿轮",
+    "action": "阅读",
+    "x": 216,
+    "y": 470,
+    "w": 48,
+    "h": 40,
+    "door": {
+      "x": 240,
+      "y": 550
+    },
+    "region": "valley",
+    "category": "object",
+    "bounds": {
+      "x": 216,
+      "y": 470,
+      "w": 48,
+      "h": 40
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 240,
+      "y": 550
+    },
+    "nearbyCollisions": [
+      {
+        "x": 216,
+        "y": 470,
+        "w": 48,
+        "h": 40,
+        "kind": "landmark"
+      },
+      {
+        "x": 321,
+        "y": 626,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 196,
+      "y": 370,
+      "w": 88,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 48×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 240,
+          "y": 450
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 200,
+            "y": 600
+          },
+          {
+            "x": 200,
+            "y": 448
+          },
+          {
+            "x": 232,
+            "y": 448
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 240,
+          "y": 522
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 232,
+            "y": 600
+          },
+          {
+            "x": 232,
+            "y": 528
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 194,
+          "y": 482
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 184,
+            "y": 600
+          },
+          {
+            "x": 184,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 286,
+          "y": 482
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 280,
+            "y": 600
+          },
+          {
+            "x": 280,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 240,
+          "y": 550
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 240,
+            "y": 600
+          },
+          {
+            "x": 240,
+            "y": 560
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "unfinished-ideas",
+    "storyId": "unfinished-ideas",
+    "kind": "story",
+    "name": "未完成的工坊",
+    "action": "阅读",
+    "x": 455,
+    "y": 360,
+    "w": 130,
+    "h": 90,
+    "door": {
+      "x": 520,
+      "y": 490
+    },
+    "region": "valley",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 455,
+      "y": 360,
+      "w": 130,
+      "h": 90
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 520,
+      "y": 490
+    },
+    "nearbyCollisions": [
+      {
+        "x": 455,
+        "y": 360,
+        "w": 130,
+        "h": 90,
+        "kind": "landmark"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 435,
+      "y": 260,
+      "w": 170,
+      "h": 220
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 130×90; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 520,
+          "y": 340
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 440,
+            "y": 600
+          },
+          {
+            "x": 440,
+            "y": 336
+          },
+          {
+            "x": 512,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 520,
+          "y": 462
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 520,
+            "y": 600
+          },
+          {
+            "x": 520,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 433,
+          "y": 397
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 432,
+            "y": 600
+          },
+          {
+            "x": 432,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 607,
+          "y": 397
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 608,
+            "y": 600
+          },
+          {
+            "x": 608,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 520,
+          "y": 490
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 512,
+            "y": 600
+          },
+          {
+            "x": 512,
+            "y": 496
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "great-transmission",
+    "storyId": "great-transmission",
+    "kind": "story",
+    "name": "宏大传动",
+    "action": "阅读",
+    "x": 716,
+    "y": 460,
+    "w": 88,
+    "h": 62,
+    "door": {
+      "x": 760,
+      "y": 570
+    },
+    "region": "valley",
+    "category": "object",
+    "bounds": {
+      "x": 716,
+      "y": 460,
+      "w": 88,
+      "h": 62
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 760,
+      "y": 570
+    },
+    "nearbyCollisions": [
+      {
+        "x": 716,
+        "y": 460,
+        "w": 88,
+        "h": 62,
+        "kind": "landmark"
+      },
+      {
+        "x": 600,
+        "y": 670,
+        "w": 240,
+        "h": 40,
+        "kind": "rock"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 696,
+      "y": 360,
+      "w": 128,
+      "h": 192
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 88×62; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 760,
+          "y": 440
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 432
+          },
+          {
+            "x": 752,
+            "y": 432
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 760,
+          "y": 534
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 760,
+            "y": 600
+          },
+          {
+            "x": 760,
+            "y": 544
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 694,
+          "y": 483
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 688,
+            "y": 600
+          },
+          {
+            "x": 688,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 826,
+          "y": 483
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 824,
+            "y": 600
+          },
+          {
+            "x": 824,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 760,
+          "y": 570
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 752,
+            "y": 600
+          },
+          {
+            "x": 752,
+            "y": 576
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "skyward-blueprint",
+    "storyId": "skyward-blueprint",
+    "kind": "story",
+    "name": "向天空的蓝图",
+    "action": "阅读",
+    "x": 750,
+    "y": 170,
+    "w": 140,
+    "h": 70,
+    "door": {
+      "x": 820,
+      "y": 280
+    },
+    "region": "valley",
+    "category": "object",
+    "bounds": {
+      "x": 750,
+      "y": 170,
+      "w": 140,
+      "h": 70
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 820,
+      "y": 280
+    },
+    "nearbyCollisions": [
+      {
+        "x": 750,
+        "y": 170,
+        "w": 140,
+        "h": 70,
+        "kind": "landmark"
+      },
+      {
+        "x": 901,
+        "y": 406,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 710,
+        "y": 300,
+        "w": 60,
+        "h": 32,
+        "kind": "activity"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 730,
+      "y": 70,
+      "w": 180,
+      "h": 200
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 140×70; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 820,
+          "y": 150
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 272
+          },
+          {
+            "x": 736,
+            "y": 272
+          },
+          {
+            "x": 736,
+            "y": 144
+          },
+          {
+            "x": 816,
+            "y": 144
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 820,
+          "y": 252
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 432
+          },
+          {
+            "x": 816,
+            "y": 432
+          },
+          {
+            "x": 816,
+            "y": 256
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 728,
+          "y": 197
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 272
+          },
+          {
+            "x": 728,
+            "y": 272
+          },
+          {
+            "x": 728,
+            "y": 208
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 912,
+          "y": 197
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 880,
+            "y": 600
+          },
+          {
+            "x": 880,
+            "y": 384
+          },
+          {
+            "x": 912,
+            "y": 384
+          },
+          {
+            "x": 912,
+            "y": 208
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 820,
+          "y": 280
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 432
+          },
+          {
+            "x": 816,
+            "y": 432
+          },
+          {
+            "x": 816,
+            "y": 288
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "power-bench",
+    "activityId": "gears",
+    "kind": "activity",
+    "name": "恢复工坊动力",
+    "region": "valley",
+    "action": "试一试",
+    "x": 710,
+    "y": 300,
+    "w": 60,
+    "h": 32,
+    "door": {
+      "x": 740,
+      "y": 370
+    },
+    "category": "object",
+    "bounds": {
+      "x": 710,
+      "y": 300,
+      "w": 60,
+      "h": 32
+    },
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 740,
+      "y": 370
+    },
+    "nearbyCollisions": [
+      {
+        "x": 716,
+        "y": 460,
+        "w": 88,
+        "h": 62,
+        "kind": "landmark"
+      },
+      {
+        "x": 750,
+        "y": 170,
+        "w": 140,
+        "h": 70,
+        "kind": "landmark"
+      },
+      {
+        "x": 901,
+        "y": 406,
+        "w": 38,
+        "h": 48,
+        "kind": "tree"
+      },
+      {
+        "x": 710,
+        "y": 300,
+        "w": 60,
+        "h": 32,
+        "kind": "activity"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 690,
+      "y": 200,
+      "w": 100,
+      "h": 162
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 60×32; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 740,
+          "y": 280
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 272
+          },
+          {
+            "x": 736,
+            "y": 272
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 740,
+          "y": 344
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 432
+          },
+          {
+            "x": 736,
+            "y": 432
+          },
+          {
+            "x": 736,
+            "y": 352
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 688,
+          "y": 308
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 680,
+            "y": 600
+          },
+          {
+            "x": 680,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 792,
+          "y": 308
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 432
+          },
+          {
+            "x": 784,
+            "y": 432
+          },
+          {
+            "x": 784,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 740,
+          "y": 370
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 600
+          },
+          {
+            "x": 696,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 440
+          },
+          {
+            "x": 704,
+            "y": 432
+          },
+          {
+            "x": 736,
+            "y": 432
+          },
+          {
+            "x": 736,
+            "y": 376
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mechanical-apprentice",
+    "name": "机械学徒",
+    "region": "valley",
+    "position": {
+      "x": 620,
+      "y": 580
+    },
+    "sprite": "npc-apprentice",
+    "interactionRadius": 54,
+    "dialogueId": "apprentice",
+    "behavior": "idle",
+    "facing": "south",
+    "category": "npc",
+    "kind": "npc",
+    "door": {
+      "x": 620,
+      "y": 604
+    },
+    "bounds": {
+      "x": 604,
+      "y": 532,
+      "w": 32,
+      "h": 48
+    },
+    "source": "src/npc-data.js + src/npc-system.js",
+    "radius": 54,
+    "anchor": {
+      "x": 620,
+      "y": 604
+    },
+    "nearbyCollisions": [
+      {
+        "x": 716,
+        "y": 460,
+        "w": 88,
+        "h": 62,
+        "kind": "landmark"
+      },
+      {
+        "x": 600,
+        "y": 670,
+        "w": 240,
+        "h": 40,
+        "kind": "rock"
+      }
+    ],
+    "conditions": "Always talkable; repeat/session and saved progress select existing dialogue",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 604,
+      "y": 532,
+      "w": 32,
+      "h": 48
+    },
+    "visualBoundsNote": "Image bounds from renderer/PNG dimensions",
+    "approximateVisual": "32×48 sprite, origin bottom center at position",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 620,
+          "y": 512
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 616,
+            "y": 600
+          },
+          {
+            "x": 616,
+            "y": 520
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 620,
+          "y": 592
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 616,
+            "y": 600
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 582,
+          "y": 548
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 576,
+            "y": 600
+          },
+          {
+            "x": 576,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 658,
+          "y": 548
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 648,
+            "y": 600
+          },
+          {
+            "x": 648,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 620,
+          "y": 604
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 152,
+            "y": 600
+          },
+          {
+            "x": 616,
+            "y": 600
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "valley-return",
+    "name": "← 边境草甸",
+    "action": "返回",
+    "door": {
+      "x": 50,
+      "y": 600
+    },
+    "to": "meadow",
+    "spawn": "fromValley",
+    "region": "valley",
+    "category": "transition-excluded",
+    "source": "src/expansion-data.js + src/activities-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 50,
+      "y": 600
+    },
+    "nearbyCollisions": [],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  },
+  {
+    "id": "manuscript",
+    "name": "永远写不完的手稿",
+    "kind": "secret",
+    "action": "查看",
+    "x": 152,
+    "y": 575,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 180,
+      "y": 640
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 152,
+      "y": 575,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 180,
+      "y": 640
+    },
+    "nearbyCollisions": [
+      {
+        "x": 152,
+        "y": 575,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 332,
+        "y": 575,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 132,
+      "y": 475,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 180,
+          "y": 555
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 552
+          },
+          {
+            "x": 176,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 180,
+          "y": 627
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 176,
+            "y": 704
+          },
+          {
+            "x": 176,
+            "y": 632
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 130,
+          "y": 587
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 592
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 230,
+          "y": 587
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 224,
+            "y": 704
+          },
+          {
+            "x": 224,
+            "y": 592
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 180,
+          "y": 640
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 176,
+            "y": 704
+          },
+          {
+            "x": 176,
+            "y": 648
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "golden",
+    "name": "黄金回旋之石",
+    "kind": "secret",
+    "action": "查看",
+    "x": 632,
+    "y": 375,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 660,
+      "y": 440
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 632,
+      "y": 375,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 660,
+      "y": 440
+    },
+    "nearbyCollisions": [
+      {
+        "x": 632,
+        "y": 375,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 558,
+        "y": 500,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 688,
+        "y": 530,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 778,
+        "y": 490,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      }
+    ],
+    "conditions": "Always inspectable; current Golden Trial stage controls listening/reread, not registration",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 612,
+      "y": 275,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 660,
+          "y": 355
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 352
+          },
+          {
+            "x": 656,
+            "y": 352
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 660,
+          "y": 427
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 656,
+            "y": 704
+          },
+          {
+            "x": 656,
+            "y": 432
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 610,
+          "y": 387
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 600,
+            "y": 704
+          },
+          {
+            "x": 600,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 710,
+          "y": 387
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 672,
+            "y": 704
+          },
+          {
+            "x": 672,
+            "y": 512
+          },
+          {
+            "x": 680,
+            "y": 512
+          },
+          {
+            "x": 680,
+            "y": 504
+          },
+          {
+            "x": 704,
+            "y": 504
+          },
+          {
+            "x": 704,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 660,
+          "y": 440
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 656,
+            "y": 704
+          },
+          {
+            "x": 656,
+            "y": 448
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "engineer",
+    "name": "绿皮工程师的遗产",
+    "kind": "secret",
+    "action": "查看",
+    "x": 372,
+    "y": 375,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 400,
+      "y": 440
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 372,
+      "y": 375,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 400,
+      "y": 440
+    },
+    "nearbyCollisions": [
+      {
+        "x": 372,
+        "y": 375,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 332,
+        "y": 575,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 558,
+        "y": 500,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 352,
+      "y": 275,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 400,
+          "y": 355
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 352
+          },
+          {
+            "x": 392,
+            "y": 352
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 400,
+          "y": 427
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 392,
+            "y": 552
+          },
+          {
+            "x": 392,
+            "y": 432
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 350,
+          "y": 387
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 344,
+            "y": 552
+          },
+          {
+            "x": 344,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 450,
+          "y": 387
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 448,
+            "y": 704
+          },
+          {
+            "x": 448,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 400,
+          "y": 440
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 392,
+            "y": 552
+          },
+          {
+            "x": 392,
+            "y": 448
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "safe-chest",
+    "name": "绝对安全的宝箱",
+    "kind": "secret",
+    "action": "查看",
+    "x": 832,
+    "y": 385,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 860,
+      "y": 450
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 832,
+      "y": 385,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 860,
+      "y": 450
+    },
+    "nearbyCollisions": [
+      {
+        "x": 832,
+        "y": 385,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 688,
+        "y": 530,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 778,
+        "y": 490,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 820,
+        "y": 610,
+        "w": 100,
+        "h": 35,
+        "kind": "wall"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 812,
+      "y": 285,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 860,
+          "y": 365
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 368
+          },
+          {
+            "x": 824,
+            "y": 368
+          },
+          {
+            "x": 824,
+            "y": 360
+          },
+          {
+            "x": 856,
+            "y": 360
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 860,
+          "y": 437
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 856,
+            "y": 584
+          },
+          {
+            "x": 856,
+            "y": 448
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 810,
+          "y": 397
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 464
+          },
+          {
+            "x": 808,
+            "y": 464
+          },
+          {
+            "x": 808,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 910,
+          "y": 397
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 912,
+            "y": 584
+          },
+          {
+            "x": 912,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 860,
+          "y": 450
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 856,
+            "y": 584
+          },
+          {
+            "x": 856,
+            "y": 456
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clock",
+    "name": "等待者之钟",
+    "kind": "secret",
+    "action": "查看",
+    "x": 152,
+    "y": 355,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 180,
+      "y": 420
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 152,
+      "y": 355,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 180,
+      "y": 420
+    },
+    "nearbyCollisions": [
+      {
+        "x": 152,
+        "y": 575,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 152,
+        "y": 355,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 70,
+        "y": 205,
+        "w": 35,
+        "h": 120,
+        "kind": "wall"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 132,
+      "y": 255,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 180,
+          "y": 335
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 336
+          },
+          {
+            "x": 144,
+            "y": 336
+          },
+          {
+            "x": 144,
+            "y": 328
+          },
+          {
+            "x": 176,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 180,
+          "y": 407
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 552
+          },
+          {
+            "x": 176,
+            "y": 552
+          },
+          {
+            "x": 176,
+            "y": 416
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 130,
+          "y": 367
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 376
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 230,
+          "y": 367
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 224,
+            "y": 704
+          },
+          {
+            "x": 224,
+            "y": 376
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 180,
+          "y": 420
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 704
+          },
+          {
+            "x": 136,
+            "y": 552
+          },
+          {
+            "x": 176,
+            "y": 552
+          },
+          {
+            "x": 176,
+            "y": 424
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flight",
+    "name": "失败的飞行实验",
+    "kind": "secret",
+    "action": "查看",
+    "x": 402,
+    "y": 175,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 430,
+      "y": 240
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 402,
+      "y": 175,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 430,
+      "y": 240
+    },
+    "nearbyCollisions": [
+      {
+        "x": 372,
+        "y": 375,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 402,
+        "y": 175,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 382,
+      "y": 75,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 430,
+          "y": 155
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 352
+          },
+          {
+            "x": 384,
+            "y": 352
+          },
+          {
+            "x": 384,
+            "y": 152
+          },
+          {
+            "x": 424,
+            "y": 152
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 430,
+          "y": 227
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 352
+          },
+          {
+            "x": 424,
+            "y": 352
+          },
+          {
+            "x": 424,
+            "y": 232
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 380,
+          "y": 187
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 352
+          },
+          {
+            "x": 376,
+            "y": 352
+          },
+          {
+            "x": 376,
+            "y": 192
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 480,
+          "y": 187
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 472,
+            "y": 704
+          },
+          {
+            "x": 472,
+            "y": 192
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 430,
+          "y": 240
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 352
+          },
+          {
+            "x": 424,
+            "y": 352
+          },
+          {
+            "x": 424,
+            "y": 248
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "logs",
+    "name": "被封存的开发日志",
+    "kind": "secret",
+    "action": "查看",
+    "x": 332,
+    "y": 575,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 360,
+      "y": 640
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 332,
+      "y": 575,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 360,
+      "y": 640
+    },
+    "nearbyCollisions": [
+      {
+        "x": 152,
+        "y": 575,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 332,
+        "y": 575,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 520,
+        "y": 600,
+        "w": 35,
+        "h": 90,
+        "kind": "wall"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 312,
+      "y": 475,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 360,
+          "y": 555
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 704
+          },
+          {
+            "x": 312,
+            "y": 552
+          },
+          {
+            "x": 352,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 360,
+          "y": 627
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 352,
+            "y": 704
+          },
+          {
+            "x": 352,
+            "y": 632
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 310,
+          "y": 587
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 304,
+            "y": 704
+          },
+          {
+            "x": 304,
+            "y": 592
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 410,
+          "y": 587
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 408,
+            "y": 704
+          },
+          {
+            "x": 408,
+            "y": 592
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 360,
+          "y": 640
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 352,
+            "y": 704
+          },
+          {
+            "x": 352,
+            "y": 648
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phase-door",
+    "name": "不存在的下一阶段",
+    "kind": "secret",
+    "action": "查看",
+    "x": 792,
+    "y": 85,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 820,
+      "y": 150
+    },
+    "region": "ruins",
+    "category": "building-excluded",
+    "bounds": {
+      "x": 792,
+      "y": 85,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 820,
+      "y": 150
+    },
+    "nearbyCollisions": [
+      {
+        "x": 792,
+        "y": 85,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 602,
+        "y": 85,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 772,
+      "y": -15,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 820,
+          "y": 65
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 464
+          },
+          {
+            "x": 776,
+            "y": 464
+          },
+          {
+            "x": 776,
+            "y": 64
+          },
+          {
+            "x": 784,
+            "y": 64
+          },
+          {
+            "x": 784,
+            "y": 56
+          },
+          {
+            "x": 816,
+            "y": 56
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 820,
+          "y": 137
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 144
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 770,
+          "y": 97
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 870,
+          "y": 97
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 368
+          },
+          {
+            "x": 824,
+            "y": 368
+          },
+          {
+            "x": 824,
+            "y": 360
+          },
+          {
+            "x": 864,
+            "y": 360
+          },
+          {
+            "x": 864,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 820,
+          "y": 150
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 160
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "memorial",
+    "name": "最后的纪念碑",
+    "kind": "secret",
+    "action": "查看",
+    "x": 602,
+    "y": 85,
+    "w": 56,
+    "h": 40,
+    "door": {
+      "x": 630,
+      "y": 150
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 602,
+      "y": 85,
+      "w": 56,
+      "h": 40
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 630,
+      "y": 150
+    },
+    "nearbyCollisions": [
+      {
+        "x": 792,
+        "y": 85,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 602,
+        "y": 85,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      }
+    ],
+    "conditions": "Always inspectable; saved discovery/completion may vary dialog",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 582,
+      "y": -15,
+      "w": 96,
+      "h": 170
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 56×40; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 630,
+          "y": 65
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 576
+          },
+          {
+            "x": 544,
+            "y": 576
+          },
+          {
+            "x": 544,
+            "y": 472
+          },
+          {
+            "x": 584,
+            "y": 472
+          },
+          {
+            "x": 584,
+            "y": 64
+          },
+          {
+            "x": 592,
+            "y": 64
+          },
+          {
+            "x": 592,
+            "y": 56
+          },
+          {
+            "x": 624,
+            "y": 56
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 630,
+          "y": 137
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 352
+          },
+          {
+            "x": 624,
+            "y": 352
+          },
+          {
+            "x": 624,
+            "y": 144
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 580,
+          "y": 97
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 576
+          },
+          {
+            "x": 544,
+            "y": 576
+          },
+          {
+            "x": 544,
+            "y": 472
+          },
+          {
+            "x": 576,
+            "y": 472
+          },
+          {
+            "x": 576,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 680,
+          "y": 97
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 352
+          },
+          {
+            "x": 672,
+            "y": 352
+          },
+          {
+            "x": 672,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 630,
+          "y": 150
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 704
+          },
+          {
+            "x": 616,
+            "y": 352
+          },
+          {
+            "x": 624,
+            "y": 352
+          },
+          {
+            "x": 624,
+            "y": 160
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rune-0",
+    "name": "回旋符文 1",
+    "kind": "rune",
+    "index": 0,
+    "action": "激活",
+    "x": 558,
+    "y": 500,
+    "w": 24,
+    "h": 16,
+    "door": {
+      "x": 570,
+      "y": 530
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 558,
+      "y": 500,
+      "w": 24,
+      "h": 16
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 570,
+      "y": 530
+    },
+    "nearbyCollisions": [
+      {
+        "x": 632,
+        "y": 375,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 558,
+        "y": 500,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 688,
+        "y": 530,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 520,
+        "y": 600,
+        "w": 35,
+        "h": 90,
+        "kind": "wall"
+      }
+    ],
+    "conditions": "Always inspectable; current Golden Trial stage controls listening/reread, not registration",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 538,
+      "y": 400,
+      "w": 64,
+      "h": 146
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 24×16; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 570,
+          "y": 480
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 576
+          },
+          {
+            "x": 544,
+            "y": 576
+          },
+          {
+            "x": 544,
+            "y": 472
+          },
+          {
+            "x": 568,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 570,
+          "y": 528
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 576
+          },
+          {
+            "x": 568,
+            "y": 576
+          },
+          {
+            "x": 568,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 536,
+          "y": 500
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 576
+          },
+          {
+            "x": 528,
+            "y": 576
+          },
+          {
+            "x": 528,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 604,
+          "y": 500
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 600,
+            "y": 704
+          },
+          {
+            "x": 600,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 570,
+          "y": 530
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 704
+          },
+          {
+            "x": 504,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 584
+          },
+          {
+            "x": 512,
+            "y": 576
+          },
+          {
+            "x": 560,
+            "y": 576
+          },
+          {
+            "x": 560,
+            "y": 536
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rune-1",
+    "name": "回旋符文 2",
+    "kind": "rune",
+    "index": 1,
+    "action": "激活",
+    "x": 688,
+    "y": 530,
+    "w": 24,
+    "h": 16,
+    "door": {
+      "x": 700,
+      "y": 560
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 688,
+      "y": 530,
+      "w": 24,
+      "h": 16
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 700,
+      "y": 560
+    },
+    "nearbyCollisions": [
+      {
+        "x": 632,
+        "y": 375,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 558,
+        "y": 500,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 688,
+        "y": 530,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 778,
+        "y": 490,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 520,
+        "y": 600,
+        "w": 35,
+        "h": 90,
+        "kind": "wall"
+      },
+      {
+        "x": 820,
+        "y": 610,
+        "w": 100,
+        "h": 35,
+        "kind": "wall"
+      }
+    ],
+    "conditions": "Always inspectable; current Golden Trial stage controls listening/reread, not registration",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 668,
+      "y": 430,
+      "w": 64,
+      "h": 146
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 24×16; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 700,
+          "y": 510
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 672,
+            "y": 704
+          },
+          {
+            "x": 672,
+            "y": 512
+          },
+          {
+            "x": 680,
+            "y": 512
+          },
+          {
+            "x": 680,
+            "y": 504
+          },
+          {
+            "x": 696,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 700,
+          "y": 558
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 696,
+            "y": 704
+          },
+          {
+            "x": 696,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 666,
+          "y": 530
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 656,
+            "y": 704
+          },
+          {
+            "x": 656,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 734,
+          "y": 530
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 728,
+            "y": 704
+          },
+          {
+            "x": 728,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 700,
+          "y": 560
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 696,
+            "y": 704
+          },
+          {
+            "x": 696,
+            "y": 568
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rune-2",
+    "name": "回旋符文 3",
+    "kind": "rune",
+    "index": 2,
+    "action": "激活",
+    "x": 778,
+    "y": 490,
+    "w": 24,
+    "h": 16,
+    "door": {
+      "x": 790,
+      "y": 520
+    },
+    "region": "ruins",
+    "category": "object",
+    "bounds": {
+      "x": 778,
+      "y": 490,
+      "w": 24,
+      "h": 16
+    },
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 790,
+      "y": 520
+    },
+    "nearbyCollisions": [
+      {
+        "x": 632,
+        "y": 375,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 832,
+        "y": 385,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      },
+      {
+        "x": 688,
+        "y": 530,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 778,
+        "y": 490,
+        "w": 24,
+        "h": 16,
+        "kind": "relic"
+      },
+      {
+        "x": 820,
+        "y": 610,
+        "w": 100,
+        "h": 35,
+        "kind": "wall"
+      }
+    ],
+    "conditions": "Always inspectable; current Golden Trial stage controls listening/reread, not registration",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": {
+      "x": 758,
+      "y": 390,
+      "w": 64,
+      "h": 146
+    },
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "Renderer ornament around ground footprint 24×16; raised artwork can extend north of solid",
+    "approaches": [
+      {
+        "direction": "north",
+        "position": {
+          "x": 790,
+          "y": 470
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 704
+          },
+          {
+            "x": 760,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 472
+          },
+          {
+            "x": 768,
+            "y": 464
+          },
+          {
+            "x": 784,
+            "y": 464
+          }
+        ]
+      },
+      {
+        "direction": "south",
+        "position": {
+          "x": 790,
+          "y": 518
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 784,
+            "y": 704
+          },
+          {
+            "x": 784,
+            "y": 528
+          }
+        ]
+      },
+      {
+        "direction": "west",
+        "position": {
+          "x": 756,
+          "y": 490
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 752,
+            "y": 704
+          },
+          {
+            "x": 752,
+            "y": 496
+          }
+        ]
+      },
+      {
+        "direction": "east",
+        "position": {
+          "x": 824,
+          "y": 490
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 704
+          },
+          {
+            "x": 800,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 592
+          },
+          {
+            "x": 808,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 584
+          },
+          {
+            "x": 816,
+            "y": 496
+          }
+        ]
+      },
+      {
+        "direction": "legacy-anchor",
+        "position": {
+          "x": 790,
+          "y": 520
+        },
+        "reachable": true,
+        "reason": "",
+        "path": [
+          {
+            "x": 160,
+            "y": 704
+          },
+          {
+            "x": 784,
+            "y": 704
+          },
+          {
+            "x": 784,
+            "y": 528
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ruins-return",
+    "name": "草甸的阳光 ↙",
+    "action": "返回",
+    "door": {
+      "x": 60,
+      "y": 700
+    },
+    "to": "meadow",
+    "spawn": "fromRuins",
+    "region": "ruins",
+    "category": "transition-excluded",
+    "source": "src/ruins-data.js",
+    "radius": 75,
+    "anchor": {
+      "x": 60,
+      "y": 700
+    },
+    "nearbyCollisions": [
+      {
+        "x": 152,
+        "y": 575,
+        "w": 56,
+        "h": 40,
+        "kind": "relic"
+      }
+    ],
+    "conditions": "Always registered; existing discovery/activity state preserved",
+    "input": "Shared scene target → E key or touch-interact click → scene.interact",
+    "approximateVisualBounds": null,
+    "visualBoundsNote": "Conservative approximate ornament envelope; labels/environment excluded, not a new activation area",
+    "approximateVisual": "exit sign",
+    "approaches": []
+  }
+]

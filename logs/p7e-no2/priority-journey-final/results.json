@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "id": "chest",
+      "region": "town",
+      "position": {
+        "x": 725.161331673855,
+        "y": 428.92364763601313
+      },
+      "routeFromPrevious": "Full actual CDP joystick route; no player repositioning after saved spawn",
+      "activations": [
+        {
+          "input": "keyboard",
+          "prompt": "百宝箱 — 点右侧按钮 打开",
+          "title": "百宝箱",
+          "opens": 1
+        },
+        {
+          "input": "touch",
+          "prompt": "百宝箱 — 点右侧按钮 打开",
+          "title": "百宝箱",
+          "opens": 1
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "errors": []
+}
