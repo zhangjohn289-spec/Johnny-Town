@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "name": "rhythm reached and safe interrupted attempt",
+      "pass": true
+    },
+    {
+      "name": "original rhythm actual time hits misses result and retry",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok((await pos()).x>v.x)\n"
+    }
+  ],
+  "errors": []
+}

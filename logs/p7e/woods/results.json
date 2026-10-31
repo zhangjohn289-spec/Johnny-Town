@@ -1,0 +1,24 @@
+{
+  "browser": "156.0.4314.50",
+  "url": "http://127.0.0.1:4501/Johnny-Town/",
+  "results": [
+    {
+      "name": "quick introduction is ungated, keyboard/mouse accessible and restores focus",
+      "pass": true
+    },
+    {
+      "name": "journal initially shows five mysterious entries without story spoilers",
+      "pass": true
+    },
+    {
+      "name": "town northern route enters forest with a safe stable spawn",
+      "pass": false,
+      "error": "walk blocked: {\"target\":{\"x\":500,\"y\":355},\"position\":{\"x\":470,\"y\":355}}"
+    }
+  ],
+  "metrics": {
+    "transitions": []
+  },
+  "errors": [],
+  "failed": []
+}

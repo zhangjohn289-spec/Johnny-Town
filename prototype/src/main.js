@@ -1,3 +1,4 @@
+import {bindFocusControls} from './input-focus.js';
 import {createNPCs} from './npc-system.js';
 import {chooseInteraction} from './npc-data.js';
 import {bindTouchControls} from './touch-controls.js';
@@ -38,6 +39,7 @@ class WorldScene extends Phaser.Scene {
     createPlayer(this,checkpoint.position);
     createNPCs(this);
     bindTouchControls(this);
+    bindFocusControls(this);
     const b=this.region.bounds;
     this.physics.world.setBounds(b.x,b.y,b.width,b.height);
     this.physics.add.collider(this.player,this.walls);

@@ -1,0 +1,293 @@
+{
+  "results": [
+    {
+      "npc": "town-clerk",
+      "view": "desktop",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "desktop",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "desktop",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "desktop",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "desktop",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "desktop",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "desktop",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "desktop",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "desktop",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "desktop",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "desktop",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "desktop",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "tablet",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "tablet",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "tablet",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "tablet",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "tablet",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "tablet",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "tablet",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "tablet",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "tablet",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "tablet",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "tablet",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "tablet",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "landscape",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "landscape",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "landscape",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "landscape",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "landscape",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "landscape",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "landscape",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "landscape",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "landscape",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "landscape",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "landscape",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "landscape",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "portrait",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "portrait",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "town-clerk",
+      "view": "portrait",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "portrait",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "portrait",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "mechanical-apprentice",
+      "view": "portrait",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "portrait",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "portrait",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "traveling-explorer",
+      "view": "portrait",
+      "variant": 2,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "portrait",
+      "variant": 0,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "portrait",
+      "variant": 1,
+      "pass": true
+    },
+    {
+      "npc": "forest-archivist",
+      "view": "portrait",
+      "variant": 2,
+      "pass": true
+    }
+  ],
+  "errors": []
+}

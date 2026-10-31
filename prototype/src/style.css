@@ -59,3 +59,13 @@ dialog{background-color:#f7e9c4;background-image:repeating-linear-gradient(0deg,
 .golden-panel[open]{display:flex;flex-direction:column;max-height:calc(100dvh - 24px)}
 .golden-panel h2{flex-shrink:0}.golden-panel #body{overflow-y:auto;min-height:0;overscroll-behavior:contain}
 .golden-panel #close{position:static;flex-shrink:0;align-self:flex-start}
+
+/* P7E: keep every modal's close control outside its scrolling text. */
+dialog[open]{display:flex;flex-direction:column;overflow:hidden}
+dialog h2{flex-shrink:0}
+dialog #body{overflow-y:auto;min-height:0;overscroll-behavior:contain}
+#close,.touch-device #close{position:static;flex-shrink:0;align-self:flex-start}
+.journal-locked{color:#62624f}
+#game:focus-visible{outline:3px solid #ffe295;outline-offset:4px}
+dialog button:focus-visible,dialog a:focus-visible,dialog summary:focus-visible{outline:3px solid #385745;outline-offset:3px}
+dialog #body:focus-visible{outline:2px solid #385745;outline-offset:2px}

@@ -1,0 +1,138 @@
+{
+  "results": [
+    {
+      "name": "HUD owns movement keys; Tab and pointer return to focusable world",
+      "pass": true
+    },
+    {
+      "name": "long HTML body scrolls by native keyboard with stationary game",
+      "pass": true
+    },
+    {
+      "name": "desktop-touch layout metrics",
+      "pass": true,
+      "layout": {
+        "bodyBottom": 756.1875,
+        "closeTop": 761.1875,
+        "closeHeight": 44,
+        "panelTop": 168.8125,
+        "panelBottom": 831.1875,
+        "dpr": 1
+      }
+    },
+    {
+      "name": "desktop-touch canvas, scroll, modal bounds, focus return and 44px controls",
+      "pass": true
+    },
+    {
+      "name": "desktop-touch cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation",
+      "pass": true
+    },
+    {
+      "name": "desktop-touch resize and simulated lost capture/blur/pagehide stop movement",
+      "pass": true
+    },
+    {
+      "name": "phone-portrait layout metrics",
+      "pass": true,
+      "layout": {
+        "bodyBottom": 757,
+        "closeTop": 762,
+        "closeHeight": 44,
+        "panelTop": 12,
+        "panelBottom": 832,
+        "dpr": 3
+      }
+    },
+    {
+      "name": "phone-portrait canvas, scroll, modal bounds, focus return and 44px controls",
+      "pass": true
+    },
+    {
+      "name": "phone-portrait cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation",
+      "pass": true
+    },
+    {
+      "name": "phone-portrait resize and simulated lost capture/blur/pagehide stop movement",
+      "pass": true
+    },
+    {
+      "name": "phone-landscape layout metrics",
+      "pass": true,
+      "layout": {
+        "bodyBottom": 288,
+        "closeTop": 293,
+        "closeHeight": 44,
+        "panelTop": 12,
+        "panelBottom": 363,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "phone-landscape canvas, scroll, modal bounds, focus return and 44px controls",
+      "pass": true
+    },
+    {
+      "name": "phone-landscape cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation",
+      "pass": true
+    },
+    {
+      "name": "phone-landscape resize and simulated lost capture/blur/pagehide stop movement",
+      "pass": true
+    },
+    {
+      "name": "tablet-portrait layout metrics",
+      "pass": true,
+      "layout": {
+        "bodyBottom": 766.25,
+        "closeTop": 771.25,
+        "closeHeight": 44,
+        "panelTop": 182.75,
+        "panelBottom": 841.25,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "tablet-portrait canvas, scroll, modal bounds, focus return and 44px controls",
+      "pass": true
+    },
+    {
+      "name": "tablet-portrait cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation",
+      "pass": true
+    },
+    {
+      "name": "tablet-portrait resize and simulated lost capture/blur/pagehide stop movement",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape layout metrics",
+      "pass": true,
+      "layout": {
+        "bodyBottom": 640.1875,
+        "closeTop": 645.1875,
+        "closeHeight": 44,
+        "panelTop": 52.8125,
+        "panelBottom": 715.1875,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "tablet-landscape canvas, scroll, modal bounds, focus return and 44px controls",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape cardinal/diagonal, captured drag, multi-touch, simulated unrelated release and cancellation",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape resize and simulated lost capture/blur/pagehide stop movement",
+      "pass": true
+    },
+    {
+      "name": "Reduced Motion freezes town/NPC ambient motion and removes dialog transitions",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

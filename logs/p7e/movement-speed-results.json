@@ -1,0 +1,158 @@
+{
+  "results": [
+    {
+      "label": "baseline",
+      "distance": 69.99999999999983,
+      "seconds": 0.38530000001192094,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 181.67661561856755
+    },
+    {
+      "label": "diagonal",
+      "distance": 70.00000000000024,
+      "seconds": 0.3965,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 176.54476670870173
+    },
+    {
+      "label": "home-1",
+      "distance": 69.99999999999983,
+      "seconds": 0.38979999999701975,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 179.57927142261423
+    },
+    {
+      "label": "home-2",
+      "distance": 69.99999999999983,
+      "seconds": 0.38930000001192094,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 179.80991522696206
+    },
+    {
+      "label": "home-3",
+      "distance": 69.99999999999977,
+      "seconds": 0.39609999999403955,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 176.72304973757414
+    },
+    {
+      "label": "home-4",
+      "distance": 69.99999999999977,
+      "seconds": 0.3996000000089407,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 175.1751751712552
+    },
+    {
+      "label": "home-5",
+      "distance": 69.99999999999983,
+      "seconds": 0.3897000000029802,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 179.6253528341404
+    },
+    {
+      "label": "shrine-1",
+      "distance": 69.99999999999983,
+      "seconds": 0.3855,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 181.58236057068697
+    },
+    {
+      "label": "shrine-2",
+      "distance": 69.99999999999977,
+      "seconds": 0.39629999999701976,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 176.6338632362508
+    },
+    {
+      "label": "shrine-3",
+      "distance": 69.99999999999983,
+      "seconds": 0.3885,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 180.18018018017975
+    },
+    {
+      "label": "shrine-4",
+      "distance": 69.99999999999977,
+      "seconds": 0.3995,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 175.21902377972407
+    },
+    {
+      "label": "shrine-5",
+      "distance": 69.99999999999977,
+      "seconds": 0.3979000000059605,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 175.92359889155864
+    },
+    {
+      "label": "chest-1",
+      "distance": 69.99999999999983,
+      "seconds": 0.3894000000059605,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 179.76373908302094
+    },
+    {
+      "label": "chest-2",
+      "distance": 69.99999999999977,
+      "seconds": 0.39879999999701976,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 175.5265797405288
+    },
+    {
+      "label": "chest-3",
+      "distance": 69.99999999999983,
+      "seconds": 0.3844000000059605,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 182.1019771043559
+    },
+    {
+      "label": "chest-4",
+      "distance": 69.99999999999983,
+      "seconds": 0.38909999999403955,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 179.9023387331589
+    },
+    {
+      "label": "chest-5",
+      "distance": 69.99999999999977,
+      "seconds": 0.3993999999910593,
+      "min": 175,
+      "max": 175,
+      "listeners": 1,
+      "rate": 175.26289434543503
+    }
+  ],
+  "errors": []
+}

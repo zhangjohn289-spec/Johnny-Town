@@ -6,7 +6,7 @@ import {renderCityHall} from './city-hall.js';
 import {renderChestLink} from './chest-link.js';
 import {renderQuick,renderStory,renderJournal,profile,getStory} from './story-ui.js';
 const panel=document.querySelector('#panel'),body=document.querySelector('#body'),store=createFortuneStore();
-let dispose=()=>{},onReturn=()=>{},previousFocus;
+let dispose=()=>{},onReturn=()=>{},previousFocus,returnToWorld=false;
 const intro=['你好，我是 Johnny，喜欢编程、音乐和游戏。','写代码时相信下一次能跑通，玩游戏时相信下一把能赢。','冷笑话是被动技能，搞怪是日常任务。','欢迎来我的小镇逛逛。如果感觉有点冷，可能是我的笑话生效了。'];
 function paragraph(text,cls){const p=document.createElement('p');p.textContent=text;if(cls)p.className=cls;body.append(p);return p;}
 function shrine(){let timer,extractTimer;const drawResult=r=>{body.replaceChildren();paragraph('今日签文 · '+r.date,'eyebrow');paragraph(r.fortuneLevel,'fortune-level');paragraph(r.fortuneText,'paper');paragraph('娱乐签文，仅供一笑。');if(store.warning)paragraph(store.warning,'warning');};const existing=store.read();if(existing){drawResult(existing);return ()=>{};}paragraph('远道搬来的神社，今天也在认真营业。');const tube=paragraph('▥','tube');const button=document.createElement('button');button.textContent='抽签';body.append(button);if(store.warning)paragraph(store.warning,'warning');button.onclick=()=>{button.disabled=true;const result=store.draw();tube.classList.add('shake');button.textContent='签已保存，正在展开…';extractTimer=setTimeout(()=>{tube.classList.remove('shake');tube.textContent='│';button.textContent='签已抽出，正在展开…';},450);timer=setTimeout(()=>{if(panel.open)drawResult(result);},matchMedia('(prefers-reduced-motion: reduce)').matches?0:900);};return ()=>{clearTimeout(timer);clearTimeout(extractTimer);};}
@@ -15,7 +15,7 @@ export function show(place,onClose){if(panel.open)return;previousFocus=document.
  else if(place.id==='city-hall'){dispose=()=>{};renderCityHall(body);}
  else if(place.id==='shrine')dispose=shrine();
  else if(place.id==='world'){dispose=()=>{};renderJournal(body,place.regions,place.state);}
- else if(place.id==='quick'){dispose=()=>{};renderQuick(body,place.regionId,()=>panel.close());}
+ else if(place.id==='quick'){dispose=()=>{};renderQuick(body,place.regionId,()=>{returnToWorld=true;panel.close();});}
  else if(place.kind==='activity')dispose=mountActivity(body,place);
  else if(place.kind==='npc'){dispose=()=>{};renderDialogue(body,place,()=>panel.close());}
  else if(place.kind==='secret')dispose=renderSecret(body,place)||(()=>{});
@@ -23,7 +23,7 @@ export function show(place,onClose){if(panel.open)return;previousFocus=document.
  else if(place.kind==='story'){dispose=()=>{};renderStory(body,getStory(place.storyId));}
  else{paragraph('▰','chest-open');dispose=()=>{};renderChestLink(body);}
  document.querySelector('#close').focus();}
-panel.addEventListener('close',()=>{dispose();dispose=()=>{};body.replaceChildren();onReturn();previousFocus?.focus?.();});
+panel.addEventListener('close',()=>{dispose();dispose=()=>{};body.replaceChildren();onReturn();if(returnToWorld){returnToWorld=false;document.querySelector('#game').focus({preventScroll:true});}else previousFocus?.focus?.();});
 document.querySelector('#close').onclick=()=>panel.close();
 export const isOpen=()=>panel.open;
 export const showNavigation=(regions,state,onClose)=>show({id:'world',name:'世界路书 · 探索日志',regions,state},onClose);

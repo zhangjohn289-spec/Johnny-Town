@@ -25,8 +25,8 @@ export function lockInput(scene, locked) {
 
 export function movePlayer(scene) {
   const k=scene.keys;
-  const x=(scene.touch?.x||0)+Number(k.D.isDown||k.RIGHT.isDown)-Number(k.A.isDown||k.LEFT.isDown);
-  const y=(scene.touch?.y||0)+Number(k.S.isDown||k.DOWN.isDown)-Number(k.W.isDown||k.UP.isDown);
+  const x=(scene.touch?.x||0)+(scene.uiOwnsKeyboard?0:Number(k.D.isDown||k.RIGHT.isDown)-Number(k.A.isDown||k.LEFT.isDown));
+  const y=(scene.touch?.y||0)+(scene.uiOwnsKeyboard?0:Number(k.S.isDown||k.DOWN.isDown)-Number(k.W.isDown||k.UP.isDown));
   const vector=movementVector(x,y);
   // Arcade integrates pixels/second with its own fixed step; never multiply by delta again.
   scene.player.body.setVelocity(vector.x*PLAYER_SPEED,vector.y*PLAYER_SPEED);

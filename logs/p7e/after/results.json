@@ -1,0 +1,38 @@
+[
+  {
+    "name": "HUD focus should not move Traveler",
+    "speed": 0,
+    "pass": true
+  },
+  {
+    "name": "landscape introduction layout",
+    "layout": {
+      "viewport": {
+        "w": 667,
+        "h": 375,
+        "dpr": 2
+      },
+      "panel": {
+        "height": 341,
+        "scrollHeight": 341
+      },
+      "close": {
+        "y": 293,
+        "h": 44
+      },
+      "body": {
+        "height": 178,
+        "scrollHeight": 485
+      },
+      "focus": "close"
+    }
+  },
+  {
+    "name": "locked journal contrast",
+    "contrast": {
+      "text": "rgb(98, 98, 79)",
+      "background": "rgb(255, 240, 207)",
+      "size": "13px"
+    }
+  }
+]

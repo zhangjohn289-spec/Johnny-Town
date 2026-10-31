@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "view": "portrait",
+      "width": 390,
+      "height": 844,
+      "dpr": 3,
+      "reduced": false,
+      "notes": 16,
+      "clicks": 16,
+      "pass": true
+    },
+    {
+      "view": "landscape",
+      "width": 844,
+      "height": 390,
+      "dpr": 2,
+      "reduced": true,
+      "notes": 16,
+      "clicks": 16,
+      "pass": true
+    },
+    {
+      "view": "tablet",
+      "width": 1024,
+      "height": 768,
+      "dpr": 2,
+      "reduced": false,
+      "notes": 16,
+      "clicks": 16,
+      "pass": true
+    }
+  ],
+  "errors": []
+}
