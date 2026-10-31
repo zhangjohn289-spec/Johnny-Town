@@ -2,7 +2,7 @@
 
 Johnny Town 是以可探索的像素世界呈现的个人介绍网站，基于 Phaser 3.90.0、Vite 6.4.5 和 JavaScript。核心入口是六章自我介绍；六区域自由探索、NPC、故事、每日签、五课回旋和两项小体验是可选内容。
 
-当前为 **P7F 本地发布候选**。已整合 P7A–P7E、欢迎信与重读、移动/交互维护、Audio Pass 及 Patch 01。main/旧线上版本不等于本候选，最终提交和验收证据见 [P7F 报告](P7F_FINAL_AUDIT_AND_RELEASE_CANDIDATE_REPORT.md)。本候选尚未授权推送、合并或部署。
+**P7 正式版已发布**：[打开 Johnny Town](https://zhangjohn289-spec.github.io/Johnny-Town/)。2026-10-31 部署的生产提交为 `0dd02c4bd1174b8f4a6ca751f235f0f343075c7c`，标签 `p7-release-2026-10-31`。已整合 P7A–P7E 及全部已验收维护；本次交接文档提交与应用部署提交分开记录。详见 [最终发布报告](P7_FINAL_DEPLOYMENT_REPORT.md) 和 [P7F 审计](P7F_FINAL_AUDIT_AND_RELEASE_CANDIDATE_REPORT.md)。
 
 ## 本地生产预览
 

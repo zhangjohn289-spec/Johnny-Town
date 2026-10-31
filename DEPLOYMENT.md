@@ -31,8 +31,13 @@ LOCAL_VIDEO_FILE 只能放在被忽略的 prototype/.env.local；不要放在公
 
 世界存档同一键内由 version 1 升为2，迁移保留旧区域进度，新增故事发现记录；运势键不变。若未来需要回滚至05A，应先备份新版世界进度，05A不理解version=2，不能承诺旧代码读取新版故事。
 
-## P7F 发布候选（当前）
+## P7F 发布候选（候选阶段历史记录）
 
 P7F 仅在 codex/p7f-release-candidate 做本地准备；没有获得公开发布权限。当前 main 仍为旧版 Phase06F。最新候选、完整祖先链、测试及确切 SHA 见 P7F_FINAL_AUDIT_AND_RELEASE_CANDIDATE_REPORT.md；不要将历史阶段条目当作当前功能/媒体状态。
 
 将来取得明确授权后：先重新检查远端分支是否变化，确认无分叉/未提交更改，再正常推送并将已验收候选整合到 main（禁止 force push）；保留现有手动 workflow_dispatch 和 publish=false 默认值，先做仅构建检查，单独获得发布授权后才能运行 publish=true。等待 deploy 成功后，以实际 page_url 在线验收首次确认、介绍、区域、声音与存档。P7F 本身不执行任何上述远端写入，也不改变 Pages Source、域名或仓库可见性。
+
+
+## P7 正式发布（当前）
+
+已获所有者明确授权，2026-10-31 23:52:50（香港）通过现有手动工作流成功发布生产提交 0dd02c4bd1174b8f4a6ca751f235f0f343075c7c；正式标签 p7-release-2026-10-31。https://zhangjohn289-spec.github.io/Johnny-Town/ 已完成真实线上冒烟验证。后续交接文档提交不改变应用、不再次触发部署。完整状态、限制和回滚见 P7_FINAL_DEPLOYMENT_REPORT.md；publish=false 默认值、Pages 设置与发布策略保持原样。
