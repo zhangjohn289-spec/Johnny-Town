@@ -1,0 +1,46 @@
+(node:35284) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ audio preference key is independent, default silent, canonical versioned settings only (1.4379ms)
+✔ corrupt/out-of-range preferences and denied storage safely fall back (0.2343ms)
+✔ no IO or sounds before deliberate enable, one ambience and bounded fade (3.7005ms)
+✔ 30 sequential region switches fade old to zero before new, one loop maximum (48.1506ms)
+✔ muting while a lazy decode is pending cannot start stale playback (0.9893ms)
+✔ effects rate-limited, capped, removed on completion, mute destroys all (1.1784ms)
+✔ missing asset fails once, no retry loop; explicit enable permits retry (7.2144ms)
+✔ blocked resume and failed play do not break UI or continuously retry (0.6689ms)
+✔ background and interrupted context silence playback; cleanup removes own listeners (1.9976ms)
+✔ unsupported audio and stored enable preference never autoplay (0.7811ms)
+✔ cleanup tolerates Phaser destroying sound objects before the audio controller (0.7667ms)
+✔ all shipped WAV assets: valid mono PCM, bounded peaks, DC and loop boundary continuity (23.746ms)
+✔ local date and exact weighted intervals (2.6924ms)
+✔ persistent same day, new day, snapshot and interrupted animation (0.8914ms)
+✔ denied storage and malformed records never crash or reroll in page (0.2794ms)
+✔ 100000 deterministic samples roughly match weights (10.3455ms)
+✔ autoplay falls back to muted then manual (0.4489ms)
+✔ closing while play promise rejects never restarts muted media (0.1492ms)
+✔ focus control is scene-owned, resets held keys and restores native key capture (1.1512ms)
+✔ UI focus suppresses keyboard movement while joystick still has normalized 175 speed (1.0241ms)
+✔ welcome title, paragraphs, emphasis and punctuation exactly match approved source hash (1.6847ms)
+✔ six portfolio sections preserve approved order and exact complete content (0.8351ms)
+✔ new and old-world visitors need welcome; rendering checks never write storage (0.3096ms)
+✔ only canonical acknowledgement counts; clearing welcome key leaves game saves intact (0.2085ms)
+✔ blocked reads/writes or storage getter never traps startup and memory prevents scene repeats (0.3147ms)
+✔ known stored acknowledgement remains valid in this page if storage later fails (0.7999ms)
+✔ every region spawn and destination is safe and outside its exit interaction range (1.0904ms)
+✔ collision geometry rejects solids, nonfinite coordinates and map edges (0.8495ms)
+✔ Phase04 fortune-only storage migrates without modifying its existing bytes (0.3241ms)
+✔ round trips persist checkpoint, discoveries and transition count across instances (0.985ms)
+✔ corrupt, partial, unsupported or hostile saves safely fall back to town (0.2958ms)
+✔ valid schema is sanitized and arbitrary saved coordinates never spawn the player (0.1257ms)
+✔ blocked storage keeps exploration alive in memory and reports the limitation (0.1575ms)
+✔ future regions are navigation labels without executable exits (0.0964ms)
+✔ video byte ranges support seeks and reject malformed or unsatisfiable ranges (0.2541ms)
+✔ media network or decode failures never get mislabeled as autoplay restrictions (0.3197ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 197.969

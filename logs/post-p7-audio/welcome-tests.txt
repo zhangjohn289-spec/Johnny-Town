@@ -1,0 +1,13 @@
+PASS desktop first welcome has two real buttons, exact copy, explicit acknowledgement only
+PASS desktop repeated replay via existing portfolio, both welcome exits, unchanged state and all chapters
+PASS desktop keyboard replay entry, tab navigation contains no duplicate controls, Escape behavior
+PASS phone first welcome has two real buttons, exact copy, explicit acknowledgement only
+PASS phone repeated replay via existing portfolio, both welcome exits, unchanged state and all chapters
+PASS phone keyboard replay entry, tab navigation contains no duplicate controls, Escape behavior
+PASS landscape first welcome has two real buttons, exact copy, explicit acknowledgement only
+PASS landscape repeated replay via existing portfolio, both welcome exits, unchanged state and all chapters
+PASS landscape keyboard replay entry, tab navigation contains no duplicate controls, Escape behavior
+PASS V1 save survives first welcome, replay and reload
+PASS V2 save survives first welcome, replay and reload
+PASS ordinary Town panels have one return control; genuine actions and NPC choices remain
+PASS reduced motion replay reuses the same animation-free reading surface

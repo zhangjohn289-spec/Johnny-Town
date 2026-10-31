@@ -1,0 +1,260 @@
+{
+  "results": [
+    {
+      "name": "first visit is silent with welcome intact and no audio requests",
+      "pass": true
+    },
+    {
+      "name": "keyboard opt-in, actual WebAudio output, volume and silence",
+      "pass": true
+    },
+    {
+      "name": "10 modal cycles preserve input isolation, single open/close feedback and sound cleanup",
+      "pass": true
+    },
+    {
+      "name": "20 real region transitions, six ambience keys, no overlapping loops or resource growth",
+      "pass": true
+    },
+    {
+      "name": "daily fortune cue once, reread has no extra draw, movement still 175",
+      "pass": true
+    },
+    {
+      "name": "refresh preserves independent audio and world/fortune preferences but never autoplays",
+      "pass": true
+    },
+    {
+      "name": "phone simulated touch audio controls, focus, bounded layout and scrolling",
+      "pass": true
+    },
+    {
+      "name": "landscape simulated touch audio controls, focus, bounded layout and scrolling",
+      "pass": true
+    },
+    {
+      "name": "tablet simulated touch audio controls, focus, bounded layout and scrolling",
+      "pass": true
+    },
+    {
+      "name": "missing WAVs fail gracefully, remain bounded and silent without background retries",
+      "pass": true
+    },
+    {
+      "name": "browser rejects resume without unhandled error or gameplay failure",
+      "pass": true
+    },
+    {
+      "name": "unsupported WebAudio remains a usable silent portfolio",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "desktopOutputRMS": 0.0036739692423142963,
+    "transitions": [
+      {
+        "region": "woods",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 241,
+        "decoded": 6
+      },
+      {
+        "region": "town",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 20,
+        "children": 39,
+        "decoded": 6
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 7
+      },
+      {
+        "region": "lake",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 65,
+        "decoded": 8
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 8
+      },
+      {
+        "region": "valley",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 20,
+        "children": 50,
+        "decoded": 9
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 9
+      },
+      {
+        "region": "ruins",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 62,
+        "decoded": 10
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 10
+      },
+      {
+        "region": "town",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 20,
+        "children": 39,
+        "decoded": 10
+      },
+      {
+        "region": "woods",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 241,
+        "decoded": 10
+      },
+      {
+        "region": "town",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 20,
+        "children": 39,
+        "decoded": 10
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 10
+      },
+      {
+        "region": "lake",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 65,
+        "decoded": 10
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 10
+      },
+      {
+        "region": "valley",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 20,
+        "children": 50,
+        "decoded": 10
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 10
+      },
+      {
+        "region": "ruins",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 62,
+        "decoded": 10
+      },
+      {
+        "region": "meadow",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 21,
+        "children": 64,
+        "decoded": 10
+      },
+      {
+        "region": "town",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "shutdown": 20,
+        "children": 39,
+        "decoded": 10
+      }
+    ]
+  },
+  "browser": "156.0.4314.50",
+  "devices": "Playwright simulated touch; no physical device or Safari check"
+}

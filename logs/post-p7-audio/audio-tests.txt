@@ -1,0 +1,12 @@
+PASS first visit is silent with welcome intact and no audio requests
+PASS keyboard opt-in, actual WebAudio output, volume and silence
+PASS 10 modal cycles preserve input isolation, single open/close feedback and sound cleanup
+PASS 20 real region transitions, six ambience keys, no overlapping loops or resource growth
+PASS daily fortune cue once, reread has no extra draw, movement still 175
+PASS refresh preserves independent audio and world/fortune preferences but never autoplays
+PASS phone simulated touch audio controls, focus, bounded layout and scrolling
+PASS landscape simulated touch audio controls, focus, bounded layout and scrolling
+PASS tablet simulated touch audio controls, focus, bounded layout and scrolling
+PASS missing WAVs fail gracefully, remain bounded and silent without background retries
+PASS browser rejects resume without unhandled error or gameplay failure
+PASS unsupported WebAudio remains a usable silent portfolio

@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "name": "real AudioContext suspend stops all sources; explicit gesture recovers",
+      "pass": true
+    },
+    {
+      "name": "simulated visibility change destroys sources and bounded recovery follows policy",
+      "pass": true
+    },
+    {
+      "name": "mute while traversing, re-enable in destination with no old region loop",
+      "pass": true
+    },
+    {
+      "name": "same-scene frame sampling with enabled and muted audio",
+      "pass": true
+    },
+    {
+      "name": "scene shutdown then game destruction cleans controller and pending animation work",
+      "pass": true
+    },
+    {
+      "name": "blocked localStorage still permits session-only volume and sound",
+      "pass": true
+    },
+    {
+      "name": "phone slider accepts an actual simulated touch drag without world motion",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "enabled": {
+      "median": 16.699999999999818,
+      "p95": 16.899999999999636
+    },
+    "muted": {
+      "median": 16.699999999999818,
+      "p95": 16.899999999999636
+    }
+  },
+  "browser": "156.0.4314.50",
+  "visibility": "synthetic document hidden change; actual AudioContext suspend/resume"
+}

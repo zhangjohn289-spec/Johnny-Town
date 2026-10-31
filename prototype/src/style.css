@@ -107,3 +107,12 @@ dialog #body:focus-visible{outline:2px solid #385745;outline-offset:2px}
  #body .portfolio-page .portfolio-english{font-size:12px;margin-bottom:10px}
  #body .portfolio-page h4{margin-top:16px}
 }
+/* Audio controls use the shared, input-isolated native reading dialog. */
+#audio-settings{white-space:nowrap;min-height:44px}
+#body label[for="audio-volume"]{display:block;margin:16px 0 0;font-weight:bold}
+#audio-volume{display:block;width:100%;min-height:44px;accent-color:#526e44;touch-action:pan-y}
+#audio-volume:focus-visible{outline:3px solid #526e44;outline-offset:2px}
+.audio-status{font-size:13px;overflow-wrap:anywhere}
+.touch-device header .navigation{flex-wrap:wrap}
+.touch-device #region-name{flex:1 1 100%;max-width:none;line-height:1.3}
+@media(orientation:landscape) and (max-height:540px){.touch-device #region-name{display:none}.touch-device header .navigation{flex-wrap:nowrap}}

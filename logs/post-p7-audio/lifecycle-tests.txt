@@ -1,0 +1,7 @@
+PASS real AudioContext suspend stops all sources; explicit gesture recovers
+PASS simulated visibility change destroys sources and bounded recovery follows policy
+PASS mute while traversing, re-enable in destination with no old region loop
+PASS same-scene frame sampling with enabled and muted audio
+PASS scene shutdown then game destruction cleans controller and pending animation work
+PASS blocked localStorage still permits session-only volume and sound
+PASS phone slider accepts an actual simulated touch drag without world motion

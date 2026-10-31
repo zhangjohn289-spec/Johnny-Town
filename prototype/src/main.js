@@ -1,3 +1,5 @@
+import {createTownAudio} from './audio-manager.js';
+import {audioLabel} from './audio-ui.js';
 import {bindFocusControls} from './input-focus.js';
 import {createNPCs} from './npc-system.js';
 import {chooseInteraction} from './npc-data.js';
@@ -6,7 +8,7 @@ import {stoneState} from './golden-trial.js';
 import './style.css';
 import Phaser from 'phaser';
 import {world} from './config.js';
-import {show,showNavigation,showQuick,showWelcome,isOpen} from './ui.js';
+import {show,showNavigation,showQuick,showWelcome,showAudio,configureUIAudio,isOpen} from './ui.js';
 import {createWelcomeStore} from './welcome-store.js';
 import {preloadArt,animateArt} from './visuals.js';
 import {regions,regionList,safeSpawn} from './regions.js';
@@ -34,6 +36,14 @@ class WorldScene extends Phaser.Scene {
     const saved=worldStore.read();
     const checkpoint=safeSpawn(saved.regionId,saved.spawnId);
     this.region=regions[checkpoint.regionId];
+    if(!this.game.townAudio){
+      this.game.townAudio=createTownAudio({sound:this.sound,cache:this.cache.audio});
+      const audio=this.game.townAudio;
+      const unsubscribe=audio.subscribe(state=>{document.querySelector('#audio-settings').textContent=audioLabel(state);});
+      this.game.events.once('destroy',()=>{unsubscribe();audio.destroy();});
+    }
+    this.audio=this.game.townAudio;configureUIAudio(this.audio);this.audio.setRegion(this.region.id);
+    this.events.once('shutdown',()=>this.audio.setRegion(null));
     this.interacting=false; this.transitioning=false; this.target=null; this.ambientUpdate=null;
     this.ruinState=saved.secrets;this.goldenStage=saved.goldenTrial.stage;this.goldenCompletionAt=null;this.secretCounts={};this.waitStart=null;this.machineUntil=0;
     renderRegion(this);
@@ -55,6 +65,9 @@ class WorldScene extends Phaser.Scene {
     const interact=event=>{if(!event.repeat) this.interact();};
     const map=event=>{if(!event?.repeat) this.openNavigation();};
     const quick=event=>{if(!event?.repeat) this.openQuick();};
+    const audioButton=document.querySelector('#audio-settings');
+    const audio=()=>{if(isOpen()||this.interacting)return;lockInput(this,true);showAudio(this.audio,()=>lockInput(this,false));};
+    audioButton.addEventListener('click',audio);
     this.input.keyboard.enabled=true;
     this.input.keyboard.resetKeys();
     this.input.keyboard.on('keydown-E',interact);
@@ -67,6 +80,7 @@ class WorldScene extends Phaser.Scene {
       this.input.keyboard.off('keydown-M',map);
       this.input.keyboard.off('keydown-I',quick);
       navigation.removeEventListener('click',map);
+      audioButton.removeEventListener('click',audio);
       quickButton.removeEventListener('click',quick);
       this.input.keyboard.resetKeys();
     });
@@ -95,7 +109,7 @@ class WorldScene extends Phaser.Scene {
     if(!this.target||isOpen()||this.interacting) return;
     const target={...this.target};
     if(target.kind==='npc'){target.dialogueContext={progress:worldStore.read(),repeat:talkedNPCs.has(target.id)};talkedNPCs.add(target.id);}
-    if(target.kind==='activity')target.onComplete=id=>{worldStore.finishActivity(id);document.querySelector('#save-status').textContent=worldStore.warning;};
+    if(target.kind==='activity')target.onComplete=id=>{worldStore.finishActivity(id);this.audio.effect('confirm');document.querySelector('#save-status').textContent=worldStore.warning;};
     if(target.id==='golden'||target.kind==='rune'){
       target.trialView=worldStore.interactGolden(target.id);
       this.goldenStage=target.trialView.stage;this.ruinState=worldStore.read().secrets;

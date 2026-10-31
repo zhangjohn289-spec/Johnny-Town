@@ -39,7 +39,7 @@
 **/Desktop.ini
 **/.idea/
 **/.vscode/
-# No third-party media files are authorized for this release
+# Private/unreviewed media remains excluded; reviewed exceptions follow below.
 **/*.mp4
 **/*.webm
 **/*.mov
@@ -48,3 +48,14 @@
 **/*.mp3
 **/*.wav
 **/*.ogg
+# Reviewed Audio Pass assets only; private media elsewhere remains excluded.
+!/prototype/public/audio/town.wav
+!/prototype/public/audio/woods.wav
+!/prototype/public/audio/meadow.wav
+!/prototype/public/audio/lake.wav
+!/prototype/public/audio/valley.wav
+!/prototype/public/audio/ruins.wav
+!/prototype/public/audio/open.wav
+!/prototype/public/audio/close.wav
+!/prototype/public/audio/confirm.wav
+!/prototype/public/audio/fortune.wav

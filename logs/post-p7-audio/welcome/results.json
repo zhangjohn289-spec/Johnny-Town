@@ -1,0 +1,59 @@
+{
+  "results": [
+    {
+      "name": "desktop first welcome has two real buttons, exact copy, explicit acknowledgement only",
+      "pass": true
+    },
+    {
+      "name": "desktop repeated replay via existing portfolio, both welcome exits, unchanged state and all chapters",
+      "pass": true
+    },
+    {
+      "name": "desktop keyboard replay entry, tab navigation contains no duplicate controls, Escape behavior",
+      "pass": true
+    },
+    {
+      "name": "phone first welcome has two real buttons, exact copy, explicit acknowledgement only",
+      "pass": true
+    },
+    {
+      "name": "phone repeated replay via existing portfolio, both welcome exits, unchanged state and all chapters",
+      "pass": true
+    },
+    {
+      "name": "phone keyboard replay entry, tab navigation contains no duplicate controls, Escape behavior",
+      "pass": true
+    },
+    {
+      "name": "landscape first welcome has two real buttons, exact copy, explicit acknowledgement only",
+      "pass": true
+    },
+    {
+      "name": "landscape repeated replay via existing portfolio, both welcome exits, unchanged state and all chapters",
+      "pass": true
+    },
+    {
+      "name": "landscape keyboard replay entry, tab navigation contains no duplicate controls, Escape behavior",
+      "pass": true
+    },
+    {
+      "name": "V1 save survives first welcome, replay and reload",
+      "pass": true
+    },
+    {
+      "name": "V2 save survives first welcome, replay and reload",
+      "pass": true
+    },
+    {
+      "name": "ordinary Town panels have one return control; genuine actions and NPC choices remain",
+      "pass": true
+    },
+    {
+      "name": "reduced motion replay reuses the same animation-free reading surface",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "touch": "simulated Playwright/CDP, not physical devices"
+}
