@@ -1,0 +1,158 @@
+{
+  "results": [
+    {
+      "name": "woods actual ambient frames, reduced motion, input and layering",
+      "pass": true
+    },
+    {
+      "name": "lake actual ambient frames, reduced motion, input and layering",
+      "pass": true
+    },
+    {
+      "name": "meadow actual ambient frames, reduced motion, input and layering",
+      "pass": true
+    },
+    {
+      "name": "ruins actual ambient frames, reduced motion, input and layering",
+      "pass": true
+    },
+    {
+      "name": "thirty mixed-region transitions dispose effects and preserve bounded resources",
+      "pass": true
+    },
+    {
+      "name": "journal and persistent progress remain compatible after environmental changes",
+      "pass": true
+    },
+    {
+      "name": "no browser runtime errors",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "resources": {
+      "meadow": {
+        "children": 64,
+        "textures": 39,
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "shutdown": 19,
+        "bodies": 1,
+        "static": 19,
+        "colliders": 1,
+        "nature": {
+          "region": "meadow",
+          "disposed": false,
+          "graphics": 4,
+          "counts": {
+            "grass": 12,
+            "canopy": 0,
+            "reeds": 0,
+            "ripples": 0,
+            "leaves": 0,
+            "dust": 0
+          }
+        }
+      },
+      "town": {
+        "children": 39,
+        "textures": 39,
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "shutdown": 18,
+        "bodies": 1,
+        "static": 9,
+        "colliders": 1,
+        "nature": null
+      },
+      "woods": {
+        "children": 241,
+        "textures": 40,
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "shutdown": 19,
+        "bodies": 1,
+        "static": 108,
+        "colliders": 1,
+        "nature": {
+          "region": "woods",
+          "disposed": false,
+          "graphics": 4,
+          "counts": {
+            "grass": 6,
+            "canopy": 24,
+            "reeds": 0,
+            "ripples": 0,
+            "leaves": 2,
+            "dust": 0
+          }
+        }
+      },
+      "lake": {
+        "children": 65,
+        "textures": 36,
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "shutdown": 19,
+        "bodies": 1,
+        "static": 36,
+        "colliders": 1,
+        "nature": {
+          "region": "lake",
+          "disposed": false,
+          "graphics": 4,
+          "counts": {
+            "grass": 0,
+            "canopy": 0,
+            "reeds": 5,
+            "ripples": 8,
+            "leaves": 0,
+            "dust": 0
+          }
+        }
+      },
+      "ruins": {
+        "children": 62,
+        "textures": 51,
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "shutdown": 19,
+        "bodies": 1,
+        "static": 16,
+        "colliders": 1,
+        "nature": {
+          "region": "ruins",
+          "disposed": false,
+          "graphics": 4,
+          "counts": {
+            "grass": 0,
+            "canopy": 0,
+            "reeds": 0,
+            "ripples": 0,
+            "leaves": 0,
+            "dust": 3
+          }
+        }
+      },
+      "valley": {
+        "children": 50,
+        "textures": 37,
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "shutdown": 18,
+        "bodies": 1,
+        "static": 11,
+        "colliders": 1,
+        "nature": null
+      }
+    }
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

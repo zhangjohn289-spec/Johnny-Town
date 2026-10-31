@@ -1,0 +1,128 @@
+{
+  "results": [
+    {
+      "name": "woods desktop rendered at gameplay scale",
+      "pass": true
+    },
+    {
+      "name": "lake desktop rendered at gameplay scale",
+      "pass": true
+    },
+    {
+      "name": "meadow desktop rendered at gameplay scale",
+      "pass": true
+    },
+    {
+      "name": "ruins desktop rendered at gameplay scale",
+      "pass": true
+    }
+  ],
+  "geometry": {
+    "town": "06570304c1f7bc1a3434432bf9e2fd13d1c6a5fe2fbff5c4148ce7ca991c079d",
+    "meadow": "13a0499f755d80ec3a3eeb873c2d151c526444334dc929f3b13a64663903fedd",
+    "woods": "33ecf18300622e07f4d6bc4536108a80bbd2c32caf55e1fd77c1d1154cf8737a",
+    "lake": "9b3fdf7ad70d8e6cefee530d45d474d12b3116dfdfc5160b1d7794bcb7488b0e",
+    "valley": "a727da9931aee9f658326bba25b3bbf617592f2289db23551c7eca1394e0a877",
+    "ruins": "732a5693aeedfd870c41667f9fc82b2b1086acc2dec8b5d3f24931cc2fae8c91"
+  },
+  "metrics": {
+    "woods": {
+      "fps": 57.46875,
+      "frameMedian": 16.699999999999818,
+      "frameP95": 17,
+      "heap": 32289506,
+      "children": 241,
+      "textures": 34,
+      "bodies": 1,
+      "static": 108,
+      "E": 1,
+      "ambient": {
+        "region": "woods",
+        "disposed": false,
+        "graphics": 4,
+        "counts": {
+          "grass": 6,
+          "canopy": 24,
+          "reeds": 0,
+          "ripples": 0,
+          "leaves": 2,
+          "dust": 0
+        }
+      }
+    },
+    "lake": {
+      "fps": 59.71875,
+      "frameMedian": 16.699999999999818,
+      "frameP95": 17.09999999999991,
+      "heap": 18795064,
+      "children": 65,
+      "textures": 21,
+      "bodies": 1,
+      "static": 36,
+      "E": 1,
+      "ambient": {
+        "region": "lake",
+        "disposed": false,
+        "graphics": 4,
+        "counts": {
+          "grass": 0,
+          "canopy": 0,
+          "reeds": 5,
+          "ripples": 8,
+          "leaves": 0,
+          "dust": 0
+        }
+      }
+    },
+    "meadow": {
+      "fps": 59.4375,
+      "frameMedian": 16.699999999999818,
+      "frameP95": 16.800000000000182,
+      "heap": 27137148,
+      "children": 64,
+      "textures": 24,
+      "bodies": 1,
+      "static": 19,
+      "E": 1,
+      "ambient": {
+        "region": "meadow",
+        "disposed": false,
+        "graphics": 4,
+        "counts": {
+          "grass": 12,
+          "canopy": 0,
+          "reeds": 0,
+          "ripples": 0,
+          "leaves": 0,
+          "dust": 0
+        }
+      }
+    },
+    "ruins": {
+      "fps": 59.296875,
+      "frameMedian": 16.699999999999818,
+      "frameP95": 16.899999999999636,
+      "heap": 27947966,
+      "children": 62,
+      "textures": 35,
+      "bodies": 1,
+      "static": 16,
+      "E": 1,
+      "ambient": {
+        "region": "ruins",
+        "disposed": false,
+        "graphics": 4,
+        "counts": {
+          "grass": 0,
+          "canopy": 0,
+          "reeds": 0,
+          "ripples": 0,
+          "leaves": 0,
+          "dust": 3
+        }
+      }
+    }
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

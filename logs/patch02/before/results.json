@@ -1,0 +1,194 @@
+[
+  {
+    "id": "logs",
+    "view": "desktop",
+    "camera": {
+      "x": 0,
+      "y": 128
+    }
+  },
+  {
+    "id": "fragments",
+    "view": "desktop",
+    "camera": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "id": "flight",
+    "view": "desktop",
+    "camera": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "id": "stage",
+    "view": "desktop",
+    "camera": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "id": "stones",
+    "view": "desktop",
+    "camera": {
+      "x": 0,
+      "y": 128
+    }
+  },
+  {
+    "id": "lamp",
+    "view": "desktop",
+    "camera": {
+      "x": 64,
+      "y": 128
+    }
+  },
+  {
+    "id": "logs",
+    "view": "tablet",
+    "camera": {
+      "x": 32,
+      "y": 342
+    }
+  },
+  {
+    "id": "fragments",
+    "view": "tablet",
+    "camera": {
+      "x": 0,
+      "y": 107
+    }
+  },
+  {
+    "id": "flight",
+    "view": "tablet",
+    "camera": {
+      "x": 102,
+      "y": 77
+    }
+  },
+  {
+    "id": "stage",
+    "view": "tablet",
+    "camera": {
+      "x": 0,
+      "y": 77
+    }
+  },
+  {
+    "id": "stones",
+    "view": "tablet",
+    "camera": {
+      "x": 0,
+      "y": 267
+    }
+  },
+  {
+    "id": "lamp",
+    "view": "tablet",
+    "camera": {
+      "x": 384,
+      "y": 307
+    }
+  },
+  {
+    "id": "logs",
+    "view": "landscape",
+    "camera": {
+      "x": 32,
+      "y": 342
+    }
+  },
+  {
+    "id": "fragments",
+    "view": "landscape",
+    "camera": {
+      "x": 0,
+      "y": 107
+    }
+  },
+  {
+    "id": "flight",
+    "view": "landscape",
+    "camera": {
+      "x": 102,
+      "y": 77
+    }
+  },
+  {
+    "id": "stage",
+    "view": "landscape",
+    "camera": {
+      "x": 0,
+      "y": 77
+    }
+  },
+  {
+    "id": "stones",
+    "view": "landscape",
+    "camera": {
+      "x": 0,
+      "y": 267
+    }
+  },
+  {
+    "id": "lamp",
+    "view": "landscape",
+    "camera": {
+      "x": 384,
+      "y": 307
+    }
+  },
+  {
+    "id": "logs",
+    "view": "portrait",
+    "camera": {
+      "x": 32,
+      "y": 342
+    }
+  },
+  {
+    "id": "fragments",
+    "view": "portrait",
+    "camera": {
+      "x": 0,
+      "y": 107
+    }
+  },
+  {
+    "id": "flight",
+    "view": "portrait",
+    "camera": {
+      "x": 102,
+      "y": 77
+    }
+  },
+  {
+    "id": "stage",
+    "view": "portrait",
+    "camera": {
+      "x": 0,
+      "y": 77
+    }
+  },
+  {
+    "id": "stones",
+    "view": "portrait",
+    "camera": {
+      "x": 0,
+      "y": 267
+    }
+  },
+  {
+    "id": "lamp",
+    "view": "portrait",
+    "camera": {
+      "x": 384,
+      "y": 307
+    }
+  }
+]

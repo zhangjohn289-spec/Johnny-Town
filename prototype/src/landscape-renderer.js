@@ -1,3 +1,4 @@
+import {landmark} from './landmark-art.js';
 import {pathDistance,waterSpan} from './expansion-data.js';
 const box=(g,c,x,y,w,h,a=1)=>g.fillStyle(c,a).fillRect(Math.round(x),Math.round(y),w,h);
 function gear(scene,x,y,r){const g=scene.add.graphics({x,y}).setDepth(y+30);g.fillStyle(0x5e5649).fillCircle(0,0,r);g.fillStyle(0xc19a59).fillCircle(0,0,r-4);for(let i=0;i<8;i++){const a=i*Math.PI/4;box(g,0xc19a59,Math.cos(a)*r-5,Math.sin(a)*r-5,10,10);}g.fillStyle(0x4b514b).fillCircle(0,0,6);return g;}
@@ -43,13 +44,7 @@ export function renderLandscape(scene){
   if(p.kind==='activity'){
    if(p.activityId==='rhythm'){box(g,0x685c42,x+8,y+20,5,22);box(g,0x685c42,x+34,y+20,5,22);box(g,0x9e6b4d,x,y,48,24);box(g,0xe4d4a5,x-2,y-3,52,7);for(const a of [5,20,37])box(g,0xd8bd7d,x+a,y+4,3,19);}
    else{box(g,0x69543c,x,y+8,60,26);box(g,0xbba477,x-5,y+6,70,5);for(let i=0;i<3;i++){g.lineStyle(3,0xc7a461).strokeCircle(x+10+i*20,y-3,10);box(g,0x81918b,x+8+i*20,y-5,4,4);}box(g,0x5a6854,x+25,y-28,8,20);}
-  }else if(p.id==='lake-stage'){
-   for(let k=0;k<3;k++){box(g,0x60735b,x-25,y+60+k*18,130,7);box(g,0xb7b78c,x-25-k*12,y+58+k*18,180+k*24,3);}
-   box(g,0x72573b,x,y,p.w,p.h);for(let a=0;a<p.w;a+=12)box(g,0xb9a273,x+a,y+4,9,p.h-8);
-   for(let a=0;a<p.w-8;a+=24){box(g,0x746044,x+a+4,y+13,2,12);box(g,0xd5bd86,x+a+4,y+4,8,1);}
-   box(g,0x876244,x-8,y-65,7,105);box(g,0x876244,x+p.w,y-65,7,105);box(g,0xb77b65,x-8,y-65,p.w+15,13);box(g,0x9b5860,x,y-50,17,48);box(g,0x9b5860,x+p.w-17,y-50,17,48);
-  }else if(p.id==='rhythm-stones'){for(let i=0;i<4;i++){box(g,0x536b65,x+i*21,y+7,17,21);box(g,0xc1c5a1,x+i*21+2,y,13,13);box(g,0x6c8278,x+i*21+7,y+3,2,5);}}
-  else if(p.id==='conductors-lantern'){box(g,0x69593c,x+9,y-50,6,85);box(g,0x47594d,x-7,y-61,38,8);box(g,0xd3b66e,x,y-53,24,27);box(g,0xffe7a1,x+4,y-48,16,18);box(g,0x5a6653,x-4,y-27,32,5);}
+  }else if(['lake-stage','rhythm-stones','conductors-lantern'].includes(p.id)){landmark(g,p.id,x,y);}
   else if(p.id==='echoing-pier'){box(g,0x755a3e,x,y-16,6,46);box(g,0xd8c496,x-4,y-26,29,18);for(let i=0;i<3;i++)box(g,0x88784e,x+1,y-22+i*4,19,1);box(g,0x645d45,x+9,y-23,2,11);box(g,0x645d45,x+6,y-15,5,3);}
   else if(p.id==='first-gear'){box(g,0x5b6257,x,y+20,48,20);gears.push(gear(scene,x+24,y,22));}
   else if(p.id==='unfinished-ideas'){
