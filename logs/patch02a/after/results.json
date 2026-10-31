@@ -1,0 +1,66 @@
+[
+  {
+    "id": "drum",
+    "view": "desktop",
+    "camera": {
+      "x": 0,
+      "y": 128
+    }
+  },
+  {
+    "id": "manuscript",
+    "view": "desktop",
+    "camera": {
+      "x": 0,
+      "y": 128
+    }
+  },
+  {
+    "id": "drum",
+    "view": "tablet",
+    "camera": {
+      "x": 16,
+      "y": 342
+    }
+  },
+  {
+    "id": "manuscript",
+    "view": "tablet",
+    "camera": {
+      "x": 0,
+      "y": 342
+    }
+  },
+  {
+    "id": "drum",
+    "view": "landscape",
+    "camera": {
+      "x": 16,
+      "y": 342
+    }
+  },
+  {
+    "id": "manuscript",
+    "view": "landscape",
+    "camera": {
+      "x": 0,
+      "y": 342
+    }
+  },
+  {
+    "id": "drum",
+    "view": "portrait",
+    "camera": {
+      "x": 16,
+      "y": 342
+    }
+  },
+  {
+    "id": "manuscript",
+    "view": "portrait",
+    "camera": {
+      "x": 0,
+      "y": 342
+    }
+  }
+]

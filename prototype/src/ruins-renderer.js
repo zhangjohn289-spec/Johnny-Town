@@ -1,3 +1,4 @@
+import {drawManuscript} from './document-drum-art.js';
 import {landmark} from './landmark-art.js';
 import {pathDistance} from './expansion-data.js';
 import {createGoldenStones} from './golden-stones.js';
@@ -37,7 +38,7 @@ export function renderRuins(s){
  if(p.kind==='rune'||p.id==='golden'){a.destroy();continue;}
  b(0x33473c,x-8,y+30,p.w+16,18);
  if(p.id==='logs'){landmark(a,p.id,x,y);}
- else if(p.id==='manuscript'){b(0x69513d,x,y-20,56,60);for(let i=0;i<4;i++){b(0xae996b,x+3,y-15+i*14,50,3);b(i%2?0xb4b99c:0x698787,x+5+i*10,y-12,8,35);}if(p.id==='manuscript'){b(0xefe0b1,x+12,y-29,34,15);b(0x384b45,x+36,y-40,2,25);b(0xe2d8ad,x+5,y-22,15,10);b(0xd4c89f,x+30,y+20,19,8);b(0x897e62,x+15,y-23,12,1);}}
+ else if(p.id==='manuscript'){drawManuscript(a,x,y);}
  else if(p.id==='engineer'){s.add.image(x-5,y-29,'chiefMek').setOrigin(0).setDepth(p.y+p.h+1);b(0x384c44,x+40,y+4,26,32);b(0xa18e5f,x+42,y,22,7);b(0x7b9388,x+44,y+11,16,14);a.lineStyle(3,0xc0a465).strokeCircle(x+52,y+17,6);b(0x6b7564,x+61,y-15,5,20);s.machine=a;}
  else if(p.id==='safe-chest'){b(0x3d4035,x-2,y-4,60,41);b(0x93663a,x,y,56,35);b(0xc7a45d,x+2,y-8,52,12);for(const dx of [7,42])b(0xf1d18a,x+dx,y-7,6,41);b(0x403c2b,x+23,y+10,12,14);b(0xf0d893,x+26,y+12,6,6);b(0x9ca078,x+3,y-8,12,3);}
  else if(p.id==='flight'){landmark(a,p.id,x,y);}

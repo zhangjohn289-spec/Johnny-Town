@@ -1,3 +1,4 @@
+import {drawDrum} from './document-drum-art.js';
 import {landmark} from './landmark-art.js';
 import {pathDistance,waterSpan} from './expansion-data.js';
 const box=(g,c,x,y,w,h,a=1)=>g.fillStyle(c,a).fillRect(Math.round(x),Math.round(y),w,h);
@@ -42,7 +43,7 @@ export function renderLandscape(scene){
  const gears=[];
  for(const p of r.places){const g=scene.add.graphics().setDepth(p.y+p.h),x=p.x,y=p.y;
   if(p.kind==='activity'){
-   if(p.activityId==='rhythm'){box(g,0x685c42,x+8,y+20,5,22);box(g,0x685c42,x+34,y+20,5,22);box(g,0x9e6b4d,x,y,48,24);box(g,0xe4d4a5,x-2,y-3,52,7);for(const a of [5,20,37])box(g,0xd8bd7d,x+a,y+4,3,19);}
+   if(p.activityId==='rhythm'){drawDrum(g,x,y);}
    else{box(g,0x69543c,x,y+8,60,26);box(g,0xbba477,x-5,y+6,70,5);for(let i=0;i<3;i++){g.lineStyle(3,0xc7a461).strokeCircle(x+10+i*20,y-3,10);box(g,0x81918b,x+8+i*20,y-5,4,4);}box(g,0x5a6854,x+25,y-28,8,20);}
   }else if(['lake-stage','rhythm-stones','conductors-lantern'].includes(p.id)){landmark(g,p.id,x,y);}
   else if(p.id==='echoing-pier'){box(g,0x755a3e,x,y-16,6,46);box(g,0xd8c496,x-4,y-26,29,18);for(let i=0;i<3;i++)box(g,0x88784e,x+1,y-22+i*4,19,1);box(g,0x645d45,x+9,y-23,2,11);box(g,0x645d45,x+6,y-15,5,3);}
