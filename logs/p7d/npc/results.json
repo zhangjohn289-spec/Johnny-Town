@@ -1,0 +1,92 @@
+{
+  "results": [
+    {
+      "name": "town-clerk walked two branches close and repeat",
+      "pass": true
+    },
+    {
+      "name": "mechanical-apprentice walked two branches close and repeat",
+      "pass": true
+    },
+    {
+      "name": "traveling-explorer walked two branches close and repeat",
+      "pass": true
+    },
+    {
+      "name": "forest-archivist walked two branches close and repeat",
+      "pass": true
+    },
+    {
+      "name": "missing dialogue readable fallback and close",
+      "pass": true
+    },
+    {
+      "name": "20 transitions clean NPC count input handlers and resources",
+      "pass": true
+    },
+    {
+      "name": "844 mobile all four NPCs choice and close",
+      "pass": true
+    },
+    {
+      "name": "390 mobile all four NPCs choice and close",
+      "pass": true
+    },
+    {
+      "name": "no errors",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "trips": [
+      335,
+      685,
+      295,
+      290,
+      334,
+      304,
+      302,
+      300,
+      301,
+      302,
+      295,
+      293,
+      290,
+      289,
+      300,
+      301,
+      301,
+      297,
+      301,
+      297,
+      295,
+      293,
+      292,
+      290,
+      301
+    ],
+    "resources": {
+      "town": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "bodies": 1,
+        "static": 9,
+        "colliders": 1,
+        "children": 39,
+        "textures": 43
+      },
+      "woods": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "bodies": 1,
+        "static": 108,
+        "colliders": 1,
+        "children": 241,
+        "textures": 44
+      }
+    }
+  },
+  "errors": []
+}

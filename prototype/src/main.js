@@ -13,6 +13,7 @@ import {createPlayer,lockInput,movePlayer} from './player-controller.js';
 import {renderRegion} from './region-renderer.js';
 
 const worldStore=createWorldStore();
+const talkedNPCs=new Set(); // Session-only greetings; no saved progression.
 const navigation=document.querySelector('#world-map');
 const quickButton=document.querySelector('#quick-intro');
 const hint=document.querySelector('#hint');
@@ -82,6 +83,7 @@ class WorldScene extends Phaser.Scene {
   interact(){
     if(!this.target||isOpen()||this.interacting) return;
     const target={...this.target};
+    if(target.kind==='npc'){target.dialogueContext={progress:worldStore.read(),repeat:talkedNPCs.has(target.id)};talkedNPCs.add(target.id);}
     if(target.kind==='activity')target.onComplete=id=>{worldStore.finishActivity(id);document.querySelector('#save-status').textContent=worldStore.warning;};
     if(target.id==='golden'||target.kind==='rune'){
       target.trialView=worldStore.interactGolden(target.id);
