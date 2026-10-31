@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://zhangjohn289-spec.github.io/Johnny-Town/",
+    "status": 200,
+    "title": "Johnny Town",
+    "scope": "read only; not candidate deployment validation"
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV1GJ411x7h7/",
+    "status": 200,
+    "title": "【官方 MV】Never Gonna Give You Up - Rick Astley_哔哩哔哩_bilibili",
+    "scope": "read only; not candidate deployment validation"
+  }
+]

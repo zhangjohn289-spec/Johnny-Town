@@ -30,3 +30,9 @@ LOCAL_VIDEO_FILE 只能放在被忽略的 prototype/.env.local；不要放在公
 本地分支 feature/phase05b-memory-woods 只用于开发、验收和本地提交。build job 增加 test-woods.mjs，发布门禁保持原样。未授权本阶段 push、merge 或部署。
 
 世界存档同一键内由 version 1 升为2，迁移保留旧区域进度，新增故事发现记录；运势键不变。若未来需要回滚至05A，应先备份新版世界进度，05A不理解version=2，不能承诺旧代码读取新版故事。
+
+## P7F 发布候选（当前）
+
+P7F 仅在 codex/p7f-release-candidate 做本地准备；没有获得公开发布权限。当前 main 仍为旧版 Phase06F。最新候选、完整祖先链、测试及确切 SHA 见 P7F_FINAL_AUDIT_AND_RELEASE_CANDIDATE_REPORT.md；不要将历史阶段条目当作当前功能/媒体状态。
+
+将来取得明确授权后：先重新检查远端分支是否变化，确认无分叉/未提交更改，再正常推送并将已验收候选整合到 main（禁止 force push）；保留现有手动 workflow_dispatch 和 publish=false 默认值，先做仅构建检查，单独获得发布授权后才能运行 publish=true。等待 deploy 成功后，以实际 page_url 在线验收首次确认、介绍、区域、声音与存档。P7F 本身不执行任何上述远端写入，也不改变 Pages Source、域名或仓库可见性。

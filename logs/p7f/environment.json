@@ -1,0 +1,10 @@
+{
+  "platform": "win32",
+  "arch": "x64",
+  "node": "v26.13.0",
+  "npm": "11.20.0",
+  "auditDate": "2026-10-31T15:29:12.977Z",
+  "preview": "http://127.0.0.1:4501/Johnny-Town/",
+  "main": "381f9a0917cf1aed7462d80380dd0a23e80c3fc4",
+  "baseline": "f6b46b79dbd1530fde8fed73c93399ce268da5fe"
+}

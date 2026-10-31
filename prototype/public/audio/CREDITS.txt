@@ -1,0 +1,14 @@
+Johnny Town audio credits — CC0 1.0
+https://creativecommons.org/publicdomain/zero/1.0/
+
+woods.wav: Processed woodland details from Spring Spring, Birds and Wind — Ambient.
+Public-domain bird contributions credited by the creator: isaiah658, syncopika, pauliuw.
+https://opengameart.org/content/birds-and-wind-ambient-birds-wind-and-synth
+
+lake.wav: Processed Water Waves by transitking, submitted by qubodup.
+https://opengameart.org/content/water-waves
+https://freesound.org/people/transitking/sounds/11505/
+
+valley.wav and open/close/confirm/fortune.wav: original Johnny Town synthesis,
+also dedicated to CC0. No wind layer, music, voice or private media is included.
+Attribution is not required by CC0; the creators are credited voluntarily.

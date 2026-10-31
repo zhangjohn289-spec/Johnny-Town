@@ -1,0 +1,402 @@
+{
+  "results": [
+    {
+      "name": "fresh visitor -> guarded introduction -> explicit welcome acknowledgment",
+      "pass": true
+    },
+    {
+      "name": "six chapters, native scrolling, replay and focus return remain readable",
+      "pass": true
+    },
+    {
+      "name": "175 speed, diagonal normalization, collision, marker selection/clearing and inactive-art removal",
+      "pass": true
+    },
+    {
+      "name": "Town NPC, daily fortune and explicit audio controls work without continuous Town ambience",
+      "pass": true
+    },
+    {
+      "name": "coherent six-region journey: forest story/NPC, meadow route, lake practice, workshop and aircraft",
+      "pass": true
+    },
+    {
+      "name": "bounded warm lifecycle: eight further transitions, repeated overlays, listener and resource stability",
+      "pass": true
+    },
+    {
+      "name": "current frame sample, reloaded checkpoint and independent persisted progress/audio/welcome state",
+      "pass": true
+    },
+    {
+      "name": "desktop layout, keyboard/touch interaction, replay scrolling and audio settings",
+      "pass": true
+    },
+    {
+      "name": "narrow-desktop layout, keyboard/touch interaction, replay scrolling and audio settings",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape layout, keyboard/touch interaction, replay scrolling and audio settings",
+      "pass": true
+    },
+    {
+      "name": "tablet-portrait layout, keyboard/touch interaction, replay scrolling and audio settings",
+      "pass": true
+    },
+    {
+      "name": "phone-portrait layout, keyboard/touch interaction, replay scrolling and audio settings",
+      "pass": true
+    },
+    {
+      "name": "short-landscape layout, keyboard/touch interaction, replay scrolling and audio settings",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "metrics": {
+    "transitions": [
+      {
+        "region": "woods",
+        "children": 241,
+        "textures": 39,
+        "bodies": 1,
+        "walls": 108,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 1,
+        "loops": 1,
+        "warning": ""
+      },
+      {
+        "region": "town",
+        "children": 39,
+        "textures": 38,
+        "bodies": 1,
+        "walls": 9,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "meadow",
+        "children": 64,
+        "textures": 39,
+        "bodies": 1,
+        "walls": 19,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "lake",
+        "children": 65,
+        "textures": 37,
+        "bodies": 1,
+        "walls": 36,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 1,
+        "loops": 1,
+        "warning": ""
+      },
+      {
+        "region": "meadow",
+        "children": 64,
+        "textures": 40,
+        "bodies": 1,
+        "walls": 19,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "valley",
+        "children": 50,
+        "textures": 42,
+        "bodies": 1,
+        "walls": 11,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 1,
+        "loops": 1,
+        "warning": ""
+      },
+      {
+        "region": "meadow",
+        "children": 64,
+        "textures": 44,
+        "bodies": 1,
+        "walls": 19,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "ruins",
+        "children": 62,
+        "textures": 56,
+        "bodies": 1,
+        "walls": 16,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "meadow",
+        "children": 64,
+        "textures": 44,
+        "bodies": 1,
+        "walls": 19,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "town",
+        "children": 39,
+        "textures": 44,
+        "bodies": 1,
+        "walls": 9,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "woods",
+        "children": 241,
+        "textures": 45,
+        "bodies": 1,
+        "walls": 108,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 1,
+        "loops": 1,
+        "warning": ""
+      },
+      {
+        "region": "town",
+        "children": 39,
+        "textures": 44,
+        "bodies": 1,
+        "walls": 9,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "woods",
+        "children": 241,
+        "textures": 45,
+        "bodies": 1,
+        "walls": 108,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 1,
+        "loops": 1,
+        "warning": ""
+      },
+      {
+        "region": "town",
+        "children": 39,
+        "textures": 44,
+        "bodies": 1,
+        "walls": 9,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "woods",
+        "children": 241,
+        "textures": 45,
+        "bodies": 1,
+        "walls": 108,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 1,
+        "loops": 1,
+        "warning": ""
+      },
+      {
+        "region": "town",
+        "children": 39,
+        "textures": 44,
+        "bodies": 1,
+        "walls": 9,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      },
+      {
+        "region": "woods",
+        "children": 241,
+        "textures": 45,
+        "bodies": 1,
+        "walls": 108,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 1,
+        "loops": 1,
+        "warning": ""
+      },
+      {
+        "region": "town",
+        "children": 39,
+        "textures": 44,
+        "bodies": 1,
+        "walls": 9,
+        "colliders": 1,
+        "markers": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "sounds": 0,
+        "loops": 0,
+        "warning": ""
+      }
+    ],
+    "startupMs": 962.5088,
+    "warm": {
+      "region": "town",
+      "children": 39,
+      "textures": 44,
+      "bodies": 1,
+      "walls": 9,
+      "colliders": 1,
+      "markers": 1,
+      "E": 1,
+      "I": 1,
+      "M": 1,
+      "sounds": 0,
+      "loops": 0,
+      "warning": ""
+    },
+    "heapBefore": 9172816,
+    "heapAfter": 9517120,
+    "listeners": {
+      "window": [
+        "__playwright_global_listeners_check__:false",
+        "auxclick:true",
+        "blur:false",
+        "blur:false",
+        "click:true",
+        "contextmenu:true",
+        "dblclick:true",
+        "focus:false",
+        "keydown:false",
+        "keyup:false",
+        "mousedown:false",
+        "mousedown:true",
+        "mousemove:true",
+        "mouseup:false",
+        "mouseup:true",
+        "pagehide:false",
+        "pointerdown:true",
+        "pointerup:true",
+        "resize:false",
+        "resize:false",
+        "touchcancel:true",
+        "touchend:true",
+        "touchstart:true"
+      ],
+      "document": [
+        "MSFullscreenChange:false",
+        "MSFullscreenError:false",
+        "focusin:false",
+        "focusout:false",
+        "fullscreenchange:false",
+        "fullscreenerror:false",
+        "mozfullscreenchange:false",
+        "mozfullscreenerror:false",
+        "mozpointerlockchange:true",
+        "pointerlockchange:true",
+        "visibilitychange:false",
+        "visibilitychange:false",
+        "visibilitychange:false",
+        "webkitfullscreenchange:false",
+        "webkitfullscreenerror:false",
+        "webkitpointerlockchange:true"
+      ]
+    },
+    "frames": {
+      "median": 16.69999999999709,
+      "p95": 17.10000000000582
+    }
+  },
+  "browser": "156.0.4314.50",
+  "devices": "Windows Edge; phone/tablet are simulated Playwright/CDP, not real Safari/iOS",
+  "staging": "Portal/landmark setup uses safe body.reset; forest approach uses actual keyboard pathfinding; Golden suite separately walks all five lessons"
+}

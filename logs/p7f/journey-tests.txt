@@ -1,0 +1,13 @@
+PASS fresh visitor -> guarded introduction -> explicit welcome acknowledgment
+PASS six chapters, native scrolling, replay and focus return remain readable
+PASS 175 speed, diagonal normalization, collision, marker selection/clearing and inactive-art removal
+PASS Town NPC, daily fortune and explicit audio controls work without continuous Town ambience
+PASS coherent six-region journey: forest story/NPC, meadow route, lake practice, workshop and aircraft
+PASS bounded warm lifecycle: eight further transitions, repeated overlays, listener and resource stability
+PASS current frame sample, reloaded checkpoint and independent persisted progress/audio/welcome state
+PASS desktop layout, keyboard/touch interaction, replay scrolling and audio settings
+PASS narrow-desktop layout, keyboard/touch interaction, replay scrolling and audio settings
+PASS tablet-landscape layout, keyboard/touch interaction, replay scrolling and audio settings
+PASS tablet-portrait layout, keyboard/touch interaction, replay scrolling and audio settings
+PASS phone-portrait layout, keyboard/touch interaction, replay scrolling and audio settings
+PASS short-landscape layout, keyboard/touch interaction, replay scrolling and audio settings

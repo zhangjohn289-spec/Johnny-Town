@@ -1,54 +1,45 @@
-# Johnny Town — Phase 05D / Forgotten Ruins
+# Johnny Town
 
-Phaser 3.90.0 + Vite 6.4.5 的 PC Only 像素探索个人网站。当前本地开发分支为 feature/phase05d-forgotten-ruins，基于已验收的 Phase 05C。未推送、合并 main 或公开部署。
+Johnny Town 是以可探索的像素世界呈现的个人介绍网站，基于 Phaser 3.90.0、Vite 6.4.5 和 JavaScript。核心入口是六章自我介绍；六区域自由探索、NPC、故事、每日签、五课回旋和两项小体验是可选内容。
 
-**快速了解是基础功能，深入探索是可选体验。** 页眉“认识 Johnny [I]”无需解锁即可打开简短介绍、兴趣和项目概览；愿意探索的访客可从小镇北侧走入记忆森林。
+当前为 **P7F 本地发布候选**。已整合 P7A–P7E、欢迎信与重读、移动/交互维护、Audio Pass 及 Patch 01。main/旧线上版本不等于本候选，最终提交和验收证据见 [P7F 报告](P7F_FINAL_AUDIT_AND_RELEASE_CANDIDATE_REPORT.md)。本候选尚未授权推送、合并或部署。
 
-## 本地运行
+## 本地生产预览
 
-```powershell
-$env:PATH = 'C:\Program Files\nodejs;' + $env:PATH
-cd prototype
-npm.cmd ci
-npm.cmd run dev -- --port 4200 --strictPort
-```
-
-访问 http://127.0.0.1:4200/Johnny-Town/ 。WASD / 方向键移动，E 互动/跨区，I 快速导览，M 探索日志，Esc 关闭。小镇北侧为森林入口，东侧前往边境草甸；森林西南路标返回小镇。
-
-记忆森林有五处原创象征性故事、蜿蜒主路、工坊支路和休憩空地。互动后自动记入日志，可随时重读，故事顺序不限。文案均为可编辑配置，没有编造具体学校、家庭、演出或获奖经历。
+在仓库根目录执行（Windows 的执行策略限制可用 npm.cmd）：
 
 ```powershell
-# 从项目根目录运行
-node --test prototype/test-core.mjs prototype/test-world.mjs prototype/test-woods.mjs
+npm.cmd --prefix prototype ci
 npm.cmd --prefix prototype run build
-node --test prototype/test-expansion.mjs
-node prototype/test-static.mjs
-npm.cmd --prefix prototype run preview -- --port 4201 --strictPort
+npm.cmd --prefix prototype run preview -- --port 4501 --strictPort
 ```
 
-生产预览：http://127.0.0.1:4201/Johnny-Town/ 。原小屋、每日抽签、宝箱、红色火柴人与键盘弹窗保留。页面刷新恢复当前区域安全入口和探索进度。小屏可阅读并关闭面板，不提供手机虚拟摇杆。
+访问 http://127.0.0.1:4501/Johnny-Town/ 。其他系统使用 npm 即可。最终公开产物是 prototype/dist；不需要 Node 服务端或后端数据库。
 
-## 可编辑内容与结构
+## 操作与阅读
 
-- `prototype/src/story-content.js`：快速介绍、公开兴趣和13篇故事。
-- `woods-data.js` / `woods-renderer.js`：森林地图、路径、地标、碰撞及原创像素绘制。
-- `story-ui.js` / `ui.js`：摘要、可选展开、快速导览与日志；单一原生 dialog。
-- `regions.js` / `region-renderer.js`：区域注册、出口和渲染入口。
-- `main.js` / `player-controller.js`：复用的场景、输入、移动和转场。
-- `world-store.js`：version 1→2 迁移，区域与故事存档；原 fortune-store.js 和运势存储键不变。
+- 电脑：WASD / 方向键移动，E 互动，I 自我介绍，M 探索日志。
+- 手机/平板：左侧虚拟摇杆移动，右侧按钮互动；页眉可打开介绍、日志、声音。
+- 首次阅读欢迎信后，勾选确认并点击「开始自由探索」。提前查看介绍会返回欢迎信；已确认访客可在介绍底部重读。
+- 普通面板使用「返回探索」或 Esc；未确认的欢迎信不能用 Esc 绕过。
+- 声音默认关闭，页眉声音入口打开「小镇声音」设置。仅记忆森林、旋律湖、机械谷有环境音；其他区域有意静音。刷新/系统中断后可能需要再次点击启用。
 
-说明：[Phase 05C](PHASE05C.md) · [测试记录](logs/phase05c-tests.md) · [区域架构](PHASE05A.md) · [部署说明](DEPLOYMENT.md)。历史阶段文档与截图均保留。
+## 区域、存储与素材
 
-## 本地媒体与发布
+Town 北侧到 Woods，东侧到 Meadow；草甸连接 Lake、Valley、Ruins。全部区域可返回。刷新恢复区域的安全入口及进度，不承诺精确恢复角色最后坐标。
 
-本地可在被忽略的 prototype/.env.local 设置 LOCAL_VIDEO_FILE，直接流式读取原 MP4。开发服务仅绑定 127.0.0.1。不要将媒体复制进 src/public/dist，也不要将路径设为 VITE_ 变量。生产构建不包含本地媒体、接口或私有路径；公开播放器保持未确认来源回退。
+世界存档保留 V1→V2 迁移，签文、欢迎 seen、独立阅读确认和音频偏好各用独立键；禁用存储时支持会话探索，刷新后无法保证保留。测试使用独立临时浏览器，不清理用户真实存档。
 
-GitHub Actions 仍仅手动运行，publish 默认 false。本次在生产构建后增加新区域及产物隔离测试，没有触发远端任务、推送、部署或继续 05D。
+原作者六章文案位于 prototype/src/portfolio-content.json。地图/交互注册、叙事和持久化均保留现有独立模块。原创美术来源见 prototype/src/assets/SOURCES.md；音频来源见 [音频素材说明](prototype/AUDIO_ASSETS.md)，公开署名见 prototype/public/audio/CREDITS.txt。
 
-草甸东北前往旋律湖，东南前往机械谷，两者均可返回。新增湖畔与机械故事，M日志保留旧发现并展示13篇进度。新模块为expansion-data.js和landscape-renderer.js。
+## 验证与发布边界
 
-## 遗忘遗迹
+P7F 测试命令、结果、已知限制、展示路线见最终报告。测试中的手机/平板模拟不代表实体 iPhone/iPad 或 Safari 验证。
 
-草甸中央向北沿「苔痕石阶」按 E 进入，西南出口随时返回。九个秘密、三符文回旋机关、8秒等待之钟与可重读纪念碑。M日志新增独立秘密分类，不影响原13篇故事。
+GitHub Pages base 为 /Johnny-Town/。现有 Actions 仅手动触发，publish 默认 false；需要所有者额外明确批准后才可推送/整合 main，并手动使用 publish=true 发布。详见 [部署说明](DEPLOYMENT.md)。
 
-[Phase 05D 开发报告](PHASE05D.md) · [验收记录](logs/phase05d-tests.md)。新单元测试：`node --test prototype/test-ruins.mjs`；浏览器验收：启动4200开发服务后运行`node prototype/test-ruins-browser.mjs`。
+## 私人媒体隔离
+
+不要把本地视频、音轨、凭据或个人配置放进 src/public/dist。现有宝箱只在明确点击后打开站外 Bilibili 链接，游戏不内嵌或自动播放外部视频。生产构建没有本地视频接口；开发用 LOCAL_VIDEO_FILE（如有）必须保持在被忽略的本地配置中，不能设为 VITE_ 公开变量。
+
+历史阶段报告与截图保留，用于追溯，不代表当前功能清单。

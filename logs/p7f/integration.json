@@ -1,0 +1,98 @@
+{
+  "base": "f6b46b79dbd1530fde8fed73c93399ce268da5fe",
+  "main": "381f9a0917cf1aed7462d80380dd0a23e80c3fc4",
+  "commonAncestor": "381f9a0917cf1aed7462d80380dd0a23e80c3fc4",
+  "acceptedCommitsAhead": "22",
+  "sources": [
+    {
+      "branch": "codex/p7a-clockwork-remaster",
+      "sha": "e06cd4c50159d1e352116bc823f9868c6248e2c8",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7b-golden-spin",
+      "sha": "099875f53c836717ffce406b9428cf9fed9674e3",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7c-r1-nature-ruins",
+      "sha": "d461b24788f46e6e7dbf61598a89aba36ae831e6",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7c-r1-animation-remediation",
+      "sha": "5e3ddb304352317f4e30a9d5082be1a78369e921",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7c-r1-patch02-placeholder-art",
+      "sha": "74c587ae1fc1f2e8a6d9c50f5d6c5ac93b80f182",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7c-r1-patch02a-drum-manuscript",
+      "sha": "025d3807b9f8b508dacfc46b93c39a286e3142ad",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7c-r2-town-world-unity",
+      "sha": "3d24e3a5e4543b319f39e3b26d2ce8b8be3ac5d4",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7d-npc-personal-storytelling",
+      "sha": "e55c6f8e31281d2b67cdd2d0729d8242e6cb08c5",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7e-mobile-accessibility",
+      "sha": "93fd79b0428abb0c9fac342eb6335bcb80f6fe7c",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/p7e-no2-interaction-reachability",
+      "sha": "774768f573f5e850f3e30b388cac548fd820dd8e",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/post-p7-welcome-portfolio",
+      "sha": "c8971c147fe4186c340d69352d7892eb80069b4f",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/post-p7-maintenance01-patch01",
+      "sha": "9918e65a999f8c036a6e72176a5b82442361e8df",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/post-p7-maintenance02-visual-ux",
+      "sha": "242678878f5b6bb70b19d234f19b658ea3cc73bc",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/post-p7-audio-pass",
+      "sha": "e541c1cb1e7cc38af1a2ae44a3875f7368cb39ac",
+      "included": true,
+      "conflicts": false
+    },
+    {
+      "branch": "codex/post-p7-audio-patch01",
+      "sha": "f6b46b79dbd1530fde8fed73c93399ce268da5fe",
+      "included": true,
+      "conflicts": false
+    }
+  ]
+}

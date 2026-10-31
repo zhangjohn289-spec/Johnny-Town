@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "name": "desktop",
+      "opacity": 1,
+      "pass": true
+    },
+    {
+      "name": "narrow-desktop",
+      "opacity": 1,
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape",
+      "opacity": 1,
+      "pass": true
+    },
+    {
+      "name": "tablet-portrait",
+      "opacity": 1,
+      "pass": true
+    },
+    {
+      "name": "phone-portrait",
+      "opacity": 1,
+      "pass": true
+    },
+    {
+      "name": "short-landscape",
+      "opacity": 1,
+      "pass": true
+    }
+  ],
+  "note": "Replace transient unfold-animation captures with steady-state UI; not additional functional coverage"
+}

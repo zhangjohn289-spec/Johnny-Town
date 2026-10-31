@@ -1,0 +1,77 @@
+[
+  {
+    "path": "favicon.svg",
+    "bytes": 312,
+    "sha256": "e2832ca48f391e20eeae4192ac9a2f3772334ace5610e0f534bf7da2feecd33d"
+  },
+  {
+    "path": "index.html",
+    "bytes": 3564,
+    "sha256": "85819779be15a4daa4233742f7828c04ae7be0cea6964698e4ba244f448f77a0"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.txt",
+    "bytes": 2301,
+    "sha256": "1b86232d25488a3639afff445105bc1e902edf189b21fb905c9ce2977398d5ca"
+  },
+  {
+    "path": "assets/ground-ua3-yTCd.png",
+    "bytes": 25710,
+    "sha256": "b4713e346ba2f17bb8046d9e8a8a7f10010329f0d10a2959f9f15e5288b711f8"
+  },
+  {
+    "path": "assets/index-a_5HX04N.js",
+    "bytes": 1625153,
+    "sha256": "eb0d68899587ba4c585bfa5c678b1d7c18e02527d84601529a378f00c9716b7b"
+  },
+  {
+    "path": "assets/index-E0_cEXP1.css",
+    "bytes": 13941,
+    "sha256": "a00d8414748e9bdd5158f91faeea0e132b757783ec5854cdba3f39f515474e66"
+  },
+  {
+    "path": "assets/player-walk-BYuAlWDv.png",
+    "bytes": 65975,
+    "sha256": "3d322f04d695a49d02f0e844c0740eb786562e299ff744c44b7cb6655fd6d726"
+  },
+  {
+    "path": "audio/close.wav",
+    "bytes": 4454,
+    "sha256": "99fc7930d931c3a35d2da439aae23745911282113744b5ce07075f825785b216"
+  },
+  {
+    "path": "audio/confirm.wav",
+    "bytes": 9746,
+    "sha256": "cae1c32579f553d630cee26bc3e36589f19219ff24bb80aab8da8c4059c8aba9"
+  },
+  {
+    "path": "audio/CREDITS.txt",
+    "bytes": 748,
+    "sha256": "08243385ddee3feac8e59b9b1b78e33dcfb75a492ff4d5cab5abdd36976e7149"
+  },
+  {
+    "path": "audio/fortune.wav",
+    "bytes": 16802,
+    "sha256": "35fbe52d33a26e9baa551520d189243b508542a2b0c8349be4a8ed04f171229f"
+  },
+  {
+    "path": "audio/lake.wav",
+    "bytes": 793844,
+    "sha256": "a39f6d3a16503aa1bcadb4e5b268e50eea43ad1a6f144d10284c78598252ed55"
+  },
+  {
+    "path": "audio/open.wav",
+    "bytes": 5336,
+    "sha256": "9afb5bdb5acc5f4d6cb465bebf95f86d8e2f5105c3d2305d77a31d6b705af18c"
+  },
+  {
+    "path": "audio/valley.wav",
+    "bytes": 793844,
+    "sha256": "8c62f65585d37b742b511d77d41242fa70acba7e21d3928e8b1d4bb1519d51ad"
+  },
+  {
+    "path": "audio/woods.wav",
+    "bytes": 793844,
+    "sha256": "66faeb1483eb6f4f54bf8d933496ed2ea92c275af09120276830ca3eacfe2495"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "name": "all 15 accepted branch tips are ancestors; no missing integration or gameplay source edits",
+      "pass": true
+    },
+    {
+      "name": "production metadata, favicon and exact base-relative resources exist",
+      "pass": true
+    },
+    {
+      "name": "production contains no internal reports, private media, source maps or local endpoints",
+      "pass": true
+    },
+    {
+      "name": "seven approved WAV files unchanged; silent-region files absent; audio and framework licenses present",
+      "pass": true
+    },
+    {
+      "name": "reviewed tracked paths and distribution text contain no credential-shaped material",
+      "pass": true
+    },
+    {
+      "name": "workflow/base/dependencies unchanged and publication still requires manual true",
+      "pass": true
+    }
+  ],
+  "files": 15,
+  "bytes": 4155574,
+  "privacy": "pattern and packaging inspection, not a comprehensive security guarantee"
+}

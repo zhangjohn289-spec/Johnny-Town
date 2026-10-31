@@ -1,4 +1,4 @@
-// Offline preparation only. Sources, hashes and licenses: public/audio/README.md.
+// Offline preparation only. Sources, hashes and licenses: AUDIO_ASSETS.md.
 // Uses installed Playwright via PLAYWRIGHT_MODULE; no runtime dependency added.
 import fs from 'node:fs';
 import path from 'node:path';

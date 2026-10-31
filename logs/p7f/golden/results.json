@@ -1,0 +1,151 @@
+{
+  "results": [
+    {
+      "name": "browser save fixture fresh",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture old-P6",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture P7A-achievements",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture lesson-1",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture lesson-2",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture lesson-3",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture lesson-4",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture lesson-5",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture legacy-completed",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture malformed-trial",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture partial-trial",
+      "pass": true
+    },
+    {
+      "name": "browser save fixture corrupt",
+      "pass": true
+    },
+    {
+      "name": "dormant stone reached by movement cannot skip central start",
+      "pass": true
+    },
+    {
+      "name": "desktop physically walks lesson 1 and saves before close",
+      "pass": true
+    },
+    {
+      "name": "desktop physically walks lesson 2 and saves before close",
+      "pass": true
+    },
+    {
+      "name": "desktop physically walks lesson 3 and saves before close",
+      "pass": true
+    },
+    {
+      "name": "desktop physically walks lesson 4 and saves before close",
+      "pass": true
+    },
+    {
+      "name": "desktop physically walks lesson 5 and saves before close",
+      "pass": true
+    },
+    {
+      "name": "completed peripheral stones reread their exact lessons without resetting progress",
+      "pass": true
+    },
+    {
+      "name": "single journal entry rereads all five exact lessons without new progress",
+      "pass": true
+    },
+    {
+      "name": "twenty rereads preserve completion and native input listener counts",
+      "pass": true
+    },
+    {
+      "name": "twenty region transitions keep trial progress and resources bounded",
+      "pass": true
+    },
+    {
+      "name": "persistent final art reduced-motion and completion replay stay stable",
+      "pass": true
+    },
+    {
+      "name": "mobile real browser touch approaches and completes every lesson",
+      "pass": true
+    },
+    {
+      "name": "mobile completion scene journal refresh and touch recovery",
+      "pass": true
+    },
+    {
+      "name": "landscape real browser touch approaches and completes every lesson",
+      "pass": true
+    },
+    {
+      "name": "landscape completion scene journal refresh and touch recovery",
+      "pass": true
+    },
+    {
+      "name": "tablet real browser touch approaches and completes every lesson",
+      "pass": true
+    },
+    {
+      "name": "tablet completion scene journal refresh and touch recovery",
+      "pass": true
+    },
+    {
+      "name": "no browser runtime errors",
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "resources": {
+      "meadow": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "children": 64,
+        "textures": 24,
+        "bodies": 1,
+        "static": 19,
+        "colliders": 1
+      },
+      "ruins": {
+        "E": 1,
+        "M": 1,
+        "I": 1,
+        "children": 62,
+        "textures": 36,
+        "bodies": 1,
+        "static": 16,
+        "colliders": 1
+      }
+    },
+    "fps": 59.924792341771536
+  },
+  "errors": [],
+  "browser": "156.0.4314.50"
+}
