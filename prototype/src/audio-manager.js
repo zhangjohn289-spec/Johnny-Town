@@ -1,5 +1,6 @@
 import {createAudioStore} from './audio-store.js';
-export const AMBIENCE=['town','woods','meadow','lake','valley','ruins'];
+// Other regions are intentionally silent; absence is not a failed asset.
+export const AMBIENCE=['woods','lake','valley'];
 const EFFECTS=['open','close','confirm','fortune'];
 // One game-owned controller survives scene restarts. Phaser owns sound objects,
 // gains and decoded buffers; this helper owns only intent, lazy IO and envelopes.

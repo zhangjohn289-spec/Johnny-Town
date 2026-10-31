@@ -103,7 +103,7 @@ class WorldScene extends Phaser.Scene {
   openWelcome(){
     if(isOpen()||this.interacting)return;
     lockInput(this,true);
-    showWelcome(()=>lockInput(this,false),()=>this.openQuick(),()=>welcomeStore.acknowledge());
+    showWelcome(()=>lockInput(this,false),()=>this.openQuick(),welcomeStore);
   }
   interact(){
     if(!this.target||isOpen()||this.interacting) return;
@@ -139,6 +139,7 @@ class WorldScene extends Phaser.Scene {
     else open();
   }
   travel(exit){
+    if(isOpen()||!welcomeStore.isAcknowledged())return;
     this.transitioning=true;
     const finish=()=>{worldStore.visit(exit.to,exit.spawn);this.scene.restart();};
     if(this.reduced) finish();

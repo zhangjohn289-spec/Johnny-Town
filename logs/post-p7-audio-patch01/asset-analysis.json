@@ -1,0 +1,59 @@
+{
+  "woods": {
+    "before": {
+      "rms": 0.019856443108555975,
+      "low400RMS": 0.01596518665326183,
+      "peak": 0.10101318359375,
+      "nearSilenceSampleFraction": 0.0044469639707734945
+    },
+    "after": {
+      "rms": 0.0048083814854571975,
+      "low400RMS": 0.0007595441506979771,
+      "peak": 0.054656982421875,
+      "nearSilenceSampleFraction": 0.21605694129503653
+    },
+    "low400ChangeDb": -26.45241953608047
+  },
+  "lake": {
+    "before": {
+      "rms": 0.03037011236418717,
+      "low400RMS": 0.02837372201288458,
+      "peak": 0.113739013671875,
+      "nearSilenceSampleFraction": 0.0029024943310657597
+    },
+    "after": {
+      "rms": 0.029134790282405346,
+      "low400RMS": 0.02805938242324025,
+      "peak": 0.098876953125,
+      "nearSilenceSampleFraction": 0.0033207357016880826
+    },
+    "low400ChangeDb": -0.09676402705764232
+  },
+  "valley": {
+    "before": {
+      "rms": 0.015886737694039626,
+      "low400RMS": 0.012919121180470705,
+      "peak": 0.084564208984375,
+      "nearSilenceSampleFraction": 0.004701436130007558
+    },
+    "after": {
+      "rms": 0.012216128230983185,
+      "low400RMS": 0.011911660556170286,
+      "peak": 0.046051025390625,
+      "nearSilenceSampleFraction": 0.004353741496598639
+    },
+    "low400ChangeDb": -0.7052132594888831
+  },
+  "open": {
+    "unchanged": true
+  },
+  "close": {
+    "unchanged": true
+  },
+  "confirm": {
+    "unchanged": true
+  },
+  "fortune": {
+    "unchanged": true
+  }
+}

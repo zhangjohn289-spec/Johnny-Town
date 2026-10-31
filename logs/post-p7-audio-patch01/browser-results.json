@@ -1,0 +1,272 @@
+{
+  "results": [
+    {
+      "name": "first visit: updated letter, unchecked accessible checkbox, disabled exploration, silent startup",
+      "pass": true
+    },
+    {
+      "name": "Escape, backdrop, background controls, native close and region travel cannot bypass gate",
+      "pass": true
+    },
+    {
+      "name": "checkbox toggles with Space; checking alone and reload never acknowledge",
+      "pass": true
+    },
+    {
+      "name": "six-chapter introduction is available before acknowledgment, both exits return to welcome",
+      "pass": true
+    },
+    {
+      "name": "Tab cannot reach background game controls; explicit checked primary action persists and restores gameplay",
+      "pass": true
+    },
+    {
+      "name": "manual replay prechecks confirmation; unchecking or normal Escape never erases acknowledgment",
+      "pass": true
+    },
+    {
+      "name": "legacy seen + V1 world still requires new acknowledgment, without resetting saves",
+      "pass": true
+    },
+    {
+      "name": "legacy seen + V2 world still requires new acknowledgment, without resetting saves",
+      "pass": true
+    },
+    {
+      "name": "phone simulated touch: scrollable letter, reachable checkbox, label tap and guarded introduction",
+      "pass": true
+    },
+    {
+      "name": "landscape simulated touch: scrollable letter, reachable checkbox, label tap and guarded introduction",
+      "pass": true
+    },
+    {
+      "name": "tablet simulated touch: scrollable letter, reachable checkbox, label tap and guarded introduction",
+      "pass": true
+    },
+    {
+      "name": "denied localStorage permits session confirmation and clearly requires it again after reload",
+      "pass": true
+    },
+    {
+      "name": "enabling audio in silent Town loads four cues only, without missing-asset warning",
+      "pass": true
+    },
+    {
+      "name": "20 audible/silent transitions enforce six-region matrix, bounded loops/listeners and all-region short cues",
+      "pass": true
+    },
+    {
+      "name": "silent-region fortune cue, mute/volume preferences, and 175 movement remain functional",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "transitions": [
+      {
+        "id": "woods",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "children": 241,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "town",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 39,
+        "shutdown": 20,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "lake",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "children": 65,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "valley",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "children": 50,
+        "shutdown": 20,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "ruins",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 62,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "town",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 39,
+        "shutdown": 20,
+        "warning": ""
+      },
+      {
+        "id": "woods",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "children": 241,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "town",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 39,
+        "shutdown": 20,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "lake",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "children": 65,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "valley",
+        "loops": 1,
+        "sounds": 1,
+        "E": 1,
+        "M": 1,
+        "children": 50,
+        "shutdown": 20,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "ruins",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 62,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "meadow",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 64,
+        "shutdown": 21,
+        "warning": ""
+      },
+      {
+        "id": "town",
+        "loops": 0,
+        "sounds": 0,
+        "E": 1,
+        "M": 1,
+        "children": 39,
+        "shutdown": 20,
+        "warning": ""
+      }
+    ],
+    "maxLoops": 1
+  },
+  "browser": "156.0.4314.50",
+  "devices": "simulated touch only; no physical iPhone/iPad/Safari or human listening"
+}
