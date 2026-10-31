@@ -1,0 +1,22 @@
+[
+  {
+    "touch": false,
+    "waited": false,
+    "hint": "静候钟声 · 0 / 8 秒 · E 查看"
+  },
+  {
+    "touch": false,
+    "waited": true,
+    "hint": "Some things are worth waiting for. — E 查看"
+  },
+  {
+    "touch": true,
+    "waited": false,
+    "hint": "静候钟声 · 0 / 8 秒 · E 查看"
+  },
+  {
+    "touch": true,
+    "waited": true,
+    "hint": "Some things are worth waiting for. — E 查看"
+  }
+]

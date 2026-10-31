@@ -31,3 +31,5 @@ Phase 06C：Chief Mek为generate-chief-mek.mjs原创生成的48×64透明像素P
 Phase 06D：四张npc-*.png为generate-npcs.mjs原创32×48透明像素角色，使用现有pngjs工具；制服、工具、旅行装及长袍采用项目既有色系，无外部角色贴图或音频。
 
 Phase 06E：鼓架、工作台及SVG齿轮均为原创程序绘制；16音符练习为原创通用节奏，无外部音频、旋律或素材库。
+
+Post-P7 Maintenance No.2：player-walk.png 由 scripts/generate-traveler.mjs 原创生成，保留原 player.png 的红色空心头部与配色；12 姿态及三档肢体幅度用于行走和起停衔接。原图保留，不使用外部素材或运行时纹理生成。

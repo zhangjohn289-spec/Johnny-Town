@@ -1,0 +1,30 @@
+{
+  "baseline": "9918e65a999f8c036a6e72176a5b82442361e8df",
+  "branch": "codex/post-p7-maintenance02-visual-ux",
+  "existingUnitCasesPassed": 104,
+  "newVisualUnitCasesFinalPassed": 6,
+  "initialExpandedUnitResult": "109/110, original-head neck overlap fixed and affected 6/6 rerun passed",
+  "combinedBrowser": 14,
+  "regressionSuites": [
+    {
+      "suite": "world",
+      "exit": 0
+    },
+    {
+      "suite": "mobile",
+      "exit": 0
+    },
+    {
+      "suite": "speed",
+      "exit": 0
+    },
+    {
+      "suite": "reading",
+      "exit": 0
+    }
+  ],
+  "clockHintCombinations": 4,
+  "physicalDeviceTested": false,
+  "ownerAcceptance": "pending",
+  "remoteOperations": false
+}

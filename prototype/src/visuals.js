@@ -12,7 +12,8 @@ import home from './assets/home.png';
 import shrine from './assets/shrine.png';
 import chest from './assets/chest.png';
 import tree from './assets/tree.png';
-import player from './assets/player.png';
+import player from './assets/player-walk.png';
+import {animateTraveler} from './traveler-animation.js';
 export function preloadArt(scene){for(const [key,url] of Object.entries({'npc-clerk':npcClerk,'npc-apprentice':npcApprentice,'npc-explorer':npcExplorer,'npc-archivist':npcArchivist}))scene.load.image(key,url);for(const [key,url] of Object.entries({ground,home,shrine,chest,tree,treeB,chiefMek}))scene.load.image(key,url);scene.load.image('chest-open',chestOpen);scene.load.spritesheet('walker',player,{frameWidth:32,frameHeight:48});}
 export function buildArt(scene,places){
  prepareTownTextures(scene);
@@ -34,8 +35,7 @@ export function setupEnvironment(scene){
 export function animateArt(scene,time,x,y){
  scene.ambientUpdate?.(time);
  scene.player.setDepth(scene.player.y+16);scene.shadow.setPosition(scene.player.x,scene.player.y+14);
- const moving=!!(x||y);if(moving)scene.facing=Math.abs(x)>Math.abs(y)?(x<0?2:3):(y<0?1:0);
- if(moving&&!scene.reduced)scene.walker.play('walk-'+scene.facing,true);else{scene.walker.stop();scene.walker.setFrame(scene.facing*4);}
+ animateTraveler(scene,time,x,y);
  const g=scene.environment;g.clear();if(!scene.natureEffects&&!scene.reduced){for(let i=0;i<8;i++){const px=120+i*94+Math.floor(Math.sin(time/4000+i)*12),py=430+Math.floor(Math.sin(time/3200+i*2)*42);g.fillStyle(0xeadb91,.4).fillRect(px,py,2,2);}}
- for(const [id,image] of Object.entries(scene.art))image.setTint(scene.target?.id===id?0xffedc2:0xffffff);
+ for(const [id,image] of Object.entries(scene.art))image.setTint(!scene.interacting&&scene.target?.id===id?0xffedc2:0xffffff);
 }

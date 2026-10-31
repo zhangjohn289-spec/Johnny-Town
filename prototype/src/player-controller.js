@@ -1,5 +1,6 @@
 import {movementVector} from './touch-controls.js';
 import {PLAYER_SPEED} from './regions.js';
+import {WALK_POSES,WALK_BLOCK,resetWalk} from './traveler-animation.js';
 
 export function createPlayer(scene, position) {
   scene.shadow=scene.add.ellipse(position.x,position.y+14,22,8,0x384c30,.4).setDepth(2);
@@ -7,7 +8,7 @@ export function createPlayer(scene, position) {
   scene.walker=scene.add.sprite(-16,-29,'walker').setOrigin(0);
   scene.player.add(scene.walker); scene.facing=0;
   for(let d=0;d<4;d++) if(!scene.anims.exists('walk-'+d)) scene.anims.create({
-    key:'walk-'+d,frames:scene.anims.generateFrameNumbers('walker',{start:d*4,end:d*4+3}),frameRate:8,repeat:-1,
+    key:'walk-'+d,frames:scene.anims.generateFrameNumbers('walker',{start:d*WALK_BLOCK+1,end:d*WALK_BLOCK+WALK_POSES}),frameRate:20,repeat:-1,
   });
   scene.physics.add.existing(scene.player);
   scene.player.body.setSize(16,16).setOffset(-8,0).setCollideWorldBounds(true);
@@ -17,7 +18,7 @@ export function createPlayer(scene, position) {
 export function lockInput(scene, locked) {
   scene.resetTouch?.();
   scene.player.body.setVelocity(0);
-  scene.walker.stop().setFrame(scene.facing*4);
+  resetWalk(scene);
   scene.input.keyboard.resetKeys();
   scene.input.keyboard.enabled=!locked;
   scene.interacting=locked;

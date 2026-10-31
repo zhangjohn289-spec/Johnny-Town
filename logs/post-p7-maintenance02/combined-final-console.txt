@@ -1,0 +1,14 @@
+PASS town resolved/highlight/E/touch identity across renderer categories
+PASS woods resolved/highlight/E/touch identity across renderer categories
+PASS meadow resolved/highlight/E/touch identity across renderer categories
+PASS lake resolved/highlight/E/touch identity across renderer categories
+PASS valley resolved/highlight/E/touch identity across renderer categories
+PASS ruins resolved/highlight/E/touch identity across renderer categories
+PASS empty space, deregistration and destroyed sprite do not retain indicators
+PASS overlap uses accepted nearest target, no parallel selection approximation
+PASS portfolio and replay welcome hide indicator, isolate movement/E, and recalculate after close
+PASS 20 warmed region transitions keep one marker and stable render/input resources
+PASS actual movement/animation at 60 engine cadence with neutral stop and phase-preserving turns
+PASS actual movement/animation at 30 engine cadence with neutral stop and phase-preserving turns
+PASS portrait simulated touch, responsive reading/replay and aircraft in context
+PASS landscape simulated touch, responsive reading/replay and aircraft in context

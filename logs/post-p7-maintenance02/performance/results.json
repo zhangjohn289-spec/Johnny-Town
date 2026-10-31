@@ -1,0 +1,138 @@
+{
+  "results": [
+    {
+      "view": "desktop",
+      "version": "baseline",
+      "width": 1440,
+      "height": 1000,
+      "touch": false,
+      "reduced": false,
+      "median": 16.699999999999818,
+      "p95": 16.90000000000009,
+      "frames": 240,
+      "children": 39,
+      "textures": 28,
+      "physics": 1,
+      "static": 9,
+      "E": 1,
+      "atlas": {
+        "width": 128,
+        "height": 192
+      },
+      "selected": "town-clerk",
+      "highlight": "legacy rectangle"
+    },
+    {
+      "view": "desktop",
+      "version": "final",
+      "width": 1440,
+      "height": 1000,
+      "touch": false,
+      "reduced": false,
+      "median": 16.699999999999818,
+      "p95": 16.800000000000182,
+      "frames": 240,
+      "children": 39,
+      "textures": 28,
+      "physics": 1,
+      "static": 9,
+      "E": 1,
+      "atlas": {
+        "width": 1184,
+        "height": 192
+      },
+      "selected": "town-clerk",
+      "highlight": "town-clerk"
+    },
+    {
+      "view": "phone",
+      "version": "baseline",
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "reduced": false,
+      "median": 16.699999999999818,
+      "p95": 16.90000000000009,
+      "frames": 240,
+      "children": 39,
+      "textures": 28,
+      "physics": 1,
+      "static": 9,
+      "E": 1,
+      "atlas": {
+        "width": 128,
+        "height": 192
+      },
+      "selected": "town-clerk",
+      "highlight": "legacy rectangle"
+    },
+    {
+      "view": "phone",
+      "version": "final",
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "reduced": false,
+      "median": 16.699999999999818,
+      "p95": 17,
+      "frames": 240,
+      "children": 39,
+      "textures": 28,
+      "physics": 1,
+      "static": 9,
+      "E": 1,
+      "atlas": {
+        "width": 1184,
+        "height": 192
+      },
+      "selected": "town-clerk",
+      "highlight": "town-clerk"
+    },
+    {
+      "view": "reduced",
+      "version": "baseline",
+      "width": 1440,
+      "height": 1000,
+      "touch": false,
+      "reduced": true,
+      "median": 16.699999999999818,
+      "p95": 17.09999999999991,
+      "frames": 240,
+      "children": 39,
+      "textures": 28,
+      "physics": 1,
+      "static": 9,
+      "E": 1,
+      "atlas": {
+        "width": 128,
+        "height": 192
+      },
+      "selected": "town-clerk",
+      "highlight": "legacy rectangle"
+    },
+    {
+      "view": "reduced",
+      "version": "final",
+      "width": 1440,
+      "height": 1000,
+      "touch": false,
+      "reduced": true,
+      "median": 16.699999999999818,
+      "p95": 17,
+      "frames": 240,
+      "children": 39,
+      "textures": 28,
+      "physics": 1,
+      "static": 9,
+      "E": 1,
+      "atlas": {
+        "width": 1184,
+        "height": 192
+      },
+      "selected": "town-clerk",
+      "highlight": "town-clerk"
+    }
+  ],
+  "browser": "156.0.4314.50",
+  "note": "Sequential isolated 240-rAF delivery samples, not physical mobile throughput or thermal testing."
+}

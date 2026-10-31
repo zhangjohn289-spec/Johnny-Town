@@ -1,0 +1,20 @@
+{
+  "meadow": {
+    "children": 64,
+    "textures": 29,
+    "body": 1,
+    "walls": 19,
+    "markers": 1,
+    "E": 1,
+    "I": 1
+  },
+  "town": {
+    "children": 39,
+    "textures": 29,
+    "body": 1,
+    "walls": 9,
+    "markers": 1,
+    "E": 1,
+    "I": 1
+  }
+}

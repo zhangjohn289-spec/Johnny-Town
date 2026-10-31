@@ -19,7 +19,6 @@ export function renderSecret(root,place){
  const button=document.createElement('button');root.append(button);
  let pages=[...data.pages];
  if(['manuscript','clock','phase-door'].includes(place.id))pages=[pages[place.count%pages.length]];
- if(place.id==='phase-door')pages.unshift('PHASE 06 — COMING SOON.');
  if(place.id==='clock')pages.push(place.state.secrets.waited?'Some things are worth waiting for.':'放下对话，在钟旁静候 8 秒。离开会重新计时。');
  if(place.id==='safe-chest')pages.push('你已经被这个世界骗过一次了。为什么还相信宝箱？');
  if(place.id==='engineer')pages.push('WAAAAAAAAAGH！');

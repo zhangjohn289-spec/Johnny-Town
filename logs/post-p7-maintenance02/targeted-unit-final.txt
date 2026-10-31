@@ -1,0 +1,98 @@
+✔ near-diagonal visual direction uses hysteresis without changing cardinal mappings (0.7939ms)
+✖ atlas keeps original hollow head pixels fixed in all direction/pose/amplitude frames (25.5999ms)
+✔ turns retain cycle phase; start/stop blend depends on elapsed time at 30/60Hz (0.587ms)
+✔ pose lookup stays inside each direction block and reaches exact neutral (0.3072ms)
+✔ marker position is visual only across NPC/sprite/graphics/exit categories (0.2919ms)
+✔ one marker consumes resolved ID, hides on overlays/deselection, no per-frame Graphics creation (0.5336ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 152.8206
+
+✖ failing tests:
+
+test at prototype\test-maintenance02.mjs:4:1
+✖ atlas keeps original hollow head pixels fixed in all direction/pose/amplitude frames (25.5999ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+
+    [
+      0,
+      0,
+      0,
+      0,
+  ...
+      255,
+  +   228,
+  +   72,
+  +   69,
+  -   108,
+  -   52,
+  -   48,
+      255,
+      228,
+      72,
+      69,
+      255,
+  ...
+      255,
+  +   108,
+  +   52,
+  +   48,
+  -   228,
+  -   72,
+  -   69,
+      255,
+  +   108,
+  +   52,
+  +   48,
+  -   228,
+  -   72,
+  -   69,
+      255,
+      108,
+      52,
+      48,
+      255,
+
+      at TestContext.<anonymous> (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-maintenance02.mjs:4:745)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0,
+      ... 2332 more items
+    ],
+    expected: [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0,
+      ... 2332 more items
+    ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

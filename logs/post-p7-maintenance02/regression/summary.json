@@ -1,0 +1,18 @@
+[
+  {
+    "suite": "world",
+    "exit": 0
+  },
+  {
+    "suite": "mobile",
+    "exit": 0
+  },
+  {
+    "suite": "speed",
+    "exit": 0
+  },
+  {
+    "suite": "reading",
+    "exit": 0
+  }
+]

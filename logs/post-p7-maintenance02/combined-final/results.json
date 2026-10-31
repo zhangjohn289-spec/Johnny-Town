@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "town resolved/highlight/E/touch identity across renderer categories",
+      "pass": true
+    },
+    {
+      "name": "woods resolved/highlight/E/touch identity across renderer categories",
+      "pass": true
+    },
+    {
+      "name": "meadow resolved/highlight/E/touch identity across renderer categories",
+      "pass": true
+    },
+    {
+      "name": "lake resolved/highlight/E/touch identity across renderer categories",
+      "pass": true
+    },
+    {
+      "name": "valley resolved/highlight/E/touch identity across renderer categories",
+      "pass": true
+    },
+    {
+      "name": "ruins resolved/highlight/E/touch identity across renderer categories",
+      "pass": true
+    },
+    {
+      "name": "empty space, deregistration and destroyed sprite do not retain indicators",
+      "pass": true
+    },
+    {
+      "name": "overlap uses accepted nearest target, no parallel selection approximation",
+      "pass": true
+    },
+    {
+      "name": "portfolio and replay welcome hide indicator, isolate movement/E, and recalculate after close",
+      "pass": true
+    },
+    {
+      "name": "20 warmed region transitions keep one marker and stable render/input resources",
+      "pass": true
+    },
+    {
+      "name": "actual movement/animation at 60 engine cadence with neutral stop and phase-preserving turns",
+      "pass": true
+    },
+    {
+      "name": "actual movement/animation at 30 engine cadence with neutral stop and phase-preserving turns",
+      "pass": true
+    },
+    {
+      "name": "portrait simulated touch, responsive reading/replay and aircraft in context",
+      "pass": true
+    },
+    {
+      "name": "landscape simulated touch, responsive reading/replay and aircraft in context",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "timing": "30Hz uses a test-only setInterval Game.step driver; 60Hz uses normal loop",
+  "touch": "simulated, no physical-device verification"
+}

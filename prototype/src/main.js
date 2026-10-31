@@ -13,6 +13,7 @@ import {regions,regionList,safeSpawn} from './regions.js';
 import {createWorldStore} from './world-store.js';
 import {createPlayer,lockInput,movePlayer} from './player-controller.js';
 import {renderRegion} from './region-renderer.js';
+import {createTargetHighlight} from './target-highlight.js';
 
 const worldStore=createWorldStore();
 const welcomeStore=createWelcomeStore();
@@ -50,7 +51,7 @@ class WorldScene extends Phaser.Scene {
     camera.startFollow(this.player,true,0.12,0.12);
     camera.centerOn(this.player.x,this.player.y);
     if(!this.reduced) camera.fadeIn(140,36,55,45);
-    this.ring=this.add.graphics().setDepth(999);
+    this.targetHighlight=createTargetHighlight(this);
     const interact=event=>{if(!event.repeat) this.interact();};
     const map=event=>{if(!event?.repeat) this.openNavigation();};
     const quick=event=>{if(!event?.repeat) this.openQuick();};
@@ -141,18 +142,20 @@ class WorldScene extends Phaser.Scene {
     }
     this.updateNPCs?.(time);
     this.player.body.setVelocity(0);
-    if(isOpen()||this.interacting){animateArt(this,time,0,0);return;}
+    if(isOpen()||this.interacting){this.targetHighlight.update(null);animateArt(this,time,0,0);return;}
     const {x,y}=movePlayer(this);
     this.target=chooseInteraction([...this.region.places,...this.region.exits],this.npcs,this.player,this.region.collisions);
     if(this.region.id==='ruins'&&(this.target?.id==='golden'||this.target?.kind==='rune')){
       const state=stoneState(this.goldenStage,this.target.id);
       this.target={...this.target,action:state==='completed'||state==='listening'?'重读':state==='awakened'||this.target.id==='golden'?'聆听':'查看'};
     }
-    this.ring.clear();
-    if(this.target) this.ring.lineStyle(2,0xffdf92).strokeRect(this.target.door.x-23,this.target.door.y-9,46,20);
+    this.targetHighlight.update(this.target);
     document.querySelector('#touch-interact').textContent=this.target?.action||'互动';
     hint.textContent=this.target ? `${this.target.name} — ${document.documentElement.classList.contains('touch-device')?'点右侧按钮':'按 E'} ${this.target.action}` : '沿着道路，随便逛逛。';
-    if(this.region.id==='ruins'&&this.target?.id==='clock')hint.textContent=this.ruinState.waited?'Some things are worth waiting for. — E 查看':`静候钟声 · ${Math.min(8,Math.floor((time-(this.waitStart??time))/1000))} / 8 秒 · E 查看`;
+    if(this.region.id==='ruins'&&this.target?.id==='clock'){
+      const action=document.documentElement.classList.contains('touch-device')?'点右侧按钮 查看':'E 查看';
+      hint.textContent=this.ruinState.waited?`Some things are worth waiting for. — ${action}`:`静候钟声 · ${Math.min(8,Math.floor((time-(this.waitStart??time))/1000))} / 8 秒 · ${action}`;
+    }
     animateArt(this,time,x,y);
   }
 }

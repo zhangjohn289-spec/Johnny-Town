@@ -1,0 +1,326 @@
+[
+  {
+    "name": "idle",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 0,
+    "playing": false
+  },
+  {
+    "name": "idle",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 0,
+    "playing": false
+  },
+  {
+    "name": "idle",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 0,
+    "playing": false
+  },
+  {
+    "name": "idle",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 0,
+    "playing": false
+  },
+  {
+    "name": "idle",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 0,
+    "playing": false
+  },
+  {
+    "name": "idle",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 0,
+    "playing": false
+  },
+  {
+    "name": "right",
+    "x": 490.4166666666668,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 114,
+    "playing": true
+  },
+  {
+    "name": "right",
+    "x": 507.9166666666669,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 116,
+    "playing": true
+  },
+  {
+    "name": "right",
+    "x": 525.416666666667,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 118,
+    "playing": true
+  },
+  {
+    "name": "right",
+    "x": 545.8333333333334,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 120,
+    "playing": true
+  },
+  {
+    "name": "right",
+    "x": 557.4999999999999,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 122,
+    "playing": true
+  },
+  {
+    "name": "right",
+    "x": 574.9999999999997,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 112,
+    "playing": true
+  },
+  {
+    "name": "down",
+    "x": 470,
+    "y": 375.4166666666668,
+    "cx": 0,
+    "cy": 0,
+    "frame": 5,
+    "playing": true
+  },
+  {
+    "name": "down",
+    "x": 470,
+    "y": 390.0000000000002,
+    "cx": 0,
+    "cy": 0,
+    "frame": 6,
+    "playing": true
+  },
+  {
+    "name": "down",
+    "x": 470,
+    "y": 407.50000000000034,
+    "cx": 0,
+    "cy": 0,
+    "frame": 8,
+    "playing": true
+  },
+  {
+    "name": "down",
+    "x": 470,
+    "y": 425.00000000000045,
+    "cx": 0,
+    "cy": 0,
+    "frame": 10,
+    "playing": true
+  },
+  {
+    "name": "down",
+    "x": 470,
+    "y": 442.50000000000057,
+    "cx": 0,
+    "cy": 0,
+    "frame": 12,
+    "playing": true
+  },
+  {
+    "name": "down",
+    "x": 470,
+    "y": 457.083333333334,
+    "cx": 0,
+    "cy": 0,
+    "frame": 2,
+    "playing": true
+  },
+  {
+    "name": "diagonal",
+    "x": 486.49915822768617,
+    "y": 371.49915822768617,
+    "cx": 0,
+    "cy": 0,
+    "frame": 7,
+    "playing": true
+  },
+  {
+    "name": "diagonal",
+    "x": 496.81113211999,
+    "y": 381.81113211999,
+    "cx": 0,
+    "cy": 0,
+    "frame": 9,
+    "playing": true
+  },
+  {
+    "name": "diagonal",
+    "x": 509.18550079075465,
+    "y": 394.18550079075465,
+    "cx": 0,
+    "cy": 0,
+    "frame": 11,
+    "playing": true
+  },
+  {
+    "name": "diagonal",
+    "x": 523.62226423998,
+    "y": 408.62226423998004,
+    "cx": 0,
+    "cy": 0,
+    "frame": 1,
+    "playing": true
+  },
+  {
+    "name": "diagonal",
+    "x": 533.9342381322839,
+    "y": 418.9342381322839,
+    "cx": 0,
+    "cy": 0,
+    "frame": 3,
+    "playing": true
+  },
+  {
+    "name": "diagonal",
+    "x": 546.3086068030485,
+    "y": 431.3086068030485,
+    "cx": 0,
+    "cy": 0,
+    "frame": 5,
+    "playing": true
+  },
+  {
+    "name": "turn",
+    "x": 449.5833333333332,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 83,
+    "playing": true
+  },
+  {
+    "name": "turn",
+    "x": 434.9999999999998,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 85,
+    "playing": true
+  },
+  {
+    "name": "turn",
+    "x": 417.49999999999966,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 75,
+    "playing": true
+  },
+  {
+    "name": "turn",
+    "x": 399.99999999999955,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 77,
+    "playing": true
+  },
+  {
+    "name": "turn",
+    "x": 385.4166666666661,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 78,
+    "playing": true
+  },
+  {
+    "name": "turn",
+    "x": 367.916666666666,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 80,
+    "playing": true
+  },
+  {
+    "name": "stop",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 74,
+    "playing": false
+  },
+  {
+    "name": "stop",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 74,
+    "playing": false
+  },
+  {
+    "name": "stop",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 74,
+    "playing": false
+  },
+  {
+    "name": "stop",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 74,
+    "playing": false
+  },
+  {
+    "name": "stop",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 74,
+    "playing": false
+  },
+  {
+    "name": "stop",
+    "x": 470,
+    "y": 355,
+    "cx": 0,
+    "cy": 0,
+    "frame": 74,
+    "playing": false
+  }
+]
