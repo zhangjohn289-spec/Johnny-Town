@@ -17,11 +17,11 @@ export function renderApprovedCopy(root,markdown){
  }
 }
 function action(root,text,callback,primary=false){const b=add(root,'button',text,primary?'reading-primary':'');b.type='button';b.onclick=callback;return b;}
-export function renderWelcome(root,actions,read,explore){
+export function renderWelcome(root,actions,read){
  const letter=add(root,'article',null,'reading-copy welcome-letter');letter.setAttribute('aria-label','欢迎信');renderApprovedCopy(letter,content.welcome.markdown);
- action(actions,'查看自我介绍',read,true);action(actions,'开始自由探索',explore);
+ action(actions,'查看自我介绍',read,true);
 }
-export function renderPortfolio(root,actions,explore){
+export function renderPortfolio(root,actions,readWelcome){
  const nav=add(root,'nav',null,'portfolio-navigation');nav.setAttribute('aria-label','自我介绍章节');
  const label=add(nav,'label','阅读章节');label.htmlFor='portfolio-section';
  const select=add(nav,'select');select.id='portfolio-section';
@@ -29,5 +29,5 @@ export function renderPortfolio(root,actions,explore){
  const article=add(root,'article',null,'reading-copy portfolio-page');article.setAttribute('aria-labelledby','portfolio-heading');
  const paint=()=>{const s=content.sections.find(s=>s.id===select.value);article.replaceChildren();add(article,'h3',s.title).id='portfolio-heading';add(add(article,'p',null,'portfolio-english'),'em',s.english);renderApprovedCopy(article,s.markdown);root.scrollTop=0;};
  select.onchange=paint;select.value=content.sections[0].id;paint();
- action(actions,'开始自由探索',explore);
+ action(actions,'重新阅读欢迎信',readWelcome);
 }

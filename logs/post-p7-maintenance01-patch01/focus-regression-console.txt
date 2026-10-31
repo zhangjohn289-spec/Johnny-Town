@@ -1,0 +1,24 @@
+PASS HUD owns movement keys; Tab and pointer return to focusable world
+PASS long HTML body scrolls by native keyboard with stationary game
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'quick-intro'
+- 'game'
+
+    at file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-ux-hardening.mjs:23:266
+    at async check (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-ux-hardening.mjs:5:34)
+    at async file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-ux-hardening.mjs:19:3 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'quick-intro',
+  expected: 'game',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

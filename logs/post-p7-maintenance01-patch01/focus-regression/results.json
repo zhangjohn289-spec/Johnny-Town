@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "name": "HUD owns movement keys; Tab and pointer return to focusable world",
+      "pass": true
+    },
+    {
+      "name": "long HTML body scrolls by native keyboard with stationary game",
+      "pass": true
+    },
+    {
+      "name": "desktop-touch canvas, scroll, modal bounds, focus return and 44px controls",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'quick-intro'\n- 'game'\n"
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

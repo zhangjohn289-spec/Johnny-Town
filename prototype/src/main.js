@@ -73,10 +73,7 @@ class WorldScene extends Phaser.Scene {
     worldStore.save();
     document.querySelector('#save-status').textContent=worldStore.warning;
     window.__town={scene:this,places:this.region.places};
-    if(welcomeStore.shouldShow()){
-      lockInput(this,true);
-      showWelcome(()=>lockInput(this,false),()=>this.openQuick(),()=>welcomeStore.acknowledge());
-    }
+    if(welcomeStore.shouldShow())this.openWelcome();
   }
   openNavigation(){
     if(isOpen()||this.interacting) return;
@@ -86,7 +83,12 @@ class WorldScene extends Phaser.Scene {
   openQuick(){
     if(isOpen()||this.interacting)return;
     lockInput(this,true);
-    showQuick(this.region.id,()=>lockInput(this,false));
+    showQuick(this.region.id,()=>lockInput(this,false),()=>this.openWelcome());
+  }
+  openWelcome(){
+    if(isOpen()||this.interacting)return;
+    lockInput(this,true);
+    showWelcome(()=>lockInput(this,false),()=>this.openQuick(),()=>welcomeStore.acknowledge());
   }
   interact(){
     if(!this.target||isOpen()||this.interacting) return;

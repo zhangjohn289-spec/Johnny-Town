@@ -67,7 +67,7 @@ try{
   await page.locator('#portfolio-section').selectOption('about');assert.ok((await page.locator('.portfolio-page').innerText()).includes('你好，Traveler！'));
   await page.screenshot({path:dir+'/quick-introduction.png'});
   await close();assert.equal(await page.locator('#quick-intro').evaluate(e=>e===document.activeElement),true);
-  await page.keyboard.press('i');await page.getByRole('button',{name:'开始自由探索',exact:true}).click();await page.waitForTimeout(100);
+  await page.keyboard.press('i');await page.getByRole('button',{name:'返回探索',exact:true}).click();await page.waitForTimeout(100);
   assert.equal(await page.locator('dialog[open]').count(),0);assert.equal((await state()).stories.length,0);
  });
  await check('journal initially shows five mysterious entries without story spoilers',async()=>{

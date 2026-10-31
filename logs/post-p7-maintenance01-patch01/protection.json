@@ -1,0 +1,29 @@
+{
+  "baseline": "c8971c147fe4186c340d69352d7892eb80069b4f",
+  "paths": [
+    "prototype/src/portfolio-content.json",
+    "prototype/src/welcome-store.js",
+    "prototype/src/world-store.js",
+    "prototype/src/input-focus.js",
+    "prototype/src/player-controller.js",
+    "prototype/src/touch-controls.js",
+    "prototype/src/interaction-targeting.js",
+    "prototype/src/npc-data.js",
+    "prototype/src/npc-stories.js",
+    "prototype/src/config.js",
+    "prototype/src/regions.js",
+    "prototype/src/woods-data.js",
+    "prototype/src/expansion-data.js",
+    "prototype/src/ruins-data.js",
+    "prototype/src/golden-trial.js",
+    "prototype/src/activities-data.js",
+    "prototype/src/visuals.js",
+    "prototype/src/region-renderer.js",
+    "prototype/src/style.css",
+    "prototype/index.html",
+    "prototype/vite.config.js",
+    ".github"
+  ],
+  "differences": [],
+  "interactionUpdateGameConfigSuffixIdentical": true
+}

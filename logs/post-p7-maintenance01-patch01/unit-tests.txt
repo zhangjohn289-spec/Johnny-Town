@@ -1,0 +1,16 @@
+✔ focus control is scene-owned, resets held keys and restores native key capture (1.085ms)
+✔ UI focus suppresses keyboard movement while joystick still has normalized 175 speed (1.2019ms)
+✔ welcome title, paragraphs, emphasis and punctuation exactly match approved source hash (1.9166ms)
+✔ six portfolio sections preserve approved order and exact complete content (0.6015ms)
+✔ new and old-world visitors need welcome; rendering checks never write storage (0.2005ms)
+✔ only canonical acknowledgement counts; clearing welcome key leaves game saves intact (0.1677ms)
+✔ blocked reads/writes or storage getter never traps startup and memory prevents scene repeats (1.2268ms)
+✔ known stored acknowledgement remains valid in this page if storage later fails (0.1821ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 102.9506
