@@ -1,3 +1,4 @@
+import {prepareTownTextures} from './town-art.js';
 import npcClerk from './assets/npc-clerk.png';
 import npcApprentice from './assets/npc-apprentice.png';
 import npcExplorer from './assets/npc-explorer.png';
@@ -14,11 +15,12 @@ import tree from './assets/tree.png';
 import player from './assets/player.png';
 export function preloadArt(scene){for(const [key,url] of Object.entries({'npc-clerk':npcClerk,'npc-apprentice':npcApprentice,'npc-explorer':npcExplorer,'npc-archivist':npcArchivist}))scene.load.image(key,url);for(const [key,url] of Object.entries({ground,home,shrine,chest,tree,treeB,chiefMek}))scene.load.image(key,url);scene.load.image('chest-open',chestOpen);scene.load.spritesheet('walker',player,{frameWidth:32,frameHeight:48});}
 export function buildArt(scene,places){
- scene.add.image(0,0,'ground').setOrigin(0).setDepth(-100);
+ prepareTownTextures(scene);
+ scene.add.image(0,0,'town-r2-ground').setOrigin(0).setDepth(-100);
  scene.art={};
- for(const p of places){if(p.id==='city-hall'){drawCityHall(scene,p);continue;}const offset=p.id==='home'?{x:-16,y:-60}:p.id==='shrine'?{x:-16,y:-60}:{x:-5,y:-17};scene.art[p.id]=scene.add.image(p.x+offset.x,p.y+offset.y,p.id).setOrigin(0).setDepth(p.y+p.h);}
+ for(const p of places){if(p.id==='city-hall'){drawCityHall(scene,p);continue;}const offset=p.id==='home'?{x:-16,y:-60}:p.id==='shrine'?{x:-16,y:-60}:{x:-5,y:-17};scene.art[p.id]=scene.add.image(p.x+offset.x,p.y+offset.y,(p.id==='home'||p.id==='shrine')?'town-r2-'+p.id:p.id).setOrigin(0).setDepth(p.y+p.h);}
  const trees=scene.region.trees;
- for(const [i,[x,y]] of trees.entries()){scene.add.image(x-40,y-76,i%2?'treeB':'tree').setOrigin(0).setDepth(y+24);}
+ for(const [i,[x,y]] of trees.entries()){scene.add.image(x-40,y-76,i%2?'town-r2-treeB':'town-r2-tree').setOrigin(0).setDepth(y+24);}
  const decor=scene.add.graphics().setDepth(1);
  // Small planters, rocks and barrels placed outside the connected roads.
  for(const [x,y] of [[335,245],[605,250],[615,480],[820,490]]){decor.fillStyle(0x604b35).fillRect(x,y,23,16);decor.fillStyle(0xb59059).fillRect(x+2,y+2,19,12);decor.fillStyle(0x496e42).fillRect(x-3,y-6,28,8);for(let i=0;i<4;i++){decor.fillStyle(i%2?0xe9cd87:0xd8957b).fillRect(x+i*6,y-8,3,4);}}

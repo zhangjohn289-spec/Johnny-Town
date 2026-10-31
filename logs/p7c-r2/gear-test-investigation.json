@@ -1,0 +1,10 @@
+{
+  "reason": "A difference of two independently rounded endpoint frames can have twice the single-endpoint quantization error. Existing unmodified browser assertion permits only 21 weighted units; endpoint differences permit up to 42. No gear/game/test source changed.",
+  "example": {
+    "start": 34,
+    "end": 934,
+    "large": 7,
+    "medium": -8,
+    "weightedDelta": 24
+  }
+}

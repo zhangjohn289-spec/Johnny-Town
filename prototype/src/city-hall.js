@@ -1,3 +1,4 @@
+import {drawTownHall} from './town-art.js';
 export const townRecords=[
  ['P1','第一条路铺好，红色旅人开始散步。'],['P2','小屋、神社和宝箱开始迎接访客。'],
  ['P3','像素建筑换上新装，散步也更顺手。'],['P4','小镇迎来第一批公开访客。'],
@@ -12,13 +13,7 @@ export function renderCityHall(root){
  }
 }
 export function drawCityHall(scene,p){
- const g=scene.add.graphics().setDepth(p.y+p.h),box=(c,x,y,w,h)=>g.fillStyle(c).fillRect(x,y,w,h),{x,y,w,h}=p;
- box(0x52614b,x-8,y+h-8,w+20,18);box(0x928f79,x,y,w,h);box(0xc4b795,x+5,y+5,w-10,h-10);
- for(let i=0;i<w;i+=24){box(0x827b64,x+i,y+12,1,h-16);box(0xaaa185,x+i,y+35,22,2);}
- for(const a of [0,w-8])box(0x725c43,x+a,y,8,h);box(0x725c43,x,y+25,w,7);
- for(let i=0;i<5;i++){box(0x45665c,x-10+i*8,y-7-i*7,w+20-i*16,8);box(0x8b9b79,x-8+i*8,y-7-i*7,w+16-i*16,2);}
- box(0x39483d,x+w/2-18,y+h-48,36,48);box(0xb6a06c,x+w/2-22,y+h-52,44,5);box(0xd1b76c,x+w/2+10,y+h-22,4,4);
- for(const a of [18,w-46]){box(0x527c7a,x+a,y+39,28,22);box(0xe3d19e,x+a+12,y+39,3,22);box(0xe3d19e,x+a,y+49,28,3);}
- const cx=x+w/2,cy=y+12;g.lineStyle(4,0xc9a45b).strokeCircle(cx,cy,11);for(let i=0;i<8;i++){const a=i*Math.PI/4;box(0xc9a45b,cx+Math.cos(a)*14-3,cy+Math.sin(a)*14-3,6,6);}
+ const g=scene.add.graphics().setDepth(p.y+p.h),{x,y,w}=p;
+ drawTownHall(g,p);const cx=x+w/2;
  scene.add.text(cx,y-65,'市政厅 · CITY HALL',{fontSize:'12px',color:'#fff0c6',backgroundColor:'#594934',padding:{x:6,y:4}}).setOrigin(.5).setDepth(1000);
 }

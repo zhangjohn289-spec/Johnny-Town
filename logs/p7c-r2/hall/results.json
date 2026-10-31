@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "name": "hall walked and four sections keyboard focus close",
+      "pass": true
+    },
+    {
+      "name": "hall blocks body and all old town routes walked",
+      "pass": true
+    },
+    {
+      "name": "chest explicit safe external link no media before action",
+      "pass": true
+    },
+    {
+      "name": "save remains byte-identical through hall and chest",
+      "pass": true
+    },
+    {
+      "name": "shrine persists across hall and journal intact",
+      "pass": true
+    },
+    {
+      "name": "all six regions roundtrip shortcuts and preserved discoveries",
+      "pass": true
+    },
+    {
+      "name": "small desktop readable hall and no page errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

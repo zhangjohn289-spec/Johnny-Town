@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "name": "desktop normal gameplay scene and all five existing interactions",
+      "pass": true
+    },
+    {
+      "name": "desktop fixed-position nearest pixel gears animate without sprite wobble",
+      "pass": true
+    },
+    {
+      "name": "desktop reduced motion freezes all mechanical frames and steam",
+      "pass": true
+    },
+    {
+      "name": "tablet normal gameplay scene and all five existing interactions",
+      "pass": true
+    },
+    {
+      "name": "tablet fixed-position nearest pixel gears animate without sprite wobble",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(Math.abs(large*24+medium*18)<=21)\n"
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50"
+}

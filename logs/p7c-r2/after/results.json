@@ -1,0 +1,102 @@
+{
+  "results": [
+    {
+      "id": "town",
+      "view": "desktop",
+      "metrics": {
+        "no-preference": {
+          "median": 16.699999999999818,
+          "p95": 16.800000000000182,
+          "children": 39,
+          "textures": 28,
+          "E": 1,
+          "bodies": 1,
+          "static": 9,
+          "colliders": 1,
+          "reduced": false
+        },
+        "reduce": {
+          "median": 16.700000000000728,
+          "p95": 16.899999999999636,
+          "children": 39,
+          "textures": 28,
+          "E": 1,
+          "bodies": 1,
+          "static": 9,
+          "colliders": 1,
+          "reduced": true
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "meadow",
+      "view": "desktop",
+      "camera": {
+        "x": 0,
+        "y": 64
+      }
+    },
+    {
+      "id": "woods",
+      "view": "desktop",
+      "camera": {
+        "x": 0,
+        "y": 128
+      }
+    },
+    {
+      "id": "lake",
+      "view": "desktop",
+      "camera": {
+        "x": 0,
+        "y": 128
+      }
+    },
+    {
+      "id": "valley",
+      "view": "desktop",
+      "camera": {
+        "x": 0,
+        "y": 128
+      }
+    },
+    {
+      "id": "ruins",
+      "view": "desktop",
+      "camera": {
+        "x": 0,
+        "y": 128
+      }
+    },
+    {
+      "id": "town",
+      "view": "tablet",
+      "camera": {
+        "x": 150,
+        "y": 142
+      }
+    },
+    {
+      "id": "town",
+      "view": "landscape",
+      "camera": {
+        "x": 150,
+        "y": 142
+      }
+    },
+    {
+      "id": "town",
+      "view": "portrait",
+      "camera": {
+        "x": 150,
+        "y": 142
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50"
+}
