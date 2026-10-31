@@ -1,0 +1,10 @@
+PASS 375x667 touch viewport and dialogs
+PASS 667x375 touch viewport and dialogs
+PASS 390x844 touch viewport and dialogs
+PASS 844x390 touch viewport and dialogs
+PASS 768x1024 touch viewport and dialogs
+PASS 1024x768 touch viewport and dialogs
+PASS real touch diagonal multitouch modal release and cancel
+PASS touch hall shrine chest popup and unchanged save
+PASS touch region changes ruins journal refresh and old save
+PASS desktop keyboard and no browser errors

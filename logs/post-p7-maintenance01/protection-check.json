@@ -1,0 +1,29 @@
+{
+  "baseline": "774768f573f5e850f3e30b388cac548fd820dd8e",
+  "protectedPaths": [
+    "prototype/src/interaction-targeting.js",
+    "prototype/src/npc-data.js",
+    "prototype/src/config.js",
+    "prototype/src/regions.js",
+    "prototype/src/woods-data.js",
+    "prototype/src/expansion-data.js",
+    "prototype/src/ruins-data.js",
+    "prototype/src/npc-stories.js",
+    "prototype/src/touch-controls.js",
+    "prototype/src/input-focus.js",
+    "prototype/src/player-controller.js",
+    "prototype/src/golden-trial.js",
+    "prototype/src/world-store.js",
+    "prototype/src/visuals.js",
+    "prototype/src/valley-renderer.js",
+    "prototype/src/gear-art.js",
+    "prototype/vite.config.js",
+    ".github"
+  ],
+  "protectedDifferences": [],
+  "worldInteractionUpdateAndStartupSuffix": {
+    "sha256": "c348363a087780f99d6bd776a90102b880e8dc7019131301e2cdc126f9db5ea7",
+    "identical": true
+  },
+  "note": "Suffix starts at WorldScene.interact, includes unchanged target selection, ring rectangle, world update and Phaser game configuration."
+}

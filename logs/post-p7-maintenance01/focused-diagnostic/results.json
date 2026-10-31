@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "name": "desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "desktop direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": false,
+      "error": "{\"focus\":\"game\",\"locked\":false,\"ui\":false,\"enabled\":true,\"D\":false,\"position\":{\"x\":470,\"y\":355}}\n\n0 !== 175\n"
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "touch": "CDP / Playwright simulation, not physical devices"
+}

@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "name": "desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "desktop direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "small-desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "small-desktop direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "phone new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "phone direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "landscape direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "tablet new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "tablet direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "secondary action, held key reset, ordinary Escape and flag removal without progress loss",
+      "pass": true
+    },
+    {
+      "name": "returning progressed save gets welcome once; world/fortune and puzzles retained",
+      "pass": true
+    },
+    {
+      "name": "version1 gameplay save receives welcome independently and retains existing migration rules",
+      "pass": true
+    },
+    {
+      "name": "I key works in all six regions for known visitor; journal and normal E remain available",
+      "pass": true
+    },
+    {
+      "name": "unavailable storage getter remains usable and does not repeat on scene restart",
+      "pass": true
+    },
+    {
+      "name": "unavailable storage read-write remains usable and does not repeat on scene restart",
+      "pass": true
+    },
+    {
+      "name": "unavailable storage quota remains usable and does not repeat on scene restart",
+      "pass": true
+    },
+    {
+      "name": "reduced motion and bundled content available with offline network",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "touch": "CDP / Playwright simulation, not physical devices"
+}

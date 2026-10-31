@@ -14,14 +14,6 @@ export function renderStory(root,story){
   node(details,'summary','继续阅读');
   for(const text of story.detail) node(details,'p',text);
 }
-export function renderQuick(root,regionId,close){
-  node(root,'p',profile.introduction,'story-lead');
-  const interests=node(root,'ul',null,'interest-list');
-  for(const interest of profile.interests)node(interests,'li',interest);
-  for(const section of profile.overview){node(root,'h3',section.title);node(root,'p',section.text);}
-  node(root,'p','沿路标探索森林、湖岸与山谷；M 键可重读已发现的故事。','route-note');
-  const explore=node(root,'button','开始自由探索');explore.type='button';explore.onclick=close;
-}
 export function renderJournal(root,regions,state){
   node(root,'p','沿路标步行，按 E 往返；每段旅途都可以慢慢重走。');
   const list=node(root,'ul',null,'region-list');

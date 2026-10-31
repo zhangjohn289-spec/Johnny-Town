@@ -1,0 +1,21 @@
+PASS desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"focus":"game","locked":false,"ui":false,"enabled":true,"D":false,"position":{"x":470,"y":355}}
+
+0 !== 175
+
+    at file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:20:267
+    at async check (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:5:34)
+    at async file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:17:3 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 0,
+  expected: 175,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

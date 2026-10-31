@@ -1,0 +1,13 @@
+PASS desktop normal gameplay scene and all five existing interactions
+PASS desktop fixed-position nearest pixel gears animate without sprite wobble
+PASS desktop reduced motion freezes all mechanical frames and steam
+PASS tablet normal gameplay scene and all five existing interactions
+PASS tablet fixed-position nearest pixel gears animate without sprite wobble
+PASS tablet reduced motion freezes all mechanical frames and steam
+PASS mobile normal gameplay scene and all five existing interactions
+PASS mobile fixed-position nearest pixel gears animate without sprite wobble
+PASS mobile reduced motion freezes all mechanical frames and steam
+PASS landscape normal gameplay scene and all five existing interactions
+PASS landscape fixed-position nearest pixel gears animate without sprite wobble
+PASS landscape reduced motion freezes all mechanical frames and steam
+PASS no browser runtime errors across all views

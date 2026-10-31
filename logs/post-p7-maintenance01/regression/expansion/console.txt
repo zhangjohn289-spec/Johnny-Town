@@ -1,0 +1,19 @@
+PASS town quick introduction and clean journal
+PASS woods quick introduction and clean journal
+PASS meadow quick introduction and clean journal
+PASS meadow all exits walked and scenic composition
+PASS lake quick introduction and clean journal
+PASS lake-stage reached and read
+PASS rhythm-stones reached and read
+PASS echoing-pier reached and read
+PASS conductors-lantern reached and read
+PASS valley quick introduction and clean journal
+PASS first-gear reached and read
+PASS unfinished-ideas reached and read
+PASS great-transmission reached and read
+PASS skyward-blueprint reached and read
+PASS all 13 discoveries survive refresh and do not duplicate
+PASS 20 new-region transitions retain stable resources
+PASS lake water and valley workshop collision with bounded cameras
+PASS reduced motion freezes machinery and overlays fit small desktop
+PASS no errors and short render sample

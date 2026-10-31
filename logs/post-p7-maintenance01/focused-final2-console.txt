@@ -1,0 +1,36 @@
+PASS desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS desktop direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS small-desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS small-desktop direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS phone new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS phone direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS landscape direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS tablet new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS tablet direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS tablet-landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS tablet-landscape direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS secondary action, held key reset, ordinary Escape and flag removal without progress loss
+PASS returning progressed save gets welcome once; world/fortune and puzzles retained
+PASS version1 gameplay save receives welcome independently and retains existing migration rules
+PASS I key works in all six regions for known visitor; journal and normal E remain available
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"focus":"game","locked":false,"ui":false,"enabled":true,"D":false,"position":{"x":470,"y":355}}
+
+0 !== 175
+
+    at file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:40:911
+    at async check (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:6:34)
+    at async file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:39:52 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 0,
+  expected: 175,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

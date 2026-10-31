@@ -1,0 +1,29 @@
+{
+  "welcome": "d621660a255a0f944ba58dde4c2d408899c52d774fd682155e9db5b320730905",
+  "sections": [
+    {
+      "id": "about",
+      "hash": "5d06bf79de2f071b93097e12d2d8d35428b900156d2aa777b76f6cfa0a5986b5"
+    },
+    {
+      "id": "interests",
+      "hash": "b38d845b5ea7ea6db9d1a2f48f24d5416b31fc1384ab3a471ea688667f131981"
+    },
+    {
+      "id": "projects",
+      "hash": "79547b5106c1100227f7e01643074bc62d949fef8eb2d8cedf48926169625042"
+    },
+    {
+      "id": "skills",
+      "hash": "3af56ef66ec0a4fd5f0307d512d2c7716c732a6e558e5de67c1ed5c97a7ed134"
+    },
+    {
+      "id": "philosophy",
+      "hash": "5f0b7c1394732095d98d1cd54c307da7e46146b732992e39bd2cb9b53b670495"
+    },
+    {
+      "id": "explore",
+      "hash": "fe9ebc428fdae14589112453375d6bfac368b507225ac901717a77bd809d5bc0"
+    }
+  ]
+}

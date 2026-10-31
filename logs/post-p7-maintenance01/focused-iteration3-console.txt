@@ -1,0 +1,34 @@
+PASS desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS desktop direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS small-desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS small-desktop direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS phone new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS phone direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS landscape direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS tablet new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS tablet direct portfolio, all six exact chapters, stable controls, reload and focus
+PASS tablet-landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling
+PASS tablet-landscape direct portfolio, all six exact chapters, stable controls, reload and focus
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ '{"version":2,"regionId":"town","spawnId":"start","discovered":["town"],"progress":{"transitions":0},"activities":{"rhythm":false,"gears":false},"secrets":{"found":[],"golden":false,"waited":false},"goldenTrial":{"stage":0},"stories":[]}'
+- '{"version":2,"regionId":"town","spawnId":"start","discovered":["town"],"progress":{"transitions":0},"stories":[],"activities":{"rhythm":false,"gears":false},"secrets":{"found":[],"golden":false,"waited":false},"goldenTrial":{"stage":0}}'
+
+    at file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:24:677
+    at async check (file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:5:34)
+    at async file:///C:/Users/mi/Desktop/Johnny-Town/prototype/test-welcome-portfolio-browser.mjs:23:2 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '{"version":2,"regionId":"town","spawnId":"start","discovered":["town"],"progress":{"transitions":0},"activities":{"rhythm":false,"gears":false},"secrets":{"found":[],"golden":false,"waited":false},"goldenTrial":{"stage":0},"stories":[]}',
+  expected: '{"version":2,"regionId":"town","spawnId":"start","discovered":["town"],"progress":{"transitions":0},"stories":[],"activities":{"rhythm":false,"gears":false},"secrets":{"found":[],"golden":false,"waited":false},"goldenTrial":{"stage":0}}',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

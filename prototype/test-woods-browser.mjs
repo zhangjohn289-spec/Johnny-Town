@@ -57,8 +57,14 @@ try{
  await check('quick introduction is ungated, keyboard/mouse accessible and restores focus',async()=>{
   assert.equal(await page.locator('dialog[open]').count(),0);assert.equal((await state()).stories.length,0);
   await page.locator('#quick-intro').click();await page.waitForTimeout(220);
-  const text=await page.locator('#body').innerText();for(const expected of ['编程','音乐','Minecraft','Johnny Town'])assert.ok(text.includes(expected));
-  assert.ok(text.length<650);assert.equal(await page.locator('#close').evaluate(e=>e===document.activeElement),true);
+  assert.equal(await page.locator('#close').evaluate(e=>e===document.activeElement),true);
+  // The owner replaced the former short summary with six approved full chapters.
+  assert.equal(await page.locator('#portfolio-section option').count(),6);
+  for(const [id,title] of [['about','关于我'],['interests','我的兴趣'],['projects','我的作品'],['skills','技能与经历'],['philosophy','我的想法'],['explore','探索我的世界']]){
+   await page.locator('#portfolio-section').selectOption(id);assert.equal(await page.locator('#portfolio-heading').innerText(),title);
+  }
+  await page.locator('#portfolio-section').selectOption('skills');assert.ok((await page.locator('.portfolio-page').innerText()).includes('AI 编程工具'));
+  await page.locator('#portfolio-section').selectOption('about');assert.ok((await page.locator('.portfolio-page').innerText()).includes('你好，Traveler！'));
   await page.screenshot({path:dir+'/quick-introduction.png'});
   await close();assert.equal(await page.locator('#quick-intro').evaluate(e=>e===document.activeElement),true);
   await page.keyboard.press('i');await page.getByRole('button',{name:'开始自由探索',exact:true}).click();await page.waitForTimeout(100);

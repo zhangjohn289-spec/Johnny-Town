@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "name": "desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "desktop direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "small-desktop new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "small-desktop direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "phone new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "phone direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "landscape direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "tablet new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "tablet direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape new welcome complete, unwritten until acknowledgement, modal isolation and scrolling",
+      "pass": true
+    },
+    {
+      "name": "tablet-landscape direct portfolio, all six exact chapters, stable controls, reload and focus",
+      "pass": true
+    },
+    {
+      "name": "secondary action, held key reset, ordinary Escape and flag removal without progress loss",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '{\"version\":2,\"regionId\":\"town\",\"spawnId\":\"start\",\"discovered\":[\"town\"],\"progress\":{\"transitions\":0},\"activities\":{\"rhythm\":false,\"gears\":false},\"secrets\":{\"found\":[],\"golden\":false,\"waited\":false},\"goldenTrial\":{\"stage\":0},\"stories\":[]}'\n- '{\"version\":2,\"regionId\":\"town\",\"spawnId\":\"start\",\"discovered\":[\"town\"],\"progress\":{\"transitions\":0},\"stories\":[],\"activities\":{\"rhythm\":false,\"gears\":false},\"secrets\":{\"found\":[],\"golden\":false,\"waited\":false},\"goldenTrial\":{\"stage\":0}}'\n"
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.4314.50",
+  "touch": "CDP / Playwright simulation, not physical devices"
+}

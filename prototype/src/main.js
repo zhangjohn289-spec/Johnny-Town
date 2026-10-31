@@ -6,7 +6,8 @@ import {stoneState} from './golden-trial.js';
 import './style.css';
 import Phaser from 'phaser';
 import {world} from './config.js';
-import {show,showNavigation,showQuick,isOpen} from './ui.js';
+import {show,showNavigation,showQuick,showWelcome,isOpen} from './ui.js';
+import {createWelcomeStore} from './welcome-store.js';
 import {preloadArt,animateArt} from './visuals.js';
 import {regions,regionList,safeSpawn} from './regions.js';
 import {createWorldStore} from './world-store.js';
@@ -14,6 +15,7 @@ import {createPlayer,lockInput,movePlayer} from './player-controller.js';
 import {renderRegion} from './region-renderer.js';
 
 const worldStore=createWorldStore();
+const welcomeStore=createWelcomeStore();
 const talkedNPCs=new Set(); // Session-only greetings; no saved progression.
 const navigation=document.querySelector('#world-map');
 const quickButton=document.querySelector('#quick-intro');
@@ -71,6 +73,10 @@ class WorldScene extends Phaser.Scene {
     worldStore.save();
     document.querySelector('#save-status').textContent=worldStore.warning;
     window.__town={scene:this,places:this.region.places};
+    if(welcomeStore.shouldShow()){
+      lockInput(this,true);
+      showWelcome(()=>lockInput(this,false),()=>this.openQuick(),()=>welcomeStore.acknowledge());
+    }
   }
   openNavigation(){
     if(isOpen()||this.interacting) return;

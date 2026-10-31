@@ -1,0 +1,97 @@
+{
+  "results": [
+    {
+      "name": "move w",
+      "pass": true
+    },
+    {
+      "name": "move a",
+      "pass": true
+    },
+    {
+      "name": "move s",
+      "pass": true
+    },
+    {
+      "name": "move d",
+      "pass": true
+    },
+    {
+      "name": "move ArrowUp",
+      "pass": true
+    },
+    {
+      "name": "move ArrowLeft",
+      "pass": true
+    },
+    {
+      "name": "move ArrowDown",
+      "pass": true
+    },
+    {
+      "name": "move ArrowRight",
+      "pass": true
+    },
+    {
+      "name": "full introduction",
+      "pass": true
+    },
+    {
+      "name": "single panel",
+      "pass": true
+    },
+    {
+      "name": "modal freeze",
+      "pass": true
+    },
+    {
+      "name": "close resumes",
+      "pass": true
+    },
+    {
+      "name": "save before animation",
+      "pass": true
+    },
+    {
+      "name": "interruption recovery",
+      "pass": true
+    },
+    {
+      "name": "reload preserves",
+      "pass": true
+    },
+    {
+      "name": "new browser context persistence",
+      "pass": true
+    },
+    {
+      "name": "explicit canonical external chest link",
+      "pass": true
+    },
+    {
+      "name": "media removed",
+      "pass": true
+    },
+    {
+      "name": "corrupt data warning",
+      "pass": true
+    },
+    {
+      "name": "storage denied survives",
+      "pass": true
+    },
+    {
+      "name": "building collision",
+      "pass": true
+    },
+    {
+      "name": "boundary",
+      "pass": true
+    },
+    {
+      "name": "no runtime errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

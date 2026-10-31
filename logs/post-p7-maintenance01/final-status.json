@@ -1,0 +1,14 @@
+{
+  "baseline": "774768f573f5e850f3e30b388cac548fd820dd8e",
+  "branch": "codex/post-p7-welcome-portfolio",
+  "unitTests": 104,
+  "focusedJourneys": 20,
+  "nativeControls": 3,
+  "broaderSuites": 19,
+  "broaderPassingRecords": 281,
+  "welcomeKey": "johnny-town.welcome.v1.seen",
+  "exactContentHashes": 7,
+  "physicalDevices": false,
+  "ownerAcceptance": "pending",
+  "remoteOperations": false
+}

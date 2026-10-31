@@ -1,0 +1,30 @@
+PASS browser save fixture fresh
+PASS browser save fixture old-P6
+PASS browser save fixture P7A-achievements
+PASS browser save fixture lesson-1
+PASS browser save fixture lesson-2
+PASS browser save fixture lesson-3
+PASS browser save fixture lesson-4
+PASS browser save fixture lesson-5
+PASS browser save fixture legacy-completed
+PASS browser save fixture malformed-trial
+PASS browser save fixture partial-trial
+PASS browser save fixture corrupt
+PASS dormant stone reached by movement cannot skip central start
+PASS desktop physically walks lesson 1 and saves before close
+PASS desktop physically walks lesson 2 and saves before close
+PASS desktop physically walks lesson 3 and saves before close
+PASS desktop physically walks lesson 4 and saves before close
+PASS desktop physically walks lesson 5 and saves before close
+PASS completed peripheral stones reread their exact lessons without resetting progress
+PASS single journal entry rereads all five exact lessons without new progress
+PASS twenty rereads preserve completion and native input listener counts
+PASS twenty region transitions keep trial progress and resources bounded
+PASS persistent final art reduced-motion and completion replay stay stable
+PASS mobile real browser touch approaches and completes every lesson
+PASS mobile completion scene journal refresh and touch recovery
+PASS landscape real browser touch approaches and completes every lesson
+PASS landscape completion scene journal refresh and touch recovery
+PASS tablet real browser touch approaches and completes every lesson
+PASS tablet completion scene journal refresh and touch recovery
+PASS no browser runtime errors
